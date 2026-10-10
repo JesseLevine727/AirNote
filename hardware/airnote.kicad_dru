@@ -1,5 +1,27 @@
 (version 1)
 # Engineering prototype geometry: 0.15 mm tracks / 0.127 mm clearance.
 # These constraints are not a factory capability approval.
-(rule "AirNote 5mil clearance" (constraint clearance (min 0.127)))
-(rule "AirNote minimum trace" (constraint track_width (min 0.15)))
+# Values carry explicit units: KiCad rejects the whole file if a unit is missing.
+(rule "AirNote 5mil clearance"
+	(constraint clearance (min 0.127mm)))
+(rule "AirNote minimum trace"
+	(constraint track_width (min 0.15mm)))
+
+# USB full-speed pair (net class USB_DIFF; provisional JLC04161H-7628 stackup):
+# 0.25 mm traces with 0.15 mm gap on F.Cu over the In1.Cu GND plane.
+# Minimum 0.15 mm width permits neck-down at the J1/D1/R8/R9/U1 pads only;
+# the neck-down locations are checked by inspection, not by this rule.
+(rule "USB_DIFF width"
+	(condition "A.NetClass == 'USB_DIFF'")
+	(constraint track_width (min 0.15mm) (opt 0.25mm) (max 0.25mm)))
+(rule "USB_DIFF to other nets"
+	(condition "A.NetClass == 'USB_DIFF' && B.NetClass != 'USB_DIFF'")
+	(constraint clearance (min 0.2mm)))
+(rule "USB_DIFF intra-pair gap"
+	(condition "A.NetClass == 'USB_DIFF' && B.NetClass == 'USB_DIFF'")
+	(constraint clearance (min 0.15mm)))
+# Keep the outer-layer GND pour back from the pair so the pair behaves as the
+# edge-coupled microstrip assumed by the impedance estimate (not coplanar).
+(rule "USB_DIFF pour pullback"
+	(condition "A.NetClass == 'USB_DIFF' && B.Type == 'Zone'")
+	(constraint clearance (min 0.5mm)))

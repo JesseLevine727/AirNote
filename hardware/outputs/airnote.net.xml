@@ -2,7 +2,7 @@
 <export version="E">
   <design>
     <source>/home/elfo/Documents/KiCadFun/hardware/airnote.kicad_sch</source>
-    <date>2026-10-10T14:01:38-0400</date>
+    <date>2026-10-10T16:31:12-0400</date>
     <tool>Eeschema 9.0.9-9.0.9~ubuntu24.04.1</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -65,13 +65,15 @@
       <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="MPN">GRM1885C1H150JA01D</field>
+        <field name="MPN">CL10C150JB8NNNC</field>
+        <field name="LCSC">C1644</field>
         <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
         <field name="Datasheet">~</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <property name="MPN" value="GRM1885C1H150JA01D"/>
+      <property name="MPN" value="CL10C150JB8NNNC"/>
+      <property name="LCSC" value="C1644"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="airnote.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -84,13 +86,15 @@
       <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="MPN">GRM1885C1H150JA01D</field>
+        <field name="MPN">CL10C150JB8NNNC</field>
+        <field name="LCSC">C1644</field>
         <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
         <field name="Datasheet">~</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <property name="MPN" value="GRM1885C1H150JA01D"/>
+      <property name="MPN" value="CL10C150JB8NNNC"/>
+      <property name="LCSC" value="C1644"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="airnote.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -103,13 +107,15 @@
       <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="MPN">GRM188R71C104KA01D</field>
+        <field name="MPN">CC0603KRX7R9BB104</field>
+        <field name="LCSC">C14663</field>
         <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
         <field name="Datasheet">~</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <property name="MPN" value="GRM188R71C104KA01D"/>
+      <property name="MPN" value="CC0603KRX7R9BB104"/>
+      <property name="LCSC" value="C14663"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="airnote.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -122,13 +128,15 @@
       <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="MPN">GRM188R71C104KA01D</field>
+        <field name="MPN">CC0603KRX7R9BB104</field>
+        <field name="LCSC">C14663</field>
         <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
         <field name="Datasheet">~</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <property name="MPN" value="GRM188R71C104KA01D"/>
+      <property name="MPN" value="CC0603KRX7R9BB104"/>
+      <property name="LCSC" value="C14663"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="airnote.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -141,13 +149,15 @@
       <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="MPN">GRM188R71C104KA01D</field>
+        <field name="MPN">CC0603KRX7R9BB104</field>
+        <field name="LCSC">C14663</field>
         <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
         <field name="Datasheet">~</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <property name="MPN" value="GRM188R71C104KA01D"/>
+      <property name="MPN" value="CC0603KRX7R9BB104"/>
+      <property name="LCSC" value="C14663"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="airnote.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -160,13 +170,15 @@
       <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="MPN">GRM188R71C104KA01D</field>
+        <field name="MPN">CC0603KRX7R9BB104</field>
+        <field name="LCSC">C14663</field>
         <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
         <field name="Datasheet">~</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <property name="MPN" value="GRM188R71C104KA01D"/>
+      <property name="MPN" value="CC0603KRX7R9BB104"/>
+      <property name="LCSC" value="C14663"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="airnote.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -179,13 +191,15 @@
       <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="MPN">GRM188R71C104KA01D</field>
+        <field name="MPN">CC0603KRX7R9BB104</field>
+        <field name="LCSC">C14663</field>
         <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
         <field name="Datasheet">~</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <property name="MPN" value="GRM188R71C104KA01D"/>
+      <property name="MPN" value="CC0603KRX7R9BB104"/>
+      <property name="LCSC" value="C14663"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="airnote.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -198,13 +212,15 @@
       <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="MPN">GRM188R71C104KA01D</field>
+        <field name="MPN">CC0603KRX7R9BB104</field>
+        <field name="LCSC">C14663</field>
         <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
         <field name="Datasheet">~</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <property name="MPN" value="GRM188R71C104KA01D"/>
+      <property name="MPN" value="CC0603KRX7R9BB104"/>
+      <property name="LCSC" value="C14663"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="airnote.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -217,13 +233,15 @@
       <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="MPN">GRM188R71C104KA01D</field>
+        <field name="MPN">CC0603KRX7R9BB104</field>
+        <field name="LCSC">C14663</field>
         <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
         <field name="Datasheet">~</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <property name="MPN" value="GRM188R71C104KA01D"/>
+      <property name="MPN" value="CC0603KRX7R9BB104"/>
+      <property name="LCSC" value="C14663"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="airnote.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -236,13 +254,15 @@
       <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="MPN">GRM188R71C104KA01D</field>
+        <field name="MPN">CC0603KRX7R9BB104</field>
+        <field name="LCSC">C14663</field>
         <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
         <field name="Datasheet">~</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <property name="MPN" value="GRM188R71C104KA01D"/>
+      <property name="MPN" value="CC0603KRX7R9BB104"/>
+      <property name="LCSC" value="C14663"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="airnote.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -255,13 +275,15 @@
       <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="MPN">GRM188R71C104KA01D</field>
+        <field name="MPN">CC0603KRX7R9BB104</field>
+        <field name="LCSC">C14663</field>
         <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
         <field name="Datasheet">~</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <property name="MPN" value="GRM188R71C104KA01D"/>
+      <property name="MPN" value="CC0603KRX7R9BB104"/>
+      <property name="LCSC" value="C14663"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="airnote.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -274,13 +296,15 @@
       <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="MPN">GRM188R71C104KA01D</field>
+        <field name="MPN">CC0603KRX7R9BB104</field>
+        <field name="LCSC">C14663</field>
         <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
         <field name="Datasheet">~</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <property name="MPN" value="GRM188R71C104KA01D"/>
+      <property name="MPN" value="CC0603KRX7R9BB104"/>
+      <property name="LCSC" value="C14663"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="airnote.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -293,13 +317,15 @@
       <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="MPN">GRM188R71A105KA61D</field>
+        <field name="MPN">CL10A105KB8NNNC</field>
+        <field name="LCSC">C15849</field>
         <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
         <field name="Datasheet">~</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <property name="MPN" value="GRM188R71A105KA61D"/>
+      <property name="MPN" value="CL10A105KB8NNNC"/>
+      <property name="LCSC" value="C15849"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="airnote.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -312,13 +338,15 @@
       <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="MPN">GRM188R71A105KA61D</field>
+        <field name="MPN">CL10A105KB8NNNC</field>
+        <field name="LCSC">C15849</field>
         <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
         <field name="Datasheet">~</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <property name="MPN" value="GRM188R71A105KA61D"/>
+      <property name="MPN" value="CL10A105KB8NNNC"/>
+      <property name="LCSC" value="C15849"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="airnote.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -331,13 +359,15 @@
       <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="MPN">GRM188R71C104KA01D</field>
+        <field name="MPN">CC0603KRX7R9BB104</field>
+        <field name="LCSC">C14663</field>
         <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
         <field name="Datasheet">~</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <property name="MPN" value="GRM188R71C104KA01D"/>
+      <property name="MPN" value="CC0603KRX7R9BB104"/>
+      <property name="LCSC" value="C14663"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="airnote.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -350,13 +380,15 @@
       <footprint>Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="MPN">TSW-105-07-G-S</field>
+        <field name="MPN">HX PZ2.54-1x5P ZZ</field>
+        <field name="LCSC">C32713271</field>
         <field name="Footprint">Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical</field>
         <field name="Datasheet">~</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Connector_Generic" part="Conn_01x05" description="Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
-      <property name="MPN" value="TSW-105-07-G-S"/>
+      <property name="MPN" value="HX PZ2.54-1x5P ZZ"/>
+      <property name="LCSC" value="C32713271"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="airnote.kicad_sch"/>
       <property name="ki_keywords" value="connector"/>
@@ -369,13 +401,15 @@
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="MPN">RC0603FR-071KL</field>
+        <field name="MPN">0603WAF1001T5E</field>
+        <field name="LCSC">C21190</field>
         <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
         <field name="Datasheet">~</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="MPN" value="RC0603FR-071KL"/>
+      <property name="MPN" value="0603WAF1001T5E"/>
+      <property name="LCSC" value="C21190"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="airnote.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -388,13 +422,15 @@
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="MPN">RC0603FR-0710KL</field>
+        <field name="MPN">0603WAF1002T5E</field>
+        <field name="LCSC">C25804</field>
         <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
         <field name="Datasheet">~</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="MPN" value="RC0603FR-0710KL"/>
+      <property name="MPN" value="0603WAF1002T5E"/>
+      <property name="LCSC" value="C25804"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="airnote.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -407,13 +443,15 @@
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="MPN">RC0603FR-071KL</field>
+        <field name="MPN">0603WAF1001T5E</field>
+        <field name="LCSC">C21190</field>
         <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
         <field name="Datasheet">~</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="MPN" value="RC0603FR-071KL"/>
+      <property name="MPN" value="0603WAF1001T5E"/>
+      <property name="LCSC" value="C21190"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="airnote.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -426,13 +464,15 @@
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="MPN">RC0603FR-0710KL</field>
+        <field name="MPN">0603WAF1002T5E</field>
+        <field name="LCSC">C25804</field>
         <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
         <field name="Datasheet">~</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="MPN" value="RC0603FR-0710KL"/>
+      <property name="MPN" value="0603WAF1002T5E"/>
+      <property name="LCSC" value="C25804"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="airnote.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -445,13 +485,15 @@
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="MPN">RC0603FR-071RL</field>
+        <field name="MPN">0603WAF100KT5E</field>
+        <field name="LCSC">C22936</field>
         <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
         <field name="Datasheet">~</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="MPN" value="RC0603FR-071RL"/>
+      <property name="MPN" value="0603WAF100KT5E"/>
+      <property name="LCSC" value="C22936"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="airnote.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -465,12 +507,14 @@
       <datasheet>~</datasheet>
       <fields>
         <field name="MPN">TL3342F160QG</field>
+        <field name="LCSC">C2886898</field>
         <field name="Footprint">Button_Switch_SMD:SW_SPST_TL3342</field>
         <field name="Datasheet">~</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Switch" part="SW_Push" description="Push button switch, generic, two pins"/>
       <property name="MPN" value="TL3342F160QG"/>
+      <property name="LCSC" value="C2886898"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="airnote.kicad_sch"/>
       <property name="ki_keywords" value="switch normally-open pushbutton push-button"/>
@@ -483,12 +527,14 @@
       <datasheet>~</datasheet>
       <fields>
         <field name="MPN">TL3342F160QG</field>
+        <field name="LCSC">C2886898</field>
         <field name="Footprint">Button_Switch_SMD:SW_SPST_TL3342</field>
         <field name="Datasheet">~</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Switch" part="SW_Push" description="Push button switch, generic, two pins"/>
       <property name="MPN" value="TL3342F160QG"/>
+      <property name="LCSC" value="C2886898"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="airnote.kicad_sch"/>
       <property name="ki_keywords" value="switch normally-open pushbutton push-button"/>
@@ -501,12 +547,14 @@
       <datasheet>https://datasheets.raspberrypi.com/rp2040/rp2040-datasheet.pdf</datasheet>
       <fields>
         <field name="MPN">RP2040</field>
+        <field name="LCSC">C2040</field>
         <field name="Footprint">Package_DFN_QFN:QFN-56-1EP_7x7mm_P0.4mm_EP3.2x3.2mm</field>
         <field name="Datasheet">https://datasheets.raspberrypi.com/rp2040/rp2040-datasheet.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="MCU_RaspberryPi" part="RP2040" description="A microcontroller by Raspberry Pi, Dual ARM Cortex-M0+, 133MHz, no flash, 264KB SRAM, 8 PIO state machines, VQFN-56"/>
       <property name="MPN" value="RP2040"/>
+      <property name="LCSC" value="C2040"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="airnote.kicad_sch"/>
       <property name="ki_keywords" value="RPi Pico USB QSPI I2C UART SC0914"/>
@@ -515,17 +563,19 @@
       <tstamps>96f64c52-a8cd-5998-a19a-a440709a867c</tstamps>
     </comp>
     <comp ref="U2">
-      <value>W25Q16JVSSIQ</value>
+      <value>W25Q16JVSNIQ</value>
       <footprint>Package_SO:SOIC-8_3.9x4.9mm_P1.27mm</footprint>
       <datasheet>https://www.winbond.com/hq/support/documentation/levelOne.jsp?__locale=en&amp;DocNo=DA00-W25Q16JV.1</datasheet>
       <fields>
-        <field name="MPN">W25Q16JVSSIQ</field>
+        <field name="MPN">W25Q16JVSNIQ</field>
+        <field name="LCSC">C2456211</field>
         <field name="Footprint">Package_SO:SOIC-8_3.9x4.9mm_P1.27mm</field>
         <field name="Datasheet">https://www.winbond.com/hq/support/documentation/levelOne.jsp?__locale=en&amp;DocNo=DA00-W25Q16JV.1</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Memory_Flash" part="W25Q16JVSS" description="16Mbit / 2MiB Serial Flash Memory, Standard/Dual/Quad SPI, 2.7-3.6V, SOIC-8 (208 mil)"/>
-      <property name="MPN" value="W25Q16JVSSIQ"/>
+      <property name="MPN" value="W25Q16JVSNIQ"/>
+      <property name="LCSC" value="C2456211"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="airnote.kicad_sch"/>
       <property name="ki_keywords" value="flash memory SPI"/>
@@ -539,12 +589,14 @@
       <datasheet>~</datasheet>
       <fields>
         <field name="MPN">ABM8-272-T3</field>
+        <field name="LCSC">C20625731</field>
         <field name="Footprint">Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm</field>
         <field name="Datasheet">~</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="Crystal_GND24" description="Four pin crystal, GND on pins 2 and 4"/>
       <property name="MPN" value="ABM8-272-T3"/>
+      <property name="LCSC" value="C20625731"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="airnote.kicad_sch"/>
       <property name="ki_keywords" value="quartz ceramic resonator oscillator"/>
@@ -557,13 +609,15 @@
       <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="MPN">GRM188R71A105KA61D</field>
+        <field name="MPN">CL10A105KB8NNNC</field>
+        <field name="LCSC">C15849</field>
         <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
         <field name="Datasheet">~</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <property name="MPN" value="GRM188R71A105KA61D"/>
+      <property name="MPN" value="CL10A105KB8NNNC"/>
+      <property name="LCSC" value="C15849"/>
       <property name="Sheetname" value="Power"/>
       <property name="Sheetfile" value="power.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -576,13 +630,15 @@
       <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="MPN">GRM188R71A105KA61D</field>
+        <field name="MPN">CL10A105KB8NNNC</field>
+        <field name="LCSC">C15849</field>
         <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
         <field name="Datasheet">~</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <property name="MPN" value="GRM188R71A105KA61D"/>
+      <property name="MPN" value="CL10A105KB8NNNC"/>
+      <property name="LCSC" value="C15849"/>
       <property name="Sheetname" value="Power"/>
       <property name="Sheetfile" value="power.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -595,13 +651,15 @@
       <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="MPN">GRM188R71C104KA01D</field>
+        <field name="MPN">CC0603KRX7R9BB104</field>
+        <field name="LCSC">C14663</field>
         <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
         <field name="Datasheet">~</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <property name="MPN" value="GRM188R71C104KA01D"/>
+      <property name="MPN" value="CC0603KRX7R9BB104"/>
+      <property name="LCSC" value="C14663"/>
       <property name="Sheetname" value="Power"/>
       <property name="Sheetfile" value="power.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -615,12 +673,14 @@
       <datasheet>https://www.st.com/resource/en/datasheet/usblc6-2.pdf</datasheet>
       <fields>
         <field name="MPN">USBLC6-2SC6</field>
+        <field name="LCSC">C7519</field>
         <field name="Footprint">Package_TO_SOT_SMD:SOT-23-6</field>
         <field name="Datasheet">https://www.st.com/resource/en/datasheet/usblc6-2.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Power_Protection" part="USBLC6-2SC6" description="Very low capacitance ESD protection diode, 2 data-line, SOT-23-6"/>
       <property name="MPN" value="USBLC6-2SC6"/>
+      <property name="LCSC" value="C7519"/>
       <property name="Sheetname" value="Power"/>
       <property name="Sheetfile" value="power.kicad_sch"/>
       <property name="ki_keywords" value="usb ethernet video"/>
@@ -634,12 +694,14 @@
       <datasheet>~</datasheet>
       <fields>
         <field name="MPN">1206L050YR</field>
+        <field name="LCSC">C163512</field>
         <field name="Footprint">Fuse:Fuse_1206_3216Metric</field>
         <field name="Datasheet">~</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="Polyfuse" description="Resettable fuse, polymeric positive temperature coefficient"/>
       <property name="MPN" value="1206L050YR"/>
+      <property name="LCSC" value="C163512"/>
       <property name="Sheetname" value="Power"/>
       <property name="Sheetfile" value="power.kicad_sch"/>
       <property name="ki_keywords" value="resettable fuse PTC PPTC polyfuse polyswitch"/>
@@ -652,13 +714,15 @@
       <footprint>AirNote:USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal</footprint>
       <datasheet>https://www.usb.org/sites/default/files/documents/usb_type-c.zip</datasheet>
       <fields>
-        <field name="MPN">USB4105-GF-A</field>
+        <field name="MPN">USB4105-GF-A-120</field>
+        <field name="LCSC">C5184243</field>
         <field name="Footprint">AirNote:USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal</field>
         <field name="Datasheet">https://www.usb.org/sites/default/files/documents/usb_type-c.zip</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Connector" part="USB_C_Receptacle_USB2.0_16P" description="USB 2.0-only 16P Type-C Receptacle connector"/>
-      <property name="MPN" value="USB4105-GF-A"/>
+      <property name="MPN" value="USB4105-GF-A-120"/>
+      <property name="LCSC" value="C5184243"/>
       <property name="Sheetname" value="Power"/>
       <property name="Sheetfile" value="power.kicad_sch"/>
       <property name="ki_keywords" value="usb universal serial bus type-C USB2.0"/>
@@ -671,13 +735,15 @@
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="MPN">RC0603FR-075K1L</field>
+        <field name="MPN">0603WAF5101T5E</field>
+        <field name="LCSC">C23186</field>
         <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
         <field name="Datasheet">~</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="MPN" value="RC0603FR-075K1L"/>
+      <property name="MPN" value="0603WAF5101T5E"/>
+      <property name="LCSC" value="C23186"/>
       <property name="Sheetname" value="Power"/>
       <property name="Sheetfile" value="power.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -690,13 +756,15 @@
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="MPN">RC0603FR-075K1L</field>
+        <field name="MPN">0603WAF5101T5E</field>
+        <field name="LCSC">C23186</field>
         <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
         <field name="Datasheet">~</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="MPN" value="RC0603FR-075K1L"/>
+      <property name="MPN" value="0603WAF5101T5E"/>
+      <property name="LCSC" value="C23186"/>
       <property name="Sheetname" value="Power"/>
       <property name="Sheetfile" value="power.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -709,13 +777,15 @@
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="MPN">RC0603FR-0727RL</field>
+        <field name="MPN">0603WAF270JT5E</field>
+        <field name="LCSC">C25190</field>
         <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
         <field name="Datasheet">~</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="MPN" value="RC0603FR-0727RL"/>
+      <property name="MPN" value="0603WAF270JT5E"/>
+      <property name="LCSC" value="C25190"/>
       <property name="Sheetname" value="Power"/>
       <property name="Sheetfile" value="power.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -728,13 +798,15 @@
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="MPN">RC0603FR-0727RL</field>
+        <field name="MPN">0603WAF270JT5E</field>
+        <field name="LCSC">C25190</field>
         <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
         <field name="Datasheet">~</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="MPN" value="RC0603FR-0727RL"/>
+      <property name="MPN" value="0603WAF270JT5E"/>
+      <property name="LCSC" value="C25190"/>
       <property name="Sheetname" value="Power"/>
       <property name="Sheetfile" value="power.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -968,12 +1040,14 @@
       <datasheet>https://www.diodes.com/assets/Datasheets/AP2112.pdf</datasheet>
       <fields>
         <field name="MPN">AP2112K-3.3TRG1</field>
+        <field name="LCSC">C51118</field>
         <field name="Footprint">Package_TO_SOT_SMD:SOT-23-5</field>
         <field name="Datasheet">https://www.diodes.com/assets/Datasheets/AP2112.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Regulator_Linear" part="AP2112K-3.3" description="600mA low dropout linear regulator, with enable pin, 3.8V-6V input voltage range, 3.3V fixed positive output, SOT-23-5"/>
       <property name="MPN" value="AP2112K-3.3TRG1"/>
+      <property name="LCSC" value="C51118"/>
       <property name="Sheetname" value="Power"/>
       <property name="Sheetfile" value="power.kicad_sch"/>
       <property name="ki_keywords" value="linear regulator ldo fixed positive"/>
@@ -986,13 +1060,15 @@
       <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="MPN">GRM188R71C104KA01D</field>
+        <field name="MPN">CC0603KRX7R9BB104</field>
+        <field name="LCSC">C14663</field>
         <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
         <field name="Datasheet">~</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <property name="MPN" value="GRM188R71C104KA01D"/>
+      <property name="MPN" value="CC0603KRX7R9BB104"/>
+      <property name="LCSC" value="C14663"/>
       <property name="Sheetname" value="Instrument"/>
       <property name="Sheetfile" value="instrument.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -1005,13 +1081,15 @@
       <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="MPN">GRM21BR71A475KA73L</field>
+        <field name="MPN">CL21A475KAQNNNE</field>
+        <field name="LCSC">C1779</field>
         <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
         <field name="Datasheet">~</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <property name="MPN" value="GRM21BR71A475KA73L"/>
+      <property name="MPN" value="CL21A475KAQNNNE"/>
+      <property name="LCSC" value="C1779"/>
       <property name="Sheetname" value="Instrument"/>
       <property name="Sheetfile" value="instrument.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -1024,13 +1102,15 @@
       <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="MPN">GRM188R71C104KA01D</field>
+        <field name="MPN">CC0603KRX7R9BB104</field>
+        <field name="LCSC">C14663</field>
         <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
         <field name="Datasheet">~</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <property name="MPN" value="GRM188R71C104KA01D"/>
+      <property name="MPN" value="CC0603KRX7R9BB104"/>
+      <property name="LCSC" value="C14663"/>
       <property name="Sheetname" value="Instrument"/>
       <property name="Sheetfile" value="instrument.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -1043,13 +1123,15 @@
       <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="MPN">GRM21BR71A475KA73L</field>
+        <field name="MPN">CL21A475KAQNNNE</field>
+        <field name="LCSC">C1779</field>
         <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
         <field name="Datasheet">~</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <property name="MPN" value="GRM21BR71A475KA73L"/>
+      <property name="MPN" value="CL21A475KAQNNNE"/>
+      <property name="LCSC" value="C1779"/>
       <property name="Sheetname" value="Instrument"/>
       <property name="Sheetfile" value="instrument.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -1062,13 +1144,15 @@
       <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="MPN">GRM188R71C104KA01D</field>
+        <field name="MPN">CC0603KRX7R9BB104</field>
+        <field name="LCSC">C14663</field>
         <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
         <field name="Datasheet">~</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <property name="MPN" value="GRM188R71C104KA01D"/>
+      <property name="MPN" value="CC0603KRX7R9BB104"/>
+      <property name="LCSC" value="C14663"/>
       <property name="Sheetname" value="Instrument"/>
       <property name="Sheetfile" value="instrument.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -1082,12 +1166,14 @@
       <datasheet>~</datasheet>
       <fields>
         <field name="MPN">LTST-C190KGKT</field>
+        <field name="LCSC">C125094</field>
         <field name="Footprint">LED_SMD:LED_0603_1608Metric</field>
         <field name="Datasheet">~</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="LED" description="Light emitting diode"/>
       <property name="MPN" value="LTST-C190KGKT"/>
+      <property name="LCSC" value="C125094"/>
       <property name="Sheetname" value="Instrument"/>
       <property name="Sheetfile" value="instrument.kicad_sch"/>
       <property name="ki_keywords" value="LED diode"/>
@@ -1101,12 +1187,14 @@
       <datasheet>~</datasheet>
       <fields>
         <field name="MPN">B2B-PH-K-S(LF)(SN)</field>
+        <field name="LCSC">C131337</field>
         <field name="Footprint">Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical</field>
         <field name="Datasheet">~</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <property name="MPN" value="B2B-PH-K-S(LF)(SN)"/>
+      <property name="LCSC" value="C131337"/>
       <property name="Sheetname" value="Instrument"/>
       <property name="Sheetfile" value="instrument.kicad_sch"/>
       <property name="ki_keywords" value="connector"/>
@@ -1119,13 +1207,15 @@
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="MPN">RC0603FR-0710KL</field>
+        <field name="MPN">0603WAF1002T5E</field>
+        <field name="LCSC">C25804</field>
         <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
         <field name="Datasheet">~</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="MPN" value="RC0603FR-0710KL"/>
+      <property name="MPN" value="0603WAF1002T5E"/>
+      <property name="LCSC" value="C25804"/>
       <property name="Sheetname" value="Instrument"/>
       <property name="Sheetfile" value="instrument.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -1138,13 +1228,15 @@
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="MPN">RC0603FR-0710KL</field>
+        <field name="MPN">0603WAF1002T5E</field>
+        <field name="LCSC">C25804</field>
         <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
         <field name="Datasheet">~</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="MPN" value="RC0603FR-0710KL"/>
+      <property name="MPN" value="0603WAF1002T5E"/>
+      <property name="LCSC" value="C25804"/>
       <property name="Sheetname" value="Instrument"/>
       <property name="Sheetfile" value="instrument.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -1157,13 +1249,15 @@
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="MPN">RC0603FR-075K1L</field>
+        <field name="MPN">0603WAF5101T5E</field>
+        <field name="LCSC">C23186</field>
         <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
         <field name="Datasheet">~</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="MPN" value="RC0603FR-075K1L"/>
+      <property name="MPN" value="0603WAF5101T5E"/>
+      <property name="LCSC" value="C23186"/>
       <property name="Sheetname" value="Instrument"/>
       <property name="Sheetfile" value="instrument.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -1176,13 +1270,15 @@
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="MPN">RC0603FR-075K1L</field>
+        <field name="MPN">0603WAF5101T5E</field>
+        <field name="LCSC">C23186</field>
         <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
         <field name="Datasheet">~</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="MPN" value="RC0603FR-075K1L"/>
+      <property name="MPN" value="0603WAF5101T5E"/>
+      <property name="LCSC" value="C23186"/>
       <property name="Sheetname" value="Instrument"/>
       <property name="Sheetfile" value="instrument.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -1195,13 +1291,15 @@
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="MPN">RC0603FR-0710KL</field>
+        <field name="MPN">0603WAF1002T5E</field>
+        <field name="LCSC">C25804</field>
         <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
         <field name="Datasheet">~</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="MPN" value="RC0603FR-0710KL"/>
+      <property name="MPN" value="0603WAF1002T5E"/>
+      <property name="LCSC" value="C25804"/>
       <property name="Sheetname" value="Instrument"/>
       <property name="Sheetfile" value="instrument.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -1214,13 +1312,15 @@
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="MPN">RC0603FR-07100KL</field>
+        <field name="MPN">0603WAF1003T5E</field>
+        <field name="LCSC">C25803</field>
         <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
         <field name="Datasheet">~</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="MPN" value="RC0603FR-07100KL"/>
+      <property name="MPN" value="0603WAF1003T5E"/>
+      <property name="LCSC" value="C25803"/>
       <property name="Sheetname" value="Instrument"/>
       <property name="Sheetfile" value="instrument.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -1233,13 +1333,15 @@
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="MPN">RC0603FR-0710KL</field>
+        <field name="MPN">0603WAF1002T5E</field>
+        <field name="LCSC">C25804</field>
         <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
         <field name="Datasheet">~</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="MPN" value="RC0603FR-0710KL"/>
+      <property name="MPN" value="0603WAF1002T5E"/>
+      <property name="LCSC" value="C25804"/>
       <property name="Sheetname" value="Instrument"/>
       <property name="Sheetfile" value="instrument.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -1252,13 +1354,15 @@
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="MPN">RC0603FR-071KL</field>
+        <field name="MPN">0603WAF1001T5E</field>
+        <field name="LCSC">C21190</field>
         <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
         <field name="Datasheet">~</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="MPN" value="RC0603FR-071KL"/>
+      <property name="MPN" value="0603WAF1001T5E"/>
+      <property name="LCSC" value="C21190"/>
       <property name="Sheetname" value="Instrument"/>
       <property name="Sheetfile" value="instrument.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -1271,13 +1375,15 @@
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="MPN">RC0603FR-071KL</field>
+        <field name="MPN">0603WAF1001T5E</field>
+        <field name="LCSC">C21190</field>
         <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
         <field name="Datasheet">~</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="MPN" value="RC0603FR-071KL"/>
+      <property name="MPN" value="0603WAF1001T5E"/>
+      <property name="LCSC" value="C21190"/>
       <property name="Sheetname" value="Instrument"/>
       <property name="Sheetfile" value="instrument.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -1290,13 +1396,15 @@
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="MPN">RC0603FR-071ML</field>
+        <field name="MPN">0603WAF1004T5E</field>
+        <field name="LCSC">C22935</field>
         <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
         <field name="Datasheet">~</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="MPN" value="RC0603FR-071ML"/>
+      <property name="MPN" value="0603WAF1004T5E"/>
+      <property name="LCSC" value="C22935"/>
       <property name="Sheetname" value="Instrument"/>
       <property name="Sheetfile" value="instrument.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -1309,13 +1417,15 @@
       <footprint>Potentiometer_THT:Potentiometer_Bourns_PTV09A-1_Single_Vertical</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="MPN">PTV09A-1020F-B103</field>
+        <field name="MPN">PTV09A-4015F-B103</field>
+        <field name="LCSC">C5710902</field>
         <field name="Footprint">Potentiometer_THT:Potentiometer_Bourns_PTV09A-1_Single_Vertical</field>
         <field name="Datasheet">~</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R_Potentiometer" description="Potentiometer"/>
-      <property name="MPN" value="PTV09A-1020F-B103"/>
+      <property name="MPN" value="PTV09A-4015F-B103"/>
+      <property name="LCSC" value="C5710902"/>
       <property name="Sheetname" value="Instrument"/>
       <property name="Sheetfile" value="instrument.kicad_sch"/>
       <property name="ki_keywords" value="resistor variable"/>
@@ -1329,12 +1439,14 @@
       <datasheet>~</datasheet>
       <fields>
         <field name="MPN">JS202011JCQN</field>
+        <field name="LCSC">C221665</field>
         <field name="Footprint">Button_Switch_SMD:SW_DPDT_CK_JS202011JCQN</field>
         <field name="Datasheet">~</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Switch" part="SW_DPDT_x2" description="Switch, dual pole double throw, separate symbols"/>
       <property name="MPN" value="JS202011JCQN"/>
+      <property name="LCSC" value="C221665"/>
       <property name="Sheetname" value="Instrument"/>
       <property name="Sheetfile" value="instrument.kicad_sch"/>
       <property name="ki_keywords" value="switch dual-pole double-throw DPDT spdt ON-ON"/>
@@ -1348,12 +1460,14 @@
       <datasheet>https://www.st.com/resource/en/datasheet/vl53l1x.pdf</datasheet>
       <fields>
         <field name="MPN">VL53L1CXV0FY/1</field>
+        <field name="LCSC">C190004</field>
         <field name="Footprint">Sensor_Distance:ST_VL53L1x</field>
         <field name="Datasheet">https://www.st.com/resource/en/datasheet/vl53l1x.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Sensor_Distance" part="VL53L1CXV0FY1" description="4m distance ranging ToF sensor, Optical LGA12"/>
       <property name="MPN" value="VL53L1CXV0FY/1"/>
+      <property name="LCSC" value="C190004"/>
       <property name="Sheetname" value="Instrument"/>
       <property name="Sheetfile" value="instrument.kicad_sch"/>
       <property name="ki_keywords" value="VL53L1x ToF"/>
@@ -1367,12 +1481,14 @@
       <datasheet>https://www.analog.com/media/en/technical-documentation/data-sheets/MAX98357A-MAX98357B.pdf</datasheet>
       <fields>
         <field name="MPN">MAX98357AETE+T</field>
+        <field name="LCSC">C910544</field>
         <field name="Footprint">AirNote:MAX98357A_T1633_ADI_90-0031</field>
         <field name="Datasheet">https://www.analog.com/media/en/technical-documentation/data-sheets/MAX98357A-MAX98357B.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="AirNote" part="MAX98357A" description="Mono DAC with amplifier, I2S, PCM, TDM, 32-bit, 96khz, 3.2W, TQFP-16"/>
       <property name="MPN" value="MAX98357AETE+T"/>
+      <property name="LCSC" value="C910544"/>
       <property name="Sheetname" value="Instrument"/>
       <property name="Sheetfile" value="instrument.kicad_sch"/>
       <property name="ki_keywords" value="pcm tdm i2s left-justified amplifier audio dac"/>
@@ -2113,7 +2229,7 @@
       <node ref="D1" pin="4" pinfunction="I/O2" pintype="passive"/>
       <node ref="R9" pin="1" pintype="passive"/>
     </net>
-    <net code="34" name="USB_DM_MCU" class="Default">
+    <net code="34" name="USB_DM_MCU" class="USB_DIFF">
       <node ref="R9" pin="2" pintype="passive"/>
       <node ref="U1" pin="46" pinfunction="USB_DM" pintype="bidirectional"/>
     </net>
@@ -2126,7 +2242,7 @@
       <node ref="D1" pin="6" pinfunction="I/O1" pintype="passive"/>
       <node ref="R8" pin="1" pintype="passive"/>
     </net>
-    <net code="37" name="USB_DP_MCU" class="Default">
+    <net code="37" name="USB_DP_MCU" class="USB_DIFF">
       <node ref="R8" pin="2" pintype="passive"/>
       <node ref="U1" pin="47" pinfunction="USB_DP" pintype="bidirectional"/>
     </net>

@@ -22,10 +22,12 @@ the volume pot, mute switch and amplifier, have no installed 3D body model;
 the render shows their footprints. Use the BOM and assembly drawing for the
 fitted-part list, and verify mechanical dimensions from their drawings.
 
-The [BOM](hardware/bom.csv) identifies exact proposed components. Supplier
-availability, pricing, chosen stackup and optical-sensor assembly support
-still require confirmation. Manufacturing outputs remain engineering review
-artifacts until their release checks are complete.
+The [BOM](hardware/bom.csv) identifies exact components with their LCSC part
+numbers for JLCPCB assembly. The fabricator, stackup and USB geometry are
+recorded in the [fabrication plan](docs/fabrication_plan.md); stock and
+prices are a snapshot and must be re-checked on the day of ordering.
+Manufacturing outputs remain engineering review artifacts until the
+independent review of the current revision passes.
 
 ## Try the sound
 

@@ -97,8 +97,10 @@ timing budget is not an instrument response-time result.
 An engineering first-article order and a validated design release are separate
 decisions. Before a first-article order, close CAD/circuit errors, confirm the
 supplier process, and explicitly disposition unresolved electrical risks with
-a restricted bring-up plan. The present USB power questions are still open;
-an unqualified order-ready claim is therefore premature. Measurements that
+a restricted bring-up plan. The USB inrush and suspend questions now have a
+first-article disposition in `power_budget.md` (accepted deviations with a
+restricted first power-on), not a measurement; an order still waits on the
+independent review of the rev 0.2 layout. Measurements that
 require a physical board are performed on those first articles, then inform
 any revision and the eventual validated release. No order has been placed.
 

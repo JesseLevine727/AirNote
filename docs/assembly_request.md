@@ -7,7 +7,7 @@
 > optical handling (2; Standard reflow and no wash, liner removed by us) and
 > exposed-pad vias (3; open by default, POFV optional). Still to confirm on
 > the actual order: rotations in JLC's placement preview (5), and
-> fiducial/edge-rail handling. JLC's inspection and functional-test options (6)
+> edge-rail handling (rev 0.2 adds three global fiducials). JLC's inspection and functional-test options (6)
 > were not researched; plan on doing all bring-up and testing ourselves.
 
 Project: AirNote V1 engineering prototype, fully integrated RP2040 /

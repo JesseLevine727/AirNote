@@ -1,8 +1,8 @@
 {
   "status": "final locally checked engineering prototype; factory and physical gates remain open",
-  "board_sha256": "c35f7d922f362b58a088193dba98902f71df68bcac94774f78b6f83b8618e9cc",
-  "tracks": 766,
-  "vias": 98,
+  "board_sha256": "b73600b23573f1bac7330f827d21ea167084af3bd38f8e93b8ca05c0155987d0",
+  "tracks": 640,
+  "vias": 102,
   "zones": 4,
   "track_layers": [
     "B.Cu",

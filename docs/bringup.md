@@ -42,6 +42,13 @@ too coarse to establish the proposed p95 latency target accurately.
 2. Verify AMP_SD remains low before firmware is installed. Hold BOOTSEL while
    connecting the USB data cable or resetting; the RP2040 ROM should expose
    its RPI-RP2 drive. Copy the matching `airnote.uf2`. Keep MUTE selected.
+   The ROM drive enumerating is also the first check of the 12 MHz crystal
+   and the USB pair. The crystal's load capacitors (15 pF) follow the
+   Raspberry Pi reference rather than the crystal's 10 pF CL rating, so a
+   small frequency offset is expected. Tens of ppm do not matter here: USB
+   full speed allows ±2500 ppm and the ±5 cent pitch target is about
+   ±2900 ppm. If the drive does not appear, check the crystal with an
+   oscilloscope (×10 probe on the XOUT side of R1) before suspecting USB.
 3. Read USB CDC diagnostics. Firmware must identify the sensor, explicitly
    configure AVDD-level I/O, start short-mode ranging and recover from a
    bounded communication failure. Log sequence numbers; gaps indicate lost

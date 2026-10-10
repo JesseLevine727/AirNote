@@ -63,14 +63,15 @@
       90,
       82
     ],
-    "initial_rotation": 0
+    "initial_rotation": 0,
+    "lcsc": "C2040"
   },
   {
     "ref": "U2",
     "lib": "Memory_Flash:W25Q16JVSS",
-    "value": "W25Q16JVSSIQ",
+    "value": "W25Q16JVSNIQ",
     "footprint": "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm",
-    "mpn": "W25Q16JVSSIQ",
+    "mpn": "W25Q16JVSNIQ",
     "nets": {
       "1": "QSPI_CS",
       "6": "QSPI_CLK",
@@ -99,7 +100,8 @@
       89,
       69
     ],
-    "initial_rotation": 0
+    "initial_rotation": 0,
+    "lcsc": "C2456211"
   },
   {
     "ref": "Y1",
@@ -119,10 +121,10 @@
       116.84
     ],
     "xy": [
-      92.0,
-      91.0
+      89.35,
+      91.46
     ],
-    "rot": 0.0,
+    "rot": -90.0,
     "unit": 1,
     "description": "",
     "manufacturer": "Abracon",
@@ -131,14 +133,15 @@
       92,
       91
     ],
-    "initial_rotation": 0
+    "initial_rotation": 0,
+    "lcsc": "C20625731"
   },
   {
     "ref": "R1",
     "lib": "Device:R",
     "value": "1k",
     "footprint": "Resistor_SMD:R_0603_1608Metric",
-    "mpn": "RC0603FR-071KL",
+    "mpn": "0603WAF1001T5E",
     "nets": {
       "1": "XOUT",
       "2": "XTAL_OUT"
@@ -149,26 +152,27 @@
       142.24
     ],
     "xy": [
-      88.75,
-      90.0
+      89.7,
+      87.71
     ],
-    "rot": 90.0,
+    "rot": -90.0,
     "unit": 1,
     "description": "",
-    "manufacturer": "Yageo",
+    "manufacturer": "UNI-ROYAL",
     "uuid": "08d15df2-0c4a-5865-bba4-66ebed0f02c5",
     "initial_xy": [
       89,
       90
     ],
-    "initial_rotation": 90
+    "initial_rotation": 90,
+    "lcsc": "C21190"
   },
   {
     "ref": "C1",
     "lib": "Device:C",
     "value": "15p",
     "footprint": "Capacitor_SMD:C_0603_1608Metric",
-    "mpn": "GRM1885C1H150JA01D",
+    "mpn": "CL10C150JB8NNNC",
     "nets": {
       "1": "XIN",
       "2": "GND"
@@ -179,26 +183,27 @@
       116.84
     ],
     "xy": [
-      89.0,
-      93.75
+      86.74,
+      90.4
     ],
-    "rot": 0.0,
+    "rot": -90.0,
     "unit": 1,
     "description": "",
-    "manufacturer": "Murata",
+    "manufacturer": "Samsung Electro-Mechanics",
     "uuid": "8ac6a1fc-cb2d-5d2a-95c7-f0dddd1741a0",
     "initial_xy": [
       89,
       93
     ],
-    "initial_rotation": 0
+    "initial_rotation": 0,
+    "lcsc": "C1644"
   },
   {
     "ref": "C2",
     "lib": "Device:C",
     "value": "15p",
     "footprint": "Capacitor_SMD:C_0603_1608Metric",
-    "mpn": "GRM1885C1H150JA01D",
+    "mpn": "CL10C150JB8NNNC",
     "nets": {
       "1": "XTAL_OUT",
       "2": "GND"
@@ -209,26 +214,27 @@
       116.84
     ],
     "xy": [
-      95.0,
-      93.75
+      91.94,
+      92.6
     ],
-    "rot": 0.0,
+    "rot": -90.0,
     "unit": 1,
     "description": "",
-    "manufacturer": "Murata",
+    "manufacturer": "Samsung Electro-Mechanics",
     "uuid": "91bb21a2-4be8-521c-b556-8ea71057e8e0",
     "initial_xy": [
       95,
       93
     ],
-    "initial_rotation": 0
+    "initial_rotation": 0,
+    "lcsc": "C1644"
   },
   {
     "ref": "R2",
     "lib": "Device:R",
     "value": "10k",
     "footprint": "Resistor_SMD:R_0603_1608Metric",
-    "mpn": "RC0603FR-0710KL",
+    "mpn": "0603WAF1002T5E",
     "nets": {
       "1": "+3V3",
       "2": "QSPI_CS"
@@ -245,20 +251,21 @@
     "rot": 0.0,
     "unit": 1,
     "description": "",
-    "manufacturer": "Yageo",
+    "manufacturer": "UNI-ROYAL",
     "uuid": "811e82b5-4bca-5a89-871e-1d5f2fd9318a",
     "initial_xy": [
       92.5,
       69.0
     ],
-    "initial_rotation": 0
+    "initial_rotation": 0,
+    "lcsc": "C25804"
   },
   {
     "ref": "R3",
     "lib": "Device:R",
     "value": "1k",
     "footprint": "Resistor_SMD:R_0603_1608Metric",
-    "mpn": "RC0603FR-071KL",
+    "mpn": "0603WAF1001T5E",
     "nets": {
       "1": "QSPI_CS",
       "2": "BOOTSEL_SW"
@@ -275,13 +282,14 @@
     "rot": 90.0,
     "unit": 1,
     "description": "",
-    "manufacturer": "Yageo",
+    "manufacturer": "UNI-ROYAL",
     "uuid": "535a49f5-813b-5766-a35e-05bec39c0c4e",
     "initial_xy": [
       96,
       68
     ],
-    "initial_rotation": 90
+    "initial_rotation": 90,
+    "lcsc": "C21190"
   },
   {
     "ref": "SW1",
@@ -311,14 +319,15 @@
       99,
       59
     ],
-    "initial_rotation": 0
+    "initial_rotation": 0,
+    "lcsc": "C2886898"
   },
   {
     "ref": "R4",
     "lib": "Device:R",
     "value": "10k",
     "footprint": "Resistor_SMD:R_0603_1608Metric",
-    "mpn": "RC0603FR-0710KL",
+    "mpn": "0603WAF1002T5E",
     "nets": {
       "1": "+3V3",
       "2": "RUN"
@@ -335,13 +344,14 @@
     "rot": 0.0,
     "unit": 1,
     "description": "",
-    "manufacturer": "Yageo",
+    "manufacturer": "UNI-ROYAL",
     "uuid": "e512011c-a626-5224-b929-fa225068127f",
     "initial_xy": [
       84,
       91
     ],
-    "initial_rotation": 0
+    "initial_rotation": 0,
+    "lcsc": "C25804"
   },
   {
     "ref": "SW2",
@@ -371,14 +381,15 @@
       109,
       59
     ],
-    "initial_rotation": 0
+    "initial_rotation": 0,
+    "lcsc": "C2886898"
   },
   {
     "ref": "J2",
     "lib": "Connector_Generic:Conn_01x05",
     "value": "SWD 3V3 GND DIO CLK RUN",
     "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical",
-    "mpn": "TSW-105-07-G-S",
+    "mpn": "HX PZ2.54-1x5P ZZ",
     "nets": {
       "1": "+3V3",
       "2": "GND",
@@ -398,20 +409,21 @@
     "rot": 0.0,
     "unit": 1,
     "description": "",
-    "manufacturer": "Samtec",
+    "manufacturer": "hanxia",
     "uuid": "19cc84fc-54b7-52fb-a96c-cc35c044ffd8",
     "initial_xy": [
       112,
       84
     ],
-    "initial_rotation": 0
+    "initial_rotation": 0,
+    "lcsc": "C32713271"
   },
   {
     "ref": "C3",
     "lib": "Device:C",
     "value": "100n",
     "footprint": "Capacitor_SMD:C_0603_1608Metric",
-    "mpn": "GRM188R71C104KA01D",
+    "mpn": "CC0603KRX7R9BB104",
     "nets": {
       "1": "+3V3",
       "2": "GND"
@@ -428,20 +440,21 @@
     "rot": 0.0,
     "unit": 1,
     "description": "",
-    "manufacturer": "Murata",
+    "manufacturer": "Yageo",
     "uuid": "387c3ce3-69d8-5a85-bc8c-71fead0000ef",
     "initial_xy": [
       85.2,
       78
     ],
-    "initial_rotation": 0
+    "initial_rotation": 0,
+    "lcsc": "C14663"
   },
   {
     "ref": "C4",
     "lib": "Device:C",
     "value": "100n",
     "footprint": "Capacitor_SMD:C_0603_1608Metric",
-    "mpn": "GRM188R71C104KA01D",
+    "mpn": "CC0603KRX7R9BB104",
     "nets": {
       "1": "+3V3",
       "2": "GND"
@@ -458,20 +471,21 @@
     "rot": 0.0,
     "unit": 1,
     "description": "",
-    "manufacturer": "Murata",
+    "manufacturer": "Yageo",
     "uuid": "13adaed9-6206-52a8-94d9-4ab43a506be7",
     "initial_xy": [
       85.2,
       84.6
     ],
-    "initial_rotation": 0
+    "initial_rotation": 0,
+    "lcsc": "C14663"
   },
   {
     "ref": "C5",
     "lib": "Device:C",
     "value": "100n",
     "footprint": "Capacitor_SMD:C_0603_1608Metric",
-    "mpn": "GRM188R71C104KA01D",
+    "mpn": "CC0603KRX7R9BB104",
     "nets": {
       "1": "+3V3",
       "2": "GND"
@@ -488,20 +502,21 @@
     "rot": 0.0,
     "unit": 1,
     "description": "",
-    "manufacturer": "Murata",
+    "manufacturer": "Yageo",
     "uuid": "4a566640-a146-5964-b0fd-39aaf15f4fe0",
     "initial_xy": [
       87.2,
       86.8
     ],
-    "initial_rotation": 0
+    "initial_rotation": 0,
+    "lcsc": "C14663"
   },
   {
     "ref": "C6",
     "lib": "Device:C",
     "value": "100n",
     "footprint": "Capacitor_SMD:C_0603_1608Metric",
-    "mpn": "GRM188R71C104KA01D",
+    "mpn": "CC0603KRX7R9BB104",
     "nets": {
       "1": "+3V3",
       "2": "GND"
@@ -512,26 +527,27 @@
       177.8
     ],
     "xy": [
-      93.25,
-      87.3
+      92.02,
+      88.53
     ],
     "rot": 0.0,
     "unit": 1,
     "description": "",
-    "manufacturer": "Murata",
+    "manufacturer": "Yageo",
     "uuid": "19bbf49a-6b04-5f79-b921-7ddb324b2427",
     "initial_xy": [
       93.6,
       86.8
     ],
-    "initial_rotation": 0
+    "initial_rotation": 0,
+    "lcsc": "C14663"
   },
   {
     "ref": "C7",
     "lib": "Device:C",
     "value": "100n",
     "footprint": "Capacitor_SMD:C_0603_1608Metric",
-    "mpn": "GRM188R71C104KA01D",
+    "mpn": "CC0603KRX7R9BB104",
     "nets": {
       "1": "+3V3",
       "2": "GND"
@@ -548,20 +564,21 @@
     "rot": 0.0,
     "unit": 1,
     "description": "",
-    "manufacturer": "Murata",
+    "manufacturer": "Yageo",
     "uuid": "ad0ab5d4-c256-5552-9045-c719dc35c297",
     "initial_xy": [
       94.8,
       82
     ],
-    "initial_rotation": 0
+    "initial_rotation": 0,
+    "lcsc": "C14663"
   },
   {
     "ref": "C8",
     "lib": "Device:C",
     "value": "100n",
     "footprint": "Capacitor_SMD:C_0603_1608Metric",
-    "mpn": "GRM188R71C104KA01D",
+    "mpn": "CC0603KRX7R9BB104",
     "nets": {
       "1": "+3V3",
       "2": "GND"
@@ -578,20 +595,21 @@
     "rot": 0.0,
     "unit": 1,
     "description": "",
-    "manufacturer": "Murata",
+    "manufacturer": "Yageo",
     "uuid": "3c1def89-498b-50a3-ad45-bc45007b8bcb",
     "initial_xy": [
       94.8,
       77.2
     ],
-    "initial_rotation": 0
+    "initial_rotation": 0,
+    "lcsc": "C14663"
   },
   {
     "ref": "C9",
     "lib": "Device:C",
     "value": "100n",
     "footprint": "Capacitor_SMD:C_0603_1608Metric",
-    "mpn": "GRM188R71C104KA01D",
+    "mpn": "CC0603KRX7R9BB104",
     "nets": {
       "1": "+3V3",
       "2": "GND"
@@ -608,20 +626,21 @@
     "rot": 180.0,
     "unit": 1,
     "description": "",
-    "manufacturer": "Murata",
+    "manufacturer": "Yageo",
     "uuid": "2543de6c-0771-57d1-9f54-2e16335f2020",
     "initial_xy": [
       92.8,
       76.6
     ],
-    "initial_rotation": 0
+    "initial_rotation": 0,
+    "lcsc": "C14663"
   },
   {
     "ref": "C10",
     "lib": "Device:C",
     "value": "100n",
     "footprint": "Capacitor_SMD:C_0603_1608Metric",
-    "mpn": "GRM188R71C104KA01D",
+    "mpn": "CC0603KRX7R9BB104",
     "nets": {
       "1": "+1V1",
       "2": "GND"
@@ -638,20 +657,21 @@
     "rot": 180.0,
     "unit": 1,
     "description": "",
-    "manufacturer": "Murata",
+    "manufacturer": "Yageo",
     "uuid": "ac686ea4-6c83-5491-b9da-14802f0b4d07",
     "initial_xy": [
       87,
       77
     ],
-    "initial_rotation": 0
+    "initial_rotation": 0,
+    "lcsc": "C14663"
   },
   {
     "ref": "C11",
     "lib": "Device:C",
     "value": "100n",
     "footprint": "Capacitor_SMD:C_0603_1608Metric",
-    "mpn": "GRM188R71C104KA01D",
+    "mpn": "CC0603KRX7R9BB104",
     "nets": {
       "1": "+1V1",
       "2": "GND"
@@ -662,26 +682,27 @@
       215.9
     ],
     "xy": [
-      90.6,
-      87.7
+      92.44,
+      86.96
     ],
-    "rot": -90.0,
+    "rot": 0.0,
     "unit": 1,
     "description": "",
-    "manufacturer": "Murata",
+    "manufacturer": "Yageo",
     "uuid": "3efdd509-ce92-508b-8dcb-e785ba129669",
     "initial_xy": [
       94.4,
       74.6
     ],
-    "initial_rotation": 0
+    "initial_rotation": 0,
+    "lcsc": "C14663"
   },
   {
     "ref": "C12",
     "lib": "Device:C",
     "value": "100n",
     "footprint": "Capacitor_SMD:C_0603_1608Metric",
-    "mpn": "GRM188R71C104KA01D",
+    "mpn": "CC0603KRX7R9BB104",
     "nets": {
       "1": "ADC_3V3",
       "2": "GND"
@@ -698,20 +719,21 @@
     "rot": 0.0,
     "unit": 1,
     "description": "",
-    "manufacturer": "Murata",
+    "manufacturer": "Yageo",
     "uuid": "7e3a3aef-addd-5491-8ca0-c2c68929050e",
     "initial_xy": [
       97,
       79
     ],
-    "initial_rotation": 0
+    "initial_rotation": 0,
+    "lcsc": "C14663"
   },
   {
     "ref": "C13",
     "lib": "Device:C",
     "value": "1u",
     "footprint": "Capacitor_SMD:C_0603_1608Metric",
-    "mpn": "GRM188R71A105KA61D",
+    "mpn": "CL10A105KB8NNNC",
     "nets": {
       "1": "+3V3",
       "2": "GND"
@@ -728,20 +750,21 @@
     "rot": 0.0,
     "unit": 1,
     "description": "",
-    "manufacturer": "Murata",
+    "manufacturer": "Samsung Electro-Mechanics",
     "uuid": "b781af95-0ae0-51b4-92d2-277108f29f49",
     "initial_xy": [
       97,
       84.5
     ],
-    "initial_rotation": 0
+    "initial_rotation": 0,
+    "lcsc": "C15849"
   },
   {
     "ref": "C14",
     "lib": "Device:C",
     "value": "1u",
     "footprint": "Capacitor_SMD:C_0603_1608Metric",
-    "mpn": "GRM188R71A105KA61D",
+    "mpn": "CL10A105KB8NNNC",
     "nets": {
       "1": "+1V1",
       "2": "GND"
@@ -758,20 +781,21 @@
     "rot": 0.0,
     "unit": 1,
     "description": "",
-    "manufacturer": "Murata",
+    "manufacturer": "Samsung Electro-Mechanics",
     "uuid": "9436e3f8-eaff-537d-a861-2a771c61c5d0",
     "initial_xy": [
       97,
       82
     ],
-    "initial_rotation": 0
+    "initial_rotation": 0,
+    "lcsc": "C15849"
   },
   {
     "ref": "C15",
     "lib": "Device:C",
     "value": "100n",
     "footprint": "Capacitor_SMD:C_0603_1608Metric",
-    "mpn": "GRM188R71C104KA01D",
+    "mpn": "CC0603KRX7R9BB104",
     "nets": {
       "1": "+3V3",
       "2": "GND"
@@ -788,20 +812,21 @@
     "rot": -45.0,
     "unit": 1,
     "description": "",
-    "manufacturer": "Murata",
+    "manufacturer": "Yageo",
     "uuid": "d67c983f-2d1c-50b7-8650-87398cb9b14b",
     "initial_xy": [
       85,
       68
     ],
-    "initial_rotation": 0
+    "initial_rotation": 0,
+    "lcsc": "C14663"
   },
   {
     "ref": "R5",
     "lib": "Device:R",
     "value": "1",
     "footprint": "Resistor_SMD:R_0603_1608Metric",
-    "mpn": "RC0603FR-071RL",
+    "mpn": "0603WAF100KT5E",
     "nets": {
       "1": "+3V3",
       "2": "ADC_3V3"
@@ -818,20 +843,21 @@
     "rot": 90.0,
     "unit": 1,
     "description": "",
-    "manufacturer": "Yageo",
+    "manufacturer": "UNI-ROYAL",
     "uuid": "02d5f95b-fbde-5122-b335-49dc357c130e",
     "initial_xy": [
       96,
       76
     ],
-    "initial_rotation": 90
+    "initial_rotation": 90,
+    "lcsc": "C22936"
   },
   {
     "ref": "J1",
     "lib": "Connector:USB_C_Receptacle_USB2.0_16P",
     "value": "USB-C USB2.0",
     "footprint": "AirNote:USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal",
-    "mpn": "USB4105-GF-A",
+    "mpn": "USB4105-GF-A-120",
     "nets": {
       "A1": "GND",
       "A12": "GND",
@@ -867,14 +893,15 @@
       64,
       53.675
     ],
-    "initial_rotation": 180
+    "initial_rotation": 180,
+    "lcsc": "C5184243"
   },
   {
     "ref": "R6",
     "lib": "Device:R",
     "value": "5.1k",
     "footprint": "Resistor_SMD:R_0603_1608Metric",
-    "mpn": "RC0603FR-075K1L",
+    "mpn": "0603WAF5101T5E",
     "nets": {
       "1": "CC1",
       "2": "GND"
@@ -891,20 +918,21 @@
     "rot": 90.0,
     "unit": 1,
     "description": "",
-    "manufacturer": "Yageo",
+    "manufacturer": "UNI-ROYAL",
     "uuid": "e3e03356-fba6-5bab-ad4c-03227f7af590",
     "initial_xy": [
       67,
       61
     ],
-    "initial_rotation": 90
+    "initial_rotation": 90,
+    "lcsc": "C23186"
   },
   {
     "ref": "R7",
     "lib": "Device:R",
     "value": "5.1k",
     "footprint": "Resistor_SMD:R_0603_1608Metric",
-    "mpn": "RC0603FR-075K1L",
+    "mpn": "0603WAF5101T5E",
     "nets": {
       "1": "CC2",
       "2": "GND"
@@ -921,13 +949,14 @@
     "rot": 90.0,
     "unit": 1,
     "description": "",
-    "manufacturer": "Yageo",
+    "manufacturer": "UNI-ROYAL",
     "uuid": "87e835da-d998-5667-9961-534170fe0f81",
     "initial_xy": [
       67,
       63.5
     ],
-    "initial_rotation": 90
+    "initial_rotation": 90,
+    "lcsc": "C23186"
   },
   {
     "ref": "D1",
@@ -949,10 +978,10 @@
       88.9
     ],
     "xy": [
-      72.0,
-      62.0
+      71.1,
+      65.1
     ],
-    "rot": 0.0,
+    "rot": 90.0,
     "unit": 1,
     "description": "",
     "manufacturer": "STMicroelectronics",
@@ -961,14 +990,15 @@
       72,
       62
     ],
-    "initial_rotation": 0
+    "initial_rotation": 0,
+    "lcsc": "C7519"
   },
   {
     "ref": "R8",
     "lib": "Device:R",
     "value": "27",
     "footprint": "Resistor_SMD:R_0603_1608Metric",
-    "mpn": "RC0603FR-0727RL",
+    "mpn": "0603WAF270JT5E",
     "nets": {
       "1": "USB_DP_ESD",
       "2": "USB_DP_MCU"
@@ -979,26 +1009,27 @@
       66.04
     ],
     "xy": [
-      90.6,
-      73.4
+      91.0,
+      73.6
     ],
     "rot": -90.0,
     "unit": 1,
     "description": "",
-    "manufacturer": "Yageo",
+    "manufacturer": "UNI-ROYAL",
     "uuid": "3838cb9c-2bea-572e-8de9-9ca40bbee129",
     "initial_xy": [
       96,
       72
     ],
-    "initial_rotation": 90
+    "initial_rotation": 90,
+    "lcsc": "C25190"
   },
   {
     "ref": "R9",
     "lib": "Device:R",
     "value": "27",
     "footprint": "Resistor_SMD:R_0603_1608Metric",
-    "mpn": "RC0603FR-0727RL",
+    "mpn": "0603WAF270JT5E",
     "nets": {
       "1": "USB_DM_ESD",
       "2": "USB_DM_MCU"
@@ -1009,19 +1040,20 @@
       66.03999999999999
     ],
     "xy": [
-      92.3,
-      73.4
+      92.6,
+      74.35
     ],
     "rot": -90.0,
     "unit": 1,
     "description": "",
-    "manufacturer": "Yageo",
+    "manufacturer": "UNI-ROYAL",
     "uuid": "5dc1dced-7209-5a84-be62-41d6e9c198c3",
     "initial_xy": [
       96,
       73.8
     ],
-    "initial_rotation": 90
+    "initial_rotation": 90,
+    "lcsc": "C25190"
   },
   {
     "ref": "F1",
@@ -1051,7 +1083,8 @@
       68,
       55.5
     ],
-    "initial_rotation": 90
+    "initial_rotation": 90,
+    "lcsc": "C163512"
   },
   {
     "ref": "U3",
@@ -1083,14 +1116,15 @@
       74,
       71
     ],
-    "initial_rotation": 0
+    "initial_rotation": 0,
+    "lcsc": "C51118"
   },
   {
     "ref": "C16",
     "lib": "Device:C",
     "value": "1u",
     "footprint": "Capacitor_SMD:C_0603_1608Metric",
-    "mpn": "GRM188R71A105KA61D",
+    "mpn": "CL10A105KB8NNNC",
     "nets": {
       "1": "+5V",
       "2": "GND"
@@ -1107,20 +1141,21 @@
     "rot": 0.0,
     "unit": 1,
     "description": "",
-    "manufacturer": "Murata",
+    "manufacturer": "Samsung Electro-Mechanics",
     "uuid": "3856fcd7-2c56-5edc-8355-8a389b878ca7",
     "initial_xy": [
       70.5,
       71
     ],
-    "initial_rotation": 0
+    "initial_rotation": 0,
+    "lcsc": "C15849"
   },
   {
     "ref": "C17",
     "lib": "Device:C",
     "value": "1u",
     "footprint": "Capacitor_SMD:C_0603_1608Metric",
-    "mpn": "GRM188R71A105KA61D",
+    "mpn": "CL10A105KB8NNNC",
     "nets": {
       "1": "+3V3",
       "2": "GND"
@@ -1137,20 +1172,21 @@
     "rot": 0.0,
     "unit": 1,
     "description": "",
-    "manufacturer": "Murata",
+    "manufacturer": "Samsung Electro-Mechanics",
     "uuid": "386f2679-b04f-52ea-a84c-0c81f5984d4a",
     "initial_xy": [
       77.5,
       71
     ],
-    "initial_rotation": 0
+    "initial_rotation": 0,
+    "lcsc": "C15849"
   },
   {
     "ref": "C18",
     "lib": "Device:C",
     "value": "100n",
     "footprint": "Capacitor_SMD:C_0603_1608Metric",
-    "mpn": "GRM188R71C104KA01D",
+    "mpn": "CC0603KRX7R9BB104",
     "nets": {
       "1": "VBUS_RAW",
       "2": "GND"
@@ -1167,13 +1203,14 @@
     "rot": 0.0,
     "unit": 1,
     "description": "",
-    "manufacturer": "Murata",
+    "manufacturer": "Yageo",
     "uuid": "47811793-f059-53a9-9b0a-891f1d488ca7",
     "initial_xy": [
       70,
       59
     ],
-    "initial_rotation": 0
+    "initial_rotation": 0,
+    "lcsc": "C14663"
   },
   {
     "ref": "U4",
@@ -1212,14 +1249,15 @@
       119,
       60
     ],
-    "initial_rotation": 0
+    "initial_rotation": 0,
+    "lcsc": "C190004"
   },
   {
     "ref": "C19",
     "lib": "Device:C",
     "value": "100n",
     "footprint": "Capacitor_SMD:C_0603_1608Metric",
-    "mpn": "GRM188R71C104KA01D",
+    "mpn": "CC0603KRX7R9BB104",
     "nets": {
       "1": "+3V3",
       "2": "GND"
@@ -1236,20 +1274,21 @@
     "rot": 90.0,
     "unit": 1,
     "description": "",
-    "manufacturer": "Murata",
+    "manufacturer": "Yageo",
     "uuid": "ae224f8b-62c4-5c61-b3ab-bf8ee79c2a28",
     "initial_xy": [
       117.5,
       63.5
     ],
-    "initial_rotation": 0
+    "initial_rotation": 0,
+    "lcsc": "C14663"
   },
   {
     "ref": "C20",
     "lib": "Device:C",
     "value": "4.7u",
     "footprint": "Capacitor_SMD:C_0805_2012Metric",
-    "mpn": "GRM21BR71A475KA73L",
+    "mpn": "CL21A475KAQNNNE",
     "nets": {
       "1": "+3V3",
       "2": "GND"
@@ -1266,20 +1305,21 @@
     "rot": 0.0,
     "unit": 1,
     "description": "",
-    "manufacturer": "Murata",
+    "manufacturer": "Samsung Electro-Mechanics",
     "uuid": "f2ded0e6-98ac-5c48-ba99-ada3ab4cfb07",
     "initial_xy": [
       120.5,
       63.5
     ],
-    "initial_rotation": 0
+    "initial_rotation": 0,
+    "lcsc": "C1779"
   },
   {
     "ref": "R10",
     "lib": "Device:R",
     "value": "10k",
     "footprint": "Resistor_SMD:R_0603_1608Metric",
-    "mpn": "RC0603FR-0710KL",
+    "mpn": "0603WAF1002T5E",
     "nets": {
       "1": "+3V3",
       "2": "SENSOR_XSHUT"
@@ -1296,20 +1336,21 @@
     "rot": 90.0,
     "unit": 1,
     "description": "",
-    "manufacturer": "Yageo",
+    "manufacturer": "UNI-ROYAL",
     "uuid": "9235c692-2cfb-5dd1-b31e-3bc4a08d107a",
     "initial_xy": [
       114.5,
       63
     ],
-    "initial_rotation": 90
+    "initial_rotation": 90,
+    "lcsc": "C25804"
   },
   {
     "ref": "R11",
     "lib": "Device:R",
     "value": "10k",
     "footprint": "Resistor_SMD:R_0603_1608Metric",
-    "mpn": "RC0603FR-0710KL",
+    "mpn": "0603WAF1002T5E",
     "nets": {
       "1": "+3V3",
       "2": "SENSOR_IRQ"
@@ -1326,20 +1367,21 @@
     "rot": 90.0,
     "unit": 1,
     "description": "",
-    "manufacturer": "Yageo",
+    "manufacturer": "UNI-ROYAL",
     "uuid": "2db514cf-37a9-5307-8e78-142308fb007b",
     "initial_xy": [
       114.5,
       66
     ],
-    "initial_rotation": 90
+    "initial_rotation": 90,
+    "lcsc": "C25804"
   },
   {
     "ref": "R12",
     "lib": "Device:R",
     "value": "5.1k",
     "footprint": "Resistor_SMD:R_0603_1608Metric",
-    "mpn": "RC0603FR-075K1L",
+    "mpn": "0603WAF5101T5E",
     "nets": {
       "1": "+3V3",
       "2": "I2C_SDA"
@@ -1356,20 +1398,21 @@
     "rot": 90.0,
     "unit": 1,
     "description": "",
-    "manufacturer": "Yageo",
+    "manufacturer": "UNI-ROYAL",
     "uuid": "6702a30c-914f-5da8-ab0f-a325e8824f5b",
     "initial_xy": [
       111,
       66
     ],
-    "initial_rotation": 90
+    "initial_rotation": 90,
+    "lcsc": "C23186"
   },
   {
     "ref": "R13",
     "lib": "Device:R",
     "value": "5.1k",
     "footprint": "Resistor_SMD:R_0603_1608Metric",
-    "mpn": "RC0603FR-075K1L",
+    "mpn": "0603WAF5101T5E",
     "nets": {
       "1": "+3V3",
       "2": "I2C_SCL"
@@ -1386,13 +1429,14 @@
     "rot": 90.0,
     "unit": 1,
     "description": "",
-    "manufacturer": "Yageo",
+    "manufacturer": "UNI-ROYAL",
     "uuid": "11faad6a-8e73-5be2-a982-3b52159de151",
     "initial_xy": [
       111,
       68.5
     ],
-    "initial_rotation": 90
+    "initial_rotation": 90,
+    "lcsc": "C23186"
   },
   {
     "ref": "U5",
@@ -1432,14 +1476,15 @@
       119,
       101
     ],
-    "initial_rotation": 0
+    "initial_rotation": 0,
+    "lcsc": "C910544"
   },
   {
     "ref": "C21",
     "lib": "Device:C",
     "value": "100n",
     "footprint": "Capacitor_SMD:C_0603_1608Metric",
-    "mpn": "GRM188R71C104KA01D",
+    "mpn": "CC0603KRX7R9BB104",
     "nets": {
       "1": "+5V",
       "2": "GND"
@@ -1456,20 +1501,21 @@
     "rot": -90.0,
     "unit": 1,
     "description": "",
-    "manufacturer": "Murata",
+    "manufacturer": "Yageo",
     "uuid": "d41e62f4-7db2-50ef-a108-46f5a2b4fdd7",
     "initial_xy": [
       121.8,
       100
     ],
-    "initial_rotation": 0
+    "initial_rotation": 0,
+    "lcsc": "C14663"
   },
   {
     "ref": "C22",
     "lib": "Device:C",
     "value": "4.7u",
     "footprint": "Capacitor_SMD:C_0805_2012Metric",
-    "mpn": "GRM21BR71A475KA73L",
+    "mpn": "CL21A475KAQNNNE",
     "nets": {
       "1": "+5V",
       "2": "GND"
@@ -1486,13 +1532,14 @@
     "rot": -90.0,
     "unit": 1,
     "description": "",
-    "manufacturer": "Murata",
+    "manufacturer": "Samsung Electro-Mechanics",
     "uuid": "76b90cc1-1878-554e-8f5a-6cf7ae8880d9",
     "initial_xy": [
       125,
       100
     ],
-    "initial_rotation": 0
+    "initial_rotation": 0,
+    "lcsc": "C1779"
   },
   {
     "ref": "J3",
@@ -1522,14 +1569,15 @@
       132,
       104
     ],
-    "initial_rotation": 0
+    "initial_rotation": 0,
+    "lcsc": "C131337"
   },
   {
     "ref": "R14",
     "lib": "Device:R",
     "value": "10k",
     "footprint": "Resistor_SMD:R_0603_1608Metric",
-    "mpn": "RC0603FR-0710KL",
+    "mpn": "0603WAF1002T5E",
     "nets": {
       "1": "AMP_ENABLE",
       "2": "AMP_SD"
@@ -1546,20 +1594,21 @@
     "rot": 90.0,
     "unit": 1,
     "description": "",
-    "manufacturer": "Yageo",
+    "manufacturer": "UNI-ROYAL",
     "uuid": "3722a2eb-de16-5749-b851-28a7235d6cec",
     "initial_xy": [
       113.5,
       103
     ],
-    "initial_rotation": 90
+    "initial_rotation": 90,
+    "lcsc": "C25804"
   },
   {
     "ref": "R15",
     "lib": "Device:R",
     "value": "100k",
     "footprint": "Resistor_SMD:R_0603_1608Metric",
-    "mpn": "RC0603FR-07100KL",
+    "mpn": "0603WAF1003T5E",
     "nets": {
       "1": "AMP_SD",
       "2": "GND"
@@ -1576,20 +1625,21 @@
     "rot": 0.0,
     "unit": 1,
     "description": "",
-    "manufacturer": "Yageo",
+    "manufacturer": "UNI-ROYAL",
     "uuid": "dd8febe0-27a1-53d9-9cb3-29efb25ea342",
     "initial_xy": [
       114,
       106
     ],
-    "initial_rotation": 0
+    "initial_rotation": 0,
+    "lcsc": "C25803"
   },
   {
     "ref": "R16",
     "lib": "Device:R",
     "value": "10k",
     "footprint": "Resistor_SMD:R_0603_1608Metric",
-    "mpn": "RC0603FR-0710KL",
+    "mpn": "0603WAF1002T5E",
     "nets": {
       "1": "+3V3",
       "2": "MUTE_N"
@@ -1606,13 +1656,14 @@
     "rot": 0.0,
     "unit": 1,
     "description": "",
-    "manufacturer": "Yageo",
+    "manufacturer": "UNI-ROYAL",
     "uuid": "e2f9a106-f2e7-52f6-b522-4afe6672e7a4",
     "initial_xy": [
       110,
       108
     ],
-    "initial_rotation": 0
+    "initial_rotation": 0,
+    "lcsc": "C25804"
   },
   {
     "ref": "SW3",
@@ -1646,14 +1697,15 @@
       121,
       113
     ],
-    "initial_rotation": 0
+    "initial_rotation": 0,
+    "lcsc": "C221665"
   },
   {
     "ref": "RV1",
     "lib": "Device:R_Potentiometer",
     "value": "10k LINEAR VOLUME",
     "footprint": "Potentiometer_THT:Potentiometer_Bourns_PTV09A-1_Single_Vertical",
-    "mpn": "PTV09A-1020F-B103",
+    "mpn": "PTV09A-4015F-B103",
     "nets": {
       "1": "GND",
       "2": "VOLUME_RAW",
@@ -1677,14 +1729,15 @@
       69,
       108
     ],
-    "initial_rotation": 0
+    "initial_rotation": 0,
+    "lcsc": "C5710902"
   },
   {
     "ref": "R17",
     "lib": "Device:R",
     "value": "1k",
     "footprint": "Resistor_SMD:R_0603_1608Metric",
-    "mpn": "RC0603FR-071KL",
+    "mpn": "0603WAF1001T5E",
     "nets": {
       "1": "VOLUME_RAW",
       "2": "VOLUME_ADC"
@@ -1701,20 +1754,21 @@
     "rot": 90.0,
     "unit": 1,
     "description": "",
-    "manufacturer": "Yageo",
+    "manufacturer": "UNI-ROYAL",
     "uuid": "b74b8747-ef78-5b4c-a1e3-936346c477b1",
     "initial_xy": [
       86,
       108
     ],
-    "initial_rotation": 90
+    "initial_rotation": 90,
+    "lcsc": "C21190"
   },
   {
     "ref": "C23",
     "lib": "Device:C",
     "value": "100n",
     "footprint": "Capacitor_SMD:C_0603_1608Metric",
-    "mpn": "GRM188R71C104KA01D",
+    "mpn": "CC0603KRX7R9BB104",
     "nets": {
       "1": "VOLUME_ADC",
       "2": "GND"
@@ -1731,13 +1785,14 @@
     "rot": 0.0,
     "unit": 1,
     "description": "",
-    "manufacturer": "Murata",
+    "manufacturer": "Yageo",
     "uuid": "78b04cd6-2e38-5019-ac76-97cbe230222e",
     "initial_xy": [
       90,
       108
     ],
-    "initial_rotation": 0
+    "initial_rotation": 0,
+    "lcsc": "C14663"
   },
   {
     "ref": "D2",
@@ -1767,14 +1822,15 @@
       95,
       112
     ],
-    "initial_rotation": 0
+    "initial_rotation": 0,
+    "lcsc": "C125094"
   },
   {
     "ref": "R18",
     "lib": "Device:R",
     "value": "1k",
     "footprint": "Resistor_SMD:R_0603_1608Metric",
-    "mpn": "RC0603FR-071KL",
+    "mpn": "0603WAF1001T5E",
     "nets": {
       "1": "STATUS_LED",
       "2": "LED_A"
@@ -1791,20 +1847,21 @@
     "rot": 90.0,
     "unit": 1,
     "description": "",
-    "manufacturer": "Yageo",
+    "manufacturer": "UNI-ROYAL",
     "uuid": "e1327bb6-6bd7-5757-8201-9cfa2fe22378",
     "initial_xy": [
       91,
       112
     ],
-    "initial_rotation": 90
+    "initial_rotation": 90,
+    "lcsc": "C21190"
   },
   {
     "ref": "R19",
     "lib": "Device:R",
     "value": "1M",
     "footprint": "Resistor_SMD:R_0603_1608Metric",
-    "mpn": "RC0603FR-071ML",
+    "mpn": "0603WAF1004T5E",
     "nets": {
       "1": "VOLUME_ADC",
       "2": "GND"
@@ -1821,13 +1878,14 @@
     "rot": 0.0,
     "unit": 1,
     "description": "",
-    "manufacturer": "Yageo",
+    "manufacturer": "UNI-ROYAL",
     "uuid": "1d117d37-7ccd-5864-8b81-ae7235c4c9b6",
     "initial_xy": [
       93,
       108
     ],
-    "initial_rotation": 0
+    "initial_rotation": 0,
+    "lcsc": "C22935"
   },
   {
     "ref": "TP1",

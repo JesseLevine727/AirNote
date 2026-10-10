@@ -1,70 +1,70 @@
-Reference,Value,Manufacturer,MPN,Footprint,Assembly,Notes
-U1,RP2040,Raspberry Pi,RP2040,Package_DFN_QFN:QFN-56-1EP_7x7mm_P0.4mm_EP3.2x3.2mm,Fit,
-U2,W25Q16JVSSIQ,Winbond,W25Q16JVSSIQ,Package_SO:SOIC-8_3.9x4.9mm_P1.27mm,Fit,
-Y1,12MHz ABM8-272-T3,Abracon,ABM8-272-T3,Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm,Fit,
-R1,1k,Yageo,RC0603FR-071KL,Resistor_SMD:R_0603_1608Metric,Fit,
-C1,15p,Murata,GRM1885C1H150JA01D,Capacitor_SMD:C_0603_1608Metric,Fit,
-C2,15p,Murata,GRM1885C1H150JA01D,Capacitor_SMD:C_0603_1608Metric,Fit,
-R2,10k,Yageo,RC0603FR-0710KL,Resistor_SMD:R_0603_1608Metric,Fit,
-R3,1k,Yageo,RC0603FR-071KL,Resistor_SMD:R_0603_1608Metric,Fit,
-SW1,BOOTSEL,E-Switch,TL3342F160QG,Button_Switch_SMD:SW_SPST_TL3342,Fit,
-R4,10k,Yageo,RC0603FR-0710KL,Resistor_SMD:R_0603_1608Metric,Fit,
-SW2,RESET,E-Switch,TL3342F160QG,Button_Switch_SMD:SW_SPST_TL3342,Fit,
-J2,SWD 3V3 GND DIO CLK RUN,Samtec,TSW-105-07-G-S,Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical,Fit,
-C3,100n,Murata,GRM188R71C104KA01D,Capacitor_SMD:C_0603_1608Metric,Fit,
-C4,100n,Murata,GRM188R71C104KA01D,Capacitor_SMD:C_0603_1608Metric,Fit,
-C5,100n,Murata,GRM188R71C104KA01D,Capacitor_SMD:C_0603_1608Metric,Fit,
-C6,100n,Murata,GRM188R71C104KA01D,Capacitor_SMD:C_0603_1608Metric,Fit,
-C7,100n,Murata,GRM188R71C104KA01D,Capacitor_SMD:C_0603_1608Metric,Fit,
-C8,100n,Murata,GRM188R71C104KA01D,Capacitor_SMD:C_0603_1608Metric,Fit,
-C9,100n,Murata,GRM188R71C104KA01D,Capacitor_SMD:C_0603_1608Metric,Fit,
-C10,100n,Murata,GRM188R71C104KA01D,Capacitor_SMD:C_0603_1608Metric,Fit,
-C11,100n,Murata,GRM188R71C104KA01D,Capacitor_SMD:C_0603_1608Metric,Fit,
-C12,100n,Murata,GRM188R71C104KA01D,Capacitor_SMD:C_0603_1608Metric,Fit,
-C13,1u,Murata,GRM188R71A105KA61D,Capacitor_SMD:C_0603_1608Metric,Fit,
-C14,1u,Murata,GRM188R71A105KA61D,Capacitor_SMD:C_0603_1608Metric,Fit,
-C15,100n,Murata,GRM188R71C104KA01D,Capacitor_SMD:C_0603_1608Metric,Fit,
-R5,1,Yageo,RC0603FR-071RL,Resistor_SMD:R_0603_1608Metric,Fit,
-J1,USB-C USB2.0,GCT,USB4105-GF-A,AirNote:USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal,Fit,
-R6,5.1k,Yageo,RC0603FR-075K1L,Resistor_SMD:R_0603_1608Metric,Fit,
-R7,5.1k,Yageo,RC0603FR-075K1L,Resistor_SMD:R_0603_1608Metric,Fit,
-D1,USBLC6-2SC6,STMicroelectronics,USBLC6-2SC6,Package_TO_SOT_SMD:SOT-23-6,Fit,
-R8,27,Yageo,RC0603FR-0727RL,Resistor_SMD:R_0603_1608Metric,Fit,
-R9,27,Yageo,RC0603FR-0727RL,Resistor_SMD:R_0603_1608Metric,Fit,
-F1,500mA hold PTC,Littelfuse,1206L050YR,Fuse:Fuse_1206_3216Metric,Fit,
-U3,AP2112K-3.3,Diodes Inc.,AP2112K-3.3TRG1,Package_TO_SOT_SMD:SOT-23-5,Fit,
-C16,1u,Murata,GRM188R71A105KA61D,Capacitor_SMD:C_0603_1608Metric,Fit,
-C17,1u,Murata,GRM188R71A105KA61D,Capacitor_SMD:C_0603_1608Metric,Fit,
-C18,100n,Murata,GRM188R71C104KA01D,Capacitor_SMD:C_0603_1608Metric,Fit,
-U4,VL53L1CXV0FY/1,STMicroelectronics,VL53L1CXV0FY/1,Sensor_Distance:ST_VL53L1x,Fit,
-C19,100n,Murata,GRM188R71C104KA01D,Capacitor_SMD:C_0603_1608Metric,Fit,
-C20,4.7u,Murata,GRM21BR71A475KA73L,Capacitor_SMD:C_0805_2012Metric,Fit,
-R10,10k,Yageo,RC0603FR-0710KL,Resistor_SMD:R_0603_1608Metric,Fit,
-R11,10k,Yageo,RC0603FR-0710KL,Resistor_SMD:R_0603_1608Metric,Fit,
-R12,5.1k,Yageo,RC0603FR-075K1L,Resistor_SMD:R_0603_1608Metric,Fit,
-R13,5.1k,Yageo,RC0603FR-075K1L,Resistor_SMD:R_0603_1608Metric,Fit,
-U5,MAX98357AETE+T,Analog Devices,MAX98357AETE+T,AirNote:MAX98357A_T1633_ADI_90-0031,Fit,
-C21,100n,Murata,GRM188R71C104KA01D,Capacitor_SMD:C_0603_1608Metric,Fit,
-C22,4.7u,Murata,GRM21BR71A475KA73L,Capacitor_SMD:C_0805_2012Metric,Fit,
-J3,SPEAKER 8ohm >=1W,JST,B2B-PH-K-S(LF)(SN),Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical,Fit,
-R14,10k,Yageo,RC0603FR-0710KL,Resistor_SMD:R_0603_1608Metric,Fit,
-R15,100k,Yageo,RC0603FR-07100KL,Resistor_SMD:R_0603_1608Metric,Fit,
-R16,10k,Yageo,RC0603FR-0710KL,Resistor_SMD:R_0603_1608Metric,Fit,
-SW3,MUTE / PLAY,C&K,JS202011JCQN,Button_Switch_SMD:SW_DPDT_CK_JS202011JCQN,Fit,
-RV1,10k LINEAR VOLUME,Bourns,PTV09A-1020F-B103,Potentiometer_THT:Potentiometer_Bourns_PTV09A-1_Single_Vertical,Fit,
-R17,1k,Yageo,RC0603FR-071KL,Resistor_SMD:R_0603_1608Metric,Fit,
-C23,100n,Murata,GRM188R71C104KA01D,Capacitor_SMD:C_0603_1608Metric,Fit,
-D2,GREEN STATUS,Lite-On,LTST-C190KGKT,LED_SMD:LED_0603_1608Metric,Fit,
-R18,1k,Yageo,RC0603FR-071KL,Resistor_SMD:R_0603_1608Metric,Fit,
-R19,1M,Yageo,RC0603FR-071ML,Resistor_SMD:R_0603_1608Metric,Fit,
-TP1,VBUS_RAW,,TEST_PAD_1.5MM,TestPoint:TestPoint_Pad_D1.5mm,PCB only,Bare PCB pad; no fitted component
-TP2,+5V,,TEST_PAD_1.5MM,TestPoint:TestPoint_Pad_D1.5mm,PCB only,Bare PCB pad; no fitted component
-TP3,+3V3,,TEST_PAD_1.5MM,TestPoint:TestPoint_Pad_D1.5mm,PCB only,Bare PCB pad; no fitted component
-TP4,+1V1,,TEST_PAD_1.5MM,TestPoint:TestPoint_Pad_D1.5mm,PCB only,Bare PCB pad; no fitted component
-TP5,GND,,TEST_PAD_1.5MM,TestPoint:TestPoint_Pad_D1.5mm,PCB only,Bare PCB pad; no fitted component
-TP6,I2C_SDA,,TEST_PAD_1.5MM,TestPoint:TestPoint_Pad_D1.5mm,PCB only,Bare PCB pad; no fitted component
-TP7,I2C_SCL,,TEST_PAD_1.5MM,TestPoint:TestPoint_Pad_D1.5mm,PCB only,Bare PCB pad; no fitted component
-TP8,I2S_DATA,,TEST_PAD_1.5MM,TestPoint:TestPoint_Pad_D1.5mm,PCB only,Bare PCB pad; no fitted component
-TP9,I2S_BCLK,,TEST_PAD_1.5MM,TestPoint:TestPoint_Pad_D1.5mm,PCB only,Bare PCB pad; no fitted component
-TP10,I2S_LRCLK,,TEST_PAD_1.5MM,TestPoint:TestPoint_Pad_D1.5mm,PCB only,Bare PCB pad; no fitted component
-TP11,AMP_SD,,TEST_PAD_1.5MM,TestPoint:TestPoint_Pad_D1.5mm,PCB only,Bare PCB pad; no fitted component
+Reference,Value,Manufacturer,MPN,LCSC,Footprint,Assembly,Notes
+U1,RP2040,Raspberry Pi,RP2040,C2040,Package_DFN_QFN:QFN-56-1EP_7x7mm_P0.4mm_EP3.2x3.2mm,Fit,
+U2,W25Q16JVSNIQ,Winbond,W25Q16JVSNIQ,C2456211,Package_SO:SOIC-8_3.9x4.9mm_P1.27mm,Fit,Corrected: SN = 150-mil SOIC-8 matching the placed footprint (SS is 208-mil)
+Y1,12MHz ABM8-272-T3,Abracon,ABM8-272-T3,C20625731,Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm,Fit,Listing CL = 10 pF; 15 pF C1/C2 follow the RP2040 minimal reference; verify frequency at bring-up
+R1,1k,UNI-ROYAL,0603WAF1001T5E,C21190,Resistor_SMD:R_0603_1608Metric,Fit,
+C1,15p,Samsung Electro-Mechanics,CL10C150JB8NNNC,C1644,Capacitor_SMD:C_0603_1608Metric,Fit,
+C2,15p,Samsung Electro-Mechanics,CL10C150JB8NNNC,C1644,Capacitor_SMD:C_0603_1608Metric,Fit,
+R2,10k,UNI-ROYAL,0603WAF1002T5E,C25804,Resistor_SMD:R_0603_1608Metric,Fit,
+R3,1k,UNI-ROYAL,0603WAF1001T5E,C21190,Resistor_SMD:R_0603_1608Metric,Fit,
+SW1,BOOTSEL,E-Switch,TL3342F160QG,C2886898,Button_Switch_SMD:SW_SPST_TL3342,Fit,
+R4,10k,UNI-ROYAL,0603WAF1002T5E,C25804,Resistor_SMD:R_0603_1608Metric,Fit,
+SW2,RESET,E-Switch,TL3342F160QG,C2886898,Button_Switch_SMD:SW_SPST_TL3342,Fit,
+J2,SWD 3V3 GND DIO CLK RUN,hanxia,HX PZ2.54-1x5P ZZ,C32713271,Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical,Fit,Generic 1x5 2.54 mm straight header (straight per LCSC photo); replaces Samtec TSW-105-07-G-S
+C3,100n,Yageo,CC0603KRX7R9BB104,C14663,Capacitor_SMD:C_0603_1608Metric,Fit,
+C4,100n,Yageo,CC0603KRX7R9BB104,C14663,Capacitor_SMD:C_0603_1608Metric,Fit,
+C5,100n,Yageo,CC0603KRX7R9BB104,C14663,Capacitor_SMD:C_0603_1608Metric,Fit,
+C6,100n,Yageo,CC0603KRX7R9BB104,C14663,Capacitor_SMD:C_0603_1608Metric,Fit,
+C7,100n,Yageo,CC0603KRX7R9BB104,C14663,Capacitor_SMD:C_0603_1608Metric,Fit,
+C8,100n,Yageo,CC0603KRX7R9BB104,C14663,Capacitor_SMD:C_0603_1608Metric,Fit,
+C9,100n,Yageo,CC0603KRX7R9BB104,C14663,Capacitor_SMD:C_0603_1608Metric,Fit,
+C10,100n,Yageo,CC0603KRX7R9BB104,C14663,Capacitor_SMD:C_0603_1608Metric,Fit,
+C11,100n,Yageo,CC0603KRX7R9BB104,C14663,Capacitor_SMD:C_0603_1608Metric,Fit,
+C12,100n,Yageo,CC0603KRX7R9BB104,C14663,Capacitor_SMD:C_0603_1608Metric,Fit,
+C13,1u,Samsung Electro-Mechanics,CL10A105KB8NNNC,C15849,Capacitor_SMD:C_0603_1608Metric,Fit,
+C14,1u,Samsung Electro-Mechanics,CL10A105KB8NNNC,C15849,Capacitor_SMD:C_0603_1608Metric,Fit,
+C15,100n,Yageo,CC0603KRX7R9BB104,C14663,Capacitor_SMD:C_0603_1608Metric,Fit,
+R5,1,UNI-ROYAL,0603WAF100KT5E,C22936,Resistor_SMD:R_0603_1608Metric,Fit,
+J1,USB-C USB2.0,GCT,USB4105-GF-A-120,C5184243,AirNote:USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal,Fit,Same land pattern as USB4105-GF-A; 1.20 mm shell stakes
+R6,5.1k,UNI-ROYAL,0603WAF5101T5E,C23186,Resistor_SMD:R_0603_1608Metric,Fit,
+R7,5.1k,UNI-ROYAL,0603WAF5101T5E,C23186,Resistor_SMD:R_0603_1608Metric,Fit,
+D1,USBLC6-2SC6,STMicroelectronics,USBLC6-2SC6,C7519,Package_TO_SOT_SMD:SOT-23-6,Fit,
+R8,27,UNI-ROYAL,0603WAF270JT5E,C25190,Resistor_SMD:R_0603_1608Metric,Fit,JLC Extended part
+R9,27,UNI-ROYAL,0603WAF270JT5E,C25190,Resistor_SMD:R_0603_1608Metric,Fit,JLC Extended part
+F1,500mA hold PTC,Littelfuse,1206L050YR,C163512,Fuse:Fuse_1206_3216Metric,Fit,
+U3,AP2112K-3.3,Diodes Inc.,AP2112K-3.3TRG1,C51118,Package_TO_SOT_SMD:SOT-23-5,Fit,
+C16,1u,Samsung Electro-Mechanics,CL10A105KB8NNNC,C15849,Capacitor_SMD:C_0603_1608Metric,Fit,
+C17,1u,Samsung Electro-Mechanics,CL10A105KB8NNNC,C15849,Capacitor_SMD:C_0603_1608Metric,Fit,
+C18,100n,Yageo,CC0603KRX7R9BB104,C14663,Capacitor_SMD:C_0603_1608Metric,Fit,
+U4,VL53L1CXV0FY/1,STMicroelectronics,VL53L1CXV0FY/1,C190004,Sensor_Distance:ST_VL53L1x,Fit,
+C19,100n,Yageo,CC0603KRX7R9BB104,C14663,Capacitor_SMD:C_0603_1608Metric,Fit,
+C20,4.7u,Samsung Electro-Mechanics,CL21A475KAQNNNE,C1779,Capacitor_SMD:C_0805_2012Metric,Fit,
+R10,10k,UNI-ROYAL,0603WAF1002T5E,C25804,Resistor_SMD:R_0603_1608Metric,Fit,
+R11,10k,UNI-ROYAL,0603WAF1002T5E,C25804,Resistor_SMD:R_0603_1608Metric,Fit,
+R12,5.1k,UNI-ROYAL,0603WAF5101T5E,C23186,Resistor_SMD:R_0603_1608Metric,Fit,
+R13,5.1k,UNI-ROYAL,0603WAF5101T5E,C23186,Resistor_SMD:R_0603_1608Metric,Fit,
+U5,MAX98357AETE+T,Analog Devices,MAX98357AETE+T,C910544,AirNote:MAX98357A_T1633_ADI_90-0031,Fit,
+C21,100n,Yageo,CC0603KRX7R9BB104,C14663,Capacitor_SMD:C_0603_1608Metric,Fit,
+C22,4.7u,Samsung Electro-Mechanics,CL21A475KAQNNNE,C1779,Capacitor_SMD:C_0805_2012Metric,Fit,
+J3,SPEAKER 8ohm >=1W,JST,B2B-PH-K-S(LF)(SN),C131337,Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical,Fit,
+R14,10k,UNI-ROYAL,0603WAF1002T5E,C25804,Resistor_SMD:R_0603_1608Metric,Fit,
+R15,100k,UNI-ROYAL,0603WAF1003T5E,C25803,Resistor_SMD:R_0603_1608Metric,Fit,
+R16,10k,UNI-ROYAL,0603WAF1002T5E,C25804,Resistor_SMD:R_0603_1608Metric,Fit,
+SW3,MUTE / PLAY,C&K,JS202011JCQN,C221665,Button_Switch_SMD:SW_DPDT_CK_JS202011JCQN,Fit,
+RV1,10k LINEAR VOLUME,Bourns,PTV09A-4015F-B103,C5710902,Potentiometer_THT:Potentiometer_Bourns_PTV09A-1_Single_Vertical,Fit,"Bushingless, 15 mm flat shaft; same PTV09 rear-mount land pattern as -1020F; knob sits about 5 mm lower"
+R17,1k,UNI-ROYAL,0603WAF1001T5E,C21190,Resistor_SMD:R_0603_1608Metric,Fit,
+C23,100n,Yageo,CC0603KRX7R9BB104,C14663,Capacitor_SMD:C_0603_1608Metric,Fit,
+D2,GREEN STATUS,Lite-On,LTST-C190KGKT,C125094,LED_SMD:LED_0603_1608Metric,Fit,Listed colour yellow-green (574 nm)
+R18,1k,UNI-ROYAL,0603WAF1001T5E,C21190,Resistor_SMD:R_0603_1608Metric,Fit,
+R19,1M,UNI-ROYAL,0603WAF1004T5E,C22935,Resistor_SMD:R_0603_1608Metric,Fit,
+TP1,VBUS_RAW,,TEST_PAD_1.5MM,,TestPoint:TestPoint_Pad_D1.5mm,PCB only,Bare PCB pad; no fitted component
+TP2,+5V,,TEST_PAD_1.5MM,,TestPoint:TestPoint_Pad_D1.5mm,PCB only,Bare PCB pad; no fitted component
+TP3,+3V3,,TEST_PAD_1.5MM,,TestPoint:TestPoint_Pad_D1.5mm,PCB only,Bare PCB pad; no fitted component
+TP4,+1V1,,TEST_PAD_1.5MM,,TestPoint:TestPoint_Pad_D1.5mm,PCB only,Bare PCB pad; no fitted component
+TP5,GND,,TEST_PAD_1.5MM,,TestPoint:TestPoint_Pad_D1.5mm,PCB only,Bare PCB pad; no fitted component
+TP6,I2C_SDA,,TEST_PAD_1.5MM,,TestPoint:TestPoint_Pad_D1.5mm,PCB only,Bare PCB pad; no fitted component
+TP7,I2C_SCL,,TEST_PAD_1.5MM,,TestPoint:TestPoint_Pad_D1.5mm,PCB only,Bare PCB pad; no fitted component
+TP8,I2S_DATA,,TEST_PAD_1.5MM,,TestPoint:TestPoint_Pad_D1.5mm,PCB only,Bare PCB pad; no fitted component
+TP9,I2S_BCLK,,TEST_PAD_1.5MM,,TestPoint:TestPoint_Pad_D1.5mm,PCB only,Bare PCB pad; no fitted component
+TP10,I2S_LRCLK,,TEST_PAD_1.5MM,,TestPoint:TestPoint_Pad_D1.5mm,PCB only,Bare PCB pad; no fitted component
+TP11,AMP_SD,,TEST_PAD_1.5MM,,TestPoint:TestPoint_Pad_D1.5mm,PCB only,Bare PCB pad; no fitted component

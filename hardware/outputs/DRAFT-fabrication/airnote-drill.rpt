@@ -1,5 +1,5 @@
 Drill report for airnote.kicad_pcb
-Created on 2026-10-10T14:01:39-0400
+Created on 2026-10-10T16:31:13-0400
 
 Copper Layer Stackup:
     =============================================================
@@ -12,13 +12,13 @@ Copper Layer Stackup:
 Drill file 'airnote-PTH.drl' contains
     plated through holes:
     =============================================================
-    T1  0.200mm  0.0079"  (98 holes)
+    T1  0.200mm  0.0079"  (102 holes)
     T2  0.600mm  0.0236"  (4 holes)  (with 4 slots)
     T3  0.750mm  0.0295"  (2 holes)
     T4  1.000mm  0.0394"  (8 holes)
     T5  2.200mm  0.0866"  (2 holes)
 
-    Total plated holes count 114
+    Total plated holes count 118
 
 
 Drill file 'airnote-NPTH.drl' contains

@@ -46,6 +46,12 @@ Both methods put 0.25/0.15 mm inside the full-speed tolerance. JLC's paid
 impedance control (+$33 on this quote) is therefore not ordered. These are
 calculations, not a TDR measurement.
 
+The rev 0.2 layout applies this as net class `USB_DIFF`. All six USB nets
+are on F.Cu with no vias, and In1.Cu ground is continuous under them.
+93% of the pair's length runs at exactly 0.40 mm pitch; the remainder is
+neck-down within about 1 mm of the J1, D1 and U1 pads. Details:
+`hardware/README.md`.
+
 ### Design rules versus JLC 4-layer capability
 
 | Rule | AirNote | JLC capability | Status |
@@ -56,6 +62,20 @@ calculations, not a TDR measurement.
 | Solder-mask web | | ≥0.10 mm | Check in final DRC/export review |
 
 Source: https://jlcpcb.com/capabilities/pcb-capabilities.
+
+The custom rules in `hardware/airnote.kicad_dru` were never enforced before
+rev 0.2: the file had no units, and KiCad discards a whole rule file with a
+unitless value (verified by testing a deliberately impossible rule both
+ways). Rev 0.2 adds the units, so DRC now applies these rules and the
+USB_DIFF rules, and still passes.
+
+## Surface finish (order-time decision)
+
+Not yet selected; the design files are the same either way. ENIG gives
+flatter pads than HASL for the 0.4 mm pitch RP2040 QFN, the VL53L1X LGA and
+the MAX98357A TQFN, which reduces bridging and open-joint risk on exactly
+the parts that are hardest to rework. Recommendation: ENIG if the price
+difference on the order page is small. Lead-free HASL is acceptable.
 
 ## Exposed-pad vias (order-time decision)
 
@@ -75,9 +95,10 @@ the same either way.
 
 ## Sourcing summary
 
-Every fitted part was found in JLC/LCSC stock. LCSC numbers go into
-`hardware/bom.csv` and the schematic with the rev 0.2 layout update.
-Changes from the Codex BOM, made for stock or correctness:
+Every fitted part was found in JLC/LCSC stock. The rev 0.2 layout carries
+the LCSC numbers in `hardware/bom.csv`, on every fitted schematic symbol and
+as hidden footprint fields. Changes from the Codex BOM, made for stock or
+correctness:
 
 | Ref | Was | Now | Why |
 | --- | --- | --- | --- |
@@ -103,8 +124,9 @@ From JLC's 2026-09-09 price page; not a quote.
 | POFV (recommended) | $21 |
 | **Subtotal before shipping/tax** | **≈ $140** |
 
-Fiducials and edge rails for Standard PCBA are still to be confirmed on the
-actual quote.
+Rev 0.2 adds three global fiducials (1 mm copper, 2 mm mask opening).
+Whether JLC wants edge rails for this board is still to be confirmed on
+the actual quote.
 
 ## Before ordering
 
@@ -115,4 +137,4 @@ actual quote.
    paying; the RP2040, VL53L1X, MAX98357A, USB-C and SOT-23 parts most often
    need rotation corrections.
 3. Re-check stock for RV1, J1 and the RP2040 on the day of ordering.
-4. Decide on POFV (see above).
+4. Decide on POFV and the surface finish (see above).
