@@ -129,13 +129,27 @@ Rev 0.2 adds three global fiducials (1 mm copper, 2 mm mask opening).
 Whether JLC wants edge rails for this board is still to be confirmed on
 the actual quote.
 
+## Review dispositions (rev 0.2)
+
+Overseer dispositions of the reviewer's below-FAIL concerns, 2026-10-10:
+
+| Concern | Disposition |
+| --- | --- |
+| +5V after F1 was 0.15 mm | Fixed: widened to 0.4 mm (U5 pin stubs 0.3 mm, set by the pad width), with a parallel via at U5. |
+| Via drill 0.005 mm inside C15's GND pad | Fixed: moved 0.7 mm along the pad axis. |
+| D1 about 15 mm along the pair from J1 | Accepted for first articles. ESD robustness is not an acceptance test; move it closer in a later revision if needed. |
+| RV1 tab holes round Ø2.2 mm where Bourns draws 1.8 × 2.2 mm slots | Accepted. The round hole covers the slot's long dimension; check the fit on the first article. |
+| Fiducial pour edge 0.1 mm outside the 2 mm mask opening | Accepted. The pour sits under mask, so the camera sees the 1 mm dot on bare laminate. |
+| I2S lines under the crystal on B.Cu; XTAL_OUT between Y1's pads | Accepted. Two GND planes separate B.Cu from the crystal; the added capacitance is under 0.1 pF. |
+| Low stock: J1, RV1 | Re-check on the order day. |
+
 ## Before ordering
 
-1. The layout corrections and BOM changes must pass the independent review
+1. The current revision must pass the independent review
    (`reviews/REVIEW_STATUS.md`).
-2. Generate JLC-format BOM and placement (CPL) files from the reviewed
-   revision. Check every part's rotation in JLC's placement preview before
-   paying; the RP2040, VL53L1X, MAX98357A, USB-C and SOT-23 parts most often
-   need rotation corrections.
+2. Follow the upload steps in `hardware/outputs/DRAFT-fabrication/README.md`.
+   It covers the Gerber zip, the JLC BOM and CPL files, and the order-form settings.
+   Check every part's rotation and anchor in JLC's placement preview before
+   paying; the CPL carries KiCad's rotations with no correction table.
 3. Re-check stock for RV1, J1 and the RP2040 on the day of ordering.
 4. Decide on POFV and the surface finish (see above).

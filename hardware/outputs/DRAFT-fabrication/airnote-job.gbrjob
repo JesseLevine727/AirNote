@@ -5,13 +5,13 @@
       "Application": "Pcbnew",
       "Version": "9.0.9-9.0.9~ubuntu24.04.1"
     },
-    "CreationDate": "2026-10-10T16:31:13-04:00"
+    "CreationDate": "2026-10-10T17:18:51-04:00"
   },
   "GeneralSpecs": {
     "ProjectId": {
       "Name": "airnote",
       "GUID": "6169726e-6f74-4652-9e6b-696361645f70",
-      "Revision": "rev?"
+      "Revision": "0.2"
     },
     "Size": {
       "X": 90.05,

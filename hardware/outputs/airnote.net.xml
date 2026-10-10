@@ -2,13 +2,13 @@
 <export version="E">
   <design>
     <source>/home/elfo/Documents/KiCadFun/hardware/airnote.kicad_sch</source>
-    <date>2026-10-10T16:31:12-0400</date>
+    <date>2026-10-10T17:18:51-0400</date>
     <tool>Eeschema 9.0.9-9.0.9~ubuntu24.04.1</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
         <title>AirNote - RP2040 controller</title>
         <company>AirNote side project</company>
-        <rev>0.1 DRAFT</rev>
+        <rev>0.2</rev>
         <date>2026-10-10</date>
         <source>airnote.kicad_sch</source>
         <comment number="1" value=""/>
@@ -26,7 +26,7 @@
       <title_block>
         <title>AirNote - USB and power</title>
         <company>AirNote side project</company>
-        <rev>0.1 DRAFT</rev>
+        <rev>0.2</rev>
         <date>2026-10-10</date>
         <source>power.kicad_sch</source>
         <comment number="1" value=""/>
@@ -44,7 +44,7 @@
       <title_block>
         <title>AirNote - sensor, audio and controls</title>
         <company>AirNote side project</company>
-        <rev>0.1 DRAFT</rev>
+        <rev>0.2</rev>
         <date>2026-10-10</date>
         <source>instrument.kicad_sch</source>
         <comment number="1" value=""/>
