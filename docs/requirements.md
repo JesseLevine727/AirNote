@@ -99,8 +99,9 @@ decisions. Before a first-article order, close CAD/circuit errors, confirm the
 supplier process, and explicitly disposition unresolved electrical risks with
 a restricted bring-up plan. The USB inrush and suspend questions now have a
 first-article disposition in `power_budget.md` (accepted deviations with a
-restricted first power-on), not a measurement; an order still waits on the
-independent review of the rev 0.2 layout. Measurements that
+restricted first power-on), not a measurement. The independent review of
+the rev 0.2 layout has no open static FAIL; the remaining order-time
+decisions are listed in `fabrication_plan.md`. Measurements that
 require a physical board are performed on those first articles, then inform
 any revision and the eventual validated release. No order has been placed.
 

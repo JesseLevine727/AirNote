@@ -26,7 +26,7 @@ The copper finish is not set in CAD; it is chosen on the order form. ENIG is rec
   - **J1** (USB-C, rotation 180): anchor (64.00, 53.675). The pad field centre is about 1.1 mm further into the board (y 54.81), and the courtyard centre is at y 53.97. The shell stakes must drop into their slots.
   - **J2** (1×5 header, through-hole): anchor at pin 1 (112.0, 84.0). The body centre is 5.08 mm along the row, at y 89.08.
   - **J3** (JST PH 2-pin, through-hole): anchor at pin 1 (132.0, 104.0). The body centre is about 1 mm east, near (133.0, 104.5).
-  - **RV1** (PTV09 potentiometer, through-hole): anchor at pin 1 (69.0, 108.0). The pin row and the two mounting tabs are centred near (73–75, 105.5).
+  - **RV1** (PTV09 potentiometer, through-hole): anchor at pin 1 (69.0, 108.0). The body and shaft centre (footprint fab outline) is at (76.0, 105.5).
 - **Centred parts.** All other parts are anchored at their body centre.
 
 ## Upload steps (JLCPCB)
@@ -45,7 +45,7 @@ The copper finish is not set in CAD; it is chosen on the order form. ENIG is rec
    - Confirm part placement in the preview.
    - **No board washing.** The VL53L1X is an optical part. If the form has no option for this, add it as an order remark.
    - **Leave the VL53L1X protective liner on**; we remove it after assembly.
-   - The through-hole parts (RV1, J2, J3) need JLC's through-hole assembly. The USB-C J1 is SMT with through-board shell stakes.
+   - The through-hole parts (RV1, J2, J3) need JLC's through-hole assembly. The USB-C J1 is SMT; its 1.20 mm shell stakes solder into plated slots and do not pass through the 1.6 mm board.
 4. **BOM / CPL.** Upload `airnote-jlc-bom.csv` and `airnote-jlc-cpl.csv`. Check every LCSC match against the BOM, re-check stock on the day (J1 C5184243 and RV1 C5710902 were low on 2026-10-10), and check every rotation and anchor in the placement preview (see above).
 5. **Before paying.** Compare the quote's layer count, stackup, finish, via treatment and part list with this page.
 

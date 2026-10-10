@@ -24,7 +24,8 @@ Additional primary sources for the rev 0.2 review, accessed 2026-10-10:
 - [ST USBLC6-2 datasheet](https://www.st.com/resource/en/datasheet/usblc6-2.pdf) (Doc ID 11265 Rev 5 as mirrored by LCSC for C7519): Figure 1 SOT23-6L pins 1/6 = I/O1, 3/4 = I/O2, 2 = GND, 5 = VBUS; Figure 7 shows 1–6 and 3–4 internally joined; Figure 8 tests IN on pin 1 and OUT on pin 6.
 - [Winbond W25Q16JV datasheet](https://www.winbond.com/resource-files/w25q16jv%20spi%20revg%2003222018%20plus.pdf), Rev G: SN = 8-pin SOIC 150-mil (E 3.80–4.00 mm, 1.27 mm pitch), SS = 208-mil.
 - [Abracon ABM8-272-T3](https://abracon.com/datasheets/ABM8-272-T3.pdf): 12 MHz, CL 10 pF, ESR 50 Ω max, C0 3 pF max. [RP2040 hardware design guide](https://datasheets.raspberrypi.com/rp2040/hardware-design-with-rp2040.pdf) section 2.3 uses this crystal with 15 pF capacitors plus ~3 pF stray (10.5 pF) and a 1 kΩ series resistor.
-- [JLCPCB PCB capabilities](https://jlcpcb.com/capabilities/pcb-capabilities): via hole-to-hole 0.2 mm, pad hole-to-hole 0.45 mm, via hole to track 0.2 mm, solder-mask bridge 0.10 mm.
+- [JLCPCB PCB capabilities](https://jlcpcb.com/capabilities/pcb-capabilities): via hole-to-hole 0.2 mm, pad hole-to-hole 0.45 mm, via hole to track 0.2 mm, solder-mask bridge 0.10 mm; 0.2/0.25 mm via holes cost more only below 0.45 mm via diameter; silkscreen line width ≥0.15 mm and text height ≥1.0 mm.
+- [JLCPCB pick-and-place file article](https://jlcpcb.com/help/article/46-pick-place-file-for-pcb-assembly): CPL columns `Designator, Mid X, Mid Y, Layer, Rotation`, millimetres, positive rotation counter-clockwise.
 - LCSC product listings `https://www.lcsc.com/product-detail/<LCSC>.html` for every fitted LCSC number in `hardware/bom.csv`; the confirmed MPN/number pairs are encoded in `audit_artifacts.py`.
 
 | Device | Critical pin mapping to audit independently |

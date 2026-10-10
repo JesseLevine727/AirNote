@@ -1,8 +1,8 @@
 {
   "scope": "pin assignment and artifact consistency only; not routing or hardware validation",
   "sha256": {
-    "hardware/outputs/airnote.net.xml": "f25ff9dd9cf6679584853d00b8a9e5008f6ab9cce38120733ea4aaf56c160f21",
-    "hardware/airnote.kicad_pcb": "b73600b23573f1bac7330f827d21ea167084af3bd38f8e93b8ca05c0155987d0",
+    "hardware/outputs/airnote.net.xml": "60b5c3c2c8d48c01ae2fad90c208af2a33be2b3cb764744bf22165c191b7ef23",
+    "hardware/airnote.kicad_pcb": "52b4bbc073e0d8ea3d90a4f6ff3984c31e7b3e20a18f3a391a13dbab2314860a",
     "hardware/bom.csv": "802ea135632e4d9fcee223bb43912857b57f84776bc0bc406603095432810282",
     "firmware/include/boards/airnote.h": "b817d261e33574ad49a5a6d827733b51c05bd4211a40b8097a47fcd2efc5769d"
   },

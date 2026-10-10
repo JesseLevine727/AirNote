@@ -5,7 +5,8 @@ VL53L1X distance sensor and MAX98357A speaker amplifier. One hand selects
 eleven pentatonic notes over two octaves. The design uses a four-layer PCB
 and factory assembly, with an external 8 ohm speaker.
 
-**Engineering prototype — not released for fabrication or physically validated.**
+**Engineering prototype, rev 0.2. The first-article order package has passed
+static review and is ready to order; nothing is ordered or physically validated yet.**
 Use [the independent review status](reviews/REVIEW_STATUS.md) for current
 failures, passes and pending evidence. A schematic check or firmware build
 does not establish that the assembled instrument works.

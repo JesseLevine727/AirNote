@@ -136,7 +136,8 @@ Overseer dispositions of the reviewer's below-FAIL concerns, 2026-10-10:
 | Concern | Disposition |
 | --- | --- |
 | +5V after F1 was 0.15 mm | Fixed: widened to 0.4 mm (U5 pin stubs 0.3 mm, set by the pad width), with a parallel via at U5. |
-| Via drill 0.005 mm inside C15's GND pad | Fixed: moved 0.7 mm along the pad axis. |
+| Via drill 0.005 mm inside C15's GND pad | Fixed: moved 0.36 mm, so the drill edge is 0.15 mm outside the pad. |
+| 0.4 mm +5V trace under the J1 receptacle body, insulated by solder mask only | Accepted. The route existed at 0.15 mm in rev 0.1, GCT's drawing shows no keep-out, and the PTC limits fault current. Inspect for mask damage under J1 if the board shows a +5V short. |
 | D1 about 15 mm along the pair from J1 | Accepted for first articles. ESD robustness is not an acceptance test; move it closer in a later revision if needed. |
 | RV1 tab holes round Ø2.2 mm where Bourns draws 1.8 × 2.2 mm slots | Accepted. The round hole covers the slot's long dimension; check the fit on the first article. |
 | Fiducial pour edge 0.1 mm outside the 2 mm mask opening | Accepted. The pour sits under mask, so the camera sees the 1 mm dot on bare laminate. |
@@ -146,7 +147,8 @@ Overseer dispositions of the reviewer's below-FAIL concerns, 2026-10-10:
 ## Before ordering
 
 1. The current revision must pass the independent review
-   (`reviews/REVIEW_STATUS.md`).
+   (`reviews/REVIEW_STATUS.md`). As of commit f187767 it has no open static
+   FAIL; physical items stay PENDING until boards exist.
 2. Follow the upload steps in `hardware/outputs/DRAFT-fabrication/README.md`.
    It covers the Gerber zip, the JLC BOM and CPL files, and the order-form settings.
    Check every part's rotation and anchor in JLC's placement preview before

@@ -86,6 +86,26 @@ for side in ['top','bottom']:
 fid_flash=sorted({o.attrs.get('.P',('?',))[0] for o in stack.graphic_layers[('top','copper')].objects if isinstance(o,Flash) and o.attrs.get('.P',('',))[0].startswith('FID') and abs(o.aperture.diameter-1.0)<1e-6})
 fid_mask=sorted({o.attrs.get('.C',('?',))[0] for o in stack.graphic_layers[('top','mask')].objects if isinstance(o,Flash) and o.attrs.get('.C',('',))[0].startswith('FID')})
 check('Three fiducials present in top copper (1 mm) and top mask Gerbers',fid_flash==fid_mask==['FID1','FID2','FID3'],{'copper':fid_flash,'mask':fid_mask})
+# JLC order package: BOM/CPL agree with bom.csv and the PCB; zip equals the loose files.
+import zipfile
+jbom=list(csv.DictReader((OUT/'airnote-jlc-bom.csv').open()))
+bom_by={r['Reference']:r for r in bom}
+jlc_want={r for r in want if not re.match(r'(TP|H|FID)\d',r)}
+jrefs=[d for row in jbom for d in row['Designator'].split(',')]
+check('JLC BOM: every fitted part exactly once; no TP/H/FID',sorted(jrefs)==sorted(jlc_want) and len(jrefs)==len(set(jrefs)),{'lines':len(jbom),'parts':len(jrefs),'missing':sorted(jlc_want-set(jrefs)),'extra':sorted(set(jrefs)-jlc_want)})
+bad=[(d,row['LCSC Part #'],bom_by[d]['LCSC'],row['Footprint'],bom_by[d]['Footprint'],row['Comment']) for row in jbom for d in row['Designator'].split(',') if d in bom_by and (row['LCSC Part #']!=bom_by[d]['LCSC'] or row['Footprint']!=bom_by[d]['Footprint'].split(':')[-1] or row['Comment']!=' / '.join(dict.fromkeys(bom_by[x]['Value'] for x in row['Designator'].split(','))))]
+check('JLC BOM: LCSC number, footprint and value equal bom.csv for every designator',not bad,{'mismatches':bad})
+jcpl=list(csv.DictReader((OUT/'airnote-jlc-cpl.csv').open()))
+check('JLC CPL: same designator set as JLC BOM, each once',sorted(r['Designator'] for r in jcpl)==sorted(jrefs),{'rows':len(jcpl)})
+badp=[]
+for r in jcpl:
+ f=parts[r['Designator']];p=f.GetPosition()
+ if not (abs(float(r['Mid X'])-p.x/1e6)<1e-5 and abs(float(r['Mid Y'])+p.y/1e6)<1e-5 and abs((float(r['Rotation'])-f.GetOrientationDegrees()+180)%360-180)<1e-5 and r['Layer']=='Top' and f.GetLayer()==pcbnew.F_Cu): badp.append(r)
+check('JLC CPL: positions (KiCad anchor, Y negated), rotations and Top layer equal the PCB',not badp,{'mismatches':badp})
+with zipfile.ZipFile(OUT/'airnote-jlc-gerbers.zip') as z:
+ names=sorted(z.namelist());diff=[n for n in names if z.read(n)!=(OUT/n).read_bytes()]
+loose=sorted(p.name for p in OUT.iterdir() if p.suffix in ['.gtl','.g1','.g2','.gbl','.gtp','.gbp','.gto','.gbo','.gts','.gbs','.gm1','.drl','.gbrjob'])
+check('JLC Gerber zip: 11 Gerbers + 2 drills + job, byte-identical to the loose files',names==loose and len(names)==14 and not diff,{'zip':names,'differing':diff})
 # Review renders (actual Gerber/Excellon content, not native CAD plots).
 (ROOT/'reviews/gerber-top-review.svg').write_text(str(stack.to_pretty_svg(side='top')))
 (ROOT/'reviews/gerber-bottom-review.svg').write_text(str(stack.to_pretty_svg(side='bottom')))
@@ -95,7 +115,7 @@ for row in rows:
  check('Placement '+row['Ref'],abs(float(row['PosX'])-p.x/1e6)<1e-5 and abs(float(row['PosY'])+p.y/1e6)<1e-5 and abs((float(row['Rot'])-f.GetOrientationDegrees()+180)%360-180)<1e-5 and row['Side']=='top' and f.GetLayer()==pcbnew.F_Cu)
 source_paths=[ROOT/'hardware/airnote.kicad_pcb',ROOT/'hardware/airnote.kicad_sch',ROOT/'hardware/power.kicad_sch',ROOT/'hardware/instrument.kicad_sch',ROOT/'hardware/airnote.kicad_pro',ROOT/'hardware/airnote.kicad_dru',ROOT/'hardware/bom.csv',ROOT/'hardware/outputs/airnote.net.xml',ROOT/'hardware/outputs/airnote-schematic.pdf',ROOT/'hardware/outputs/airnote-assembly.pdf']
 source_paths+=sorted(p for p in OUT.iterdir() if p.is_file())
-result={'status':'PASS export-coherence checks only' if all(c['status']=='PASS' for c in checks) else 'FAIL','gerbonara_version':gerbonara.__version__,'sha256':{str(p.relative_to(ROOT)):hashlib.sha256(p.read_bytes()).hexdigest() for p in source_paths},'checks':checks,'parsed_layers':layer_geometry,'parser_warnings':warnings_seen,'order_package_open_items':order_package,'physical_tests':'PENDING','limitations':['Copper Gerbers, mask/paste and split drill sets were parsed; front/back/In1 renders are written to reviews/gerber-*-review.svg and inspected separately.','The Gerber job stackup now matches JLC04161H-7628, but its Revision is "rev?" and Finish is "None"; both must be set or overridden on the order.','Zero geometry discrepancies do not approve USB impedance/routing, remaining layout concerns, optical assembly process or actual operation.']}
+result={'status':'PASS export-coherence checks only' if all(c['status']=='PASS' for c in checks) else 'FAIL','gerbonara_version':gerbonara.__version__,'sha256':{str(p.relative_to(ROOT)):hashlib.sha256(p.read_bytes()).hexdigest() for p in source_paths},'checks':checks,'parsed_layers':layer_geometry,'parser_warnings':warnings_seen,'order_package_open_items':order_package,'physical_tests':'PENDING','limitations':['Copper Gerbers, mask/paste and split drill sets were parsed; front/back/In1 renders are written to reviews/gerber-*-review.svg and inspected separately.','The Gerber job stackup matches JLC04161H-7628; Finish stays "None" by overseer disposition (chosen on the order form).','Zero geometry discrepancies do not approve USB impedance/routing, remaining layout concerns, optical assembly process or actual operation.']}
 (ROOT/'reviews/export-review.json').write_text(json.dumps(result,indent=2)+'\n')
 for c in checks:
  if c['status']=='FAIL':print(c)

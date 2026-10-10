@@ -1,16 +1,15 @@
 {
-  "captured_utc": "2026-10-10T21:07:13.299405+00:00",
-  "overall_status": "REV_0.2_REVIEWED_FAILS_OPEN_NOT_RELEASED",
+  "captured_utc": "2026-10-10T21:29:58.797290+00:00",
+  "overall_status": "REV_0.2_STATIC_REVIEW_NO_OPEN_FAIL_NOT_RELEASED",
+  "first_article_gate": "No open static FAIL. Order-time items (MFG-01 supplier/stock/finish/POFV/optical handling, MFG-12 JLC placement-preview rotation check) remain; physical items PENDING and are not order prerequisites.",
   "revision": {
-    "commit": "78444e8",
-    "pcb_sha256": "b73600b23573f1bac7330f827d21ea167084af3bd38f8e93b8ca05c0155987d0"
+    "commit": "f187767",
+    "pcb_sha256": "52b4bbc073e0d8ea3d90a4f6ff3984c31e7b3e20a18f3a391a13dbab2314860a"
   },
   "previous_reviewed": {
-    "commits": [
-      "c298357",
-      "14e63ae"
-    ],
-    "pcb_sha256": "c35f7d922f362b58a088193dba98902f71df68bcac94774f78b6f83b8618e9cc"
+    "commit": "0d1927e",
+    "reviewed_pcb_commit": "78444e8",
+    "pcb_sha256": "b73600b23573f1bac7330f827d21ea167084af3bd38f8e93b8ca05c0155987d0"
   },
   "native_checks": {
     "kicad_version": "9.0.9",
@@ -25,8 +24,7 @@
     "exit_codes": [
       0,
       0
-    ],
-    "custom_rules_loaded": "PASS (probe in layout-review.json)"
+    ]
   },
   "script_results": {
     "artifact-audit.json": {
@@ -34,77 +32,70 @@
       "failed": 0
     },
     "layout-review.json": {
-      "checks": 23,
-      "failed": 1,
-      "failed_checks": [
-        "Drill-to-drill webs meet JLC published spacing (via-via 0.2 mm; pad hole 0.45 mm)"
-      ]
+      "checks": 25,
+      "failed": 0
     },
     "export-review.json": {
-      "checks": 70,
+      "checks": 75,
       "status": "PASS export-coherence checks only"
     },
-    "host_tests_rerun": "PASS 1056569 assertions (firmware unchanged; host-test-evidence.json hashes still match)"
+    "netlist": "fresh schematic netlist == exported; components and 73 nets == 78444e8; schematic diffs are title-block rev only"
   },
   "verdicts": {
-    "ARCH-01": "PASS",
-    "CIR-01": "PASS (limited scope)",
-    "CIR-02": "PASS static / PENDING physical",
-    "CIR-03": "PASS arithmetic / PENDING electrical",
-    "FW-01": "PASS",
-    "FW-02": "PASS",
-    "FW-03": "PASS static",
-    "FW-04": "PASS static / PENDING electrical",
     "PCB-01": "PASS",
     "PCB-02": "PASS",
     "PCB-03": "PASS",
-    "PCB-04": "PASS static layout / PENDING impedance+operation",
+    "PCB-04": "PASS static / PENDING",
     "PCB-05": "PASS",
-    "PCB-06": "PASS with concern (+5V 0.15 mm)",
+    "PCB-06": "PASS",
     "PCB-07": "PASS",
-    "PCB-08": "PASS layout+load caps / PENDING oscillator margin",
+    "PCB-08": "PASS layout / PENDING oscillator",
     "PCB-09": "PASS",
     "PCB-10": "PASS",
-    "MFG-01": "PENDING",
+    "MFG-01": "PENDING (order time)",
     "MFG-02": "PASS",
-    "MFG-03": "PASS footprint fit / PENDING mechanics",
+    "MFG-03": "PASS footprint / PENDING mechanics",
     "MFG-04": "PASS",
-    "MFG-05": "FAIL",
+    "MFG-05": "PASS (closed)",
     "MFG-06": "PASS",
     "MFG-07": "PASS",
     "MFG-08": "PASS",
     "MFG-09": "PASS",
     "MFG-10": "PASS",
-    "MFG-11": "FAIL (order package)",
+    "MFG-11": "PASS (closed; finish by disposition)",
+    "MFG-12": "PASS coherence / PENDING JLC preview",
+    "MFG-13": "PASS",
+    "CIR-01": "PASS (limited)",
+    "CIR-02": "PASS static / PENDING",
+    "CIR-03": "PASS arithmetic / PENDING",
+    "FW-01": "PASS",
+    "FW-02": "PASS",
+    "FW-03": "PASS static",
+    "FW-04": "PASS static / PENDING",
+    "ARCH-01": "PASS",
     "BENCH-01": "PENDING"
   },
+  "dispositions_recorded": "docs/fabrication_plan.md \"Review dispositions (rev 0.2)\"; reviewer agrees with all (wording note on C15 move distance)",
   "report_sha256": {
-    "reviews/drc-final.json": "3ffef5e612a0cff98e47b0fe9ba2b3566d3c3c02f02f03c560c46375937d0c2c",
-    "reviews/erc-final.json": "1005280afc56758505e7e1a3c61186bd53213d2857b7b34fe2bea3ad2e0ef650",
-    "reviews/artifact-audit.json": "47e95af1d50411a8e1f53b685f52dc9b0c694b2ff529372ec921dc479b5c2b5b",
-    "reviews/layout-review.json": "c5371c153268451de897f3cbfe9a43fb6478bb7aecbeaa3e09bcef688ef2817b",
-    "reviews/export-review.json": "e96649479b54eb89b7d62b08a89a5f4d08effa5872ab7917cbd672680cffa88e",
-    "reviews/final-trace-paths.txt": "53e78e9cc7f7d42e9fb0475b793af350b4ef08a75175e5f0661eaa1d024ae7f9",
+    "reviews/drc-final.json": "dad55233b31ae17d097a5d3c292f4efb7959c4885bd6035f1050f020018cf7e7",
+    "reviews/erc-final.json": "b56cea6cfa1fe833217cec27f7345642adbcad950317a2ad74c07f353d3f343e",
+    "reviews/artifact-audit.json": "254e6438799a4b877b8f704587d3f9305d4f4d62e8abf532cecf485396a7703a",
+    "reviews/layout-review.json": "934a6579fbe9362a099d5892cdb51693b2ac7b68de4ecaec776ed6ccf8c99bb3",
+    "reviews/export-review.json": "c1b16d9ab43803ea0e7c6c1d6b27de52a7546939ba9d24bd0659f7a052a98133",
+    "reviews/final-trace-paths.txt": "3882ff8b246d969858ec12b7b4b7b57d2051dede7d193fe4cb10d179b551b66f",
     "reviews/host-test-evidence.json": "7a6d460a7361008d29c04a4a60ab4d8cab94da1b295237a0fb3992654fa42df9",
     "reviews/firmware-static-review.json": "089abfc5373bf6e795e1a6014a4a8cfbd19559445b301bd87f27d633a483498f",
-    "reviews/power-budget-review.json": "26737c5f8442770505e3a1fb7c96092f360efc452534cfa59f0fcdb39c8ce431",
-    "reviews/gerber-top-review.svg": "581af35f2bc037acd6d49b854b8fa2cc22b4f4dfb20b094ea7b9d6dc70725dd4",
-    "reviews/gerber-bottom-review.svg": "695e2873165a2bd64959f8f0bbe7502e54d0acd41f7c99d83b2fcd56ee7828ad",
-    "reviews/gerber-inner1-review.svg": "c565bc18dc72ceea0cb6dd61dc168113f360ac42e768cd4c31c58fc8bc3f9009",
-    "reviews/FINAL_REVIEW.md": "a77acf439ec1dafefb1ea021b0587ca9f4bbd2f596be6c8fbc9ef85bcb77f043",
-    "reviews/REVIEW_STATUS.md": "ac59c3f7ef14e84a517e4d98aaac5fe42d83e84e8d07e9ba93ba154977073320",
-    "reviews/CHECKLIST.md": "bfcc43d00298372383975b7d3b1b92b284f711e3b95948bd4ca1ab5173152338",
+    "reviews/power-budget-review.json": "bf0327d981ac6fc2d3333623ff8f09db3ac6920272315e550e76244946effcc4",
+    "reviews/gerber-top-review.svg": "ac9438059a72c43b2a45748c37699280b325abca681017e8e9c6dafc81afb593",
+    "reviews/gerber-bottom-review.svg": "10f395a86ef5934bd644e8f6178f143c02774fba18869eed9e65eb1044ac472b",
+    "reviews/gerber-inner1-review.svg": "4ac382c89c396fbc3174781da0f91d77c6af0871dd485940965dc36a0ef72d27",
+    "reviews/FINAL_REVIEW.md": "2071d56a48e5359bb17c241c778c6812e7cb851e60cbf8d055fb178023154e8a",
+    "reviews/REVIEW_STATUS.md": "94db22605a0cbf1e149685bdbedb0b67e93d3ec1a4905995d5e9d411fb65d231",
+    "reviews/CHECKLIST.md": "285d78d08c95da65294bc13b40097cd2c888ad4e4386a7775720caadea9cafd0",
     "reviews/audit_artifacts.py": "f6ddf4466b214e5933fec4021d1db42d18280768b692cc5839c94e177eeb40ad",
-    "reviews/inspect_layout.py": "f3012fa80ef1fe682beff488359b09f6452b76b10827235706221b68f1c6ccb3",
-    "reviews/inspect_exports.py": "cc5f3bd0713a68ff334a07cd23118ab81a708305aaf7a60832d79268736be66e",
+    "reviews/inspect_layout.py": "1d84d08984e3d2d5820661a991e012c5c706158307d5c739e089732e47e7a5e5",
+    "reviews/inspect_exports.py": "4326d886fedc76f7c17bbe8f73406e334732ccb70946b89121c7f7e2945d9508",
     "reviews/inspect_trace_paths.py": "2c3db3dff564c5d2b3eaffae8666c1efe20fb8782752880d2eeb550ad67a7f09"
   },
-  "remaining_gates": [
-    "MFG-05 J1 via-to-slot drill web",
-    "MFG-11 revision marking / gbrjob revision+finish / stale export README",
-    "Supplier quote, day-of-order stock, optical process, exposed-pad via treatment (MFG-01)",
-    "Overseer disposition of concerns in FINAL_REVIEW.md",
-    "All physical tests (BENCH-01)"
-  ],
   "physical_tests": "PENDING"
 }

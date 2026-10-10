@@ -5,7 +5,7 @@
     "docs/power_budget.md": "4c01adb91ee036f16e126a1bbbafa53ae27edb95c29d4660b6ae18e1f7b3a0a8",
     "docs/requirements.md": "60cd9afa8de6326ecc056ed1e95523c257a3614a65fc56587d800e681ec86e7c",
     "docs/assembly_request.md": "1e1b3249d7b85b82ba9edfce71d78f6ed69d5cee1edeea7e079336cb3cd3a223",
-    "hardware/outputs/airnote.net.xml": "f25ff9dd9cf6679584853d00b8a9e5008f6ab9cce38120733ea4aaf56c160f21"
+    "hardware/outputs/airnote.net.xml": "60b5c3c2c8d48c01ae2fad90c208af2a33be2b3cb764744bf22165c191b7ef23"
   },
   "independent_calculations": {
     "3V3_allocation_mA": 155,
@@ -38,7 +38,8 @@
       "source": "LCSC C163512 listing / Littelfuse 1206L table, accessed 2026-10-10"
     },
     "vbus_5v_copper_paths": {
-      "see": "reviews/layout-review.json (VBUS_RAW main path 0.4 mm, ~0.008 ohm; +5V F1->U3 0.15 mm ~0.12 ohm; F1->U5 0.15 mm ~0.31 ohm incl. 2 vias)"
+      "see": "reviews/layout-review.json",
+      "f187767": "VBUS_RAW J1->F1 0.4 mm ~0.008 ohm; +5V F1->U3 0.4 mm ~0.047 ohm; F1->U5 0.4 mm (0.3 mm pin stubs) ~0.12 ohm series upper bound, 2 parallel vias at U5"
     }
   },
   "verified_primary_sources": [
@@ -56,7 +57,7 @@
     "First-article ordering and validated release are separate gates; neither is marked passed."
   ],
   "revision": {
-    "commit": "78444e8",
-    "pcb_sha256": "b73600b23573f1bac7330f827d21ea167084af3bd38f8e93b8ca05c0155987d0"
+    "commit": "f187767",
+    "pcb_sha256": "52b4bbc073e0d8ea3d90a4f6ff3984c31e7b3e20a18f3a391a13dbab2314860a"
   }
 }

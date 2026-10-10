@@ -1,61 +1,75 @@
 # Independent review — AirNote rev 0.2
 
-Reviewed artifact: commit `78444e8`, PCB SHA256 `b73600b23573f1bac7330f827d21ea167084af3bd38f8e93b8ca05c0155987d0`. Previous: `c35f7d922f362b58a088193dba98902f71df68bcac94774f78b6f83b8618e9cc`.
+Reviewed artifact: commit `f187767`, PCB SHA256 `52b4bbc073e0d8ea3d90a4f6ff3984c31e7b3e20a18f3a391a13dbab2314860a`. Previous review: `0d1927e` (PCB `b73600b2…7d0`, commit `78444e8`).
 
-**The rev 0.2 layout corrections pass static review. Two manufacturing findings fail: MFG-05 (a via-to-slot drill web) and MFG-11 (revision marking and order metadata). The design is not released for fabrication and is not validated on hardware.**
+**Static review: no open FAIL.** The two rev 0.2 failures are closed: MFG-05 (the J1 via-to-slot web) and MFG-11 (revision marking and order metadata). No CAD, export or order-file finding blocks a first-article order.
 
-The KiCad 9.0.9 native checks are clean on an independent run: ERC 0; DRC 0 violations, 0 unconnected and 0 parity, with all severities and all track errors. The custom rules are now loaded. A temporary copy with the USB maximum width lowered flagged every 0.25 mm USB track, while a unit-less copy produced no rule hits. The saved zone fills equal an in-memory refill. The pin, footprint and sourcing audit runs 922 checks with no failures. Its sourcing checks confirm that every fitted part's MPN and LCSC number agree across bom.csv, the schematic and the footprints, and that all 26 MPN-to-LCSC pairs resolve on LCSC to the stated part. The firmware is unchanged; the independent host suite was rebuilt and passes.
+What remains is order-time confirmation (MFG-01), JLC placement-preview rotation checks (MFG-12), and the finish and via-covering choices on the order form. Everything physical stays **PENDING**. The design is not validated on hardware.
 
-## Layout changes reviewed
+## Native and independent checks at f187767
 
-- **USB pair (PCB-04, PCB-05).** All six USB nets are in USB_DIFF on F.Cu, with no vias, over continuous In1 GND. There is no In1 void under the pair plus 0.3 mm; the only gaps within 0.6 mm are antipads of adjacent vias. The F.Cu GND pour is held back exactly 0.5 mm. About 85% of each polarity runs at exactly 0.40 mm pitch. The overseer's 93% figure was not reproduced; the uncoupled parts are J1 fan-out and duplicate-contact joins, D1 pad entries and the staggered R8/R9.
-  - **Neck-down.** The 0.15 mm neck-down starts at the pads. Two 0.15 mm runs of about 3 mm pass through D1's pad gap.
-  - **D1 crossover.** ST's USBLC6-2 datasheet joins pins 1–6 and 3–4 internally (Figures 1, 7 and 8). The nets land correctly: DP on 1, DP_ESD on 6, DM on 3, DM_ESD on 4, GND on 2 with its own via, VBUS on 5. The two gap traces keep 0.205 mm to the pads, and nothing crosses.
-  - **Lengths and skew.** Pad edge to pad edge: J1→D1 13.80 mm DP / 15.61 mm DM; D1→R 43.66 / 41.40 mm; R→U1 3.30 / 3.53 mm. End-to-end skew is 0.23 mm. The duplicate-contact joins give 2.8 mm with the plug on A6/A7 and 0.8 mm on B6/B7, about 17 ps worst case. At full speed (83 ns bit, ≥4 ns edges) neither that nor the ±2 mm per-section mismatch matters.
-  - **Stubs, terminations and placement.** The stubs are 2.0–2.6 mm. R8/R9 are 3.3–3.5 mm from U1, and the CC1/CC2 5.1 kΩ pull-downs are intact. D1 is about 14–16 mm along the pair from J1; closer is better for ESD, but this is acceptable.
-  - **Impedance.** Not measured. A Hammerstad-based check of 0.25 / 0.15 mm over 0.21 mm of εr 4.4 gives roughly 95 Ω without mask. That agrees with the overseer's 90–92 Ω coated estimates; full speed is tolerant.
-- **Crystal and supply pins (PCB-03, PCB-08).**
-  - **Crystal.** XIN pin 20 → Y1.1 is 4.0–4.1 mm with no vias (previously 7.79 mm with two vias). XOUT → R1 is 0.6 mm, and C1/C2 sit about 1 mm from Y1.
-  - **Supply pins.** IOVDD22 → C6 is 2.94 mm (was 6.07 mm) and DVDD23 → C11 is 1.07 mm. Every other primary bypass path is unchanged.
-  - **Load capacitors.** ABM8-272-T3 (CL 10 pF, ESR 50 Ω) with 15 pF capacitors and a 1 kΩ resistor is exactly the RP2040 hardware design guide §2.3 network: 7.5 pF + ~3 pF stray = 10.5 pF. A ±0.5 pF error is a few ppm, against USB full speed's ±2500 ppm. This is the correct choice; keep it.
-  - **Nearby copper.** The only foreign F.Cu copper inside the network's outline is the IOVDD22 bypass branch, a decoupled supply. XTAL_OUT runs between Y1's pad columns, 0.175 mm from the XIN pad. That adds an estimated <0.1 pF XIN–XOUT shunt, which is acceptable. I2S_DATA and I2S_LRCLK pass under the crystal on B.Cu, behind two GND planes.
-  - **Bench.** Startup time and frequency remain bench tests.
-- **VBUS (PCB-06).** J1's A4/B9 VBUS pad now reaches F1 over 5.5 mm of 0.4 mm F.Cu with no vias (≈8 mΩ, IPC-2221 ≈1.2 A at 10 °C rise). This is an improvement. The B4/A9 pad is a parallel 0.3 mm path through TP1, a B.Cu link and two vias. After F1, +5V is unchanged at 0.15 mm: ≈0.12 Ω to U3 and ≈0.31 Ω with two vias to U5. That is adequate for the 210 mA PLAY allocation (IPC-2221 ≈0.6 A; drop <40 mV), but it is the thinnest link in the power path and should be widened before raising audio amplitude or gain.
-- **Other reroutes (PCB-07).** Every changed non-USB net keeps 0.15 mm minimum width. New vias are tented, including the +1V1 via between the RP2040 exposed pad and its pad ring. Other-net F.Cu track within 0.5 mm of the USB pair fell from about 22 mm to 3.6 mm. SENSOR_XSHUT, a static line, runs about 0.56 mm from the pair for about 14 mm.
-- **Stackup (PCB-10).** The PCB stackup and the Gerber job both equal JLC04161H-7628 as described in `docs/fabrication_plan.md`.
+- **KiCad.** KiCad 9.0.9 reports ERC 0. DRC reports 0 violations, 0 unconnected and 0 schematic parity, with all severities and all track errors.
+- **Custom rules.** They still load (probe in `layout-review.json`). Saved zone fills equal an in-memory refill.
+- **Pin and sourcing audit.** 922 checks, 0 failures.
+- **Netlist.** A fresh schematic netlist equals the exported one. Components and all 73 nets are identical to 78444e8. The schematic files changed only in the title-block revision. On the PCB, all 272 pad-to-net assignments are unchanged and no footprint moved.
+- **`layout-review.json`.** 25 checks, 0 failures, including the drill-web check that failed at 78444e8.
+- **`export-review.json`.** 75 checks, 0 failures.
 
-## Sourcing and mechanical changes
+## Changes verified
 
-- **RV1 (MFG-03), PASS for footprint fit.** In the Bourns PTV09 code, "-4" is terminal configuration 4: horizontal/rear mount, bushingless. "-1" is also rear mount, with a sleeve bushing. The datasheet has a single "recommended PCB layout (horizontal/rear mount)", and the -1 and -4 front views give identical body, tab and pin dimensions. So the PTV09A-1 rear-mount footprint is correct for -4015F.
-  - **Footprint vs layout.** The footprint matches: pins Ø1.0 at 2.5 mm, tab holes 8.8 mm apart (10.6 mm outside-to-outside), 7.0 mm from the pins. KiCad uses Ø2.2 round tab holes where Bourns shows 1.8 × 2.2 slots. That is the same for -1 and is left for the first-article fit check.
-  - **Mechanics.** With no bushing or nut and a 15 mm F shaft, the knob sits about 5 mm lower and needs a 6 mm F-shaft knob.
-- **U2 (MFG-06).** Winbond Rev G gives "SN = 8-pin SOIC 150-mil" and "SS = 8-pin SOIC 208-mil". W25Q16JVSNIQ fits the 3.9 mm footprint, so this correction is right.
-- **J1 (MFG-07).** GCT's drawing gives "120 = 1.20mm" shell stake, against the 0.95 mm default. That is the longest option for a 1.6 mm board; the land pattern is unchanged and was verified.
-- **J2 (MFG-08).** The 0.64 mm square pin fits the Ø1.0 holes.
-- **Passives (MFG-09).** Ratings are 50 V/25 V, X7R/X5R/C0G. They are improved over rev 0.1 for the 5 V rails, and DC-bias derating is modest.
-- **Fiducials (MFG-10).** The three fiducials are correctly excluded from BOM/CPL, asymmetric and clear of copper.
+- **MFG-05.** The GND via at (67.798, 56.124) is removed. No via-to-via web is under 0.2 mm, and no via-to-pad-hole web is under 0.45 mm. All four J1 shell pads lie entirely inside GND fill on all four layers. The via-in-pad set is still only the five exposed-pad vias.
+- **MFG-11.**
+  - The silkscreen reads "v0.2 ENGINEERING PROTOTYPE"; I confirmed this in the Gerber render.
+  - The PCB title block reads 0.2, and the Gerber job Revision is "0.2".
+  - The three schematic title blocks read 0.2. That is a field-only change.
+  - Finish "None" stays by overseer disposition: ENIG or lead-free HASL is chosen on the order form. I agree.
+  - The export README is rewritten.
+- **+5V widening (PCB-06).**
+  - F1→U3 is 0.4 mm, 36.6 mm long, with no vias (≈0.05 Ω).
+  - F1→U5 is 0.4 mm on F.Cu and B.Cu, with 0.3 mm pad-width stubs at U5 pins 7 and 8 (≈0.12 Ω, series upper bound). Two vias in parallel feed C21 at U5, and the C21–C22 link is 0.4 mm.
+  - The remaining narrow parts are as disclosed: a single via near SW2/C19, and the 0.15 mm U3 EN tie, which carries no load.
+- **No regressions from the widening.**
+  - Only the +5V and GND copper changed.
+  - Every primary bypass path is identical (`final-trace-paths.txt`).
+  - The F.Cu and B.Cu GND pours keep the same island count (11 and 2), and In1/In2 are still single fills.
+  - The USB pair still has its 0.500 mm pour pull-back, 85% coupling and 0.23 mm skew.
+  - The crystal neighbourhood is unchanged.
+  - The closest new spacing is +5V to SW1 pad 1 at 0.127 mm. That is the design minimum and above JLC's 0.09 mm.
+- **C15 via.** It is now at (95.343, 66.943). Its drill edge is 0.150 mm outside the pad and its annulus 0.025 mm clear.
+- **JLC order package (MFG-12, MFG-13).**
+  - **BOM.** 26 lines with 58 parts, each exactly once. There is no TP, H or FID. LCSC number, footprint and comment agree with bom.csv.
+  - **CPL.** The same 58 parts, in the `Designator,Mid X,Mid Y,Layer,Rotation` format. Positions equal the KiCad anchor with Y negated, rotations equal the PCB, and Layer is Top.
+  - **Gerber zip.** 11 Gerbers, 2 drill files and the job file, all byte-identical to the loose files. All 40 manifest hashes match.
+  - **Order-number marker.** The bottom-side marker is 1.0 × 0.9 mm with a 0.15 mm stroke, which meets JLC's minimum. It is mirrored and reads correctly from the bottom, and it is ≥8 mm from bottom pads and vias.
+- **Export README.**
+  - Its order-form settings agree with `docs/fabrication_plan.md`: 4 layers, 1.6 mm, JLC04161H-7628, no impedance control, 1/0.5 oz, Standard PCBA top side, 2 of 5 boards, no washing, liner left on, and a POFV-or-tented choice.
+  - The 0.20/0.45 mm vias carry no surcharge, because JLC charges extra only below a 0.45 mm via diameter.
+  - The anchor notes for J1, J2 and J3 match the footprints.
 
-## Failures
+## Overseer dispositions (recorded, not passes)
 
-- **MFG-05, FAIL.** The GND via at (67.798, 56.124) mm, 0.20 mm drill, is 0.132 mm (drill to drill) from J1's S1 slot at (68.32, 56.78). JLC publishes 0.2 mm via hole spacing and 0.45 mm pad hole spacing. KiCad did not flag it. It existed in rev 0.1. **Fix:** delete it. It has no track, and all four S1 pads are solid in GND on every layer.
-- **MFG-11, FAIL (order package).** Three items:
-  - The silkscreen says "v0.1 ENGINEERING PROTOTYPE".
-  - The Gerber job shows Revision "rev?" and Finish "None"; the PCB has no title-block revision.
-  - `hardware/outputs/DRAFT-fabrication/README.md` still describes 0.48 mm placeholder dielectrics and a test-pad position file.
+These are the overseer's dispositions of my earlier concerns. I agree with all of them; the wording correction is noted in REVIEW_STATUS.md.
+- **Accepted for first articles:** D1's distance from J1, the RV1 round tab holes (check fit on the first article), the fiducial pour margin, and the I2S traces and XTAL_OUT routing near the crystal.
+- **Fixed:** +5V width and the C15 via.
+- **Re-check on the order day:** low stock on J1 and RV1.
+- **Chosen on the order form:** the surface finish.
 
-  **Fix:** mark revision 0.2 on silk and in the title block, record the chosen finish, and refresh that README.
+## Minor observations (no action required)
 
-## Concerns for overseer disposition (not failures)
-
-1. **+5V is 0.15 mm** from F1 to U3 and U5. See PCB-06.
-2. **Via drill at C15's GND pad edge.** The via at (95.45, 66.6) mm has its drill edge 0.005 mm inside the C15 GND pad outline. That carries a low risk of solder wicking or tombstoning; nudge the via 0.15 mm away.
-3. **README figures differ from measurement.** The coupling fraction is 93% claimed vs 85% measured. Neck-down is described as "within about 1 mm", but two 3 mm runs pass through D1. Orientation skew is given as 1.6/0.9 mm vs 2.8/0.8 mm measured. All are immaterial electrically.
-4. **Sourcing risk.** J1 shows 0 LCSC stock (JLC 1,569) and RV1 shows 123. Recheck on the order day, as the plan states.
-5. **Fiducial pour margin.** The fiducial pour edge is only 0.1 mm outside each 2 mm mask opening. It is acceptable but tight; JLC may add rails.
+- **Export README wording.** It calls J1's 1.20 mm shell stakes "through-board", but they do not protrude through the 1.6 mm board. The RV1 note gives the pad-field centre (73.15, 105.5), while the body and shaft centre is (76.0, 105.5).
+- **C15 move distance.** The fabrication plan says the via moved 0.7 mm. It actually moved 0.36 mm and now sits 0.70 mm from the pad centre.
+- **+5V under J1.** The 0.4 mm +5V trace runs under J1's body at y = 54.1, with mask as the only insulation. The route existed before at 0.15 mm, and GCT's drawing shows no keep-out.
 
 ## Physical validation
 
-Every physical criterion remains **PENDING**: assembly, rails and current, crystal startup and frequency, USB enumeration and signal quality on both plug orientations, inrush and suspend, calibration, notes, latency, audio and endurance. Use `docs/bench-results-template.csv`.
+Every physical criterion remains **PENDING**:
+- assembly, and the rails and current;
+- crystal startup and frequency;
+- USB on both plug orientations, and inrush and suspend;
+- calibration, notes and latency;
+- audio and endurance.
+
+Use `docs/bench-results-template.csv`.
 
 Evidence:
 - `drc-final.json`, `erc-final.json`
@@ -64,4 +78,4 @@ Evidence:
 - `power-budget-review.json`, `host-test-evidence.json`, `firmware-static-review.json`
 - `final-review-evidence.json`
 
-Path lengths are approximate centreline figures, not a signal-integrity model.
+Path figures are approximate centreline estimates, not a signal-integrity model.

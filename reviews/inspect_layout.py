@@ -21,7 +21,9 @@ from shapely.ops import unary_union
 
 ROOT = Path(__file__).resolve().parents[1]
 PCB = ROOT / 'hardware/airnote.kicad_pcb'
-PREVIOUS = '14e63ae'  # previously reviewed revision (PCB unchanged since c298357)
+import os
+# Previously reviewed revision for the regression comparison (override with AIRNOTE_PREVIOUS=<commit>).
+PREVIOUS = os.environ.get('AIRNOTE_PREVIOUS', '0d1927e')
 mm = lambda v: v / 1e6
 checks = []
 def check(name, status, detail):
@@ -248,7 +250,11 @@ main = power['J1 east VBUS pad (A4/B9) -> F1.1']
 check('VBUS_RAW main path J1 -> F1 is >= 0.4 mm F.Cu with no vias', 'PASS' if main['vias'] == 0 and main['min_width_mm'] >= 0.399 else 'FAIL',
       {'paths': power, 'widths_mm': widths,
        'ipc2221_external_10C_rise_A': {str(w): round(ipc2221_external_A(w), 2) for w in (0.15, 0.3, 0.4)},
-       'note': '+5V after F1 remains 0.15 mm (unchanged from the previous revision).'})
+       'note': 'Series-path estimates: parallel vias/branches are not credited, so resistances are upper bounds.'})
+p3, p5 = power['F1.2 -> U3.1 (LDO input)'], power['F1.2 -> U5.7 (amplifier VDD)']
+check('+5V main paths: F1 -> U3 >= 0.4 mm; F1 -> U5 >= 0.3 mm (pad-width stub)', 'PASS' if p3['min_width_mm'] >= 0.399 and p5['min_width_mm'] >= 0.299 else 'FAIL',
+      {'F1->U3': p3, 'F1->U5': p5, 'vias_on_+5V': [(round(mm(v.GetPosition().x), 3), round(mm(v.GetPosition().y), 3)) for v in vias if v.GetNetname() == '+5V'],
+       'narrow_+5V_segments_mm': sorted({(round(mm(t.GetWidth()), 3),) + tuple(round(x, 3) for pt in seg(t) for x in pt) for t in tracks if t.GetNetname() == '+5V' and mm(t.GetWidth()) < 0.399})})
 
 # ---------------------------------------------------------------- vias in pads and drill webs
 vip = []
@@ -279,7 +285,7 @@ for v in vias:
             webs.append({'via': c, 'via2': c2, 'web_mm': round(math.dist(c, c2) - r - mm(v2.GetDrillValue()) / 2, 3)})
 check('Drill-to-drill webs meet JLC published spacing (via-via 0.2 mm; pad hole 0.45 mm)', 'PASS' if not webs else 'FAIL',
       {'violations': webs, 'source': 'https://jlcpcb.com/capabilities/pcb-capabilities (accessed 2026-10-10)',
-       'note': 'KiCad min_hole_to_hole 0.25 mm did not report this same-net via/pad-slot pair.'})
+       'note': 'KiCad min_hole_to_hole (0.25 mm) did not report the same-net via/pad-slot pair found at J1 in rev 0.2 (78444e8); this check is independent of it.'})
 
 # ---------------------------------------------------------------- fiducials
 bb = board.GetBoardEdgesBoundingBox(); edge = (mm(bb.GetLeft()), mm(bb.GetTop()), mm(bb.GetRight()), mm(bb.GetBottom()))
@@ -320,6 +326,11 @@ for net in sorted(set(old) | set(new)):
         changed[net] = {'length_mm': [ln(a['segs']), ln(b['segs'])], 'vias': [len(a['vias']), len(b['vias'])],
                         'widths_mm': [sorted({x[1] for x in a['segs']}), sorted({x[1] for x in b['segs']})],
                         'layers': [sorted({x[0] for x in a['segs']}), sorted({x[0] for x in b['segs']})]}
+prev_board = pcbnew.LoadBoard(previous_pcb.name)
+padnets = lambda b: {(f.GetReference(), p.GetNumber(), round(mm(p.GetPosition().x) - mm(f.GetPosition().x), 4), round(mm(p.GetPosition().y) - mm(f.GetPosition().y), 4)): p.GetNetname() for f in b.GetFootprints() for p in f.Pads()}
+pn_old, pn_new = padnets(prev_board), padnets(board)
+diff_pads = sorted(set(pn_old.items()) ^ set(pn_new.items()))
+check('Pad-to-net assignments unchanged from the previous revision', 'PASS' if not diff_pads else 'FAIL', {'pads': len(pn_new), 'differences': diff_pads[:40]})
 moved = {r: [oldfp.get(r), newfp.get(r)] for r in sorted(set(oldfp) | set(newfp)) if oldfp.get(r) != newfp.get(r)}
 nonusb_min = min(min(v['widths_mm'][1] or [9]) for n, v in changed.items() if n not in usb)
 check('Rerouted non-USB nets keep >= 0.15 mm width (no new necking)', 'PASS' if nonusb_min >= 0.15 else 'FAIL', {'changed_nets': changed, 'moved_footprints': moved})

@@ -2,37 +2,40 @@
   "status": "PASS export-coherence checks only",
   "gerbonara_version": "1.6.3",
   "sha256": {
-    "hardware/airnote.kicad_pcb": "b73600b23573f1bac7330f827d21ea167084af3bd38f8e93b8ca05c0155987d0",
-    "hardware/airnote.kicad_sch": "139cf87b2824c6da391843a299c47e154a8d5ccabc7daa62f7a05993652ad2d6",
-    "hardware/power.kicad_sch": "75a91945fa706e21feba6f2e3d8ee6467a48b409e1d13fea9a2cdcf15b6493f8",
-    "hardware/instrument.kicad_sch": "a4d57997b641a3a0c9435704b964effbe56616bc93cca22d44732351fb26551b",
+    "hardware/airnote.kicad_pcb": "52b4bbc073e0d8ea3d90a4f6ff3984c31e7b3e20a18f3a391a13dbab2314860a",
+    "hardware/airnote.kicad_sch": "ac07a4e8cc7379dad34826fc9fc92604be1f20e5c84d3cbfab5fa63d056eca71",
+    "hardware/power.kicad_sch": "5bf7a7001c59f92558daa2d8af6df590762c7ec39752a25e1be8a471576f5568",
+    "hardware/instrument.kicad_sch": "ac5e1189f173987779250018ad2bd45557076e82ea6dd7a0f2b6ea8d5f065f72",
     "hardware/airnote.kicad_pro": "e48c756c452b46294d1d0ef2b3b38f5a1145ae20889daddbcef76c16907c33a2",
     "hardware/airnote.kicad_dru": "347da8c6c1a797be5d0fd89a73a96f5aa6b5e3f414584b0ef1968594f7181b7a",
     "hardware/bom.csv": "802ea135632e4d9fcee223bb43912857b57f84776bc0bc406603095432810282",
-    "hardware/outputs/airnote.net.xml": "f25ff9dd9cf6679584853d00b8a9e5008f6ab9cce38120733ea4aaf56c160f21",
-    "hardware/outputs/airnote-schematic.pdf": "bea8d0fe1f1af4c2feedfde6aeae725706c75eb09a17b0f2d9abef86b7b4257e",
-    "hardware/outputs/airnote-assembly.pdf": "c4f517bb6f179b3c6d4996c16e4cb925da14559406af0743ec16d06a3dfe4ab5",
-    "hardware/outputs/DRAFT-fabrication/README.md": "23bcb01405a3f96517087b0f30782f596b438176b83839c64056807c83b06384",
-    "hardware/outputs/DRAFT-fabrication/airnote-B_Cu.gbl": "3b8aa682883e5a70cf693d739ecf3ca942d1da45ff19cc39904f228da9ab5fb1",
-    "hardware/outputs/DRAFT-fabrication/airnote-B_Mask.gbs": "4bf880708cbe45213027f03f62000f456d695e95b7563c7cb2c56a33c8c0b0df",
-    "hardware/outputs/DRAFT-fabrication/airnote-B_Paste.gbp": "6f7a74f1240378a07be45520cfae32972a20d80cf6674fc2133bb3337e2a161a",
-    "hardware/outputs/DRAFT-fabrication/airnote-B_Silkscreen.gbo": "27082d39a86bd0cbfaeaf3acd3bc624934356bbb550db09d9efc646501b4ac49",
-    "hardware/outputs/DRAFT-fabrication/airnote-Edge_Cuts.gm1": "67cf4941b411be1f4d4a11a2a75201e75a12d4a70940b029cfb57ba965427db2",
-    "hardware/outputs/DRAFT-fabrication/airnote-F_Cu.gtl": "0a5bd800dc3538c93dd03260c2ece88478dea5014f0ebc47e9fcb5c8a7b0c042",
-    "hardware/outputs/DRAFT-fabrication/airnote-F_Mask.gts": "8bead452e164025473e941175625977b0c0b4f7e9ad3038d0cfc8a63dad28297",
-    "hardware/outputs/DRAFT-fabrication/airnote-F_Paste.gtp": "d00cca243340bd1355185b449efc78535feee56da46b9a7306e77edd9fa8c535",
-    "hardware/outputs/DRAFT-fabrication/airnote-F_Silkscreen.gto": "cc389faf25c22a5ff482967daea943beae6949438d6e6273b4a3bed2229384a5",
-    "hardware/outputs/DRAFT-fabrication/airnote-In1_Cu.g1": "1c8acac621aa9ddfb6eb44129e1a8524a912d35ee147f176b2bb5d21620a72e9",
-    "hardware/outputs/DRAFT-fabrication/airnote-In2_Cu.g2": "5bad82d3b65e5c203d73d23b2a090d20c99168a8b613bd64caa175b737ef051a",
-    "hardware/outputs/DRAFT-fabrication/airnote-NPTH-drl_map.pdf": "496e9c90af7bc4bed81009168820c20ea108d98b8df37b735589ca385c97f6a3",
-    "hardware/outputs/DRAFT-fabrication/airnote-NPTH.drl": "e3b09259f90b45fe29d85e6c34381788e8681ee9474f3b3d23fbe2abf6553454",
-    "hardware/outputs/DRAFT-fabrication/airnote-PTH-drl_map.pdf": "5ab9a60e49212a7debdef3a2ebe3989260c0badc331dad4e78df3b20f89e7ec3",
-    "hardware/outputs/DRAFT-fabrication/airnote-PTH.drl": "6f73ce27949ff8b5018f8d3d81199878d9cbc3ef48923e01db4b86eac64f6206",
+    "hardware/outputs/airnote.net.xml": "60b5c3c2c8d48c01ae2fad90c208af2a33be2b3cb764744bf22165c191b7ef23",
+    "hardware/outputs/airnote-schematic.pdf": "d571f89889100ecf249e7ab25a2645cdbd272fe42d1bb20bbcdc742003905172",
+    "hardware/outputs/airnote-assembly.pdf": "bdd02f5ffbfc3de02ac4b0adb68b73e0a72ad75051fbcad062a19d598922fce9",
+    "hardware/outputs/DRAFT-fabrication/README.md": "725701c02ed57c1f953c832ed26553d701a7fb8d2fac7a7975f3d9db1e261870",
+    "hardware/outputs/DRAFT-fabrication/airnote-B_Cu.gbl": "2cc87d6cdd869f84b0040c28fad37a1aa203f661e8d742b5ef8cc1ea62888ab0",
+    "hardware/outputs/DRAFT-fabrication/airnote-B_Mask.gbs": "3ba21acd477d59485c70568edcf036434c2be56b488760756786cc61cebb5d0f",
+    "hardware/outputs/DRAFT-fabrication/airnote-B_Paste.gbp": "b36a7ff24923f645e10f971ad6995c2fd05e6265fbc0e6f33a2b4d211cca32f0",
+    "hardware/outputs/DRAFT-fabrication/airnote-B_Silkscreen.gbo": "ee28757f76dcc434ffb613617092b4f62c13b6373e28d4fc0482db343c1d6644",
+    "hardware/outputs/DRAFT-fabrication/airnote-Edge_Cuts.gm1": "32cc1a987d3ffc3ad8ee17155058ddf7a6d300248e8a71e1294ea6788a08b801",
+    "hardware/outputs/DRAFT-fabrication/airnote-F_Cu.gtl": "b5460c221cd46fabfe258f860a6ae02dd365a9393e0b2d3981bd06ae6f25086a",
+    "hardware/outputs/DRAFT-fabrication/airnote-F_Mask.gts": "880f2984fb5949368169ab5916acf29d81ce6a36843cb7221c034dbeaaafd979",
+    "hardware/outputs/DRAFT-fabrication/airnote-F_Paste.gtp": "e2a6840057591dc96c19a4521caa9e940655f976439f195ce9c80bde84b84045",
+    "hardware/outputs/DRAFT-fabrication/airnote-F_Silkscreen.gto": "6caf9911db24700ebee38eaa1fdebc9790a6ac38a6246c623e89ab862e8cc08a",
+    "hardware/outputs/DRAFT-fabrication/airnote-In1_Cu.g1": "93a50ab76d56fb972335788366e501c5c4331f91919a0a7a7dcbde7f74cf89ce",
+    "hardware/outputs/DRAFT-fabrication/airnote-In2_Cu.g2": "ce08bc03a284a78f78b5cbdcf21778a945219375616d3d287b6f47142c1f410a",
+    "hardware/outputs/DRAFT-fabrication/airnote-NPTH-drl_map.pdf": "41ecd1be9aa215b91538c95222feb58a2c1d19575408dafe6ef75cfd84a70ab6",
+    "hardware/outputs/DRAFT-fabrication/airnote-NPTH.drl": "af255f080eedc7129e8827176be52fc2f82e61bdb1f7418e2ff9526a1164d4be",
+    "hardware/outputs/DRAFT-fabrication/airnote-PTH-drl_map.pdf": "e1c47e21b7806217dbb4a3fcc32cb8abe9f37261b7be9e15872cf593400f48af",
+    "hardware/outputs/DRAFT-fabrication/airnote-PTH.drl": "4614b9763ebba70fc9f80b4f338857262f6b2a264e13ae5eb6c6389f77d18de2",
     "hardware/outputs/DRAFT-fabrication/airnote-all-positions.csv": "726a60008354736368ef84836e2d7dc5640369a50f0f7e1ba41d0d8cf6aafa77",
-    "hardware/outputs/DRAFT-fabrication/airnote-drill.rpt": "9216e1c749d1a7f22c0c7ae0937db488fd24d1100269ac76a510847eb15b5899",
+    "hardware/outputs/DRAFT-fabrication/airnote-drill.rpt": "e49bd9e588269c0811d487de008243fab3baf0b6652cd0da436bdaef2f27a82a",
     "hardware/outputs/DRAFT-fabrication/airnote-fitted-bom.csv": "6d37ab87e1105d9369796b1d5f604a3a92889465d9f0bf554eb881434f1b95a5",
     "hardware/outputs/DRAFT-fabrication/airnote-fitted-positions.csv": "1580cac4483c52ecb8b2a344ef6a96203ad793c85fa74f248b447971b8b755a5",
-    "hardware/outputs/DRAFT-fabrication/airnote-job.gbrjob": "3fa241e9d1ab8836d2dfb77528e8cd7446f454189cd8d9cd8a26bab934529b27"
+    "hardware/outputs/DRAFT-fabrication/airnote-jlc-bom.csv": "09fc582da7a517c201c05a84e20b135ec5001aa5c35036b5435452581f2282f9",
+    "hardware/outputs/DRAFT-fabrication/airnote-jlc-cpl.csv": "4b74c29ae049a740a980cef4066a4f1a87d37ed2cb8810ff2c77c9d0e0fd81a6",
+    "hardware/outputs/DRAFT-fabrication/airnote-jlc-gerbers.zip": "d92631b024d640b79c8fd6e391eb32d98c34d81b594ab3dbd4fa13eb521cd738",
+    "hardware/outputs/DRAFT-fabrication/airnote-job.gbrjob": "f0e19a68d5920b451884d556528de2d0fa3fb7ce1f1133511d7503935fbc1496"
   },
   "checks": [
     {
@@ -92,7 +95,7 @@
       "check": "Implementer hash manifest matches every listed file",
       "status": "PASS",
       "details": {
-        "entries": 37,
+        "entries": 40,
         "mismatches": []
       }
     },
@@ -153,6 +156,60 @@
           "FID2",
           "FID3"
         ]
+      }
+    },
+    {
+      "check": "JLC BOM: every fitted part exactly once; no TP/H/FID",
+      "status": "PASS",
+      "details": {
+        "lines": 26,
+        "parts": 58,
+        "missing": [],
+        "extra": []
+      }
+    },
+    {
+      "check": "JLC BOM: LCSC number, footprint and value equal bom.csv for every designator",
+      "status": "PASS",
+      "details": {
+        "mismatches": []
+      }
+    },
+    {
+      "check": "JLC CPL: same designator set as JLC BOM, each once",
+      "status": "PASS",
+      "details": {
+        "rows": 58
+      }
+    },
+    {
+      "check": "JLC CPL: positions (KiCad anchor, Y negated), rotations and Top layer equal the PCB",
+      "status": "PASS",
+      "details": {
+        "mismatches": []
+      }
+    },
+    {
+      "check": "JLC Gerber zip: 11 Gerbers + 2 drills + job, byte-identical to the loose files",
+      "status": "PASS",
+      "details": {
+        "zip": [
+          "airnote-B_Cu.gbl",
+          "airnote-B_Mask.gbs",
+          "airnote-B_Paste.gbp",
+          "airnote-B_Silkscreen.gbo",
+          "airnote-Edge_Cuts.gm1",
+          "airnote-F_Cu.gtl",
+          "airnote-F_Mask.gts",
+          "airnote-F_Paste.gtp",
+          "airnote-F_Silkscreen.gto",
+          "airnote-In1_Cu.g1",
+          "airnote-In2_Cu.g2",
+          "airnote-NPTH.drl",
+          "airnote-PTH.drl",
+          "airnote-job.gbrjob"
+        ],
+        "differing": []
       }
     },
     {
@@ -448,7 +505,7 @@
   ],
   "parsed_layers": {
     "('top', 'copper')": {
-      "objects": 904,
+      "objects": 905,
       "bounds": [
         [
           50.5,
@@ -474,7 +531,7 @@
       ]
     },
     "('top', 'silk')": {
-      "objects": 1372,
+      "objects": 1377,
       "bounds": [
         [
           52.020238,
@@ -500,7 +557,7 @@
       ]
     },
     "('bottom', 'copper')": {
-      "objects": 227,
+      "objects": 229,
       "bounds": [
         [
           50.5,
@@ -526,7 +583,7 @@
       ]
     },
     "('bottom', 'silk')": {
-      "objects": 22,
+      "objects": 110,
       "bounds": [
         [
           52.65,
@@ -587,13 +644,13 @@
     "/home/elfo/Documents/KiCadFun/hardware/outputs/DRAFT-fabrication/airnote-PTH.drl:20 \"G90\": G90 header statement found after end of header"
   ],
   "order_package_open_items": {
-    "gbrjob_revision": "rev?",
+    "gbrjob_revision": "0.2",
     "gbrjob_finish": "None"
   },
   "physical_tests": "PENDING",
   "limitations": [
     "Copper Gerbers, mask/paste and split drill sets were parsed; front/back/In1 renders are written to reviews/gerber-*-review.svg and inspected separately.",
-    "The Gerber job stackup now matches JLC04161H-7628, but its Revision is \"rev?\" and Finish is \"None\"; both must be set or overridden on the order.",
+    "The Gerber job stackup matches JLC04161H-7628; Finish stays \"None\" by overseer disposition (chosen on the order form).",
     "Zero geometry discrepancies do not approve USB impedance/routing, remaining layout concerns, optical assembly process or actual operation."
   ]
 }
