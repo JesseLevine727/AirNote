@@ -1,8 +1,9 @@
 {
   "scope": "pin assignment and artifact consistency only; not routing or hardware validation",
   "sha256": {
-    "hardware/outputs/airnote.net.xml": "ee346477049ec22b76ea3cd7c0bbc5dc64f0328fb498ee8fb50f77e6ed0a27dc",
-    "hardware/airnote.kicad_pcb": "c35f7d922f362b58a088193dba98902f71df68bcac94774f78b6f83b8618e9cc",
+    "hardware/outputs/airnote.net.xml": "f25ff9dd9cf6679584853d00b8a9e5008f6ab9cce38120733ea4aaf56c160f21",
+    "hardware/airnote.kicad_pcb": "b73600b23573f1bac7330f827d21ea167084af3bd38f8e93b8ca05c0155987d0",
+    "hardware/bom.csv": "802ea135632e4d9fcee223bb43912857b57f84776bc0bc406603095432810282",
     "firmware/include/boards/airnote.h": "b817d261e33574ad49a5a6d827733b51c05bd4211a40b8097a47fcd2efc5769d"
   },
   "checks": [
@@ -3962,9 +3963,604 @@
       "detail": ""
     },
     {
-      "check": "potentiometer MPN matches selected body variant",
+      "check": "potentiometer MPN matches reviewed rear-mount variant",
+      "status": "PASS",
+      "detail": "MPN='PTV09A-4015F-B103'; footprint='Potentiometer_THT:Potentiometer_Bourns_PTV09A-1_Single_Vertical'"
+    },
+    {
+      "check": "flash MPN is the 150-mil SN package on the SOIC-8 3.9 mm footprint",
       "status": "PASS",
       "detail": ""
+    },
+    {
+      "check": "USB receptacle MPN is the reviewed 1.20 mm stake variant",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "BOM/schematic/footprint MPN and LCSC agree C1",
+      "status": "PASS",
+      "detail": "bom=CL10C150JB8NNNC/C1644; sch=CL10C150JB8NNNC/C1644; pcb=CL10C150JB8NNNC/C1644"
+    },
+    {
+      "check": "BOM/schematic/footprint MPN and LCSC agree C10",
+      "status": "PASS",
+      "detail": "bom=CC0603KRX7R9BB104/C14663; sch=CC0603KRX7R9BB104/C14663; pcb=CC0603KRX7R9BB104/C14663"
+    },
+    {
+      "check": "BOM/schematic/footprint MPN and LCSC agree C11",
+      "status": "PASS",
+      "detail": "bom=CC0603KRX7R9BB104/C14663; sch=CC0603KRX7R9BB104/C14663; pcb=CC0603KRX7R9BB104/C14663"
+    },
+    {
+      "check": "BOM/schematic/footprint MPN and LCSC agree C12",
+      "status": "PASS",
+      "detail": "bom=CC0603KRX7R9BB104/C14663; sch=CC0603KRX7R9BB104/C14663; pcb=CC0603KRX7R9BB104/C14663"
+    },
+    {
+      "check": "BOM/schematic/footprint MPN and LCSC agree C13",
+      "status": "PASS",
+      "detail": "bom=CL10A105KB8NNNC/C15849; sch=CL10A105KB8NNNC/C15849; pcb=CL10A105KB8NNNC/C15849"
+    },
+    {
+      "check": "BOM/schematic/footprint MPN and LCSC agree C14",
+      "status": "PASS",
+      "detail": "bom=CL10A105KB8NNNC/C15849; sch=CL10A105KB8NNNC/C15849; pcb=CL10A105KB8NNNC/C15849"
+    },
+    {
+      "check": "BOM/schematic/footprint MPN and LCSC agree C15",
+      "status": "PASS",
+      "detail": "bom=CC0603KRX7R9BB104/C14663; sch=CC0603KRX7R9BB104/C14663; pcb=CC0603KRX7R9BB104/C14663"
+    },
+    {
+      "check": "BOM/schematic/footprint MPN and LCSC agree C16",
+      "status": "PASS",
+      "detail": "bom=CL10A105KB8NNNC/C15849; sch=CL10A105KB8NNNC/C15849; pcb=CL10A105KB8NNNC/C15849"
+    },
+    {
+      "check": "BOM/schematic/footprint MPN and LCSC agree C17",
+      "status": "PASS",
+      "detail": "bom=CL10A105KB8NNNC/C15849; sch=CL10A105KB8NNNC/C15849; pcb=CL10A105KB8NNNC/C15849"
+    },
+    {
+      "check": "BOM/schematic/footprint MPN and LCSC agree C18",
+      "status": "PASS",
+      "detail": "bom=CC0603KRX7R9BB104/C14663; sch=CC0603KRX7R9BB104/C14663; pcb=CC0603KRX7R9BB104/C14663"
+    },
+    {
+      "check": "BOM/schematic/footprint MPN and LCSC agree C19",
+      "status": "PASS",
+      "detail": "bom=CC0603KRX7R9BB104/C14663; sch=CC0603KRX7R9BB104/C14663; pcb=CC0603KRX7R9BB104/C14663"
+    },
+    {
+      "check": "BOM/schematic/footprint MPN and LCSC agree C2",
+      "status": "PASS",
+      "detail": "bom=CL10C150JB8NNNC/C1644; sch=CL10C150JB8NNNC/C1644; pcb=CL10C150JB8NNNC/C1644"
+    },
+    {
+      "check": "BOM/schematic/footprint MPN and LCSC agree C20",
+      "status": "PASS",
+      "detail": "bom=CL21A475KAQNNNE/C1779; sch=CL21A475KAQNNNE/C1779; pcb=CL21A475KAQNNNE/C1779"
+    },
+    {
+      "check": "BOM/schematic/footprint MPN and LCSC agree C21",
+      "status": "PASS",
+      "detail": "bom=CC0603KRX7R9BB104/C14663; sch=CC0603KRX7R9BB104/C14663; pcb=CC0603KRX7R9BB104/C14663"
+    },
+    {
+      "check": "BOM/schematic/footprint MPN and LCSC agree C22",
+      "status": "PASS",
+      "detail": "bom=CL21A475KAQNNNE/C1779; sch=CL21A475KAQNNNE/C1779; pcb=CL21A475KAQNNNE/C1779"
+    },
+    {
+      "check": "BOM/schematic/footprint MPN and LCSC agree C23",
+      "status": "PASS",
+      "detail": "bom=CC0603KRX7R9BB104/C14663; sch=CC0603KRX7R9BB104/C14663; pcb=CC0603KRX7R9BB104/C14663"
+    },
+    {
+      "check": "BOM/schematic/footprint MPN and LCSC agree C3",
+      "status": "PASS",
+      "detail": "bom=CC0603KRX7R9BB104/C14663; sch=CC0603KRX7R9BB104/C14663; pcb=CC0603KRX7R9BB104/C14663"
+    },
+    {
+      "check": "BOM/schematic/footprint MPN and LCSC agree C4",
+      "status": "PASS",
+      "detail": "bom=CC0603KRX7R9BB104/C14663; sch=CC0603KRX7R9BB104/C14663; pcb=CC0603KRX7R9BB104/C14663"
+    },
+    {
+      "check": "BOM/schematic/footprint MPN and LCSC agree C5",
+      "status": "PASS",
+      "detail": "bom=CC0603KRX7R9BB104/C14663; sch=CC0603KRX7R9BB104/C14663; pcb=CC0603KRX7R9BB104/C14663"
+    },
+    {
+      "check": "BOM/schematic/footprint MPN and LCSC agree C6",
+      "status": "PASS",
+      "detail": "bom=CC0603KRX7R9BB104/C14663; sch=CC0603KRX7R9BB104/C14663; pcb=CC0603KRX7R9BB104/C14663"
+    },
+    {
+      "check": "BOM/schematic/footprint MPN and LCSC agree C7",
+      "status": "PASS",
+      "detail": "bom=CC0603KRX7R9BB104/C14663; sch=CC0603KRX7R9BB104/C14663; pcb=CC0603KRX7R9BB104/C14663"
+    },
+    {
+      "check": "BOM/schematic/footprint MPN and LCSC agree C8",
+      "status": "PASS",
+      "detail": "bom=CC0603KRX7R9BB104/C14663; sch=CC0603KRX7R9BB104/C14663; pcb=CC0603KRX7R9BB104/C14663"
+    },
+    {
+      "check": "BOM/schematic/footprint MPN and LCSC agree C9",
+      "status": "PASS",
+      "detail": "bom=CC0603KRX7R9BB104/C14663; sch=CC0603KRX7R9BB104/C14663; pcb=CC0603KRX7R9BB104/C14663"
+    },
+    {
+      "check": "BOM/schematic/footprint MPN and LCSC agree D1",
+      "status": "PASS",
+      "detail": "bom=USBLC6-2SC6/C7519; sch=USBLC6-2SC6/C7519; pcb=USBLC6-2SC6/C7519"
+    },
+    {
+      "check": "BOM/schematic/footprint MPN and LCSC agree D2",
+      "status": "PASS",
+      "detail": "bom=LTST-C190KGKT/C125094; sch=LTST-C190KGKT/C125094; pcb=LTST-C190KGKT/C125094"
+    },
+    {
+      "check": "BOM/schematic/footprint MPN and LCSC agree F1",
+      "status": "PASS",
+      "detail": "bom=1206L050YR/C163512; sch=1206L050YR/C163512; pcb=1206L050YR/C163512"
+    },
+    {
+      "check": "BOM/schematic/footprint MPN and LCSC agree J1",
+      "status": "PASS",
+      "detail": "bom=USB4105-GF-A-120/C5184243; sch=USB4105-GF-A-120/C5184243; pcb=USB4105-GF-A-120/C5184243"
+    },
+    {
+      "check": "BOM/schematic/footprint MPN and LCSC agree J2",
+      "status": "PASS",
+      "detail": "bom=HX PZ2.54-1x5P ZZ/C32713271; sch=HX PZ2.54-1x5P ZZ/C32713271; pcb=HX PZ2.54-1x5P ZZ/C32713271"
+    },
+    {
+      "check": "BOM/schematic/footprint MPN and LCSC agree J3",
+      "status": "PASS",
+      "detail": "bom=B2B-PH-K-S(LF)(SN)/C131337; sch=B2B-PH-K-S(LF)(SN)/C131337; pcb=B2B-PH-K-S(LF)(SN)/C131337"
+    },
+    {
+      "check": "BOM/schematic/footprint MPN and LCSC agree R1",
+      "status": "PASS",
+      "detail": "bom=0603WAF1001T5E/C21190; sch=0603WAF1001T5E/C21190; pcb=0603WAF1001T5E/C21190"
+    },
+    {
+      "check": "BOM/schematic/footprint MPN and LCSC agree R10",
+      "status": "PASS",
+      "detail": "bom=0603WAF1002T5E/C25804; sch=0603WAF1002T5E/C25804; pcb=0603WAF1002T5E/C25804"
+    },
+    {
+      "check": "BOM/schematic/footprint MPN and LCSC agree R11",
+      "status": "PASS",
+      "detail": "bom=0603WAF1002T5E/C25804; sch=0603WAF1002T5E/C25804; pcb=0603WAF1002T5E/C25804"
+    },
+    {
+      "check": "BOM/schematic/footprint MPN and LCSC agree R12",
+      "status": "PASS",
+      "detail": "bom=0603WAF5101T5E/C23186; sch=0603WAF5101T5E/C23186; pcb=0603WAF5101T5E/C23186"
+    },
+    {
+      "check": "BOM/schematic/footprint MPN and LCSC agree R13",
+      "status": "PASS",
+      "detail": "bom=0603WAF5101T5E/C23186; sch=0603WAF5101T5E/C23186; pcb=0603WAF5101T5E/C23186"
+    },
+    {
+      "check": "BOM/schematic/footprint MPN and LCSC agree R14",
+      "status": "PASS",
+      "detail": "bom=0603WAF1002T5E/C25804; sch=0603WAF1002T5E/C25804; pcb=0603WAF1002T5E/C25804"
+    },
+    {
+      "check": "BOM/schematic/footprint MPN and LCSC agree R15",
+      "status": "PASS",
+      "detail": "bom=0603WAF1003T5E/C25803; sch=0603WAF1003T5E/C25803; pcb=0603WAF1003T5E/C25803"
+    },
+    {
+      "check": "BOM/schematic/footprint MPN and LCSC agree R16",
+      "status": "PASS",
+      "detail": "bom=0603WAF1002T5E/C25804; sch=0603WAF1002T5E/C25804; pcb=0603WAF1002T5E/C25804"
+    },
+    {
+      "check": "BOM/schematic/footprint MPN and LCSC agree R17",
+      "status": "PASS",
+      "detail": "bom=0603WAF1001T5E/C21190; sch=0603WAF1001T5E/C21190; pcb=0603WAF1001T5E/C21190"
+    },
+    {
+      "check": "BOM/schematic/footprint MPN and LCSC agree R18",
+      "status": "PASS",
+      "detail": "bom=0603WAF1001T5E/C21190; sch=0603WAF1001T5E/C21190; pcb=0603WAF1001T5E/C21190"
+    },
+    {
+      "check": "BOM/schematic/footprint MPN and LCSC agree R19",
+      "status": "PASS",
+      "detail": "bom=0603WAF1004T5E/C22935; sch=0603WAF1004T5E/C22935; pcb=0603WAF1004T5E/C22935"
+    },
+    {
+      "check": "BOM/schematic/footprint MPN and LCSC agree R2",
+      "status": "PASS",
+      "detail": "bom=0603WAF1002T5E/C25804; sch=0603WAF1002T5E/C25804; pcb=0603WAF1002T5E/C25804"
+    },
+    {
+      "check": "BOM/schematic/footprint MPN and LCSC agree R3",
+      "status": "PASS",
+      "detail": "bom=0603WAF1001T5E/C21190; sch=0603WAF1001T5E/C21190; pcb=0603WAF1001T5E/C21190"
+    },
+    {
+      "check": "BOM/schematic/footprint MPN and LCSC agree R4",
+      "status": "PASS",
+      "detail": "bom=0603WAF1002T5E/C25804; sch=0603WAF1002T5E/C25804; pcb=0603WAF1002T5E/C25804"
+    },
+    {
+      "check": "BOM/schematic/footprint MPN and LCSC agree R5",
+      "status": "PASS",
+      "detail": "bom=0603WAF100KT5E/C22936; sch=0603WAF100KT5E/C22936; pcb=0603WAF100KT5E/C22936"
+    },
+    {
+      "check": "BOM/schematic/footprint MPN and LCSC agree R6",
+      "status": "PASS",
+      "detail": "bom=0603WAF5101T5E/C23186; sch=0603WAF5101T5E/C23186; pcb=0603WAF5101T5E/C23186"
+    },
+    {
+      "check": "BOM/schematic/footprint MPN and LCSC agree R7",
+      "status": "PASS",
+      "detail": "bom=0603WAF5101T5E/C23186; sch=0603WAF5101T5E/C23186; pcb=0603WAF5101T5E/C23186"
+    },
+    {
+      "check": "BOM/schematic/footprint MPN and LCSC agree R8",
+      "status": "PASS",
+      "detail": "bom=0603WAF270JT5E/C25190; sch=0603WAF270JT5E/C25190; pcb=0603WAF270JT5E/C25190"
+    },
+    {
+      "check": "BOM/schematic/footprint MPN and LCSC agree R9",
+      "status": "PASS",
+      "detail": "bom=0603WAF270JT5E/C25190; sch=0603WAF270JT5E/C25190; pcb=0603WAF270JT5E/C25190"
+    },
+    {
+      "check": "BOM/schematic/footprint MPN and LCSC agree RV1",
+      "status": "PASS",
+      "detail": "bom=PTV09A-4015F-B103/C5710902; sch=PTV09A-4015F-B103/C5710902; pcb=PTV09A-4015F-B103/C5710902"
+    },
+    {
+      "check": "BOM/schematic/footprint MPN and LCSC agree SW1",
+      "status": "PASS",
+      "detail": "bom=TL3342F160QG/C2886898; sch=TL3342F160QG/C2886898; pcb=TL3342F160QG/C2886898"
+    },
+    {
+      "check": "BOM/schematic/footprint MPN and LCSC agree SW2",
+      "status": "PASS",
+      "detail": "bom=TL3342F160QG/C2886898; sch=TL3342F160QG/C2886898; pcb=TL3342F160QG/C2886898"
+    },
+    {
+      "check": "BOM/schematic/footprint MPN and LCSC agree SW3",
+      "status": "PASS",
+      "detail": "bom=JS202011JCQN/C221665; sch=JS202011JCQN/C221665; pcb=JS202011JCQN/C221665"
+    },
+    {
+      "check": "BOM/schematic/footprint MPN and LCSC agree U1",
+      "status": "PASS",
+      "detail": "bom=RP2040/C2040; sch=RP2040/C2040; pcb=RP2040/C2040"
+    },
+    {
+      "check": "BOM/schematic/footprint MPN and LCSC agree U2",
+      "status": "PASS",
+      "detail": "bom=W25Q16JVSNIQ/C2456211; sch=W25Q16JVSNIQ/C2456211; pcb=W25Q16JVSNIQ/C2456211"
+    },
+    {
+      "check": "BOM/schematic/footprint MPN and LCSC agree U3",
+      "status": "PASS",
+      "detail": "bom=AP2112K-3.3TRG1/C51118; sch=AP2112K-3.3TRG1/C51118; pcb=AP2112K-3.3TRG1/C51118"
+    },
+    {
+      "check": "BOM/schematic/footprint MPN and LCSC agree U4",
+      "status": "PASS",
+      "detail": "bom=VL53L1CXV0FY/1/C190004; sch=VL53L1CXV0FY/1/C190004; pcb=VL53L1CXV0FY/1/C190004"
+    },
+    {
+      "check": "BOM/schematic/footprint MPN and LCSC agree U5",
+      "status": "PASS",
+      "detail": "bom=MAX98357AETE+T/C910544; sch=MAX98357AETE+T/C910544; pcb=MAX98357AETE+T/C910544"
+    },
+    {
+      "check": "BOM/schematic/footprint MPN and LCSC agree Y1",
+      "status": "PASS",
+      "detail": "bom=ABM8-272-T3/C20625731; sch=ABM8-272-T3/C20625731; pcb=ABM8-272-T3/C20625731"
+    },
+    {
+      "check": "LCSC number matches online listing for MPN C1",
+      "status": "PASS",
+      "detail": "mpn=CL10C150JB8NNNC; bom=C1644; listing=C1644"
+    },
+    {
+      "check": "LCSC number matches online listing for MPN C10",
+      "status": "PASS",
+      "detail": "mpn=CC0603KRX7R9BB104; bom=C14663; listing=C14663"
+    },
+    {
+      "check": "LCSC number matches online listing for MPN C11",
+      "status": "PASS",
+      "detail": "mpn=CC0603KRX7R9BB104; bom=C14663; listing=C14663"
+    },
+    {
+      "check": "LCSC number matches online listing for MPN C12",
+      "status": "PASS",
+      "detail": "mpn=CC0603KRX7R9BB104; bom=C14663; listing=C14663"
+    },
+    {
+      "check": "LCSC number matches online listing for MPN C13",
+      "status": "PASS",
+      "detail": "mpn=CL10A105KB8NNNC; bom=C15849; listing=C15849"
+    },
+    {
+      "check": "LCSC number matches online listing for MPN C14",
+      "status": "PASS",
+      "detail": "mpn=CL10A105KB8NNNC; bom=C15849; listing=C15849"
+    },
+    {
+      "check": "LCSC number matches online listing for MPN C15",
+      "status": "PASS",
+      "detail": "mpn=CC0603KRX7R9BB104; bom=C14663; listing=C14663"
+    },
+    {
+      "check": "LCSC number matches online listing for MPN C16",
+      "status": "PASS",
+      "detail": "mpn=CL10A105KB8NNNC; bom=C15849; listing=C15849"
+    },
+    {
+      "check": "LCSC number matches online listing for MPN C17",
+      "status": "PASS",
+      "detail": "mpn=CL10A105KB8NNNC; bom=C15849; listing=C15849"
+    },
+    {
+      "check": "LCSC number matches online listing for MPN C18",
+      "status": "PASS",
+      "detail": "mpn=CC0603KRX7R9BB104; bom=C14663; listing=C14663"
+    },
+    {
+      "check": "LCSC number matches online listing for MPN C19",
+      "status": "PASS",
+      "detail": "mpn=CC0603KRX7R9BB104; bom=C14663; listing=C14663"
+    },
+    {
+      "check": "LCSC number matches online listing for MPN C2",
+      "status": "PASS",
+      "detail": "mpn=CL10C150JB8NNNC; bom=C1644; listing=C1644"
+    },
+    {
+      "check": "LCSC number matches online listing for MPN C20",
+      "status": "PASS",
+      "detail": "mpn=CL21A475KAQNNNE; bom=C1779; listing=C1779"
+    },
+    {
+      "check": "LCSC number matches online listing for MPN C21",
+      "status": "PASS",
+      "detail": "mpn=CC0603KRX7R9BB104; bom=C14663; listing=C14663"
+    },
+    {
+      "check": "LCSC number matches online listing for MPN C22",
+      "status": "PASS",
+      "detail": "mpn=CL21A475KAQNNNE; bom=C1779; listing=C1779"
+    },
+    {
+      "check": "LCSC number matches online listing for MPN C23",
+      "status": "PASS",
+      "detail": "mpn=CC0603KRX7R9BB104; bom=C14663; listing=C14663"
+    },
+    {
+      "check": "LCSC number matches online listing for MPN C3",
+      "status": "PASS",
+      "detail": "mpn=CC0603KRX7R9BB104; bom=C14663; listing=C14663"
+    },
+    {
+      "check": "LCSC number matches online listing for MPN C4",
+      "status": "PASS",
+      "detail": "mpn=CC0603KRX7R9BB104; bom=C14663; listing=C14663"
+    },
+    {
+      "check": "LCSC number matches online listing for MPN C5",
+      "status": "PASS",
+      "detail": "mpn=CC0603KRX7R9BB104; bom=C14663; listing=C14663"
+    },
+    {
+      "check": "LCSC number matches online listing for MPN C6",
+      "status": "PASS",
+      "detail": "mpn=CC0603KRX7R9BB104; bom=C14663; listing=C14663"
+    },
+    {
+      "check": "LCSC number matches online listing for MPN C7",
+      "status": "PASS",
+      "detail": "mpn=CC0603KRX7R9BB104; bom=C14663; listing=C14663"
+    },
+    {
+      "check": "LCSC number matches online listing for MPN C8",
+      "status": "PASS",
+      "detail": "mpn=CC0603KRX7R9BB104; bom=C14663; listing=C14663"
+    },
+    {
+      "check": "LCSC number matches online listing for MPN C9",
+      "status": "PASS",
+      "detail": "mpn=CC0603KRX7R9BB104; bom=C14663; listing=C14663"
+    },
+    {
+      "check": "LCSC number matches online listing for MPN D1",
+      "status": "PASS",
+      "detail": "mpn=USBLC6-2SC6; bom=C7519; listing=C7519"
+    },
+    {
+      "check": "LCSC number matches online listing for MPN D2",
+      "status": "PASS",
+      "detail": "mpn=LTST-C190KGKT; bom=C125094; listing=C125094"
+    },
+    {
+      "check": "LCSC number matches online listing for MPN F1",
+      "status": "PASS",
+      "detail": "mpn=1206L050YR; bom=C163512; listing=C163512"
+    },
+    {
+      "check": "LCSC number matches online listing for MPN J1",
+      "status": "PASS",
+      "detail": "mpn=USB4105-GF-A-120; bom=C5184243; listing=C5184243"
+    },
+    {
+      "check": "LCSC number matches online listing for MPN J2",
+      "status": "PASS",
+      "detail": "mpn=HX PZ2.54-1x5P ZZ; bom=C32713271; listing=C32713271"
+    },
+    {
+      "check": "LCSC number matches online listing for MPN J3",
+      "status": "PASS",
+      "detail": "mpn=B2B-PH-K-S(LF)(SN); bom=C131337; listing=C131337"
+    },
+    {
+      "check": "LCSC number matches online listing for MPN R1",
+      "status": "PASS",
+      "detail": "mpn=0603WAF1001T5E; bom=C21190; listing=C21190"
+    },
+    {
+      "check": "LCSC number matches online listing for MPN R10",
+      "status": "PASS",
+      "detail": "mpn=0603WAF1002T5E; bom=C25804; listing=C25804"
+    },
+    {
+      "check": "LCSC number matches online listing for MPN R11",
+      "status": "PASS",
+      "detail": "mpn=0603WAF1002T5E; bom=C25804; listing=C25804"
+    },
+    {
+      "check": "LCSC number matches online listing for MPN R12",
+      "status": "PASS",
+      "detail": "mpn=0603WAF5101T5E; bom=C23186; listing=C23186"
+    },
+    {
+      "check": "LCSC number matches online listing for MPN R13",
+      "status": "PASS",
+      "detail": "mpn=0603WAF5101T5E; bom=C23186; listing=C23186"
+    },
+    {
+      "check": "LCSC number matches online listing for MPN R14",
+      "status": "PASS",
+      "detail": "mpn=0603WAF1002T5E; bom=C25804; listing=C25804"
+    },
+    {
+      "check": "LCSC number matches online listing for MPN R15",
+      "status": "PASS",
+      "detail": "mpn=0603WAF1003T5E; bom=C25803; listing=C25803"
+    },
+    {
+      "check": "LCSC number matches online listing for MPN R16",
+      "status": "PASS",
+      "detail": "mpn=0603WAF1002T5E; bom=C25804; listing=C25804"
+    },
+    {
+      "check": "LCSC number matches online listing for MPN R17",
+      "status": "PASS",
+      "detail": "mpn=0603WAF1001T5E; bom=C21190; listing=C21190"
+    },
+    {
+      "check": "LCSC number matches online listing for MPN R18",
+      "status": "PASS",
+      "detail": "mpn=0603WAF1001T5E; bom=C21190; listing=C21190"
+    },
+    {
+      "check": "LCSC number matches online listing for MPN R19",
+      "status": "PASS",
+      "detail": "mpn=0603WAF1004T5E; bom=C22935; listing=C22935"
+    },
+    {
+      "check": "LCSC number matches online listing for MPN R2",
+      "status": "PASS",
+      "detail": "mpn=0603WAF1002T5E; bom=C25804; listing=C25804"
+    },
+    {
+      "check": "LCSC number matches online listing for MPN R3",
+      "status": "PASS",
+      "detail": "mpn=0603WAF1001T5E; bom=C21190; listing=C21190"
+    },
+    {
+      "check": "LCSC number matches online listing for MPN R4",
+      "status": "PASS",
+      "detail": "mpn=0603WAF1002T5E; bom=C25804; listing=C25804"
+    },
+    {
+      "check": "LCSC number matches online listing for MPN R5",
+      "status": "PASS",
+      "detail": "mpn=0603WAF100KT5E; bom=C22936; listing=C22936"
+    },
+    {
+      "check": "LCSC number matches online listing for MPN R6",
+      "status": "PASS",
+      "detail": "mpn=0603WAF5101T5E; bom=C23186; listing=C23186"
+    },
+    {
+      "check": "LCSC number matches online listing for MPN R7",
+      "status": "PASS",
+      "detail": "mpn=0603WAF5101T5E; bom=C23186; listing=C23186"
+    },
+    {
+      "check": "LCSC number matches online listing for MPN R8",
+      "status": "PASS",
+      "detail": "mpn=0603WAF270JT5E; bom=C25190; listing=C25190"
+    },
+    {
+      "check": "LCSC number matches online listing for MPN R9",
+      "status": "PASS",
+      "detail": "mpn=0603WAF270JT5E; bom=C25190; listing=C25190"
+    },
+    {
+      "check": "LCSC number matches online listing for MPN RV1",
+      "status": "PASS",
+      "detail": "mpn=PTV09A-4015F-B103; bom=C5710902; listing=C5710902"
+    },
+    {
+      "check": "LCSC number matches online listing for MPN SW1",
+      "status": "PASS",
+      "detail": "mpn=TL3342F160QG; bom=C2886898; listing=C2886898"
+    },
+    {
+      "check": "LCSC number matches online listing for MPN SW2",
+      "status": "PASS",
+      "detail": "mpn=TL3342F160QG; bom=C2886898; listing=C2886898"
+    },
+    {
+      "check": "LCSC number matches online listing for MPN SW3",
+      "status": "PASS",
+      "detail": "mpn=JS202011JCQN; bom=C221665; listing=C221665"
+    },
+    {
+      "check": "LCSC number matches online listing for MPN U1",
+      "status": "PASS",
+      "detail": "mpn=RP2040; bom=C2040; listing=C2040"
+    },
+    {
+      "check": "LCSC number matches online listing for MPN U2",
+      "status": "PASS",
+      "detail": "mpn=W25Q16JVSNIQ; bom=C2456211; listing=C2456211"
+    },
+    {
+      "check": "LCSC number matches online listing for MPN U3",
+      "status": "PASS",
+      "detail": "mpn=AP2112K-3.3TRG1; bom=C51118; listing=C51118"
+    },
+    {
+      "check": "LCSC number matches online listing for MPN U4",
+      "status": "PASS",
+      "detail": "mpn=VL53L1CXV0FY/1; bom=C190004; listing=C190004"
+    },
+    {
+      "check": "LCSC number matches online listing for MPN U5",
+      "status": "PASS",
+      "detail": "mpn=MAX98357AETE+T; bom=C910544; listing=C910544"
+    },
+    {
+      "check": "LCSC number matches online listing for MPN Y1",
+      "status": "PASS",
+      "detail": "mpn=ABM8-272-T3; bom=C20625731; listing=C20625731"
+    },
+    {
+      "check": "three fiducials on PCB, excluded from BOM/position files and absent from bom.csv",
+      "status": "PASS",
+      "detail": "fiducials=['FID1', 'FID2', 'FID3']"
     },
     {
       "check": "firmware pin assignment PICO_DEFAULT_I2C_SDA_PIN",

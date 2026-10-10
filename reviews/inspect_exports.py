@@ -1,8 +1,11 @@
 #!/usr/bin/python3
 """Review exported placement/drill geometry against native PCB; parse Gerbers.
 
-Requires pcbnew (system Python) and gerbonara==1.6.3. This checks coherence,
-not supplier capability, controlled impedance, assembly yield or hardware.
+Requires pcbnew (system Python) and gerbonara==1.6.3, e.g. a venv created with
+--system-site-packages. Also checks the Gerber job stackup against the PCB, via
+tenting in the mask layers, fiducial exclusion and the implementer's artifact
+hash manifest, and renders the review SVGs. This checks coherence, not supplier
+capability, controlled impedance, assembly yield or hardware.
 """
 import collections,csv,hashlib,json,math,warnings
 from pathlib import Path
@@ -59,12 +62,40 @@ bom=list(csv.DictReader((ROOT/'hardware/bom.csv').open()))
 want={r['Reference'] for r in bom if r['Assembly']=='Fit'}
 rows=list(csv.DictReader((OUT/'airnote-all-positions.csv').open()))
 check('Placement list matches fitted BOM references',{r['Ref'] for r in rows}==want)
+fitted_bom={r['Reference'] for r in csv.DictReader((OUT/'airnote-fitted-bom.csv').open())}
+fitted_cpl={r['Ref'] for r in csv.DictReader((OUT/'airnote-fitted-positions.csv').open())}
+check('Exported fitted BOM and fitted CPL list exactly the fitted bom.csv references (no FID/TP/H)',fitted_bom==want==fitted_cpl,{'bom_only':sorted(fitted_bom-want),'cpl_only':sorted(fitted_cpl-want),'missing':sorted(want-fitted_bom)})
+manifest=json.loads((ROOT/'hardware/reports/final-artifact-hashes.json').read_text())
+bad=[k for k,v in manifest.items() if hashlib.sha256((ROOT/'hardware'/k).read_bytes()).hexdigest()!=v]
+check('Implementer hash manifest matches every listed file',not bad and manifest.get('airnote.kicad_pcb')==hashlib.sha256((ROOT/'hardware/airnote.kicad_pcb').read_bytes()).hexdigest(),{'entries':len(manifest),'mismatches':bad})
+job=json.loads((OUT/'airnote-job.gbrjob').read_text())
+job_thk=[m.get('Thickness') for m in job['MaterialStackup'] if 'Thickness' in m]
+pcb_text=(ROOT/'hardware/airnote.kicad_pcb').read_text()
+import re
+pcb_thk=[float(x) for x in re.findall(r'\(thickness ([\d.]+)\)',pcb_text.split('(stackup',1)[1].split('(copper_finish',1)[0])]
+check('Gerber job stackup equals the PCB stackup (JLC04161H-7628) and four layers',job_thk==pcb_thk and job['GeneralSpecs']['LayerNumber']==4,{'job':job_thk,'pcb':pcb_thk,'board_thickness':job['GeneralSpecs']['BoardThickness']})
+order_package={'gbrjob_revision':job['GeneralSpecs']['ProjectId']['Revision'],'gbrjob_finish':job['GeneralSpecs']['Finish']}
+from gerbonara.graphic_objects import Flash
+pad_xy={(round(p.GetPosition().x/1e6,3),round(-p.GetPosition().y/1e6,3)) for f in board.GetFootprints() for p in f.Pads()}
+via_xy=[(round(v.GetPosition().x/1e6,3),round(-v.GetPosition().y/1e6,3)) for v in board.GetTracks() if isinstance(v,pcbnew.PCB_VIA)]
+via_xy=[xy for xy in via_xy if xy not in pad_xy]  # a via at a pad centre (U5 exposed pad) shares that pad's opening
+for side in ['top','bottom']:
+ centres={(round(o.x,3),round(o.y,3)) for o in stack.graphic_layers[(side,'mask')].objects if isinstance(o,Flash)}
+ exposed=[xy for xy in via_xy if xy in centres]
+ check(f'All {len(via_xy)} vias tented on {side} mask (no mask flash at a via centre)',not exposed,{'exposed':exposed})
+fid_flash=sorted({o.attrs.get('.P',('?',))[0] for o in stack.graphic_layers[('top','copper')].objects if isinstance(o,Flash) and o.attrs.get('.P',('',))[0].startswith('FID') and abs(o.aperture.diameter-1.0)<1e-6})
+fid_mask=sorted({o.attrs.get('.C',('?',))[0] for o in stack.graphic_layers[('top','mask')].objects if isinstance(o,Flash) and o.attrs.get('.C',('',))[0].startswith('FID')})
+check('Three fiducials present in top copper (1 mm) and top mask Gerbers',fid_flash==fid_mask==['FID1','FID2','FID3'],{'copper':fid_flash,'mask':fid_mask})
+# Review renders (actual Gerber/Excellon content, not native CAD plots).
+(ROOT/'reviews/gerber-top-review.svg').write_text(str(stack.to_pretty_svg(side='top')))
+(ROOT/'reviews/gerber-bottom-review.svg').write_text(str(stack.to_pretty_svg(side='bottom')))
+(ROOT/'reviews/gerber-inner1-review.svg').write_text(str(stack.graphic_layers[('inner_1','copper')].to_svg()))
 for row in rows:
  f=parts[row['Ref']];p=f.GetPosition()
  check('Placement '+row['Ref'],abs(float(row['PosX'])-p.x/1e6)<1e-5 and abs(float(row['PosY'])+p.y/1e6)<1e-5 and abs((float(row['Rot'])-f.GetOrientationDegrees()+180)%360-180)<1e-5 and row['Side']=='top' and f.GetLayer()==pcbnew.F_Cu)
 source_paths=[ROOT/'hardware/airnote.kicad_pcb',ROOT/'hardware/airnote.kicad_sch',ROOT/'hardware/power.kicad_sch',ROOT/'hardware/instrument.kicad_sch',ROOT/'hardware/airnote.kicad_pro',ROOT/'hardware/airnote.kicad_dru',ROOT/'hardware/bom.csv',ROOT/'hardware/outputs/airnote.net.xml',ROOT/'hardware/outputs/airnote-schematic.pdf',ROOT/'hardware/outputs/airnote-assembly.pdf']
 source_paths+=sorted(p for p in OUT.iterdir() if p.is_file())
-result={'status':'PASS export-coherence checks only' if all(c['status']=='PASS' for c in checks) else 'FAIL','gerbonara_version':gerbonara.__version__,'sha256':{str(p.relative_to(ROOT)):hashlib.sha256(p.read_bytes()).hexdigest() for p in source_paths},'checks':checks,'parsed_layers':layer_geometry,'parser_warnings':warnings_seen,'physical_tests':'PENDING','limitations':['Copper Gerbers, mask/paste and split drill sets were parsed; front/back independent render review is recorded separately.','The Gerber job stackup/finish/revision metadata are placeholders pending a factory-specific release.','Zero geometry discrepancies do not approve USB impedance/routing, remaining layout concerns, optical assembly process or actual operation.']}
+result={'status':'PASS export-coherence checks only' if all(c['status']=='PASS' for c in checks) else 'FAIL','gerbonara_version':gerbonara.__version__,'sha256':{str(p.relative_to(ROOT)):hashlib.sha256(p.read_bytes()).hexdigest() for p in source_paths},'checks':checks,'parsed_layers':layer_geometry,'parser_warnings':warnings_seen,'order_package_open_items':order_package,'physical_tests':'PENDING','limitations':['Copper Gerbers, mask/paste and split drill sets were parsed; front/back/In1 renders are written to reviews/gerber-*-review.svg and inspected separately.','The Gerber job stackup now matches JLC04161H-7628, but its Revision is "rev?" and Finish is "None"; both must be set or overridden on the order.','Zero geometry discrepancies do not approve USB impedance/routing, remaining layout concerns, optical assembly process or actual operation.']}
 (ROOT/'reviews/export-review.json').write_text(json.dumps(result,indent=2)+'\n')
 for c in checks:
  if c['status']=='FAIL':print(c)

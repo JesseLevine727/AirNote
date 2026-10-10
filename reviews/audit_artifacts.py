@@ -3,7 +3,9 @@
 
 Use /usr/bin/python3 for Ubuntu's pcbnew module. Critical expected connections
 come from manufacturer pin tables recorded in CHECKLIST.md, not the CAD builder.
-This does not prove routing continuity, PCB geometry, USB compliance, or hardware.
+Sourcing identity checks compare bom.csv, schematic and footprint fields with LCSC
+numbers confirmed online on 2026-10-10. This does not prove routing continuity,
+PCB geometry, USB compliance, stock, or hardware.
 """
 import hashlib
 import json
@@ -123,8 +125,49 @@ for number in range(1, 17):
           all(abs(pcbnew.ToMM(actual)-want)<0.001 for actual,want in
               zip((position.x,position.y,size.x,size.y),want_position+want_size)))
 check("volume ADC has 1 Mohm open-wiper discharge path",components["R19"].findtext("value")=="1M")
-pot_mpn = components["RV1"].find("fields/field[@name='MPN']")
-check("potentiometer MPN matches selected body variant",pot_mpn is not None and pot_mpn.text=="PTV09A-1020F-B103")
+# Rev 0.2: RV1 is PTV09A-4015F-B103 (Bourns terminal configuration 4 = horizontal/rear
+# mount, bushingless). Bourns' PTV09 datasheet gives one "recommended PCB layout
+# (horizontal/rear mount)" and identical front-view tab/pin dimensions for -1 and -4,
+# so the PTV09A-1 rear-mount footprint fits; only the bushing and shaft height differ.
+def field(ref, name):
+    node = components[ref].find(f"fields/field[@name='{name}']")
+    return None if node is None else node.text
+check("potentiometer MPN matches reviewed rear-mount variant",field("RV1","MPN")=="PTV09A-4015F-B103"
+      and components["RV1"].findtext("footprint")=="Potentiometer_THT:Potentiometer_Bourns_PTV09A-1_Single_Vertical",
+      f"MPN={field('RV1','MPN')!r}; footprint={components['RV1'].findtext('footprint')!r}")
+check("flash MPN is the 150-mil SN package on the SOIC-8 3.9 mm footprint",field("U2","MPN")=="W25Q16JVSNIQ"
+      and components["U2"].findtext("footprint")=="Package_SO:SOIC-8_3.9x4.9mm_P1.27mm")
+check("USB receptacle MPN is the reviewed 1.20 mm stake variant",field("J1","MPN")=="USB4105-GF-A-120")
+
+# Sourcing identity: bom.csv, schematic netlist fields and PCB footprint fields agree,
+# and the LCSC numbers equal those confirmed on lcsc.com/jlcpcb.com on 2026-10-10.
+import csv
+bom_rows = {r["Reference"]: r for r in csv.DictReader((ROOT/"hardware/bom.csv").open())}
+fitted = {ref for ref, r in bom_rows.items() if r["Assembly"]=="Fit"}
+for ref in sorted(fitted):
+    row, fp = bom_rows[ref], footprints.get(ref)
+    fp_mpn = fp.GetFieldText("MPN") if fp is not None and fp.HasFieldByName("MPN") else None
+    fp_lcsc = fp.GetFieldText("LCSC") if fp is not None and fp.HasFieldByName("LCSC") else None
+    ok = bool(row["LCSC"]) and row["MPN"]==field(ref,"MPN")==fp_mpn and row["LCSC"]==field(ref,"LCSC")==fp_lcsc
+    check(f"BOM/schematic/footprint MPN and LCSC agree {ref}", ok,
+          f"bom={row['MPN']}/{row['LCSC']}; sch={field(ref,'MPN')}/{field(ref,'LCSC')}; pcb={fp_mpn}/{fp_lcsc}")
+confirmed_online = {"RP2040":"C2040","W25Q16JVSNIQ":"C2456211","USB4105-GF-A-120":"C5184243",
+    "HX PZ2.54-1x5P ZZ":"C32713271","USBLC6-2SC6":"C7519","AP2112K-3.3TRG1":"C51118",
+    "VL53L1CXV0FY/1":"C190004","MAX98357AETE+T":"C910544","ABM8-272-T3":"C20625731",
+    "1206L050YR":"C163512","CC0603KRX7R9BB104":"C14663","CL10A105KB8NNNC":"C15849",
+    "CL21A475KAQNNNE":"C1779","CL10C150JB8NNNC":"C1644","0603WAF270JT5E":"C25190",
+    "0603WAF5101T5E":"C23186","0603WAF100KT5E":"C22936","0603WAF1004T5E":"C22935",
+    "0603WAF1003T5E":"C25803","0603WAF1002T5E":"C25804","0603WAF1001T5E":"C21190",
+    "TL3342F160QG":"C2886898","JS202011JCQN":"C221665","B2B-PH-K-S(LF)(SN)":"C131337",
+    "LTST-C190KGKT":"C125094","PTV09A-4015F-B103":"C5710902"}
+for ref in sorted(fitted):
+    mpn, lcsc = bom_rows[ref]["MPN"], bom_rows[ref]["LCSC"]
+    check(f"LCSC number matches online listing for MPN {ref}", confirmed_online.get(mpn)==lcsc,
+          f"mpn={mpn}; bom={lcsc}; listing={confirmed_online.get(mpn)}")
+fids = sorted(r for r in footprints if r.startswith("FID"))
+check("three fiducials on PCB, excluded from BOM/position files and absent from bom.csv",
+      len(fids)==3 and all(footprints[r].IsExcludedFromBOM() and footprints[r].IsExcludedFromPosFiles() for r in fids)
+      and not any(r in bom_rows for r in fids), f"fiducials={fids}")
 
 header = (ROOT/"firmware/include/boards/airnote.h").read_text()
 for macro, want in {"PICO_DEFAULT_I2C_SDA_PIN":0,"PICO_DEFAULT_I2C_SCL_PIN":1,
@@ -134,7 +177,7 @@ for macro, want in {"PICO_DEFAULT_I2C_SDA_PIN":0,"PICO_DEFAULT_I2C_SCL_PIN":1,
     match = re.search(r"^#define\s+"+macro+r"\s+(\d+)\b",header,re.M)
     check(f"firmware pin assignment {macro}",bool(match and int(match[1])==want))
 
-sources = [netlist_path, board_path, ROOT/"firmware/include/boards/airnote.h"]
+sources = [netlist_path, board_path, ROOT/"hardware/bom.csv", ROOT/"firmware/include/boards/airnote.h"]
 result = {"scope":"pin assignment and artifact consistency only; not routing or hardware validation",
           "sha256":{str(p.relative_to(ROOT)):hashlib.sha256(p.read_bytes()).hexdigest() for p in sources},
           "checks":checks,"failed":sum(x["status"]=="FAIL" for x in checks),

@@ -48,9 +48,10 @@ calculations, not a TDR measurement.
 
 The rev 0.2 layout applies this as net class `USB_DIFF`. All six USB nets
 are on F.Cu with no vias, and In1.Cu ground is continuous under them.
-93% of the pair's length runs at exactly 0.40 mm pitch; the remainder is
-neck-down within about 1 mm of the J1, D1 and U1 pads. Details:
-`hardware/README.md`.
+About 85% of each line's length runs at exactly 0.40 mm pitch (reviewer
+measurement). The rest is neck-down at the J1, D1 and U1 pads, including two
+runs of about 3 mm through D1's pad gap. Details: `hardware/README.md` and
+`reviews/layout-review.json`.
 
 ### Design rules versus JLC 4-layer capability
 

@@ -18,6 +18,15 @@ Primary sources accessed 2026-10-10:
 - [GCT USB4105 drawing](https://gct.co/files/drawings/usb4105.pdf), revision B4: contact order, duplicate VBUS/GND lands, 0.50 mm signal pitch, 5.78 mm peg spacing, 8.64 mm shell-stake spacing and recommended land/hole sizes checked against the project footprint.
 - [C&K JS series datasheet](https://www.ckswitches.com/media/1422/js.pdf), 2026 revision, page 9: JS202011JCQN topology and land layout. KiCad numbers its two rows 1/2/3 and 4/5/6, while this manufacturer drawing uses 1/2/3 and 5/6/7. The central lands are common in each row; this deliberate numbering normalization is acceptable only with the corresponding generic DPDT symbol. Both switched rows in AirNote use the same end for ground. Actual lever direction versus silk still needs assembly verification.
 
+Additional primary sources for the rev 0.2 review, accessed 2026-10-10:
+
+- [Bourns PTV09 datasheet](https://www.bourns.com/docs/product-datasheets/ptv09.pdf): "How To Order" terminal configuration 1 = horizontal/rear mount with sleeve bushing, 4 = horizontal/rear mount bushingless; 15 mm shaft is bushingless-only. One "recommended PCB layout (horizontal/rear mount)": three Ø1.0 mm pin holes at 2.5 mm pitch, two 1.8 × 2.2 mm tab holes spanning 10.6 mm outside-to-outside, 7.0 mm from the pin row. The -1 and -4 front views give the same 10.0 mm body, 11.4 mm across tabs and 5.0 mm pin span.
+- [ST USBLC6-2 datasheet](https://www.st.com/resource/en/datasheet/usblc6-2.pdf) (Doc ID 11265 Rev 5 as mirrored by LCSC for C7519): Figure 1 SOT23-6L pins 1/6 = I/O1, 3/4 = I/O2, 2 = GND, 5 = VBUS; Figure 7 shows 1–6 and 3–4 internally joined; Figure 8 tests IN on pin 1 and OUT on pin 6.
+- [Winbond W25Q16JV datasheet](https://www.winbond.com/resource-files/w25q16jv%20spi%20revg%2003222018%20plus.pdf), Rev G: SN = 8-pin SOIC 150-mil (E 3.80–4.00 mm, 1.27 mm pitch), SS = 208-mil.
+- [Abracon ABM8-272-T3](https://abracon.com/datasheets/ABM8-272-T3.pdf): 12 MHz, CL 10 pF, ESR 50 Ω max, C0 3 pF max. [RP2040 hardware design guide](https://datasheets.raspberrypi.com/rp2040/hardware-design-with-rp2040.pdf) section 2.3 uses this crystal with 15 pF capacitors plus ~3 pF stray (10.5 pF) and a 1 kΩ series resistor.
+- [JLCPCB PCB capabilities](https://jlcpcb.com/capabilities/pcb-capabilities): via hole-to-hole 0.2 mm, pad hole-to-hole 0.45 mm, via hole to track 0.2 mm, solder-mask bridge 0.10 mm.
+- LCSC product listings `https://www.lcsc.com/product-detail/<LCSC>.html` for every fitted LCSC number in `hardware/bom.csv`; the confirmed MPN/number pairs are encoded in `audit_artifacts.py`.
+
 | Device | Critical pin mapping to audit independently |
 |---|---|
 | RP2040 | IOVDD: 1,10,22,33,42,49; DVDD:23,50; VREG input:44; VREG output:45; USB supply:48; ADC supply:43; exposed ground:57; TESTEN:19; RUN:26; XIN:20; XOUT:21; SWCLK:24; SWDIO:25; USB DM:46; USB DP:47; QSPI CLK:52; CS:56; IO0:53; IO1:55; IO2:54; IO3:51. |

@@ -1,10 +1,11 @@
 {
   "date": "2026-10-10",
-  "status": "PASS arithmetic and evidence boundaries; physical power remains PENDING",
+  "status": "PASS arithmetic (allocation and inrush tally) and evidence boundaries; inrush/suspend are accepted deviations, not passes; physical power remains PENDING",
   "sha256": {
-    "docs/power_budget.md": "ff9a95aaffbe71eed2dd71b2bc5a986eba2bb4f3884f61c2ed15f1dc164b3133",
-    "docs/requirements.md": "7bcb8a6d8aa32e57ad33da48072260d18747840f728b9144c3910e395bfe1182",
-    "docs/assembly_request.md": "049382d8b07e2be358df300d588e68da441831384957e43e07339487ebadd1c9"
+    "docs/power_budget.md": "4c01adb91ee036f16e126a1bbbafa53ae27edb95c29d4660b6ae18e1f7b3a0a8",
+    "docs/requirements.md": "60cd9afa8de6326ecc056ed1e95523c257a3614a65fc56587d800e681ec86e7c",
+    "docs/assembly_request.md": "1e1b3249d7b85b82ba9edfce71d78f6ed69d5cee1edeea7e079336cb3cd3a223",
+    "hardware/outputs/airnote.net.xml": "f25ff9dd9cf6679584853d00b8a9e5008f6ab9cce38120733ea4aaf56c160f21"
   },
   "independent_calculations": {
     "3V3_allocation_mA": 155,
@@ -19,12 +20,32 @@
     "nominal_audio_W_8ohm": 0.10064449622508169,
     "speaker_RMS_A": 0.11216310457603788,
     "speaker_peak_A": 0.15862258368930454,
-    "nominal_direct_input_uF": 5.9
+    "nominal_direct_input_uF": 5.9,
+    "inrush_charge_from_netlist_uC": {
+      "VBUS_RAW (C18 0.1 uF @5.25 V)": 0.53,
+      "+5V (C16,C21,C22 5.8 uF @5.25 V)": 30.45,
+      "+3V3 (12 caps 7.6 uF @3.3 V)": 25.08,
+      "+1V1 (C10,C11,C14 1.2 uF @1.1 V)": 1.32,
+      "total": 57.38
+    },
+    "inrush_vs_usbif_50uC_guideline": "57.4 uC nominal exceeds 50 uC by ~15%; overseer disposition: accepted first-article deviation (not a pass)",
+    "ptc_1206L050": {
+      "hold_A": 0.5,
+      "trip_A": 1.0,
+      "Vmax_V": 6,
+      "R1max_ohm": 0.7,
+      "drop_at_210mA_V_max": 0.147,
+      "source": "LCSC C163512 listing / Littelfuse 1206L table, accessed 2026-10-10"
+    },
+    "vbus_5v_copper_paths": {
+      "see": "reviews/layout-review.json (VBUS_RAW main path 0.4 mm, ~0.008 ohm; +5V F1->U3 0.15 mm ~0.12 ohm; F1->U5 0.15 mm ~0.31 ohm incl. 2 vias)"
+    }
   },
   "verified_primary_sources": [
+    "https://www.analog.com/media/en/technical-documentation/data-sheets/MAX98357A-MAX98357B.pdf",
     "https://www.diodes.com/assets/Datasheets/AP2112.pdf",
-    "https://www.st.com/resource/en/datasheet/vl53l1x.pdf",
-    "https://www.analog.com/media/en/technical-documentation/data-sheets/MAX98357A-MAX98357B.pdf"
+    "https://www.lcsc.com/product-detail/C163512.html",
+    "https://www.st.com/resource/en/datasheet/vl53l1x.pdf"
   ],
   "boundaries": [
     "MCU/flash/amplifier current rows are engineering allocations, not guaranteed device maxima.",
@@ -33,5 +54,9 @@
     "Direct input capacitance excludes downstream charging; PTC does not control inrush.",
     "Core 0 remains running during suspend; USB suspend compliance is not demonstrated.",
     "First-article ordering and validated release are separate gates; neither is marked passed."
-  ]
+  ],
+  "revision": {
+    "commit": "78444e8",
+    "pcb_sha256": "b73600b23573f1bac7330f827d21ea167084af3bd38f8e93b8ca05c0155987d0"
+  }
 }

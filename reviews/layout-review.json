@@ -1,0 +1,1676 @@
+{
+ "scope": "static layout inspection; approximate geometry; no physical validation",
+ "sha256": {
+  "hardware/airnote.kicad_pcb": "b73600b23573f1bac7330f827d21ea167084af3bd38f8e93b8ca05c0155987d0",
+  "hardware/airnote.kicad_pro": "e48c756c452b46294d1d0ef2b3b38f5a1145ae20889daddbcef76c16907c33a2",
+  "hardware/airnote.kicad_dru": "347da8c6c1a797be5d0fd89a73a96f5aa6b5e3f414584b0ef1968594f7181b7a"
+ },
+ "previous_revision": {
+  "commit": "14e63ae",
+  "pcb_sha256": "c35f7d922f362b58a088193dba98902f71df68bcac94774f78b6f83b8618e9cc"
+ },
+ "checks": [
+  {
+   "check": "Custom rules file is parsed and USB_DIFF rule matches the pair (probe: max width lowered to 0.2 mm on a temporary copy)",
+   "status": "PASS",
+   "detail": {
+    "usb_0.25mm_tracks": 38,
+    "probe_violations_naming_USB_DIFF_width": 38
+   }
+  },
+  {
+   "check": "All six USB nets are in net class USB_DIFF",
+   "status": "PASS",
+   "detail": {
+    "USB_DP": "USB_DIFF",
+    "USB_DM": "USB_DIFF",
+    "USB_DP_ESD": "USB_DIFF",
+    "USB_DM_ESD": "USB_DIFF",
+    "USB_DP_MCU": "USB_DIFF",
+    "USB_DM_MCU": "USB_DIFF"
+   }
+  },
+  {
+   "check": "Stackup equals JLC04161H-7628 (mask 0.01, Cu 0.035, PP 0.2104 Dk4.4, Cu 0.0152, core 1.065 Dk4.6, Cu 0.0152, PP 0.2104, Cu 0.035, mask 0.01)",
+   "status": "PASS",
+   "detail": {
+    "thicknesses_mm": [
+     0.01,
+     0.035,
+     0.2104,
+     0.0152,
+     1.065,
+     0.0152,
+     0.2104,
+     0.035,
+     0.01
+    ],
+    "copper_finish": "None"
+   }
+  },
+  {
+   "check": "USB nets: F.Cu only, zero vias",
+   "status": "PASS",
+   "detail": {
+    "USB_DP": {
+     "segments": 10,
+     "length_mm": 17.136,
+     "widths": [
+      0.15,
+      0.25
+     ]
+    },
+    "USB_DM": {
+     "segments": 11,
+     "length_mm": 18.514,
+     "widths": [
+      0.15,
+      0.25
+     ]
+    },
+    "USB_DP_ESD": {
+     "segments": 16,
+     "length_mm": 44.499,
+     "widths": [
+      0.15,
+      0.25
+     ]
+    },
+    "USB_DM_ESD": {
+     "segments": 15,
+     "length_mm": 42.182,
+     "widths": [
+      0.15,
+      0.25
+     ]
+    },
+    "USB_DP_MCU": {
+     "segments": 2,
+     "length_mm": 4.137,
+     "widths": [
+      0.15,
+      0.25
+     ]
+    },
+    "USB_DM_MCU": {
+     "segments": 4,
+     "length_mm": 4.441,
+     "widths": [
+      0.15,
+      0.25
+     ]
+    }
+   }
+  },
+  {
+   "check": "USB coupling: fraction of each polarity family at 0.40 mm centre pitch (>=0.80 expected; doc claims 0.93)",
+   "status": "PASS",
+   "detail": {
+    "USB_DP family": {
+     "length_mm": 65.77,
+     "at_0.40mm_pitch_mm": 55.82,
+     "fraction": 0.849
+    },
+    "USB_DM family": {
+     "length_mm": 65.14,
+     "at_0.40mm_pitch_mm": 55.8,
+     "fraction": 0.857
+    }
+   }
+  },
+  {
+   "check": "USB neck-down (0.15 mm) segments all start at or within 1.05 mm of an own-net pad",
+   "status": "PASS",
+   "detail": {
+    "segments": [
+     {
+      "net": "USB_DP",
+      "from": [
+       69.0,
+       65.695
+      ],
+      "to": [
+       70.0,
+       65.695
+      ],
+      "length_mm": 1.0,
+      "nearest_end_to_own_pad_mm": 0.0,
+      "farthest_end_to_own_pad_mm": 0.851
+     },
+     {
+      "net": "USB_DP",
+      "from": [
+       63.25,
+       56.55
+      ],
+      "to": [
+       64.25,
+       56.55
+      ],
+      "length_mm": 1.0,
+      "nearest_end_to_own_pad_mm": 0.23,
+      "farthest_end_to_own_pad_mm": 0.23
+     },
+     {
+      "net": "USB_DP",
+      "from": [
+       63.25,
+       57.355
+      ],
+      "to": [
+       63.25,
+       58.6
+      ],
+      "length_mm": 1.245,
+      "nearest_end_to_own_pad_mm": 0.0,
+      "farthest_end_to_own_pad_mm": 0.67
+     },
+     {
+      "net": "USB_DP",
+      "from": [
+       63.25,
+       57.355
+      ],
+      "to": [
+       63.25,
+       56.55
+      ],
+      "length_mm": 0.805,
+      "nearest_end_to_own_pad_mm": 0.0,
+      "farthest_end_to_own_pad_mm": 0.23
+     },
+     {
+      "net": "USB_DP",
+      "from": [
+       64.25,
+       56.55
+      ],
+      "to": [
+       64.25,
+       57.355
+      ],
+      "length_mm": 0.805,
+      "nearest_end_to_own_pad_mm": 0.0,
+      "farthest_end_to_own_pad_mm": 0.23
+     },
+     {
+      "net": "USB_DP",
+      "from": [
+       63.25,
+       58.6
+      ],
+      "to": [
+       63.3,
+       58.65
+      ],
+      "length_mm": 0.071,
+      "nearest_end_to_own_pad_mm": 0.67,
+      "farthest_end_to_own_pad_mm": 0.72
+     },
+     {
+      "net": "USB_DM",
+      "from": [
+       72.05,
+       65.295
+      ],
+      "to": [
+       72.05,
+       65.9
+      ],
+      "length_mm": 0.605,
+      "nearest_end_to_own_pad_mm": 0.0,
+      "farthest_end_to_own_pad_mm": 0.28
+     },
+     {
+      "net": "USB_DM",
+      "from": [
+       63.75,
+       58.35
+      ],
+      "to": [
+       63.75,
+       58.6
+      ],
+      "length_mm": 0.25,
+      "nearest_end_to_own_pad_mm": 0.42,
+      "farthest_end_to_own_pad_mm": 0.67
+     },
+     {
+      "net": "USB_DM",
+      "from": [
+       63.75,
+       58.35
+      ],
+      "to": [
+       64.75,
+       58.35
+      ],
+      "length_mm": 1.0,
+      "nearest_end_to_own_pad_mm": 0.42,
+      "farthest_end_to_own_pad_mm": 0.42
+     },
+     {
+      "net": "USB_DM",
+      "from": [
+       64.75,
+       58.35
+      ],
+      "to": [
+       64.75,
+       57.355
+      ],
+      "length_mm": 0.995,
+      "nearest_end_to_own_pad_mm": 0.0,
+      "farthest_end_to_own_pad_mm": 0.42
+     },
+     {
+      "net": "USB_DM",
+      "from": [
+       69.0,
+       65.295
+      ],
+      "to": [
+       72.05,
+       65.295
+      ],
+      "length_mm": 3.05,
+      "nearest_end_to_own_pad_mm": 0.28,
+      "farthest_end_to_own_pad_mm": 2.783
+     },
+     {
+      "net": "USB_DM",
+      "from": [
+       63.75,
+       57.355
+      ],
+      "to": [
+       63.75,
+       58.35
+      ],
+      "length_mm": 0.995,
+      "nearest_end_to_own_pad_mm": 0.0,
+      "farthest_end_to_own_pad_mm": 0.42
+     },
+     {
+      "net": "USB_DM",
+      "from": [
+       63.75,
+       58.6
+      ],
+      "to": [
+       63.7,
+       58.65
+      ],
+      "length_mm": 0.071,
+      "nearest_end_to_own_pad_mm": 0.67,
+      "farthest_end_to_own_pad_mm": 0.72
+     },
+     {
+      "net": "USB_DP_ESD",
+      "from": [
+       70.15,
+       64.905
+      ],
+      "to": [
+       73.1,
+       64.905
+      ],
+      "length_mm": 2.95,
+      "nearest_end_to_own_pad_mm": 0.28,
+      "farthest_end_to_own_pad_mm": 2.685
+     },
+     {
+      "net": "USB_DP_ESD",
+      "from": [
+       70.15,
+       64.2
+      ],
+      "to": [
+       70.15,
+       64.905
+      ],
+      "length_mm": 0.705,
+      "nearest_end_to_own_pad_mm": 0.0,
+      "farthest_end_to_own_pad_mm": 0.28
+     },
+     {
+      "net": "USB_DM_ESD",
+      "from": [
+       72.6,
+       63.9625
+      ],
+      "to": [
+       73.142499,
+       64.504999
+      ],
+      "length_mm": 0.767,
+      "nearest_end_to_own_pad_mm": 0.25,
+      "farthest_end_to_own_pad_mm": 0.793
+     },
+     {
+      "net": "USB_DM_ESD",
+      "from": [
+       72.05,
+       63.9625
+      ],
+      "to": [
+       72.6,
+       63.9625
+      ],
+      "length_mm": 0.55,
+      "nearest_end_to_own_pad_mm": 0.0,
+      "farthest_end_to_own_pad_mm": 0.25
+     },
+     {
+      "net": "USB_DM_ESD",
+      "from": [
+       73.142499,
+       64.504999
+      ],
+      "to": [
+       73.1,
+       64.504999
+      ],
+      "length_mm": 0.042,
+      "nearest_end_to_own_pad_mm": 0.751,
+      "farthest_end_to_own_pad_mm": 0.793
+     },
+     {
+      "net": "USB_DP_MCU",
+      "from": [
+       91.0,
+       77.1
+      ],
+      "to": [
+       91.0,
+       78.562
+      ],
+      "length_mm": 1.462,
+      "nearest_end_to_own_pad_mm": 0.0,
+      "farthest_end_to_own_pad_mm": 1.025
+     },
+     {
+      "net": "USB_DM_MCU",
+      "from": [
+       91.4,
+       77.1
+      ],
+      "to": [
+       91.4,
+       78.562
+      ],
+      "length_mm": 1.462,
+      "nearest_end_to_own_pad_mm": 0.0,
+      "farthest_end_to_own_pad_mm": 1.025
+     }
+    ],
+    "note": "The D1 pad-gap runs (USB_DM 3.05 mm, USB_DP_ESD 2.95 mm) extend about 2.7-2.8 mm from their own pad but stay inside D1 pad rows."
+   }
+  },
+  {
+   "check": "F.Cu GND pour pull-back from USB copper >= 0.5 mm",
+   "status": "PASS",
+   "detail": {
+    "minimum_mm": 0.5
+   }
+  },
+  {
+   "check": "In1.Cu GND fill continuous under USB copper footprint + 0.3 mm",
+   "status": "PASS",
+   "detail": {
+    "coverage": {
+     "In1.Cu": {
+      "+0.1mm_uncovered_mm2": 0.0,
+      "+0.3mm_uncovered_mm2": 0.0,
+      "+0.6mm_uncovered_mm2": 0.3837
+     },
+     "In2.Cu": {
+      "+0.1mm_uncovered_mm2": 0.0,
+      "+0.3mm_uncovered_mm2": 0.0,
+      "+0.6mm_uncovered_mm2": 0.3837
+     }
+    },
+    "note": "Residual +0.6 mm gaps are antipads of nearby QSPI_CS, QSPI_D0, CC2 and I2C_SDA vias (0.43-0.57 mm from pair copper)."
+   }
+  },
+  {
+   "check": "USB copper to other-net F.Cu copper >= 0.2 mm",
+   "status": "PASS",
+   "detail": {
+    "USB_DP": [
+     0.275,
+     "J1.A8 unconnected-(J1-SBU1-PadA8)"
+    ],
+    "USB_DM": [
+     0.205,
+     "D1.2 GND"
+    ],
+    "USB_DP_ESD": [
+     0.205,
+     "D1.5 VBUS_RAW"
+    ],
+    "USB_DM_ESD": [
+     0.558,
+     "SENSOR_XSHUT"
+    ],
+    "USB_DP_MCU": [
+     0.225,
+     "U1.48 +3V3"
+    ],
+    "USB_DM_MCU": [
+     0.201,
+     "+1V1"
+    ]
+   }
+  },
+  {
+   "check": "USB end-to-end skew through D1 <= 1 mm on the B6/A7 trunks; worst plug orientation recorded",
+   "status": "PASS",
+   "detail": {
+    "sections_pad_edge_to_pad_edge_mm": {
+     "DP J1.B6->D1.1": 13.795,
+     "DM J1.A7->D1.3": 15.606,
+     "DP J1.A6->D1.1": 16.405,
+     "DM J1.B7->D1.3": 16.606,
+     "DP D1.6->R8.1": 43.662,
+     "DM D1.4->R9.1": 41.397,
+     "DP R8.2->U1.47": 3.3,
+     "DM R9.2->U1.46": 3.529
+    },
+    "totals_mm": {
+     "DP": 60.757,
+     "DM": 60.532
+    },
+    "skew": {
+     "B6/A7 trunks DP-DM_mm": 0.225,
+     "plug on A6/A7 DP-DM_mm": 2.835,
+     "plug on B6/B7 DP-DM_mm": -0.775,
+     "estimated_ps_per_mm": 5.98,
+     "worst_case_ps": 16.9,
+     "full_speed_bit_time_ns": 83.33
+    }
+   }
+  },
+  {
+   "check": "D1 USBLC6-2SC6: I/O1 = pins 1/6 (DP/DP_ESD), I/O2 = pins 3/4 (DM/DM_ESD), GND 2, VBUS 5; 1 opposite 6 and 3 opposite 4",
+   "status": "PASS",
+   "detail": {
+    "1": [
+     "USB_DP",
+     70.15,
+     66.237
+    ],
+    "2": [
+     "GND",
+     71.1,
+     66.237
+    ],
+    "3": [
+     "USB_DM",
+     72.05,
+     66.237
+    ],
+    "4": [
+     "USB_DM_ESD",
+     72.05,
+     63.962
+    ],
+    "5": [
+     "VBUS_RAW",
+     71.1,
+     63.962
+    ],
+    "6": [
+     "USB_DP_ESD",
+     70.15,
+     63.962
+    ]
+   }
+  },
+  {
+   "check": "R6 5.1 kohm pull-down CC1 to GND",
+   "status": "PASS",
+   "detail": {
+    "1": "CC1",
+    "2": "GND"
+   }
+  },
+  {
+   "check": "R7 5.1 kohm pull-down CC2 to GND",
+   "status": "PASS",
+   "detail": {
+    "1": "CC2",
+    "2": "GND"
+   }
+  },
+  {
+   "check": "R8/R9 placed near U1 (series section <= 4 mm)",
+   "status": "PASS",
+   "detail": {
+    "R8.2->U1.47_mm": 3.3,
+    "R9.2->U1.46_mm": 3.529,
+    "centre_distance_to_U1_mm": {
+     "R8": 8.46,
+     "R9": 8.08
+    }
+   }
+  },
+  {
+   "check": "XIN pin 20 -> Y1.1 <= 4.1 mm and crystal nets have no vias",
+   "status": "PASS",
+   "detail": {
+    "XIN_mm": 4.006,
+    "XOUT_to_R1_mm": 0.61,
+    "R1_to_Y1.3_mm": 3.89
+   }
+  },
+  {
+   "check": "Crystal network: only non-GND F.Cu copper inside its hull is the IOVDD22 (+3V3) bypass branch",
+   "status": "PASS",
+   "detail": {
+    "F.Cu": [
+     [
+      "+1V1",
+      0.535,
+      "within 1 mm"
+     ],
+     [
+      "+1V1",
+      0.625,
+      "within 1 mm"
+     ],
+     [
+      "+1V1",
+      0.636,
+      "within 1 mm"
+     ],
+     [
+      "+1V1",
+      0.867,
+      "within 1 mm"
+     ],
+     [
+      "+3V3",
+      0.16,
+      "within 1 mm"
+     ],
+     [
+      "+3V3",
+      0.225,
+      "inside hull"
+     ],
+     [
+      "+3V3",
+      0.225,
+      "within 1 mm"
+     ],
+     [
+      "+3V3",
+      0.247,
+      "inside hull"
+     ],
+     [
+      "+3V3",
+      0.327,
+      "within 1 mm"
+     ],
+     [
+      "+3V3",
+      0.4,
+      "inside hull"
+     ],
+     [
+      "+3V3",
+      0.401,
+      "inside hull"
+     ],
+     [
+      "+3V3",
+      0.695,
+      "within 1 mm"
+     ],
+     [
+      "+3V3",
+      1.231,
+      "within 1 mm"
+     ],
+     [
+      "+3V3",
+      1.801,
+      "within 1 mm"
+     ],
+     [
+      "AMP_ENABLE",
+      0.784,
+      "within 1 mm"
+     ],
+     [
+      "AMP_ENABLE",
+      0.933,
+      "within 1 mm"
+     ],
+     [
+      "AMP_ENABLE",
+      1.608,
+      "within 1 mm"
+     ],
+     [
+      "MUTE_N",
+      0.426,
+      "within 1 mm"
+     ],
+     [
+      "MUTE_N",
+      0.461,
+      "within 1 mm"
+     ],
+     [
+      "MUTE_N",
+      0.884,
+      "within 1 mm"
+     ],
+     [
+      "MUTE_N",
+      1.217,
+      "within 1 mm"
+     ],
+     [
+      "MUTE_N",
+      1.471,
+      "within 1 mm"
+     ],
+     [
+      "RUN",
+      0.927,
+      "within 1 mm"
+     ],
+     [
+      "SWCLK",
+      1.025,
+      "within 1 mm"
+     ]
+    ],
+    "via": [
+     [
+      "+1V1",
+      0.726,
+      "within 1 mm"
+     ],
+     [
+      "AMP_ENABLE",
+      1.784,
+      "within 1 mm"
+     ],
+     [
+      "SWCLK",
+      0.924,
+      "within 1 mm"
+     ]
+    ],
+    "B.Cu": [
+     [
+      "+1V1",
+      0.675,
+      "within 1 mm"
+     ],
+     [
+      "AMP_ENABLE",
+      0.0,
+      "inside hull"
+     ],
+     [
+      "AMP_ENABLE",
+      0.325,
+      "within 1 mm"
+     ],
+     [
+      "I2S_BCLK",
+      0.501,
+      "within 1 mm"
+     ],
+     [
+      "I2S_DATA",
+      0.0,
+      "inside hull"
+     ],
+     [
+      "I2S_DATA",
+      0.046,
+      "within 1 mm"
+     ],
+     [
+      "I2S_LRCLK",
+      0.0,
+      "inside hull"
+     ],
+     [
+      "I2S_LRCLK",
+      0.76,
+      "within 1 mm"
+     ],
+     [
+      "RUN",
+      0.0,
+      "inside hull"
+     ],
+     [
+      "STATUS_LED",
+      0.262,
+      "within 1 mm"
+     ],
+     [
+      "VOLUME_ADC",
+      0.541,
+      "within 1 mm"
+     ]
+    ]
+   }
+  },
+  {
+   "check": "IOVDD pin 22 -> C6 copper path <= 3.0 mm",
+   "status": "PASS",
+   "detail": {
+    "mm": 2.936
+   }
+  },
+  {
+   "check": "VBUS_RAW main path J1 -> F1 is >= 0.4 mm F.Cu with no vias",
+   "status": "PASS",
+   "detail": {
+    "paths": {
+     "J1 east VBUS pad (A4/B9) -> F1.1": {
+      "length_mm": 5.49,
+      "vias": 0,
+      "min_width_mm": 0.4,
+      "est_dc_resistance_ohm": 0.008
+     },
+     "J1 west VBUS pad (A9/B4) -> F1.1": {
+      "length_mm": 26.45,
+      "vias": 2,
+      "min_width_mm": 0.3,
+      "est_dc_resistance_ohm": 0.049
+     },
+     "F1.2 -> U3.1 (LDO input)": {
+      "length_mm": 36.19,
+      "vias": 0,
+      "min_width_mm": 0.15,
+      "est_dc_resistance_ohm": 0.124
+     },
+     "F1.2 -> U5.7 (amplifier VDD)": {
+      "length_mm": 91.72,
+      "vias": 2,
+      "min_width_mm": 0.15,
+      "est_dc_resistance_ohm": 0.307
+     }
+    },
+    "widths_mm": {
+     "VBUS_RAW": [
+      0.3,
+      0.4
+     ],
+     "+5V": [
+      0.15,
+      0.3
+     ]
+    },
+    "ipc2221_external_10C_rise_A": {
+     "0.15": 0.6,
+     "0.3": 1.0,
+     "0.4": 1.23
+    },
+    "note": "+5V after F1 remains 0.15 mm (unchanged from the previous revision)."
+   }
+  },
+  {
+   "check": "Via-in-pad set: only the five exposed-pad vias have drills inside pads",
+   "status": "PASS",
+   "detail": [
+    {
+     "via": [
+      89.4,
+      82.6
+     ],
+     "net": "GND",
+     "pad": "U1.57",
+     "drill_centre_inside_pad": true,
+     "drill_edge_inside_pad_mm": null
+    },
+    {
+     "via": [
+      67.798,
+      56.124
+     ],
+     "net": "GND",
+     "pad": "J1.S1",
+     "drill_centre_inside_pad": false,
+     "drill_edge_inside_pad_mm": 0.064
+    },
+    {
+     "via": [
+      90.6,
+      82.6
+     ],
+     "net": "GND",
+     "pad": "U1.57",
+     "drill_centre_inside_pad": true,
+     "drill_edge_inside_pad_mm": null
+    },
+    {
+     "via": [
+      90.6,
+      81.4
+     ],
+     "net": "GND",
+     "pad": "U1.57",
+     "drill_centre_inside_pad": true,
+     "drill_edge_inside_pad_mm": null
+    },
+    {
+     "via": [
+      119.0,
+      101.0
+     ],
+     "net": "GND",
+     "pad": "U5.17",
+     "drill_centre_inside_pad": true,
+     "drill_edge_inside_pad_mm": null
+    },
+    {
+     "via": [
+      89.4,
+      81.4
+     ],
+     "net": "GND",
+     "pad": "U1.57",
+     "drill_centre_inside_pad": true,
+     "drill_edge_inside_pad_mm": null
+    },
+    {
+     "via": [
+      95.45,
+      66.6
+     ],
+     "net": "GND",
+     "pad": "C15.2",
+     "drill_centre_inside_pad": false,
+     "drill_edge_inside_pad_mm": 0.005
+    }
+   ]
+  },
+  {
+   "check": "Drill-to-drill webs meet JLC published spacing (via-via 0.2 mm; pad hole 0.45 mm)",
+   "status": "FAIL",
+   "detail": {
+    "violations": [
+     {
+      "via": [
+       67.798333,
+       56.1239
+      ],
+      "net": "GND",
+      "hole": "J1.S1",
+      "web_mm": 0.132
+     }
+    ],
+    "source": "https://jlcpcb.com/capabilities/pcb-capabilities (accessed 2026-10-10)",
+    "note": "KiCad min_hole_to_hole 0.25 mm did not report this same-net via/pad-slot pair."
+   }
+  },
+  {
+   "check": "Three fiducials, excluded from BOM/CPL, >=3 mm from edge, no copper inside the mask opening, not 180-degree symmetric",
+   "status": "PASS",
+   "detail": {
+    "fiducials": {
+     "FID1": {
+      "xy": [
+       53.5,
+       61.5
+      ],
+      "copper_dia": 1.0,
+      "mask_opening_dia": 2.0,
+      "min_edge_mm": 3.52,
+      "pour_from_centre_mm": 1.1,
+      "excluded_bom_pos": true
+     },
+     "FID2": {
+      "xy": [
+       61.5,
+       116.5
+      ],
+      "copper_dia": 1.0,
+      "mask_opening_dia": 2.0,
+      "min_edge_mm": 3.53,
+      "pour_from_centre_mm": 1.1,
+      "excluded_bom_pos": true
+     },
+     "FID3": {
+      "xy": [
+       130.0,
+       53.5
+      ],
+      "copper_dia": 1.0,
+      "mask_opening_dia": 2.0,
+      "min_edge_mm": 3.52,
+      "pour_from_centre_mm": 1.1,
+      "excluded_bom_pos": true
+     }
+    },
+    "max_mismatch_after_180deg_rotation_mm": 55.38
+   }
+  },
+  {
+   "check": "Saved zone fills equal an in-memory refill with the loaded rules",
+   "status": "PASS",
+   "detail": {
+    "saved_mm2": {
+     "GND F.Cu": 5216.254,
+     "GND B.Cu": 5808.4968,
+     "GND In1.Cu": 6023.0032,
+     "GND In2.Cu": 6023.0032
+    },
+    "refilled_mm2": {
+     "GND F.Cu": 5216.254,
+     "GND B.Cu": 5808.4968,
+     "GND In1.Cu": 6023.0032,
+     "GND In2.Cu": 6023.0032
+    }
+   }
+  },
+  {
+   "check": "Rerouted non-USB nets keep >= 0.15 mm width (no new necking)",
+   "status": "PASS",
+   "detail": {
+    "changed_nets": {
+     "+1V1": {
+      "length_mm": [
+       32.05,
+       25.29
+      ],
+      "vias": [
+       4,
+       4
+      ],
+      "widths_mm": [
+       [
+        0.15
+       ],
+       [
+        0.15
+       ]
+      ],
+      "layers": [
+       [
+        "B.Cu",
+        "F.Cu"
+       ],
+       [
+        "B.Cu",
+        "F.Cu"
+       ]
+      ]
+     },
+     "+3V3": {
+      "length_mm": [
+       223.39,
+       219.22
+      ],
+      "vias": [
+       9,
+       8
+      ],
+      "widths_mm": [
+       [
+        0.15,
+        0.2
+       ],
+       [
+        0.15,
+        0.2
+       ]
+      ],
+      "layers": [
+       [
+        "B.Cu",
+        "F.Cu"
+       ],
+       [
+        "B.Cu",
+        "F.Cu"
+       ]
+      ]
+     },
+     "BOOTSEL_SW": {
+      "length_mm": [
+       18.47,
+       16.89
+      ],
+      "vias": [
+       0,
+       2
+      ],
+      "widths_mm": [
+       [
+        0.15
+       ],
+       [
+        0.15
+       ]
+      ],
+      "layers": [
+       [
+        "F.Cu"
+       ],
+       [
+        "B.Cu",
+        "F.Cu"
+       ]
+      ]
+     },
+     "CC1": {
+      "length_mm": [
+       11.09,
+       12.5
+      ],
+      "vias": [
+       0,
+       2
+      ],
+      "widths_mm": [
+       [
+        0.15
+       ],
+       [
+        0.15
+       ]
+      ],
+      "layers": [
+       [
+        "F.Cu"
+       ],
+       [
+        "B.Cu",
+        "F.Cu"
+       ]
+      ]
+     },
+     "GND": {
+      "length_mm": [
+       15.88,
+       19.79
+      ],
+      "vias": [
+       34,
+       39
+      ],
+      "widths_mm": [
+       [
+        0.15,
+        0.2
+       ],
+       [
+        0.15,
+        0.2,
+        0.25
+       ]
+      ],
+      "layers": [
+       [
+        "F.Cu"
+       ],
+       [
+        "F.Cu"
+       ]
+      ]
+     },
+     "I2C_SCL": {
+      "length_mm": [
+       57.99,
+       57.98
+      ],
+      "vias": [
+       4,
+       4
+      ],
+      "widths_mm": [
+       [
+        0.15
+       ],
+       [
+        0.15
+       ]
+      ],
+      "layers": [
+       [
+        "B.Cu",
+        "F.Cu"
+       ],
+       [
+        "B.Cu",
+        "F.Cu"
+       ]
+      ]
+     },
+     "QSPI_D0": {
+      "length_mm": [
+       10.61,
+       9.58
+      ],
+      "vias": [
+       2,
+       2
+      ],
+      "widths_mm": [
+       [
+        0.15
+       ],
+       [
+        0.15
+       ]
+      ],
+      "layers": [
+       [
+        "B.Cu",
+        "F.Cu"
+       ],
+       [
+        "B.Cu",
+        "F.Cu"
+       ]
+      ]
+     },
+     "RUN": {
+      "length_mm": [
+       85.64,
+       85.5
+      ],
+      "vias": [
+       3,
+       3
+      ],
+      "widths_mm": [
+       [
+        0.15
+       ],
+       [
+        0.15
+       ]
+      ],
+      "layers": [
+       [
+        "B.Cu",
+        "F.Cu"
+       ],
+       [
+        "B.Cu",
+        "F.Cu"
+       ]
+      ]
+     },
+     "SENSOR_XSHUT": {
+      "length_mm": [
+       50.82,
+       60.21
+      ],
+      "vias": [
+       2,
+       2
+      ],
+      "widths_mm": [
+       [
+        0.15
+       ],
+       [
+        0.15
+       ]
+      ],
+      "layers": [
+       [
+        "B.Cu",
+        "F.Cu"
+       ],
+       [
+        "B.Cu",
+        "F.Cu"
+       ]
+      ]
+     },
+     "SWCLK": {
+      "length_mm": [
+       30.61,
+       30.61
+      ],
+      "vias": [
+       2,
+       2
+      ],
+      "widths_mm": [
+       [
+        0.15
+       ],
+       [
+        0.15
+       ]
+      ],
+      "layers": [
+       [
+        "B.Cu",
+        "F.Cu"
+       ],
+       [
+        "B.Cu",
+        "F.Cu"
+       ]
+      ]
+     },
+     "USB_DM": {
+      "length_mm": [
+       20.3,
+       18.51
+      ],
+      "vias": [
+       2,
+       0
+      ],
+      "widths_mm": [
+       [
+        0.15
+       ],
+       [
+        0.15,
+        0.25
+       ]
+      ],
+      "layers": [
+       [
+        "B.Cu",
+        "F.Cu"
+       ],
+       [
+        "F.Cu"
+       ]
+      ]
+     },
+     "USB_DM_ESD": {
+      "length_mm": [
+       34.4,
+       42.18
+      ],
+      "vias": [
+       0,
+       0
+      ],
+      "widths_mm": [
+       [
+        0.15
+       ],
+       [
+        0.15,
+        0.25
+       ]
+      ],
+      "layers": [
+       [
+        "F.Cu"
+       ],
+       [
+        "F.Cu"
+       ]
+      ]
+     },
+     "USB_DM_MCU": {
+      "length_mm": [
+       4.78,
+       4.44
+      ],
+      "vias": [
+       0,
+       0
+      ],
+      "widths_mm": [
+       [
+        0.15
+       ],
+       [
+        0.15,
+        0.25
+       ]
+      ],
+      "layers": [
+       [
+        "F.Cu"
+       ],
+       [
+        "F.Cu"
+       ]
+      ]
+     },
+     "USB_DP": {
+      "length_mm": [
+       19.66,
+       17.14
+      ],
+      "vias": [
+       0,
+       0
+      ],
+      "widths_mm": [
+       [
+        0.15
+       ],
+       [
+        0.15,
+        0.25
+       ]
+      ],
+      "layers": [
+       [
+        "F.Cu"
+       ],
+       [
+        "F.Cu"
+       ]
+      ]
+     },
+     "USB_DP_ESD": {
+      "length_mm": [
+       24.15,
+       44.5
+      ],
+      "vias": [
+       2,
+       0
+      ],
+      "widths_mm": [
+       [
+        0.15
+       ],
+       [
+        0.15,
+        0.25
+       ]
+      ],
+      "layers": [
+       [
+        "B.Cu",
+        "F.Cu"
+       ],
+       [
+        "F.Cu"
+       ]
+      ]
+     },
+     "USB_DP_MCU": {
+      "length_mm": [
+       4.62,
+       4.14
+      ],
+      "vias": [
+       0,
+       0
+      ],
+      "widths_mm": [
+       [
+        0.15
+       ],
+       [
+        0.15,
+        0.25
+       ]
+      ],
+      "layers": [
+       [
+        "F.Cu"
+       ],
+       [
+        "F.Cu"
+       ]
+      ]
+     },
+     "VBUS_RAW": {
+      "length_mm": [
+       35.87,
+       34.33
+      ],
+      "vias": [
+       0,
+       2
+      ],
+      "widths_mm": [
+       [
+        0.3
+       ],
+       [
+        0.3,
+        0.4
+       ]
+      ],
+      "layers": [
+       [
+        "F.Cu"
+       ],
+       [
+        "B.Cu",
+        "F.Cu"
+       ]
+      ]
+     },
+     "XIN": {
+      "length_mm": [
+       10.48,
+       5.18
+      ],
+      "vias": [
+       2,
+       0
+      ],
+      "widths_mm": [
+       [
+        0.15
+       ],
+       [
+        0.15
+       ]
+      ],
+      "layers": [
+       [
+        "B.Cu",
+        "F.Cu"
+       ],
+       [
+        "F.Cu"
+       ]
+      ]
+     },
+     "XOUT": {
+      "length_mm": [
+       6.4,
+       0.8
+      ],
+      "vias": [
+       0,
+       0
+      ],
+      "widths_mm": [
+       [
+        0.15
+       ],
+       [
+        0.15
+       ]
+      ],
+      "layers": [
+       [
+        "F.Cu"
+       ],
+       [
+        "F.Cu"
+       ]
+      ]
+     },
+     "XTAL_OUT": {
+      "length_mm": [
+       9.65,
+       4.96
+      ],
+      "vias": [
+       0,
+       0
+      ],
+      "widths_mm": [
+       [
+        0.15
+       ],
+       [
+        0.15
+       ]
+      ],
+      "layers": [
+       [
+        "F.Cu"
+       ],
+       [
+        "F.Cu"
+       ]
+      ]
+     }
+    },
+    "moved_footprints": {
+     "C1": [
+      [
+       89.0,
+       93.75,
+       0.0
+      ],
+      [
+       86.74,
+       90.4,
+       -90.0
+      ]
+     ],
+     "C11": [
+      [
+       90.6,
+       87.7,
+       -90.0
+      ],
+      [
+       92.44,
+       86.96,
+       0.0
+      ]
+     ],
+     "C2": [
+      [
+       95.0,
+       93.75,
+       0.0
+      ],
+      [
+       91.94,
+       92.6,
+       -90.0
+      ]
+     ],
+     "C6": [
+      [
+       93.25,
+       87.3,
+       0.0
+      ],
+      [
+       92.02,
+       88.53,
+       0.0
+      ]
+     ],
+     "D1": [
+      [
+       72.0,
+       62.0,
+       0.0
+      ],
+      [
+       71.1,
+       65.1,
+       90.0
+      ]
+     ],
+     "FID1": [
+      null,
+      [
+       53.5,
+       61.5,
+       0.0
+      ]
+     ],
+     "FID2": [
+      null,
+      [
+       61.5,
+       116.5,
+       0.0
+      ]
+     ],
+     "FID3": [
+      null,
+      [
+       130.0,
+       53.5,
+       0.0
+      ]
+     ],
+     "R1": [
+      [
+       88.75,
+       90.0,
+       90.0
+      ],
+      [
+       89.7,
+       87.71,
+       -90.0
+      ]
+     ],
+     "R8": [
+      [
+       90.6,
+       73.4,
+       -90.0
+      ],
+      [
+       91.0,
+       73.6,
+       -90.0
+      ]
+     ],
+     "R9": [
+      [
+       92.3,
+       73.4,
+       -90.0
+      ],
+      [
+       92.6,
+       74.35,
+       -90.0
+      ]
+     ],
+     "Y1": [
+      [
+       92.0,
+       91.0,
+       0.0
+      ],
+      [
+       89.35,
+       91.46,
+       -90.0
+      ]
+     ]
+    }
+   }
+  }
+ ],
+ "failed": 1,
+ "physical_tests": "PENDING"
+}
