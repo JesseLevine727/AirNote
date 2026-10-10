@@ -52,22 +52,60 @@ The 50 mA amplifier input allocation allows 0.25 W at 5 V. It must be checked
 at the actual load and all eleven pitches. Use an 8 ohm speaker rated at least
 1 W; output power and acoustic loudness are separate measurements.
 
-## USB release blockers
+## USB power: first-article disposition
+
+### Inrush charge
 
 Nominal direct input capacitance is 5.9 uF: C18 on raw VBUS plus C16, C21 and
 C22 after the PTC. The PTC is not a controlled inrush limiter. Charging the
 downstream 3.3 V and 1.1 V capacitance adds source charge; a count of only
 the capacitors labelled 5 V therefore cannot establish USB inrush compliance.
 
+Total charge drawn from VBUS if every rail charges to nominal, using the
+capacitors on the PCB nets:
+
+| Rail | Capacitance | Voltage | Charge |
+| --- | ---: | ---: | ---: |
+| VBUS_RAW (C18) | 0.1 uF | 5.25 V | 0.5 uC |
+| +5V (C16, C21, C22) | 5.8 uF | 5.25 V | 30.5 uC |
+| +3V3 (12 capacitors incl. C20 4.7 uF) | 7.6 uF | 3.3 V | 25.1 uC |
+| +1V1 (C10, C11, C14) | 1.2 uF | 1.1 V | 1.3 uC |
+| **Total** | | | **57.4 uC** |
+
+USB 2.0 section 7.2.4.1 limits a device to 10 uF at attach unless it limits
+surge current, and USB-IF compliance testing uses a 50 uC inrush-charge limit.
+AirNote's nominal figure is about 15% over that guideline. MLCC DC-bias
+derating lowers the real value, while capacitor tolerance can raise it; only
+a measurement settles it.
+
+### Suspend current
+
 The present firmware holds the sensor in reset and delays the audio core
 until USB configuration or a deliberate MUTE-to-PLAY sequence on the specified
 adapter. USB suspend/deconfiguration disables the amplifier and sensor and
-parks the audio core. **Core 0 and the regulator still run; no compliant
-suspend current has been demonstrated.** A validated low-power strategy and
-input-charge/current measurements are required before a USB-compliant release.
-For a first-article build, these open risks need an explicit engineering
-disposition and restricted power-on plan; the physical measurements themselves
-follow assembly. The current files have not passed that first-article gate.
+parks the audio core. **Core 0 and the regulator still run**, so suspend
+current is tens of milliamps, not the 2.5 mA USB allows.
+
+### Disposition
+
+Overseer disposition, 2026-10-10 (the user may override):
+
+- **Inrush: accepted deviation for first articles.** AirNote is not a
+  USB-IF-certified product. The computer connection exists only for
+  programming and diagnostics in MUTE; normal PLAY uses a 5 V adapter.
+  A rev-B fix, if bring-up shows a host port resetting or browning out, is
+  a soft-start load switch on VBUS or less bulk capacitance on +5V/+3V3.
+- **Suspend: accepted deviation for first articles.** The worst case is a
+  sleeping computer supplying more suspend current than the spec allows.
+  A compliant fix needs RP2040 dormant mode with a USB-resume wake strategy;
+  that is a firmware project for later, if ever needed.
+- **Restricted first power-on** (detailed in `docs/bringup.md`): the first
+  power comes from a current-limited bench supply or USB power meter, never
+  directly from a computer port. Connect to a computer only after rails and
+  current are verified, preferably through a powered hub, with MUTE selected.
+
+These are accepted risks, not passes. The measurements below are still
+required before any claim of USB behaviour.
 
 Record source voltage, current waveform, cable, board revision and firmware
 hash for connection, ROM BOOTSEL, unconfigured application, configured

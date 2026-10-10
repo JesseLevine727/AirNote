@@ -1,9 +1,10 @@
 # AirNote V1 requirements and workflow
 
-Revision 0.1, 2026-10-10. User-selected architecture: fully integrated PCB with
+Revision 0.2, 2026-10-10. User-selected architecture: fully integrated PCB with
 factory assembly. All physical acceptance results are **PENDING** until an
-assembled board is measured. Four layers and the component selections below
-are engineering choices; a factory stackup and quote are not yet confirmed.
+assembled board is measured. Fabricator, stackup (JLC04161H-7628), PCBA
+service and sourcing are recorded in [fabrication_plan.md](fabrication_plan.md);
+no quote has been accepted and no order has been placed.
 
 ## Product behavior
 

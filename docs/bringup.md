@@ -24,10 +24,16 @@ too coarse to establish the proposed p95 latency target accurately.
    allow capacitors to charge before interpreting resistance measurements.
 3. Verify the hardware mute switch shorts AMP_SD to GND in MUTE without
    shorting the MCU GPIO directly (there is a series resistor).
+4. Remove the VL53L1X protective liner (the clear film over the optical
+   window) with plastic tweezers. JLC assembles the sensor with it in place
+   and has no removal step; ranging through it gives wrong distances.
 
 ## First power and firmware
 
 1. Apply current-limited 5 V, initially with a conservative 100 mA limit.
+   Never make the first connection to a computer port (see the inrush and
+   suspend disposition in `docs/power_budget.md`). Without a bench supply,
+   use a USB power meter on a phone charger, then a powered hub for the computer.
    If the supply limits, switch off and investigate before raising it.
    Measure 5V, 3V3 and 1V1 at the test pads identified in the assembly drawing.
    TP1 is raw USB VBUS, TP2 is fused 5V, TP3 is 3V3, TP4 is 1V1 and TP5 is

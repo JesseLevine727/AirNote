@@ -1,5 +1,15 @@
 # Assembly feasibility and quotation brief — draft
 
+> **Update 2026-10-10:** JLCPCB Standard PCBA has been chosen. Its published
+> capabilities and parts catalog answer most of the questions below without
+> a manual inquiry; see [fabrication_plan.md](fabrication_plan.md). Answered:
+> procurement (1), stackup and geometry (4), THT assembly. Partly answered:
+> optical handling (2; Standard reflow and no wash, liner removed by us) and
+> exposed-pad vias (3; open by default, POFV optional). Still to confirm on
+> the actual order: rotations in JLC's placement preview (5), and
+> fiducial/edge-rail handling. JLC's inspection and functional-test options (6)
+> were not researched; plan on doing all bring-up and testing ourselves.
+
 Project: AirNote V1 engineering prototype, fully integrated RP2040 /
 VL53L1X / MAX98357A instrument. This brief is prepared for a future supplier
 inquiry. **It has not been sent, no quotation has been obtained, and no order

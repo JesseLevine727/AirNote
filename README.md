@@ -71,6 +71,7 @@ reports distinguish logic/net-mapping evidence from routing and physical tests.
 - [Requirements, targets and three-agent workflow](docs/requirements.md)
 - [Bring-up, programming, equipment and calibration procedure](docs/bringup.md)
 - [Power and thermal allocations](docs/power_budget.md)
+- [Fabrication and sourcing plan (JLCPCB)](docs/fabrication_plan.md)
 - [Draft factory assembly brief](docs/assembly_request.md)
 - [Independent review checklist](reviews/CHECKLIST.md)
 - [Current review status](reviews/REVIEW_STATUS.md)
