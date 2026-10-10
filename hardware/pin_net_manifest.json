@@ -1,0 +1,2151 @@
+[
+  {
+    "ref": "U1",
+    "lib": "MCU_RaspberryPi:RP2040",
+    "value": "RP2040",
+    "footprint": "Package_DFN_QFN:QFN-56-1EP_7x7mm_P0.4mm_EP3.2x3.2mm",
+    "mpn": "RP2040",
+    "nets": {
+      "19": "GND",
+      "26": "RUN",
+      "46": "USB_DM_MCU",
+      "47": "USB_DP_MCU",
+      "56": "QSPI_CS",
+      "52": "QSPI_CLK",
+      "53": "QSPI_D0",
+      "55": "QSPI_D1",
+      "54": "QSPI_D2",
+      "51": "QSPI_D3",
+      "20": "XIN",
+      "21": "XOUT",
+      "24": "SWCLK",
+      "25": "SWDIO",
+      "48": "+3V3",
+      "43": "ADC_3V3",
+      "1": "+3V3",
+      "10": "+3V3",
+      "22": "+3V3",
+      "33": "+3V3",
+      "42": "+3V3",
+      "49": "+3V3",
+      "57": "GND",
+      "44": "+3V3",
+      "45": "+1V1",
+      "23": "+1V1",
+      "50": "+1V1",
+      "2": "I2C_SDA",
+      "3": "I2C_SCL",
+      "4": "SENSOR_XSHUT",
+      "5": "SENSOR_IRQ",
+      "13": "I2S_DATA",
+      "14": "I2S_BCLK",
+      "15": "I2S_LRCLK",
+      "17": "AMP_ENABLE",
+      "18": "MUTE_N",
+      "37": "STATUS_LED",
+      "38": "VOLUME_ADC"
+    },
+    "page": "core",
+    "sch": [
+      81.28,
+      96.52
+    ],
+    "xy": [
+      90.0,
+      82.0
+    ],
+    "rot": 0.0,
+    "unit": 1,
+    "description": "",
+    "manufacturer": "Raspberry Pi",
+    "uuid": "1d3e0ef3-fa6d-513f-b055-f2416b5334f5",
+    "initial_xy": [
+      90,
+      82
+    ],
+    "initial_rotation": 0
+  },
+  {
+    "ref": "U2",
+    "lib": "Memory_Flash:W25Q16JVSS",
+    "value": "W25Q16JVSSIQ",
+    "footprint": "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm",
+    "mpn": "W25Q16JVSSIQ",
+    "nets": {
+      "1": "QSPI_CS",
+      "6": "QSPI_CLK",
+      "5": "QSPI_D0",
+      "2": "QSPI_D1",
+      "3": "QSPI_D2",
+      "7": "QSPI_D3",
+      "8": "+3V3",
+      "4": "GND"
+    },
+    "page": "core",
+    "sch": [
+      190.5,
+      58.42
+    ],
+    "xy": [
+      89.0,
+      69.0
+    ],
+    "rot": 0.0,
+    "unit": 1,
+    "description": "",
+    "manufacturer": "Winbond",
+    "uuid": "e4938643-9c42-5024-b533-9d3908ad2a2d",
+    "initial_xy": [
+      89,
+      69
+    ],
+    "initial_rotation": 0
+  },
+  {
+    "ref": "Y1",
+    "lib": "Device:Crystal_GND24",
+    "value": "12MHz ABM8-272-T3",
+    "footprint": "Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm",
+    "mpn": "ABM8-272-T3",
+    "nets": {
+      "1": "XIN",
+      "3": "XTAL_OUT",
+      "2": "GND",
+      "4": "GND"
+    },
+    "page": "core",
+    "sch": [
+      193.04,
+      116.84
+    ],
+    "xy": [
+      92.0,
+      91.0
+    ],
+    "rot": 0.0,
+    "unit": 1,
+    "description": "",
+    "manufacturer": "Abracon",
+    "uuid": "4b5bad11-4f54-5a27-ae0b-fb08dcd527d5",
+    "initial_xy": [
+      92,
+      91
+    ],
+    "initial_rotation": 0
+  },
+  {
+    "ref": "R1",
+    "lib": "Device:R",
+    "value": "1k",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "mpn": "RC0603FR-071KL",
+    "nets": {
+      "1": "XOUT",
+      "2": "XTAL_OUT"
+    },
+    "page": "core",
+    "sch": [
+      203.2,
+      142.24
+    ],
+    "xy": [
+      88.75,
+      90.0
+    ],
+    "rot": 90.0,
+    "unit": 1,
+    "description": "",
+    "manufacturer": "Yageo",
+    "uuid": "08d15df2-0c4a-5865-bba4-66ebed0f02c5",
+    "initial_xy": [
+      89,
+      90
+    ],
+    "initial_rotation": 90
+  },
+  {
+    "ref": "C1",
+    "lib": "Device:C",
+    "value": "15p",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "mpn": "GRM1885C1H150JA01D",
+    "nets": {
+      "1": "XIN",
+      "2": "GND"
+    },
+    "page": "core",
+    "sch": [
+      172.72,
+      116.84
+    ],
+    "xy": [
+      89.0,
+      93.75
+    ],
+    "rot": 0.0,
+    "unit": 1,
+    "description": "",
+    "manufacturer": "Murata",
+    "uuid": "8ac6a1fc-cb2d-5d2a-95c7-f0dddd1741a0",
+    "initial_xy": [
+      89,
+      93
+    ],
+    "initial_rotation": 0
+  },
+  {
+    "ref": "C2",
+    "lib": "Device:C",
+    "value": "15p",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "mpn": "GRM1885C1H150JA01D",
+    "nets": {
+      "1": "XTAL_OUT",
+      "2": "GND"
+    },
+    "page": "core",
+    "sch": [
+      218.44,
+      116.84
+    ],
+    "xy": [
+      95.0,
+      93.75
+    ],
+    "rot": 0.0,
+    "unit": 1,
+    "description": "",
+    "manufacturer": "Murata",
+    "uuid": "91bb21a2-4be8-521c-b556-8ea71057e8e0",
+    "initial_xy": [
+      95,
+      93
+    ],
+    "initial_rotation": 0
+  },
+  {
+    "ref": "R2",
+    "lib": "Device:R",
+    "value": "10k",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "mpn": "RC0603FR-0710KL",
+    "nets": {
+      "1": "+3V3",
+      "2": "QSPI_CS"
+    },
+    "page": "core",
+    "sch": [
+      162.56,
+      58.42
+    ],
+    "xy": [
+      94.5,
+      69.0
+    ],
+    "rot": 0.0,
+    "unit": 1,
+    "description": "",
+    "manufacturer": "Yageo",
+    "uuid": "811e82b5-4bca-5a89-871e-1d5f2fd9318a",
+    "initial_xy": [
+      92.5,
+      69.0
+    ],
+    "initial_rotation": 0
+  },
+  {
+    "ref": "R3",
+    "lib": "Device:R",
+    "value": "1k",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "mpn": "RC0603FR-071KL",
+    "nets": {
+      "1": "QSPI_CS",
+      "2": "BOOTSEL_SW"
+    },
+    "page": "core",
+    "sch": [
+      241.3,
+      58.42
+    ],
+    "xy": [
+      97.0,
+      68.0
+    ],
+    "rot": 90.0,
+    "unit": 1,
+    "description": "",
+    "manufacturer": "Yageo",
+    "uuid": "535a49f5-813b-5766-a35e-05bec39c0c4e",
+    "initial_xy": [
+      96,
+      68
+    ],
+    "initial_rotation": 90
+  },
+  {
+    "ref": "SW1",
+    "lib": "Switch:SW_Push",
+    "value": "BOOTSEL",
+    "footprint": "Button_Switch_SMD:SW_SPST_TL3342",
+    "mpn": "TL3342F160QG",
+    "nets": {
+      "1": "BOOTSEL_SW",
+      "2": "GND"
+    },
+    "page": "core",
+    "sch": [
+      269.24,
+      58.42
+    ],
+    "xy": [
+      99.0,
+      59.0
+    ],
+    "rot": 0.0,
+    "unit": 1,
+    "description": "",
+    "manufacturer": "E-Switch",
+    "uuid": "c69bf9ea-3595-5000-92bc-34ff1bd40f60",
+    "initial_xy": [
+      99,
+      59
+    ],
+    "initial_rotation": 0
+  },
+  {
+    "ref": "R4",
+    "lib": "Device:R",
+    "value": "10k",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "mpn": "RC0603FR-0710KL",
+    "nets": {
+      "1": "+3V3",
+      "2": "RUN"
+    },
+    "page": "core",
+    "sch": [
+      243.84,
+      93.98
+    ],
+    "xy": [
+      84.0,
+      91.0
+    ],
+    "rot": 0.0,
+    "unit": 1,
+    "description": "",
+    "manufacturer": "Yageo",
+    "uuid": "e512011c-a626-5224-b929-fa225068127f",
+    "initial_xy": [
+      84,
+      91
+    ],
+    "initial_rotation": 0
+  },
+  {
+    "ref": "SW2",
+    "lib": "Switch:SW_Push",
+    "value": "RESET",
+    "footprint": "Button_Switch_SMD:SW_SPST_TL3342",
+    "mpn": "TL3342F160QG",
+    "nets": {
+      "1": "RUN",
+      "2": "GND"
+    },
+    "page": "core",
+    "sch": [
+      269.24,
+      93.98
+    ],
+    "xy": [
+      109.0,
+      59.0
+    ],
+    "rot": 0.0,
+    "unit": 1,
+    "description": "",
+    "manufacturer": "E-Switch",
+    "uuid": "cc61221a-60fe-59ef-9d09-9920f37ecd49",
+    "initial_xy": [
+      109,
+      59
+    ],
+    "initial_rotation": 0
+  },
+  {
+    "ref": "J2",
+    "lib": "Connector_Generic:Conn_01x05",
+    "value": "SWD 3V3 GND DIO CLK RUN",
+    "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical",
+    "mpn": "TSW-105-07-G-S",
+    "nets": {
+      "1": "+3V3",
+      "2": "GND",
+      "3": "SWDIO",
+      "4": "SWCLK",
+      "5": "RUN"
+    },
+    "page": "core",
+    "sch": [
+      304.8,
+      132.08
+    ],
+    "xy": [
+      112.0,
+      84.0
+    ],
+    "rot": 0.0,
+    "unit": 1,
+    "description": "",
+    "manufacturer": "Samtec",
+    "uuid": "19cc84fc-54b7-52fb-a96c-cc35c044ffd8",
+    "initial_xy": [
+      112,
+      84
+    ],
+    "initial_rotation": 0
+  },
+  {
+    "ref": "C3",
+    "lib": "Device:C",
+    "value": "100n",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "mpn": "GRM188R71C104KA01D",
+    "nets": {
+      "1": "+3V3",
+      "2": "GND"
+    },
+    "page": "core",
+    "sch": [
+      48.26,
+      177.8
+    ],
+    "xy": [
+      83.95,
+      78.5
+    ],
+    "rot": 0.0,
+    "unit": 1,
+    "description": "",
+    "manufacturer": "Murata",
+    "uuid": "387c3ce3-69d8-5a85-bc8c-71fead0000ef",
+    "initial_xy": [
+      85.2,
+      78
+    ],
+    "initial_rotation": 0
+  },
+  {
+    "ref": "C4",
+    "lib": "Device:C",
+    "value": "100n",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "mpn": "GRM188R71C104KA01D",
+    "nets": {
+      "1": "+3V3",
+      "2": "GND"
+    },
+    "page": "core",
+    "sch": [
+      76.2,
+      177.8
+    ],
+    "xy": [
+      83.95,
+      84.6
+    ],
+    "rot": 0.0,
+    "unit": 1,
+    "description": "",
+    "manufacturer": "Murata",
+    "uuid": "13adaed9-6206-52a8-94d9-4ab43a506be7",
+    "initial_xy": [
+      85.2,
+      84.6
+    ],
+    "initial_rotation": 0
+  },
+  {
+    "ref": "C5",
+    "lib": "Device:C",
+    "value": "100n",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "mpn": "GRM188R71C104KA01D",
+    "nets": {
+      "1": "+3V3",
+      "2": "GND"
+    },
+    "page": "core",
+    "sch": [
+      104.14,
+      177.8
+    ],
+    "xy": [
+      87.2,
+      87.3
+    ],
+    "rot": 0.0,
+    "unit": 1,
+    "description": "",
+    "manufacturer": "Murata",
+    "uuid": "4a566640-a146-5964-b0fd-39aaf15f4fe0",
+    "initial_xy": [
+      87.2,
+      86.8
+    ],
+    "initial_rotation": 0
+  },
+  {
+    "ref": "C6",
+    "lib": "Device:C",
+    "value": "100n",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "mpn": "GRM188R71C104KA01D",
+    "nets": {
+      "1": "+3V3",
+      "2": "GND"
+    },
+    "page": "core",
+    "sch": [
+      132.08,
+      177.8
+    ],
+    "xy": [
+      93.25,
+      87.3
+    ],
+    "rot": 0.0,
+    "unit": 1,
+    "description": "",
+    "manufacturer": "Murata",
+    "uuid": "19bbf49a-6b04-5f79-b921-7ddb324b2427",
+    "initial_xy": [
+      93.6,
+      86.8
+    ],
+    "initial_rotation": 0
+  },
+  {
+    "ref": "C7",
+    "lib": "Device:C",
+    "value": "100n",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "mpn": "GRM188R71C104KA01D",
+    "nets": {
+      "1": "+3V3",
+      "2": "GND"
+    },
+    "page": "core",
+    "sch": [
+      160.02,
+      177.8
+    ],
+    "xy": [
+      96.0,
+      82.5
+    ],
+    "rot": 0.0,
+    "unit": 1,
+    "description": "",
+    "manufacturer": "Murata",
+    "uuid": "ad0ab5d4-c256-5552-9045-c719dc35c297",
+    "initial_xy": [
+      94.8,
+      82
+    ],
+    "initial_rotation": 0
+  },
+  {
+    "ref": "C8",
+    "lib": "Device:C",
+    "value": "100n",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "mpn": "GRM188R71C104KA01D",
+    "nets": {
+      "1": "+3V3",
+      "2": "GND"
+    },
+    "page": "core",
+    "sch": [
+      48.26,
+      215.9
+    ],
+    "xy": [
+      96.4,
+      76.7
+    ],
+    "rot": 0.0,
+    "unit": 1,
+    "description": "",
+    "manufacturer": "Murata",
+    "uuid": "3c1def89-498b-50a3-ad45-bc45007b8bcb",
+    "initial_xy": [
+      94.8,
+      77.2
+    ],
+    "initial_rotation": 0
+  },
+  {
+    "ref": "C9",
+    "lib": "Device:C",
+    "value": "100n",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "mpn": "GRM188R71C104KA01D",
+    "nets": {
+      "1": "+3V3",
+      "2": "GND"
+    },
+    "page": "core",
+    "sch": [
+      76.2,
+      215.9
+    ],
+    "xy": [
+      89.4,
+      76.7
+    ],
+    "rot": 180.0,
+    "unit": 1,
+    "description": "",
+    "manufacturer": "Murata",
+    "uuid": "2543de6c-0771-57d1-9f54-2e16335f2020",
+    "initial_xy": [
+      92.8,
+      76.6
+    ],
+    "initial_rotation": 0
+  },
+  {
+    "ref": "C10",
+    "lib": "Device:C",
+    "value": "100n",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "mpn": "GRM188R71C104KA01D",
+    "nets": {
+      "1": "+1V1",
+      "2": "GND"
+    },
+    "page": "core",
+    "sch": [
+      104.14,
+      215.9
+    ],
+    "xy": [
+      87.6,
+      74.85
+    ],
+    "rot": 180.0,
+    "unit": 1,
+    "description": "",
+    "manufacturer": "Murata",
+    "uuid": "ac686ea4-6c83-5491-b9da-14802f0b4d07",
+    "initial_xy": [
+      87,
+      77
+    ],
+    "initial_rotation": 0
+  },
+  {
+    "ref": "C11",
+    "lib": "Device:C",
+    "value": "100n",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "mpn": "GRM188R71C104KA01D",
+    "nets": {
+      "1": "+1V1",
+      "2": "GND"
+    },
+    "page": "core",
+    "sch": [
+      132.08,
+      215.9
+    ],
+    "xy": [
+      90.6,
+      87.7
+    ],
+    "rot": -90.0,
+    "unit": 1,
+    "description": "",
+    "manufacturer": "Murata",
+    "uuid": "3efdd509-ce92-508b-8dcb-e785ba129669",
+    "initial_xy": [
+      94.4,
+      74.6
+    ],
+    "initial_rotation": 0
+  },
+  {
+    "ref": "C12",
+    "lib": "Device:C",
+    "value": "100n",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "mpn": "GRM188R71C104KA01D",
+    "nets": {
+      "1": "ADC_3V3",
+      "2": "GND"
+    },
+    "page": "core",
+    "sch": [
+      160.02,
+      215.9
+    ],
+    "xy": [
+      97.0,
+      79.0
+    ],
+    "rot": 0.0,
+    "unit": 1,
+    "description": "",
+    "manufacturer": "Murata",
+    "uuid": "7e3a3aef-addd-5491-8ca0-c2c68929050e",
+    "initial_xy": [
+      97,
+      79
+    ],
+    "initial_rotation": 0
+  },
+  {
+    "ref": "C13",
+    "lib": "Device:C",
+    "value": "1u",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "mpn": "GRM188R71A105KA61D",
+    "nets": {
+      "1": "+3V3",
+      "2": "GND"
+    },
+    "page": "core",
+    "sch": [
+      208.28,
+      177.8
+    ],
+    "xy": [
+      97.0,
+      84.5
+    ],
+    "rot": 0.0,
+    "unit": 1,
+    "description": "",
+    "manufacturer": "Murata",
+    "uuid": "b781af95-0ae0-51b4-92d2-277108f29f49",
+    "initial_xy": [
+      97,
+      84.5
+    ],
+    "initial_rotation": 0
+  },
+  {
+    "ref": "C14",
+    "lib": "Device:C",
+    "value": "1u",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "mpn": "GRM188R71A105KA61D",
+    "nets": {
+      "1": "+1V1",
+      "2": "GND"
+    },
+    "page": "core",
+    "sch": [
+      236.22,
+      177.8
+    ],
+    "xy": [
+      93.0,
+      76.7
+    ],
+    "rot": 0.0,
+    "unit": 1,
+    "description": "",
+    "manufacturer": "Murata",
+    "uuid": "9436e3f8-eaff-537d-a861-2a771c61c5d0",
+    "initial_xy": [
+      97,
+      82
+    ],
+    "initial_rotation": 0
+  },
+  {
+    "ref": "C15",
+    "lib": "Device:C",
+    "value": "100n",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "mpn": "GRM188R71C104KA01D",
+    "nets": {
+      "1": "+3V3",
+      "2": "GND"
+    },
+    "page": "core",
+    "sch": [
+      264.16,
+      177.8
+    ],
+    "xy": [
+      94.3,
+      65.9
+    ],
+    "rot": -45.0,
+    "unit": 1,
+    "description": "",
+    "manufacturer": "Murata",
+    "uuid": "d67c983f-2d1c-50b7-8650-87398cb9b14b",
+    "initial_xy": [
+      85,
+      68
+    ],
+    "initial_rotation": 0
+  },
+  {
+    "ref": "R5",
+    "lib": "Device:R",
+    "value": "1",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "mpn": "RC0603FR-071RL",
+    "nets": {
+      "1": "+3V3",
+      "2": "ADC_3V3"
+    },
+    "page": "core",
+    "sch": [
+      292.1,
+      177.8
+    ],
+    "xy": [
+      100.0,
+      76.0
+    ],
+    "rot": 90.0,
+    "unit": 1,
+    "description": "",
+    "manufacturer": "Yageo",
+    "uuid": "02d5f95b-fbde-5122-b335-49dc357c130e",
+    "initial_xy": [
+      96,
+      76
+    ],
+    "initial_rotation": 90
+  },
+  {
+    "ref": "J1",
+    "lib": "Connector:USB_C_Receptacle_USB2.0_16P",
+    "value": "USB-C USB2.0",
+    "footprint": "AirNote:USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal",
+    "mpn": "USB4105-GF-A",
+    "nets": {
+      "A1": "GND",
+      "A12": "GND",
+      "B1": "GND",
+      "B12": "GND",
+      "A4": "VBUS_RAW",
+      "A9": "VBUS_RAW",
+      "B4": "VBUS_RAW",
+      "B9": "VBUS_RAW",
+      "A5": "CC1",
+      "B5": "CC2",
+      "A6": "USB_DP",
+      "B6": "USB_DP",
+      "A7": "USB_DM",
+      "B7": "USB_DM",
+      "S1": "GND"
+    },
+    "page": "power",
+    "sch": [
+      55.88,
+      71.12
+    ],
+    "xy": [
+      64.0,
+      53.675
+    ],
+    "rot": 180.0,
+    "unit": 1,
+    "description": "",
+    "manufacturer": "GCT",
+    "uuid": "9c490067-8af4-5951-bb5d-0116ac310085",
+    "initial_xy": [
+      64,
+      53.675
+    ],
+    "initial_rotation": 180
+  },
+  {
+    "ref": "R6",
+    "lib": "Device:R",
+    "value": "5.1k",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "mpn": "RC0603FR-075K1L",
+    "nets": {
+      "1": "CC1",
+      "2": "GND"
+    },
+    "page": "power",
+    "sch": [
+      104.14,
+      45.72
+    ],
+    "xy": [
+      67.0,
+      60.25
+    ],
+    "rot": 90.0,
+    "unit": 1,
+    "description": "",
+    "manufacturer": "Yageo",
+    "uuid": "e3e03356-fba6-5bab-ad4c-03227f7af590",
+    "initial_xy": [
+      67,
+      61
+    ],
+    "initial_rotation": 90
+  },
+  {
+    "ref": "R7",
+    "lib": "Device:R",
+    "value": "5.1k",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "mpn": "RC0603FR-075K1L",
+    "nets": {
+      "1": "CC2",
+      "2": "GND"
+    },
+    "page": "power",
+    "sch": [
+      132.08,
+      45.72
+    ],
+    "xy": [
+      67.0,
+      63.5
+    ],
+    "rot": 90.0,
+    "unit": 1,
+    "description": "",
+    "manufacturer": "Yageo",
+    "uuid": "87e835da-d998-5667-9961-534170fe0f81",
+    "initial_xy": [
+      67,
+      63.5
+    ],
+    "initial_rotation": 90
+  },
+  {
+    "ref": "D1",
+    "lib": "Power_Protection:USBLC6-2SC6",
+    "value": "USBLC6-2SC6",
+    "footprint": "Package_TO_SOT_SMD:SOT-23-6",
+    "mpn": "USBLC6-2SC6",
+    "nets": {
+      "1": "USB_DP",
+      "6": "USB_DP_ESD",
+      "3": "USB_DM",
+      "4": "USB_DM_ESD",
+      "2": "GND",
+      "5": "VBUS_RAW"
+    },
+    "page": "power",
+    "sch": [
+      121.92,
+      88.9
+    ],
+    "xy": [
+      72.0,
+      62.0
+    ],
+    "rot": 0.0,
+    "unit": 1,
+    "description": "",
+    "manufacturer": "STMicroelectronics",
+    "uuid": "4141420a-b27a-5c54-9149-1434110606f6",
+    "initial_xy": [
+      72,
+      62
+    ],
+    "initial_rotation": 0
+  },
+  {
+    "ref": "R8",
+    "lib": "Device:R",
+    "value": "27",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "mpn": "RC0603FR-0727RL",
+    "nets": {
+      "1": "USB_DP_ESD",
+      "2": "USB_DP_MCU"
+    },
+    "page": "power",
+    "sch": [
+      175.26,
+      66.04
+    ],
+    "xy": [
+      90.6,
+      73.4
+    ],
+    "rot": -90.0,
+    "unit": 1,
+    "description": "",
+    "manufacturer": "Yageo",
+    "uuid": "3838cb9c-2bea-572e-8de9-9ca40bbee129",
+    "initial_xy": [
+      96,
+      72
+    ],
+    "initial_rotation": 90
+  },
+  {
+    "ref": "R9",
+    "lib": "Device:R",
+    "value": "27",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "mpn": "RC0603FR-0727RL",
+    "nets": {
+      "1": "USB_DM_ESD",
+      "2": "USB_DM_MCU"
+    },
+    "page": "power",
+    "sch": [
+      205.73999999999998,
+      66.03999999999999
+    ],
+    "xy": [
+      92.3,
+      73.4
+    ],
+    "rot": -90.0,
+    "unit": 1,
+    "description": "",
+    "manufacturer": "Yageo",
+    "uuid": "5dc1dced-7209-5a84-be62-41d6e9c198c3",
+    "initial_xy": [
+      96,
+      73.8
+    ],
+    "initial_rotation": 90
+  },
+  {
+    "ref": "F1",
+    "lib": "Device:Polyfuse",
+    "value": "500mA hold PTC",
+    "footprint": "Fuse:Fuse_1206_3216Metric",
+    "mpn": "1206L050YR",
+    "nets": {
+      "1": "VBUS_RAW",
+      "2": "+5V"
+    },
+    "page": "power",
+    "sch": [
+      111.76,
+      139.7
+    ],
+    "xy": [
+      70.75,
+      55.5
+    ],
+    "rot": 90.0,
+    "unit": 1,
+    "description": "",
+    "manufacturer": "Littelfuse",
+    "uuid": "4c6cd8e6-bce8-5b3d-9999-310c92e488b9",
+    "initial_xy": [
+      68,
+      55.5
+    ],
+    "initial_rotation": 90
+  },
+  {
+    "ref": "U3",
+    "lib": "Regulator_Linear:AP2112K-3.3",
+    "value": "AP2112K-3.3",
+    "footprint": "Package_TO_SOT_SMD:SOT-23-5",
+    "mpn": "AP2112K-3.3TRG1",
+    "nets": {
+      "1": "+5V",
+      "2": "GND",
+      "3": "+5V",
+      "5": "+3V3"
+    },
+    "page": "power",
+    "sch": [
+      177.8,
+      139.7
+    ],
+    "xy": [
+      74.0,
+      71.0
+    ],
+    "rot": 0.0,
+    "unit": 1,
+    "description": "",
+    "manufacturer": "Diodes Inc.",
+    "uuid": "054eec89-52fd-5cde-b719-d1a6583bfc73",
+    "initial_xy": [
+      74,
+      71
+    ],
+    "initial_rotation": 0
+  },
+  {
+    "ref": "C16",
+    "lib": "Device:C",
+    "value": "1u",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "mpn": "GRM188R71A105KA61D",
+    "nets": {
+      "1": "+5V",
+      "2": "GND"
+    },
+    "page": "power",
+    "sch": [
+      144.78,
+      157.48
+    ],
+    "xy": [
+      70.0,
+      71.0
+    ],
+    "rot": 0.0,
+    "unit": 1,
+    "description": "",
+    "manufacturer": "Murata",
+    "uuid": "3856fcd7-2c56-5edc-8355-8a389b878ca7",
+    "initial_xy": [
+      70.5,
+      71
+    ],
+    "initial_rotation": 0
+  },
+  {
+    "ref": "C17",
+    "lib": "Device:C",
+    "value": "1u",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "mpn": "GRM188R71A105KA61D",
+    "nets": {
+      "1": "+3V3",
+      "2": "GND"
+    },
+    "page": "power",
+    "sch": [
+      208.28,
+      157.48
+    ],
+    "xy": [
+      78.0,
+      71.0
+    ],
+    "rot": 0.0,
+    "unit": 1,
+    "description": "",
+    "manufacturer": "Murata",
+    "uuid": "386f2679-b04f-52ea-a84c-0c81f5984d4a",
+    "initial_xy": [
+      77.5,
+      71
+    ],
+    "initial_rotation": 0
+  },
+  {
+    "ref": "C18",
+    "lib": "Device:C",
+    "value": "100n",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "mpn": "GRM188R71C104KA01D",
+    "nets": {
+      "1": "VBUS_RAW",
+      "2": "GND"
+    },
+    "page": "power",
+    "sch": [
+      78.74,
+      139.7
+    ],
+    "xy": [
+      71.25,
+      59.0
+    ],
+    "rot": 0.0,
+    "unit": 1,
+    "description": "",
+    "manufacturer": "Murata",
+    "uuid": "47811793-f059-53a9-9b0a-891f1d488ca7",
+    "initial_xy": [
+      70,
+      59
+    ],
+    "initial_rotation": 0
+  },
+  {
+    "ref": "U4",
+    "lib": "Sensor_Distance:VL53L1CXV0FY1",
+    "value": "VL53L1CXV0FY/1",
+    "footprint": "Sensor_Distance:ST_VL53L1x",
+    "mpn": "VL53L1CXV0FY/1",
+    "nets": {
+      "1": "+3V3",
+      "11": "+3V3",
+      "2": "GND",
+      "3": "GND",
+      "4": "GND",
+      "6": "GND",
+      "12": "GND",
+      "5": "SENSOR_XSHUT",
+      "7": "SENSOR_IRQ",
+      "9": "I2C_SDA",
+      "10": "I2C_SCL"
+    },
+    "page": "instrument",
+    "sch": [
+      68.58,
+      66.04
+    ],
+    "xy": [
+      119.0,
+      60.0
+    ],
+    "rot": 0.0,
+    "unit": 1,
+    "description": "",
+    "manufacturer": "STMicroelectronics",
+    "uuid": "c9a3a70c-adb0-52b5-bbcb-9d87022b4526",
+    "initial_xy": [
+      119,
+      60
+    ],
+    "initial_rotation": 0
+  },
+  {
+    "ref": "C19",
+    "lib": "Device:C",
+    "value": "100n",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "mpn": "GRM188R71C104KA01D",
+    "nets": {
+      "1": "+3V3",
+      "2": "GND"
+    },
+    "page": "instrument",
+    "sch": [
+      101.6,
+      45.72
+    ],
+    "xy": [
+      114.75,
+      59.25
+    ],
+    "rot": 90.0,
+    "unit": 1,
+    "description": "",
+    "manufacturer": "Murata",
+    "uuid": "ae224f8b-62c4-5c61-b3ab-bf8ee79c2a28",
+    "initial_xy": [
+      117.5,
+      63.5
+    ],
+    "initial_rotation": 0
+  },
+  {
+    "ref": "C20",
+    "lib": "Device:C",
+    "value": "4.7u",
+    "footprint": "Capacitor_SMD:C_0805_2012Metric",
+    "mpn": "GRM21BR71A475KA73L",
+    "nets": {
+      "1": "+3V3",
+      "2": "GND"
+    },
+    "page": "instrument",
+    "sch": [
+      129.54,
+      45.72
+    ],
+    "xy": [
+      120.5,
+      63.5
+    ],
+    "rot": 0.0,
+    "unit": 1,
+    "description": "",
+    "manufacturer": "Murata",
+    "uuid": "f2ded0e6-98ac-5c48-ba99-ada3ab4cfb07",
+    "initial_xy": [
+      120.5,
+      63.5
+    ],
+    "initial_rotation": 0
+  },
+  {
+    "ref": "R10",
+    "lib": "Device:R",
+    "value": "10k",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "mpn": "RC0603FR-0710KL",
+    "nets": {
+      "1": "+3V3",
+      "2": "SENSOR_XSHUT"
+    },
+    "page": "instrument",
+    "sch": [
+      101.6,
+      81.28
+    ],
+    "xy": [
+      114.5,
+      62.75
+    ],
+    "rot": 90.0,
+    "unit": 1,
+    "description": "",
+    "manufacturer": "Yageo",
+    "uuid": "9235c692-2cfb-5dd1-b31e-3bc4a08d107a",
+    "initial_xy": [
+      114.5,
+      63
+    ],
+    "initial_rotation": 90
+  },
+  {
+    "ref": "R11",
+    "lib": "Device:R",
+    "value": "10k",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "mpn": "RC0603FR-0710KL",
+    "nets": {
+      "1": "+3V3",
+      "2": "SENSOR_IRQ"
+    },
+    "page": "instrument",
+    "sch": [
+      129.54,
+      81.28
+    ],
+    "xy": [
+      114.5,
+      66.0
+    ],
+    "rot": 90.0,
+    "unit": 1,
+    "description": "",
+    "manufacturer": "Yageo",
+    "uuid": "2db514cf-37a9-5307-8e78-142308fb007b",
+    "initial_xy": [
+      114.5,
+      66
+    ],
+    "initial_rotation": 90
+  },
+  {
+    "ref": "R12",
+    "lib": "Device:R",
+    "value": "5.1k",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "mpn": "RC0603FR-075K1L",
+    "nets": {
+      "1": "+3V3",
+      "2": "I2C_SDA"
+    },
+    "page": "instrument",
+    "sch": [
+      40.64,
+      111.76
+    ],
+    "xy": [
+      111.0,
+      65.25
+    ],
+    "rot": 90.0,
+    "unit": 1,
+    "description": "",
+    "manufacturer": "Yageo",
+    "uuid": "6702a30c-914f-5da8-ab0f-a325e8824f5b",
+    "initial_xy": [
+      111,
+      66
+    ],
+    "initial_rotation": 90
+  },
+  {
+    "ref": "R13",
+    "lib": "Device:R",
+    "value": "5.1k",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "mpn": "RC0603FR-075K1L",
+    "nets": {
+      "1": "+3V3",
+      "2": "I2C_SCL"
+    },
+    "page": "instrument",
+    "sch": [
+      68.58,
+      111.76
+    ],
+    "xy": [
+      111.0,
+      68.5
+    ],
+    "rot": 90.0,
+    "unit": 1,
+    "description": "",
+    "manufacturer": "Yageo",
+    "uuid": "11faad6a-8e73-5be2-a982-3b52159de151",
+    "initial_xy": [
+      111,
+      68.5
+    ],
+    "initial_rotation": 90
+  },
+  {
+    "ref": "U5",
+    "lib": "AirNote:MAX98357A",
+    "value": "MAX98357AETE+T",
+    "footprint": "AirNote:MAX98357A_T1633_ADI_90-0031",
+    "mpn": "MAX98357AETE+T",
+    "nets": {
+      "1": "I2S_DATA",
+      "16": "I2S_BCLK",
+      "14": "I2S_LRCLK",
+      "4": "AMP_SD",
+      "3": "GND",
+      "11": "GND",
+      "15": "GND",
+      "17": "GND",
+      "7": "+5V",
+      "8": "+5V",
+      "9": "SPK_P",
+      "10": "SPK_N"
+    },
+    "page": "instrument",
+    "sch": [
+      220.98,
+      68.58
+    ],
+    "xy": [
+      119.0,
+      101.0
+    ],
+    "rot": 0.0,
+    "unit": 1,
+    "description": "",
+    "manufacturer": "Analog Devices",
+    "uuid": "065cd789-74b4-56bb-9a08-f2b5ed3e6f74",
+    "initial_xy": [
+      119,
+      101
+    ],
+    "initial_rotation": 0
+  },
+  {
+    "ref": "C21",
+    "lib": "Device:C",
+    "value": "100n",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "mpn": "GRM188R71C104KA01D",
+    "nets": {
+      "1": "+5V",
+      "2": "GND"
+    },
+    "page": "instrument",
+    "sch": [
+      187.96,
+      38.1
+    ],
+    "xy": [
+      119.5,
+      104.75
+    ],
+    "rot": -90.0,
+    "unit": 1,
+    "description": "",
+    "manufacturer": "Murata",
+    "uuid": "d41e62f4-7db2-50ef-a108-46f5a2b4fdd7",
+    "initial_xy": [
+      121.8,
+      100
+    ],
+    "initial_rotation": 0
+  },
+  {
+    "ref": "C22",
+    "lib": "Device:C",
+    "value": "4.7u",
+    "footprint": "Capacitor_SMD:C_0805_2012Metric",
+    "mpn": "GRM21BR71A475KA73L",
+    "nets": {
+      "1": "+5V",
+      "2": "GND"
+    },
+    "page": "instrument",
+    "sch": [
+      218.44,
+      38.1
+    ],
+    "xy": [
+      122.4,
+      104.75
+    ],
+    "rot": -90.0,
+    "unit": 1,
+    "description": "",
+    "manufacturer": "Murata",
+    "uuid": "76b90cc1-1878-554e-8f5a-6cf7ae8880d9",
+    "initial_xy": [
+      125,
+      100
+    ],
+    "initial_rotation": 0
+  },
+  {
+    "ref": "J3",
+    "lib": "Connector_Generic:Conn_01x02",
+    "value": "SPEAKER 8ohm >=1W",
+    "footprint": "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical",
+    "mpn": "B2B-PH-K-S(LF)(SN)",
+    "nets": {
+      "1": "SPK_P",
+      "2": "SPK_N"
+    },
+    "page": "instrument",
+    "sch": [
+      279.4,
+      66.04
+    ],
+    "xy": [
+      132.0,
+      104.0
+    ],
+    "rot": 0.0,
+    "unit": 1,
+    "description": "",
+    "manufacturer": "JST",
+    "uuid": "bd973daa-2e93-5412-9b68-21befe9aacec",
+    "initial_xy": [
+      132,
+      104
+    ],
+    "initial_rotation": 0
+  },
+  {
+    "ref": "R14",
+    "lib": "Device:R",
+    "value": "10k",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "mpn": "RC0603FR-0710KL",
+    "nets": {
+      "1": "AMP_ENABLE",
+      "2": "AMP_SD"
+    },
+    "page": "instrument",
+    "sch": [
+      177.8,
+      111.76
+    ],
+    "xy": [
+      113.5,
+      103.0
+    ],
+    "rot": 90.0,
+    "unit": 1,
+    "description": "",
+    "manufacturer": "Yageo",
+    "uuid": "3722a2eb-de16-5749-b851-28a7235d6cec",
+    "initial_xy": [
+      113.5,
+      103
+    ],
+    "initial_rotation": 90
+  },
+  {
+    "ref": "R15",
+    "lib": "Device:R",
+    "value": "100k",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "mpn": "RC0603FR-07100KL",
+    "nets": {
+      "1": "AMP_SD",
+      "2": "GND"
+    },
+    "page": "instrument",
+    "sch": [
+      205.74,
+      111.76
+    ],
+    "xy": [
+      114.0,
+      106.0
+    ],
+    "rot": 0.0,
+    "unit": 1,
+    "description": "",
+    "manufacturer": "Yageo",
+    "uuid": "dd8febe0-27a1-53d9-9cb3-29efb25ea342",
+    "initial_xy": [
+      114,
+      106
+    ],
+    "initial_rotation": 0
+  },
+  {
+    "ref": "R16",
+    "lib": "Device:R",
+    "value": "10k",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "mpn": "RC0603FR-0710KL",
+    "nets": {
+      "1": "+3V3",
+      "2": "MUTE_N"
+    },
+    "page": "instrument",
+    "sch": [
+      276.86,
+      111.76
+    ],
+    "xy": [
+      110.0,
+      108.0
+    ],
+    "rot": 0.0,
+    "unit": 1,
+    "description": "",
+    "manufacturer": "Yageo",
+    "uuid": "e2f9a106-f2e7-52f6-b522-4afe6672e7a4",
+    "initial_xy": [
+      110,
+      108
+    ],
+    "initial_rotation": 0
+  },
+  {
+    "ref": "SW3",
+    "lib": "Switch:SW_DPDT_x2",
+    "value": "MUTE / PLAY",
+    "footprint": "Button_Switch_SMD:SW_DPDT_CK_JS202011JCQN",
+    "mpn": "JS202011JCQN",
+    "nets": {
+      "1": "GND",
+      "2": "AMP_SD",
+      "3": null,
+      "4": "GND",
+      "5": "MUTE_N",
+      "6": null
+    },
+    "page": "instrument",
+    "sch": [
+      276.86,
+      134.62
+    ],
+    "xy": [
+      121.0,
+      113.0
+    ],
+    "rot": 0.0,
+    "unit": 2,
+    "description": "",
+    "manufacturer": "C&K",
+    "uuid": "5951fa19-ef73-551e-9f3a-002f4d1bcc94",
+    "initial_xy": [
+      121,
+      113
+    ],
+    "initial_rotation": 0
+  },
+  {
+    "ref": "RV1",
+    "lib": "Device:R_Potentiometer",
+    "value": "10k LINEAR VOLUME",
+    "footprint": "Potentiometer_THT:Potentiometer_Bourns_PTV09A-1_Single_Vertical",
+    "mpn": "PTV09A-1020F-B103",
+    "nets": {
+      "1": "GND",
+      "2": "VOLUME_RAW",
+      "3": "+3V3"
+    },
+    "page": "instrument",
+    "sch": [
+      66.04,
+      165.1
+    ],
+    "xy": [
+      69.0,
+      108.0
+    ],
+    "rot": 0.0,
+    "unit": 1,
+    "description": "",
+    "manufacturer": "Bourns",
+    "uuid": "3e0d3a59-f4c7-5a49-bd60-d7b5ec2366c0",
+    "initial_xy": [
+      69,
+      108
+    ],
+    "initial_rotation": 0
+  },
+  {
+    "ref": "R17",
+    "lib": "Device:R",
+    "value": "1k",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "mpn": "RC0603FR-071KL",
+    "nets": {
+      "1": "VOLUME_RAW",
+      "2": "VOLUME_ADC"
+    },
+    "page": "instrument",
+    "sch": [
+      109.22,
+      165.1
+    ],
+    "xy": [
+      86.0,
+      108.0
+    ],
+    "rot": 90.0,
+    "unit": 1,
+    "description": "",
+    "manufacturer": "Yageo",
+    "uuid": "b74b8747-ef78-5b4c-a1e3-936346c477b1",
+    "initial_xy": [
+      86,
+      108
+    ],
+    "initial_rotation": 90
+  },
+  {
+    "ref": "C23",
+    "lib": "Device:C",
+    "value": "100n",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "mpn": "GRM188R71C104KA01D",
+    "nets": {
+      "1": "VOLUME_ADC",
+      "2": "GND"
+    },
+    "page": "instrument",
+    "sch": [
+      137.16,
+      165.1
+    ],
+    "xy": [
+      89.75,
+      108.0
+    ],
+    "rot": 0.0,
+    "unit": 1,
+    "description": "",
+    "manufacturer": "Murata",
+    "uuid": "78b04cd6-2e38-5019-ac76-97cbe230222e",
+    "initial_xy": [
+      90,
+      108
+    ],
+    "initial_rotation": 0
+  },
+  {
+    "ref": "D2",
+    "lib": "Device:LED",
+    "value": "GREEN STATUS",
+    "footprint": "LED_SMD:LED_0603_1608Metric",
+    "mpn": "LTST-C190KGKT",
+    "nets": {
+      "1": "GND",
+      "2": "LED_A"
+    },
+    "page": "instrument",
+    "sch": [
+      190.5,
+      165.1
+    ],
+    "xy": [
+      95.0,
+      112.0
+    ],
+    "rot": 0.0,
+    "unit": 1,
+    "description": "",
+    "manufacturer": "Lite-On",
+    "uuid": "ab26e5e9-faec-5230-9558-ab79f7f5506d",
+    "initial_xy": [
+      95,
+      112
+    ],
+    "initial_rotation": 0
+  },
+  {
+    "ref": "R18",
+    "lib": "Device:R",
+    "value": "1k",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "mpn": "RC0603FR-071KL",
+    "nets": {
+      "1": "STATUS_LED",
+      "2": "LED_A"
+    },
+    "page": "instrument",
+    "sch": [
+      162.56,
+      165.1
+    ],
+    "xy": [
+      91.0,
+      112.0
+    ],
+    "rot": 90.0,
+    "unit": 1,
+    "description": "",
+    "manufacturer": "Yageo",
+    "uuid": "e1327bb6-6bd7-5757-8201-9cfa2fe22378",
+    "initial_xy": [
+      91,
+      112
+    ],
+    "initial_rotation": 90
+  },
+  {
+    "ref": "R19",
+    "lib": "Device:R",
+    "value": "1M",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "mpn": "RC0603FR-071ML",
+    "nets": {
+      "1": "VOLUME_ADC",
+      "2": "GND"
+    },
+    "page": "instrument",
+    "sch": [
+      137.16,
+      200.66
+    ],
+    "xy": [
+      93.0,
+      108.0
+    ],
+    "rot": 0.0,
+    "unit": 1,
+    "description": "",
+    "manufacturer": "Yageo",
+    "uuid": "1d117d37-7ccd-5864-8b81-ae7235c4c9b6",
+    "initial_xy": [
+      93,
+      108
+    ],
+    "initial_rotation": 0
+  },
+  {
+    "ref": "TP1",
+    "lib": "Connector:TestPoint",
+    "value": "VBUS_RAW",
+    "footprint": "TestPoint:TestPoint_Pad_D1.5mm",
+    "mpn": "TEST_PAD_1.5MM",
+    "nets": {
+      "1": "VBUS_RAW"
+    },
+    "page": "power",
+    "sch": [
+      40.64,
+      190.5
+    ],
+    "xy": [
+      61.0,
+      65.0
+    ],
+    "rot": 0.0,
+    "unit": 1,
+    "description": "Bare PCB pad; no fitted component",
+    "manufacturer": "",
+    "uuid": "ec528bcd-a71e-509a-aff0-fd1ec1c07693",
+    "initial_xy": [
+      61,
+      65
+    ],
+    "initial_rotation": 0
+  },
+  {
+    "ref": "TP2",
+    "lib": "Connector:TestPoint",
+    "value": "+5V",
+    "footprint": "TestPoint:TestPoint_Pad_D1.5mm",
+    "mpn": "TEST_PAD_1.5MM",
+    "nets": {
+      "1": "+5V"
+    },
+    "page": "power",
+    "sch": [
+      68.58,
+      190.5
+    ],
+    "xy": [
+      68.0,
+      67.0
+    ],
+    "rot": 0.0,
+    "unit": 1,
+    "description": "Bare PCB pad; no fitted component",
+    "manufacturer": "",
+    "uuid": "34940954-1fc6-5800-becf-cc014cb0b4dd",
+    "initial_xy": [
+      68,
+      67
+    ],
+    "initial_rotation": 0
+  },
+  {
+    "ref": "TP3",
+    "lib": "Connector:TestPoint",
+    "value": "+3V3",
+    "footprint": "TestPoint:TestPoint_Pad_D1.5mm",
+    "mpn": "TEST_PAD_1.5MM",
+    "nets": {
+      "1": "+3V3"
+    },
+    "page": "power",
+    "sch": [
+      96.52000000000001,
+      190.5
+    ],
+    "xy": [
+      77.0,
+      75.0
+    ],
+    "rot": 0.0,
+    "unit": 1,
+    "description": "Bare PCB pad; no fitted component",
+    "manufacturer": "",
+    "uuid": "d612572b-70d6-5cfe-950a-7dbe8d2aa1b1",
+    "initial_xy": [
+      77,
+      75
+    ],
+    "initial_rotation": 0
+  },
+  {
+    "ref": "TP4",
+    "lib": "Connector:TestPoint",
+    "value": "+1V1",
+    "footprint": "TestPoint:TestPoint_Pad_D1.5mm",
+    "mpn": "TEST_PAD_1.5MM",
+    "nets": {
+      "1": "+1V1"
+    },
+    "page": "power",
+    "sch": [
+      124.46000000000001,
+      190.5
+    ],
+    "xy": [
+      98.0,
+      87.0
+    ],
+    "rot": 0.0,
+    "unit": 1,
+    "description": "Bare PCB pad; no fitted component",
+    "manufacturer": "",
+    "uuid": "d2fb442c-7503-59c7-98cc-4eb17ac5061a",
+    "initial_xy": [
+      98,
+      87
+    ],
+    "initial_rotation": 0
+  },
+  {
+    "ref": "TP5",
+    "lib": "Connector:TestPoint",
+    "value": "GND",
+    "footprint": "TestPoint:TestPoint_Pad_D1.5mm",
+    "mpn": "TEST_PAD_1.5MM",
+    "nets": {
+      "1": "GND"
+    },
+    "page": "power",
+    "sch": [
+      152.4,
+      190.5
+    ],
+    "xy": [
+      107.0,
+      90.0
+    ],
+    "rot": 0.0,
+    "unit": 1,
+    "description": "Bare PCB pad; no fitted component",
+    "manufacturer": "",
+    "uuid": "168f4009-b2f8-55b6-9318-fe3fdbab418f",
+    "initial_xy": [
+      107,
+      90
+    ],
+    "initial_rotation": 0
+  },
+  {
+    "ref": "TP6",
+    "lib": "Connector:TestPoint",
+    "value": "I2C_SDA",
+    "footprint": "TestPoint:TestPoint_Pad_D1.5mm",
+    "mpn": "TEST_PAD_1.5MM",
+    "nets": {
+      "1": "I2C_SDA"
+    },
+    "page": "power",
+    "sch": [
+      180.34000000000003,
+      190.5
+    ],
+    "xy": [
+      108.0,
+      73.0
+    ],
+    "rot": 0.0,
+    "unit": 1,
+    "description": "Bare PCB pad; no fitted component",
+    "manufacturer": "",
+    "uuid": "95564245-2618-57e2-8496-205ff2e2af75",
+    "initial_xy": [
+      108,
+      73
+    ],
+    "initial_rotation": 0
+  },
+  {
+    "ref": "TP7",
+    "lib": "Connector:TestPoint",
+    "value": "I2C_SCL",
+    "footprint": "TestPoint:TestPoint_Pad_D1.5mm",
+    "mpn": "TEST_PAD_1.5MM",
+    "nets": {
+      "1": "I2C_SCL"
+    },
+    "page": "power",
+    "sch": [
+      40.64,
+      210.82
+    ],
+    "xy": [
+      111.0,
+      73.0
+    ],
+    "rot": 0.0,
+    "unit": 1,
+    "description": "Bare PCB pad; no fitted component",
+    "manufacturer": "",
+    "uuid": "5db7cf71-be25-5f1d-bc9f-40db101707b9",
+    "initial_xy": [
+      111,
+      73
+    ],
+    "initial_rotation": 0
+  },
+  {
+    "ref": "TP8",
+    "lib": "Connector:TestPoint",
+    "value": "I2S_DATA",
+    "footprint": "TestPoint:TestPoint_Pad_D1.5mm",
+    "mpn": "TEST_PAD_1.5MM",
+    "nets": {
+      "1": "I2S_DATA"
+    },
+    "page": "power",
+    "sch": [
+      68.58,
+      210.82
+    ],
+    "xy": [
+      107.0,
+      98.0
+    ],
+    "rot": 0.0,
+    "unit": 1,
+    "description": "Bare PCB pad; no fitted component",
+    "manufacturer": "",
+    "uuid": "59402567-6732-53e6-9d95-1f35ed919019",
+    "initial_xy": [
+      107,
+      98
+    ],
+    "initial_rotation": 0
+  },
+  {
+    "ref": "TP9",
+    "lib": "Connector:TestPoint",
+    "value": "I2S_BCLK",
+    "footprint": "TestPoint:TestPoint_Pad_D1.5mm",
+    "mpn": "TEST_PAD_1.5MM",
+    "nets": {
+      "1": "I2S_BCLK"
+    },
+    "page": "power",
+    "sch": [
+      96.52000000000001,
+      210.82
+    ],
+    "xy": [
+      107.0,
+      101.0
+    ],
+    "rot": 0.0,
+    "unit": 1,
+    "description": "Bare PCB pad; no fitted component",
+    "manufacturer": "",
+    "uuid": "8a53f148-1708-5268-b355-9e0583b8f80b",
+    "initial_xy": [
+      107,
+      101
+    ],
+    "initial_rotation": 0
+  },
+  {
+    "ref": "TP10",
+    "lib": "Connector:TestPoint",
+    "value": "I2S_LRCLK",
+    "footprint": "TestPoint:TestPoint_Pad_D1.5mm",
+    "mpn": "TEST_PAD_1.5MM",
+    "nets": {
+      "1": "I2S_LRCLK"
+    },
+    "page": "power",
+    "sch": [
+      124.46000000000001,
+      210.82
+    ],
+    "xy": [
+      107.0,
+      104.0
+    ],
+    "rot": 0.0,
+    "unit": 1,
+    "description": "Bare PCB pad; no fitted component",
+    "manufacturer": "",
+    "uuid": "7ec079ba-f3cb-5fc4-943a-f8e2346d10db",
+    "initial_xy": [
+      107,
+      104
+    ],
+    "initial_rotation": 0
+  },
+  {
+    "ref": "TP11",
+    "lib": "Connector:TestPoint",
+    "value": "AMP_SD",
+    "footprint": "TestPoint:TestPoint_Pad_D1.5mm",
+    "mpn": "TEST_PAD_1.5MM",
+    "nets": {
+      "1": "AMP_SD"
+    },
+    "page": "power",
+    "sch": [
+      152.4,
+      210.82
+    ],
+    "xy": [
+      112.0,
+      112.0
+    ],
+    "rot": 0.0,
+    "unit": 1,
+    "description": "Bare PCB pad; no fitted component",
+    "manufacturer": "",
+    "uuid": "f6f5724d-a603-540e-b674-858d2f774fef",
+    "initial_xy": [
+      112,
+      112
+    ],
+    "initial_rotation": 0
+  }
+]

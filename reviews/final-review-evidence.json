@@ -1,0 +1,45 @@
+{
+  "captured_utc": "2026-10-10T18:04:30.198317+00:00",
+  "overall_status": "ENGINEERING_DRAFT_REVIEWED_NOT_RELEASED",
+  "pcb_sha256": "c35f7d922f362b58a088193dba98902f71df68bcac94774f78b6f83b8618e9cc",
+  "source_and_export_hashes_unchanged": true,
+  "firmware_static_review_hashes_unchanged": true,
+  "native_checks": {
+    "erc_violations": 0,
+    "drc_violations": 0,
+    "unconnected": 0,
+    "schematic_parity": 0,
+    "commands": [
+      "kicad-cli pcb drc --format json --severity-all --all-track-errors --schematic-parity --exit-code-violations -o reviews/drc-final.json hardware/airnote.kicad_pcb",
+      "kicad-cli sch erc --format json --severity-all --exit-code-violations -o reviews/erc-final.json hardware/airnote.kicad_sch"
+    ],
+    "exit_codes": [
+      0,
+      0
+    ]
+  },
+  "export_coherence": "PASS",
+  "report_sha256": {
+    "reviews/drc-final.json": "0b4c33d11ad61439d84e9fc1da33abc4ac31f85751942911685a9de0b3279413",
+    "reviews/erc-final.json": "5dc30e3c80015e54fce90f7de631532fa64c3599aed73f682d197c4e353c9fa5",
+    "reviews/artifact-audit.json": "16b755541948db9ef427aef38a4f1a67e9155dc8ad61fd1448da3475a18f0e23",
+    "reviews/export-review.json": "434fad2a787fa52b86e710f4df1edef14994f31a5735bc8247f7142919ad886f",
+    "reviews/final-trace-paths.txt": "faf50becdaec3c5935089e53a652dc4a0d8dd8b232930e59dd89de0eba046b19",
+    "reviews/host-test-evidence.json": "7a6d460a7361008d29c04a4a60ab4d8cab94da1b295237a0fb3992654fa42df9",
+    "reviews/firmware-static-review.json": "089abfc5373bf6e795e1a6014a4a8cfbd19559445b301bd87f27d633a483498f",
+    "reviews/power-budget-review.json": "20eda3b8e5c5647e69198c1d6d9f24b5c47f21cfbcd88391d3efc89d4401dd41",
+    "reviews/gerber-top-review.svg": "38b0cdce16b4ef738722110fba746afe73731127c2cc0d703bfec3d0594adfc2",
+    "reviews/gerber-bottom-review.svg": "242d4dc6b443883d9584d3031494c16e03a5747fc9217041441efe97ef35b542",
+    "reviews/gerber-inner1-review.svg": "a8f4f5af88013eecebff9705971b8d752735c59299292027905a76314ccb2e41",
+    "reviews/FINAL_REVIEW.md": "9f5426f4b7c74048061cd802368c3c49cfe9b0375206499ae096cc532b26199b"
+  },
+  "remaining_gates": [
+    "USB pair geometry and supplier stackup",
+    "Residual IOVDD22/crystal prototype disposition",
+    "USB power/inrush/suspend compliance and restricted first-article plan",
+    "Supplier sourcing/optical assembly/thermal-via process",
+    "Mechanical fit with missing 3D models",
+    "All physical performance/calibration/endurance tests"
+  ],
+  "physical_tests": "PENDING"
+}

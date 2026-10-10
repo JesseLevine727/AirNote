@@ -1,0 +1,45 @@
+PICO_SDK_PATH is /home/elfo/Documents/KiCadFun/.deps/pico-sdk
+Target board (PICO_BOARD) is 'airnote'.
+Using board configuration from /home/elfo/Documents/KiCadFun/firmware/include/boards/airnote.h
+Defaulting platform (PICO_PLATFORM) to 'rp2040' since not specified.
+-- Defaulting build type to 'Release' since not specified.
+Defaulting compiler (PICO_COMPILER) to 'pico_arm_cortex_m0plus_gcc' since not specified or detected.
+Configuring toolchain based on PICO_COMPILER 'pico_arm_cortex_m0plus_gcc'
+Defaulting PICO_GCC_TRIPLE to 'arm-none-eabi'
+-- The C compiler identification is GNU 13.2.1
+-- The CXX compiler identification is GNU 13.2.1
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/arm-none-eabi-gcc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/arm-none-eabi-g++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- The ASM compiler identification is GNU
+-- Found assembler: /usr/bin/arm-none-eabi-gcc
+Build type is Release
+-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+-- Detected native TLS (__aeabi_read_tp)
+TinyUSB available at /home/elfo/Documents/KiCadFun/.deps/pico-sdk/lib/tinyusb/hw/bsp/rp2040; enabling build support for USB.
+C library type is newlib
+CMake Warning at /home/elfo/Documents/KiCadFun/.deps/pico-sdk/tools/Findpicotool.cmake:30 (message):
+  No installed picotool with version 2.3.0 found - building from source
+
+  It is recommended to build and install picotool separately, or to set
+  PICOTOOL_FETCH_FROM_GIT_PATH to a common directory for all your SDK
+  projects
+Call Stack (most recent call first):
+  /home/elfo/Documents/KiCadFun/.deps/pico-sdk/tools/CMakeLists.txt:180 (find_package)
+  /home/elfo/Documents/KiCadFun/.deps/pico-sdk/tools/CMakeLists.txt:722 (pico_init_picotool)
+  /home/elfo/Documents/KiCadFun/.deps/pico-sdk/src/cmake/on_device.cmake:81 (picotool_postprocess_binary)
+  CMakeLists.txt:34 (pico_add_extra_outputs)
+
+
+Downloading Picotool
+Using picotool from /home/elfo/Documents/KiCadFun/build/firmware-verification/_deps/picotool/picotool
+-- Configuring done (1.1s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/elfo/Documents/KiCadFun/build/firmware-verification

@@ -1,0 +1,25 @@
+{
+  "captured_utc": "2026-10-10T17:42:39.194169+00:00",
+  "native_test": "PASS",
+  "independent_test": "PASS",
+  "fresh_arm_build": "PASS",
+  "executed_on_hardware": false,
+  "hashes_sha256": {
+    "artifacts/airnote.elf": "63d43d94cb7d5098025099cb50ab1e146e5e40fe14d76ce08b3a98e9ed156982",
+    "artifacts/airnote.uf2": "1eca0f9bf6ae44d5835f8bcaeadfaec4ba5a16e21518f764a9d7f2b3ffd09a6b",
+    "firmware/CMakeLists.txt": "3834ef2faf27154b845422bf1dd1e0e122e2cfefd3e77b92172b746f340ba0b3",
+    "firmware/include/boards/airnote.h": "b817d261e33574ad49a5a6d827733b51c05bd4211a40b8097a47fcd2efc5769d",
+    "firmware/include/compat/Arduino.h": "cf6d661efef76f36afa0349ed20d83818500ae2414c045415a66234a0a8fae09",
+    "firmware/include/compat/Wire.h": "c274213772a1cc0b576f6e9805e57fc3842fd298055ffeedb3a808303aab42b2",
+    "firmware/include/instrument.hpp": "bc933aac8d743b98dee5fbd81ff009e3ee491b4e5da6d3f15cd1540fac79c8ad",
+    "firmware/src/instrument.cpp": "18aba69c659cfb6a50668042a9b866346793f6dcd118dab9f6b5871287f27f62",
+    "firmware/src/main.cpp": "af89d7cd43bc039e39a3d18349d98a1aa062817b9f8c27d701d3b6e391c55310",
+    "firmware/src/wire.cpp": "9aafc32c3acc9575a81cc705b401f29e41b09f1913ac0a3f2c0dc34bb0465064",
+    "firmware/vendor/pico_audio_i2s/audio_i2s.c": "09e2df64b1a2d537e82c1b2d3c39f1cfe6fed5444891015baa4ef84b9d0b337f",
+    "firmware/vendor/pico_audio_i2s/audio_i2s.pio": "a0484a30baa3193cca17d986b4be39a60c96e4e00104856a2cf2632a639c2bcf",
+    "firmware/vendor/vl53l1x/VL53L1X.cpp": "3ecfca61d2e3c5ca92d018c1472a4d081b74c2717a366c0c690c2596a8ec5e01",
+    "firmware/vendor/vl53l1x/VL53L1X.h": "5ef6d136d0195189a223b29403a0d45ce96f618df9cf8b456b3737e899d93486",
+    "reviews/test_instrument_independent.cpp": "b2ee23bc03a790c9bb33a9c98cb51ece0c808be97d2c8bef3017505a8251b114",
+    "tests/instrument_tests.cpp": "0d5bbeabe77c4b72e0e010838c800c54fad76f15029a63b346da3093d4c55cf1"
+  }
+}

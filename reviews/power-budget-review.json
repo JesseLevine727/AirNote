@@ -1,0 +1,37 @@
+{
+  "date": "2026-10-10",
+  "status": "PASS arithmetic and evidence boundaries; physical power remains PENDING",
+  "sha256": {
+    "docs/power_budget.md": "ff9a95aaffbe71eed2dd71b2bc5a986eba2bb4f3884f61c2ed15f1dc164b3133",
+    "docs/requirements.md": "7bcb8a6d8aa32e57ad33da48072260d18747840f728b9144c3910e395bfe1182",
+    "docs/assembly_request.md": "049382d8b07e2be358df300d588e68da441831384957e43e07339487ebadd1c9"
+  },
+  "independent_calculations": {
+    "3V3_allocation_mA": 155,
+    "5V_PLAY_allocation_mA": 210,
+    "LDO_5V_W": 0.2635,
+    "LDO_5V25_W": 0.30225,
+    "indicative_LDO_rise_C": [
+      48.484,
+      55.614000000000004
+    ],
+    "nominal_audio_RMS_V": 0.8973048366083031,
+    "nominal_audio_W_8ohm": 0.10064449622508169,
+    "speaker_RMS_A": 0.11216310457603788,
+    "speaker_peak_A": 0.15862258368930454,
+    "nominal_direct_input_uF": 5.9
+  },
+  "verified_primary_sources": [
+    "https://www.diodes.com/assets/Datasheets/AP2112.pdf",
+    "https://www.st.com/resource/en/datasheet/vl53l1x.pdf",
+    "https://www.analog.com/media/en/technical-documentation/data-sheets/MAX98357A-MAX98357B.pdf"
+  ],
+  "boundaries": [
+    "MCU/flash/amplifier current rows are engineering allocations, not guaranteed device maxima.",
+    "ST 40 mA peak is under nominal test conditions, not a guarantee for the board at 3.3 V.",
+    "184 C/W estimate depends on board copper/airflow; it does not prove junction temperature.",
+    "Direct input capacitance excludes downstream charging; PTC does not control inrush.",
+    "Core 0 remains running during suspend; USB suspend compliance is not demonstrated.",
+    "First-article ordering and validated release are separate gates; neither is marked passed."
+  ]
+}

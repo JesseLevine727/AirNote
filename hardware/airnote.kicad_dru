@@ -1,0 +1,5 @@
+(version 1)
+# Engineering prototype geometry: 0.15 mm tracks / 0.127 mm clearance.
+# These constraints are not a factory capability approval.
+(rule "AirNote 5mil clearance" (constraint clearance (min 0.127)))
+(rule "AirNote minimum trace" (constraint track_width (min 0.15)))

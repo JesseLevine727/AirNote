@@ -1,0 +1,29 @@
+{
+  "build_command": [
+    "g++",
+    "-std=c++17",
+    "-Wall",
+    "-Wextra",
+    "-Werror",
+    "-fsanitize=address,undefined",
+    "-fno-omit-frame-pointer",
+    "-I",
+    "firmware/include",
+    "firmware/src/instrument.cpp",
+    "reviews/test_instrument_independent.cpp",
+    "-o",
+    "/tmp/airnote-independent-tests"
+  ],
+  "build_exit": 0,
+  "build_stdout": "",
+  "build_stderr": "",
+  "run_exit": 0,
+  "run_stdout": "PASS: 1056569 independent controller/synth assertions\nPhysical latency, sensing, power and audio quality remain PENDING.\n",
+  "run_stderr": "",
+  "sha256": {
+    "firmware/include/instrument.hpp": "bc933aac8d743b98dee5fbd81ff009e3ee491b4e5da6d3f15cd1540fac79c8ad",
+    "firmware/src/instrument.cpp": "18aba69c659cfb6a50668042a9b866346793f6dcd118dab9f6b5871287f27f62",
+    "reviews/test_instrument_independent.cpp": "b2ee23bc03a790c9bb33a9c98cb51ece0c808be97d2c8bef3017505a8251b114"
+  },
+  "physical_tests": "PENDING"
+}

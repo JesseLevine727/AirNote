@@ -1,0 +1,32 @@
+{
+  "time_utc": "2026-10-10T17:41:35.405536+00:00",
+  "checks": [
+    {
+      "step": "firmware-configure",
+      "command": [
+        "cmake",
+        "-S",
+        "firmware",
+        "-B",
+        "build/firmware-verification",
+        "-G",
+        "Unix Makefiles"
+      ],
+      "exit_code": 0,
+      "log": "artifacts/firmware-configure.log"
+    },
+    {
+      "step": "firmware-build",
+      "command": [
+        "cmake",
+        "--build",
+        "build/firmware-verification",
+        "-j",
+        "8"
+      ],
+      "exit_code": 0,
+      "log": "artifacts/firmware-build.log"
+    }
+  ],
+  "hardware_execution": "NOT PERFORMED"
+}

@@ -1,0 +1,4027 @@
+{
+  "scope": "pin assignment and artifact consistency only; not routing or hardware validation",
+  "sha256": {
+    "hardware/outputs/airnote.net.xml": "ee346477049ec22b76ea3cd7c0bbc5dc64f0328fb498ee8fb50f77e6ed0a27dc",
+    "hardware/airnote.kicad_pcb": "c35f7d922f362b58a088193dba98902f71df68bcac94774f78b6f83b8618e9cc",
+    "firmware/include/boards/airnote.h": "b817d261e33574ad49a5a6d827733b51c05bd4211a40b8097a47fcd2efc5769d"
+  },
+  "checks": [
+    {
+      "check": "manufacturer pin map U1.1",
+      "status": "PASS",
+      "detail": "expected='+3V3'; actual='+3V3'"
+    },
+    {
+      "check": "manufacturer pin map U1.10",
+      "status": "PASS",
+      "detail": "expected='+3V3'; actual='+3V3'"
+    },
+    {
+      "check": "manufacturer pin map U1.22",
+      "status": "PASS",
+      "detail": "expected='+3V3'; actual='+3V3'"
+    },
+    {
+      "check": "manufacturer pin map U1.33",
+      "status": "PASS",
+      "detail": "expected='+3V3'; actual='+3V3'"
+    },
+    {
+      "check": "manufacturer pin map U1.42",
+      "status": "PASS",
+      "detail": "expected='+3V3'; actual='+3V3'"
+    },
+    {
+      "check": "manufacturer pin map U1.49",
+      "status": "PASS",
+      "detail": "expected='+3V3'; actual='+3V3'"
+    },
+    {
+      "check": "manufacturer pin map U1.44",
+      "status": "PASS",
+      "detail": "expected='+3V3'; actual='+3V3'"
+    },
+    {
+      "check": "manufacturer pin map U1.45",
+      "status": "PASS",
+      "detail": "expected='+1V1'; actual='+1V1'"
+    },
+    {
+      "check": "manufacturer pin map U1.23",
+      "status": "PASS",
+      "detail": "expected='+1V1'; actual='+1V1'"
+    },
+    {
+      "check": "manufacturer pin map U1.50",
+      "status": "PASS",
+      "detail": "expected='+1V1'; actual='+1V1'"
+    },
+    {
+      "check": "manufacturer pin map U1.43",
+      "status": "PASS",
+      "detail": "expected='ADC_3V3'; actual='ADC_3V3'"
+    },
+    {
+      "check": "manufacturer pin map U1.48",
+      "status": "PASS",
+      "detail": "expected='+3V3'; actual='+3V3'"
+    },
+    {
+      "check": "manufacturer pin map U1.57",
+      "status": "PASS",
+      "detail": "expected='GND'; actual='GND'"
+    },
+    {
+      "check": "manufacturer pin map U1.19",
+      "status": "PASS",
+      "detail": "expected='GND'; actual='GND'"
+    },
+    {
+      "check": "manufacturer pin map U1.26",
+      "status": "PASS",
+      "detail": "expected='RUN'; actual='RUN'"
+    },
+    {
+      "check": "manufacturer pin map U1.46",
+      "status": "PASS",
+      "detail": "expected='USB_DM_MCU'; actual='USB_DM_MCU'"
+    },
+    {
+      "check": "manufacturer pin map U1.47",
+      "status": "PASS",
+      "detail": "expected='USB_DP_MCU'; actual='USB_DP_MCU'"
+    },
+    {
+      "check": "manufacturer pin map U1.20",
+      "status": "PASS",
+      "detail": "expected='XIN'; actual='XIN'"
+    },
+    {
+      "check": "manufacturer pin map U1.21",
+      "status": "PASS",
+      "detail": "expected='XOUT'; actual='XOUT'"
+    },
+    {
+      "check": "manufacturer pin map U1.24",
+      "status": "PASS",
+      "detail": "expected='SWCLK'; actual='SWCLK'"
+    },
+    {
+      "check": "manufacturer pin map U1.25",
+      "status": "PASS",
+      "detail": "expected='SWDIO'; actual='SWDIO'"
+    },
+    {
+      "check": "manufacturer pin map U1.52",
+      "status": "PASS",
+      "detail": "expected='QSPI_CLK'; actual='QSPI_CLK'"
+    },
+    {
+      "check": "manufacturer pin map U1.56",
+      "status": "PASS",
+      "detail": "expected='QSPI_CS'; actual='QSPI_CS'"
+    },
+    {
+      "check": "manufacturer pin map U1.53",
+      "status": "PASS",
+      "detail": "expected='QSPI_D0'; actual='QSPI_D0'"
+    },
+    {
+      "check": "manufacturer pin map U1.55",
+      "status": "PASS",
+      "detail": "expected='QSPI_D1'; actual='QSPI_D1'"
+    },
+    {
+      "check": "manufacturer pin map U1.54",
+      "status": "PASS",
+      "detail": "expected='QSPI_D2'; actual='QSPI_D2'"
+    },
+    {
+      "check": "manufacturer pin map U1.51",
+      "status": "PASS",
+      "detail": "expected='QSPI_D3'; actual='QSPI_D3'"
+    },
+    {
+      "check": "manufacturer pin map U1.2",
+      "status": "PASS",
+      "detail": "expected='I2C_SDA'; actual='I2C_SDA'"
+    },
+    {
+      "check": "manufacturer pin map U1.3",
+      "status": "PASS",
+      "detail": "expected='I2C_SCL'; actual='I2C_SCL'"
+    },
+    {
+      "check": "manufacturer pin map U1.4",
+      "status": "PASS",
+      "detail": "expected='SENSOR_XSHUT'; actual='SENSOR_XSHUT'"
+    },
+    {
+      "check": "manufacturer pin map U1.5",
+      "status": "PASS",
+      "detail": "expected='SENSOR_IRQ'; actual='SENSOR_IRQ'"
+    },
+    {
+      "check": "manufacturer pin map U1.13",
+      "status": "PASS",
+      "detail": "expected='I2S_DATA'; actual='I2S_DATA'"
+    },
+    {
+      "check": "manufacturer pin map U1.14",
+      "status": "PASS",
+      "detail": "expected='I2S_BCLK'; actual='I2S_BCLK'"
+    },
+    {
+      "check": "manufacturer pin map U1.15",
+      "status": "PASS",
+      "detail": "expected='I2S_LRCLK'; actual='I2S_LRCLK'"
+    },
+    {
+      "check": "manufacturer pin map U1.17",
+      "status": "PASS",
+      "detail": "expected='AMP_ENABLE'; actual='AMP_ENABLE'"
+    },
+    {
+      "check": "manufacturer pin map U1.18",
+      "status": "PASS",
+      "detail": "expected='MUTE_N'; actual='MUTE_N'"
+    },
+    {
+      "check": "manufacturer pin map U1.37",
+      "status": "PASS",
+      "detail": "expected='STATUS_LED'; actual='STATUS_LED'"
+    },
+    {
+      "check": "manufacturer pin map U1.38",
+      "status": "PASS",
+      "detail": "expected='VOLUME_ADC'; actual='VOLUME_ADC'"
+    },
+    {
+      "check": "manufacturer pin map U2.1",
+      "status": "PASS",
+      "detail": "expected='QSPI_CS'; actual='QSPI_CS'"
+    },
+    {
+      "check": "manufacturer pin map U2.2",
+      "status": "PASS",
+      "detail": "expected='QSPI_D1'; actual='QSPI_D1'"
+    },
+    {
+      "check": "manufacturer pin map U2.3",
+      "status": "PASS",
+      "detail": "expected='QSPI_D2'; actual='QSPI_D2'"
+    },
+    {
+      "check": "manufacturer pin map U2.4",
+      "status": "PASS",
+      "detail": "expected='GND'; actual='GND'"
+    },
+    {
+      "check": "manufacturer pin map U2.5",
+      "status": "PASS",
+      "detail": "expected='QSPI_D0'; actual='QSPI_D0'"
+    },
+    {
+      "check": "manufacturer pin map U2.6",
+      "status": "PASS",
+      "detail": "expected='QSPI_CLK'; actual='QSPI_CLK'"
+    },
+    {
+      "check": "manufacturer pin map U2.7",
+      "status": "PASS",
+      "detail": "expected='QSPI_D3'; actual='QSPI_D3'"
+    },
+    {
+      "check": "manufacturer pin map U2.8",
+      "status": "PASS",
+      "detail": "expected='+3V3'; actual='+3V3'"
+    },
+    {
+      "check": "manufacturer pin map U3.1",
+      "status": "PASS",
+      "detail": "expected='+5V'; actual='+5V'"
+    },
+    {
+      "check": "manufacturer pin map U3.2",
+      "status": "PASS",
+      "detail": "expected='GND'; actual='GND'"
+    },
+    {
+      "check": "manufacturer pin map U3.3",
+      "status": "PASS",
+      "detail": "expected='+5V'; actual='+5V'"
+    },
+    {
+      "check": "manufacturer pin map U3.4",
+      "status": "PASS",
+      "detail": "expected=None; actual='unconnected-(U3-NC-Pad4)'"
+    },
+    {
+      "check": "manufacturer pin map U3.5",
+      "status": "PASS",
+      "detail": "expected='+3V3'; actual='+3V3'"
+    },
+    {
+      "check": "manufacturer pin map U4.1",
+      "status": "PASS",
+      "detail": "expected='+3V3'; actual='+3V3'"
+    },
+    {
+      "check": "manufacturer pin map U4.2",
+      "status": "PASS",
+      "detail": "expected='GND'; actual='GND'"
+    },
+    {
+      "check": "manufacturer pin map U4.3",
+      "status": "PASS",
+      "detail": "expected='GND'; actual='GND'"
+    },
+    {
+      "check": "manufacturer pin map U4.4",
+      "status": "PASS",
+      "detail": "expected='GND'; actual='GND'"
+    },
+    {
+      "check": "manufacturer pin map U4.5",
+      "status": "PASS",
+      "detail": "expected='SENSOR_XSHUT'; actual='SENSOR_XSHUT'"
+    },
+    {
+      "check": "manufacturer pin map U4.6",
+      "status": "PASS",
+      "detail": "expected='GND'; actual='GND'"
+    },
+    {
+      "check": "manufacturer pin map U4.7",
+      "status": "PASS",
+      "detail": "expected='SENSOR_IRQ'; actual='SENSOR_IRQ'"
+    },
+    {
+      "check": "manufacturer pin map U4.8",
+      "status": "PASS",
+      "detail": "expected=None; actual='unconnected-(U4-DNC-Pad8)'"
+    },
+    {
+      "check": "manufacturer pin map U4.9",
+      "status": "PASS",
+      "detail": "expected='I2C_SDA'; actual='I2C_SDA'"
+    },
+    {
+      "check": "manufacturer pin map U4.10",
+      "status": "PASS",
+      "detail": "expected='I2C_SCL'; actual='I2C_SCL'"
+    },
+    {
+      "check": "manufacturer pin map U4.11",
+      "status": "PASS",
+      "detail": "expected='+3V3'; actual='+3V3'"
+    },
+    {
+      "check": "manufacturer pin map U4.12",
+      "status": "PASS",
+      "detail": "expected='GND'; actual='GND'"
+    },
+    {
+      "check": "manufacturer pin map U5.1",
+      "status": "PASS",
+      "detail": "expected='I2S_DATA'; actual='I2S_DATA'"
+    },
+    {
+      "check": "manufacturer pin map U5.2",
+      "status": "PASS",
+      "detail": "expected=None; actual='unconnected-(U5-GAIN_SLOT-Pad2)'"
+    },
+    {
+      "check": "manufacturer pin map U5.3",
+      "status": "PASS",
+      "detail": "expected='GND'; actual='GND'"
+    },
+    {
+      "check": "manufacturer pin map U5.4",
+      "status": "PASS",
+      "detail": "expected='AMP_SD'; actual='AMP_SD'"
+    },
+    {
+      "check": "manufacturer pin map U5.5",
+      "status": "PASS",
+      "detail": "expected=None; actual='unconnected-(U5-NC-Pad5)'"
+    },
+    {
+      "check": "manufacturer pin map U5.6",
+      "status": "PASS",
+      "detail": "expected=None; actual='unconnected-(U5-NC-Pad6)'"
+    },
+    {
+      "check": "manufacturer pin map U5.7",
+      "status": "PASS",
+      "detail": "expected='+5V'; actual='+5V'"
+    },
+    {
+      "check": "manufacturer pin map U5.8",
+      "status": "PASS",
+      "detail": "expected='+5V'; actual='+5V'"
+    },
+    {
+      "check": "manufacturer pin map U5.9",
+      "status": "PASS",
+      "detail": "expected='SPK_P'; actual='SPK_P'"
+    },
+    {
+      "check": "manufacturer pin map U5.10",
+      "status": "PASS",
+      "detail": "expected='SPK_N'; actual='SPK_N'"
+    },
+    {
+      "check": "manufacturer pin map U5.11",
+      "status": "PASS",
+      "detail": "expected='GND'; actual='GND'"
+    },
+    {
+      "check": "manufacturer pin map U5.12",
+      "status": "PASS",
+      "detail": "expected=None; actual='unconnected-(U5-NC-Pad12)'"
+    },
+    {
+      "check": "manufacturer pin map U5.13",
+      "status": "PASS",
+      "detail": "expected=None; actual='unconnected-(U5-NC-Pad13)'"
+    },
+    {
+      "check": "manufacturer pin map U5.14",
+      "status": "PASS",
+      "detail": "expected='I2S_LRCLK'; actual='I2S_LRCLK'"
+    },
+    {
+      "check": "manufacturer pin map U5.15",
+      "status": "PASS",
+      "detail": "expected='GND'; actual='GND'"
+    },
+    {
+      "check": "manufacturer pin map U5.16",
+      "status": "PASS",
+      "detail": "expected='I2S_BCLK'; actual='I2S_BCLK'"
+    },
+    {
+      "check": "manufacturer pin map U5.17",
+      "status": "PASS",
+      "detail": "expected='GND'; actual='GND'"
+    },
+    {
+      "check": "manufacturer pin map J1.A1",
+      "status": "PASS",
+      "detail": "expected='GND'; actual='GND'"
+    },
+    {
+      "check": "manufacturer pin map J1.A12",
+      "status": "PASS",
+      "detail": "expected='GND'; actual='GND'"
+    },
+    {
+      "check": "manufacturer pin map J1.B1",
+      "status": "PASS",
+      "detail": "expected='GND'; actual='GND'"
+    },
+    {
+      "check": "manufacturer pin map J1.B12",
+      "status": "PASS",
+      "detail": "expected='GND'; actual='GND'"
+    },
+    {
+      "check": "manufacturer pin map J1.S1",
+      "status": "PASS",
+      "detail": "expected='GND'; actual='GND'"
+    },
+    {
+      "check": "manufacturer pin map J1.A4",
+      "status": "PASS",
+      "detail": "expected='VBUS_RAW'; actual='VBUS_RAW'"
+    },
+    {
+      "check": "manufacturer pin map J1.A9",
+      "status": "PASS",
+      "detail": "expected='VBUS_RAW'; actual='VBUS_RAW'"
+    },
+    {
+      "check": "manufacturer pin map J1.B4",
+      "status": "PASS",
+      "detail": "expected='VBUS_RAW'; actual='VBUS_RAW'"
+    },
+    {
+      "check": "manufacturer pin map J1.B9",
+      "status": "PASS",
+      "detail": "expected='VBUS_RAW'; actual='VBUS_RAW'"
+    },
+    {
+      "check": "manufacturer pin map J1.A5",
+      "status": "PASS",
+      "detail": "expected='CC1'; actual='CC1'"
+    },
+    {
+      "check": "manufacturer pin map J1.B5",
+      "status": "PASS",
+      "detail": "expected='CC2'; actual='CC2'"
+    },
+    {
+      "check": "manufacturer pin map J1.A6",
+      "status": "PASS",
+      "detail": "expected='USB_DP'; actual='USB_DP'"
+    },
+    {
+      "check": "manufacturer pin map J1.B6",
+      "status": "PASS",
+      "detail": "expected='USB_DP'; actual='USB_DP'"
+    },
+    {
+      "check": "manufacturer pin map J1.A7",
+      "status": "PASS",
+      "detail": "expected='USB_DM'; actual='USB_DM'"
+    },
+    {
+      "check": "manufacturer pin map J1.B7",
+      "status": "PASS",
+      "detail": "expected='USB_DM'; actual='USB_DM'"
+    },
+    {
+      "check": "manufacturer pin map J1.A8",
+      "status": "PASS",
+      "detail": "expected=None; actual='unconnected-(J1-SBU1-PadA8)'"
+    },
+    {
+      "check": "manufacturer pin map J1.B8",
+      "status": "PASS",
+      "detail": "expected=None; actual='unconnected-(J1-SBU2-PadB8)'"
+    },
+    {
+      "check": "manufacturer pin map R6.1",
+      "status": "PASS",
+      "detail": "expected='CC1'; actual='CC1'"
+    },
+    {
+      "check": "manufacturer pin map R6.2",
+      "status": "PASS",
+      "detail": "expected='GND'; actual='GND'"
+    },
+    {
+      "check": "manufacturer pin map R7.1",
+      "status": "PASS",
+      "detail": "expected='CC2'; actual='CC2'"
+    },
+    {
+      "check": "manufacturer pin map R7.2",
+      "status": "PASS",
+      "detail": "expected='GND'; actual='GND'"
+    },
+    {
+      "check": "manufacturer pin map R8.1",
+      "status": "PASS",
+      "detail": "expected='USB_DP_ESD'; actual='USB_DP_ESD'"
+    },
+    {
+      "check": "manufacturer pin map R8.2",
+      "status": "PASS",
+      "detail": "expected='USB_DP_MCU'; actual='USB_DP_MCU'"
+    },
+    {
+      "check": "manufacturer pin map R9.1",
+      "status": "PASS",
+      "detail": "expected='USB_DM_ESD'; actual='USB_DM_ESD'"
+    },
+    {
+      "check": "manufacturer pin map R9.2",
+      "status": "PASS",
+      "detail": "expected='USB_DM_MCU'; actual='USB_DM_MCU'"
+    },
+    {
+      "check": "manufacturer pin map D1.1",
+      "status": "PASS",
+      "detail": "expected='USB_DP'; actual='USB_DP'"
+    },
+    {
+      "check": "manufacturer pin map D1.2",
+      "status": "PASS",
+      "detail": "expected='GND'; actual='GND'"
+    },
+    {
+      "check": "manufacturer pin map D1.3",
+      "status": "PASS",
+      "detail": "expected='USB_DM'; actual='USB_DM'"
+    },
+    {
+      "check": "manufacturer pin map D1.4",
+      "status": "PASS",
+      "detail": "expected='USB_DM_ESD'; actual='USB_DM_ESD'"
+    },
+    {
+      "check": "manufacturer pin map D1.5",
+      "status": "PASS",
+      "detail": "expected='VBUS_RAW'; actual='VBUS_RAW'"
+    },
+    {
+      "check": "manufacturer pin map D1.6",
+      "status": "PASS",
+      "detail": "expected='USB_DP_ESD'; actual='USB_DP_ESD'"
+    },
+    {
+      "check": "manufacturer pin map R14.1",
+      "status": "PASS",
+      "detail": "expected='AMP_ENABLE'; actual='AMP_ENABLE'"
+    },
+    {
+      "check": "manufacturer pin map R14.2",
+      "status": "PASS",
+      "detail": "expected='AMP_SD'; actual='AMP_SD'"
+    },
+    {
+      "check": "manufacturer pin map R15.1",
+      "status": "PASS",
+      "detail": "expected='AMP_SD'; actual='AMP_SD'"
+    },
+    {
+      "check": "manufacturer pin map R15.2",
+      "status": "PASS",
+      "detail": "expected='GND'; actual='GND'"
+    },
+    {
+      "check": "manufacturer pin map R19.1",
+      "status": "PASS",
+      "detail": "expected='VOLUME_ADC'; actual='VOLUME_ADC'"
+    },
+    {
+      "check": "manufacturer pin map R19.2",
+      "status": "PASS",
+      "detail": "expected='GND'; actual='GND'"
+    },
+    {
+      "check": "manufacturer pin map SW3.1",
+      "status": "PASS",
+      "detail": "expected='GND'; actual='GND'"
+    },
+    {
+      "check": "manufacturer pin map SW3.2",
+      "status": "PASS",
+      "detail": "expected='AMP_SD'; actual='AMP_SD'"
+    },
+    {
+      "check": "manufacturer pin map SW3.3",
+      "status": "PASS",
+      "detail": "expected=None; actual='unconnected-(SW3A-C-Pad3)'"
+    },
+    {
+      "check": "manufacturer pin map SW3.4",
+      "status": "PASS",
+      "detail": "expected='GND'; actual='GND'"
+    },
+    {
+      "check": "manufacturer pin map SW3.5",
+      "status": "PASS",
+      "detail": "expected='MUTE_N'; actual='MUTE_N'"
+    },
+    {
+      "check": "manufacturer pin map SW3.6",
+      "status": "PASS",
+      "detail": "expected=None; actual='unconnected-(SW3B-C-Pad6)'"
+    },
+    {
+      "check": "manufacturer pin map J3.1",
+      "status": "PASS",
+      "detail": "expected='SPK_P'; actual='SPK_P'"
+    },
+    {
+      "check": "manufacturer pin map J3.2",
+      "status": "PASS",
+      "detail": "expected='SPK_N'; actual='SPK_N'"
+    },
+    {
+      "check": "manufacturer pin map J2.1",
+      "status": "PASS",
+      "detail": "expected='+3V3'; actual='+3V3'"
+    },
+    {
+      "check": "manufacturer pin map J2.2",
+      "status": "PASS",
+      "detail": "expected='GND'; actual='GND'"
+    },
+    {
+      "check": "manufacturer pin map J2.3",
+      "status": "PASS",
+      "detail": "expected='SWDIO'; actual='SWDIO'"
+    },
+    {
+      "check": "manufacturer pin map J2.4",
+      "status": "PASS",
+      "detail": "expected='SWCLK'; actual='SWCLK'"
+    },
+    {
+      "check": "manufacturer pin map J2.5",
+      "status": "PASS",
+      "detail": "expected='RUN'; actual='RUN'"
+    },
+    {
+      "check": "manufacturer pin map SW1.1",
+      "status": "PASS",
+      "detail": "expected='BOOTSEL_SW'; actual='BOOTSEL_SW'"
+    },
+    {
+      "check": "manufacturer pin map SW1.2",
+      "status": "PASS",
+      "detail": "expected='GND'; actual='GND'"
+    },
+    {
+      "check": "manufacturer pin map SW2.1",
+      "status": "PASS",
+      "detail": "expected='RUN'; actual='RUN'"
+    },
+    {
+      "check": "manufacturer pin map SW2.2",
+      "status": "PASS",
+      "detail": "expected='GND'; actual='GND'"
+    },
+    {
+      "check": "manufacturer pin map RV1.1",
+      "status": "PASS",
+      "detail": "expected='GND'; actual='GND'"
+    },
+    {
+      "check": "manufacturer pin map RV1.2",
+      "status": "PASS",
+      "detail": "expected='VOLUME_RAW'; actual='VOLUME_RAW'"
+    },
+    {
+      "check": "manufacturer pin map RV1.3",
+      "status": "PASS",
+      "detail": "expected='+3V3'; actual='+3V3'"
+    },
+    {
+      "check": "manufacturer pin map D2.1",
+      "status": "PASS",
+      "detail": "expected='GND'; actual='GND'"
+    },
+    {
+      "check": "manufacturer pin map D2.2",
+      "status": "PASS",
+      "detail": "expected='LED_A'; actual='LED_A'"
+    },
+    {
+      "check": "critical passive value R1",
+      "status": "PASS",
+      "detail": "expected=1k; actual=1k"
+    },
+    {
+      "check": "critical passive value R2",
+      "status": "PASS",
+      "detail": "expected=10k; actual=10k"
+    },
+    {
+      "check": "critical passive value R3",
+      "status": "PASS",
+      "detail": "expected=1k; actual=1k"
+    },
+    {
+      "check": "critical passive value R4",
+      "status": "PASS",
+      "detail": "expected=10k; actual=10k"
+    },
+    {
+      "check": "critical passive value R6",
+      "status": "PASS",
+      "detail": "expected=5.1k; actual=5.1k"
+    },
+    {
+      "check": "critical passive value R7",
+      "status": "PASS",
+      "detail": "expected=5.1k; actual=5.1k"
+    },
+    {
+      "check": "critical passive value R8",
+      "status": "PASS",
+      "detail": "expected=27; actual=27"
+    },
+    {
+      "check": "critical passive value R9",
+      "status": "PASS",
+      "detail": "expected=27; actual=27"
+    },
+    {
+      "check": "critical passive value R10",
+      "status": "PASS",
+      "detail": "expected=10k; actual=10k"
+    },
+    {
+      "check": "critical passive value R11",
+      "status": "PASS",
+      "detail": "expected=10k; actual=10k"
+    },
+    {
+      "check": "critical passive value R12",
+      "status": "PASS",
+      "detail": "expected=5.1k; actual=5.1k"
+    },
+    {
+      "check": "critical passive value R13",
+      "status": "PASS",
+      "detail": "expected=5.1k; actual=5.1k"
+    },
+    {
+      "check": "critical passive value R14",
+      "status": "PASS",
+      "detail": "expected=10k; actual=10k"
+    },
+    {
+      "check": "critical passive value R15",
+      "status": "PASS",
+      "detail": "expected=100k; actual=100k"
+    },
+    {
+      "check": "critical passive value R16",
+      "status": "PASS",
+      "detail": "expected=10k; actual=10k"
+    },
+    {
+      "check": "critical passive value R17",
+      "status": "PASS",
+      "detail": "expected=1k; actual=1k"
+    },
+    {
+      "check": "critical passive value R18",
+      "status": "PASS",
+      "detail": "expected=1k; actual=1k"
+    },
+    {
+      "check": "critical passive value R19",
+      "status": "PASS",
+      "detail": "expected=1M; actual=1M"
+    },
+    {
+      "check": "critical passive value C1",
+      "status": "PASS",
+      "detail": "expected=15p; actual=15p"
+    },
+    {
+      "check": "critical passive value C2",
+      "status": "PASS",
+      "detail": "expected=15p; actual=15p"
+    },
+    {
+      "check": "critical passive value C10",
+      "status": "PASS",
+      "detail": "expected=100n; actual=100n"
+    },
+    {
+      "check": "critical passive value C11",
+      "status": "PASS",
+      "detail": "expected=100n; actual=100n"
+    },
+    {
+      "check": "critical passive value C14",
+      "status": "PASS",
+      "detail": "expected=1u; actual=1u"
+    },
+    {
+      "check": "critical passive value C19",
+      "status": "PASS",
+      "detail": "expected=100n; actual=100n"
+    },
+    {
+      "check": "critical passive value C21",
+      "status": "PASS",
+      "detail": "expected=100n; actual=100n"
+    },
+    {
+      "check": "four copper layers",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "component present on PCB C1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "component value agreement C1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad C1.2",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad C1.1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "schematic/PCB pad assignment C1.1",
+      "status": "PASS",
+      "detail": "schematic='XIN'; pcb='XIN'"
+    },
+    {
+      "check": "schematic/PCB pad assignment C1.2",
+      "status": "PASS",
+      "detail": "schematic='GND'; pcb='GND'"
+    },
+    {
+      "check": "component present on PCB C2",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "component value agreement C2",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad C2.2",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad C2.1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "schematic/PCB pad assignment C2.1",
+      "status": "PASS",
+      "detail": "schematic='XTAL_OUT'; pcb='XTAL_OUT'"
+    },
+    {
+      "check": "schematic/PCB pad assignment C2.2",
+      "status": "PASS",
+      "detail": "schematic='GND'; pcb='GND'"
+    },
+    {
+      "check": "component present on PCB C3",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "component value agreement C3",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad C3.1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad C3.2",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "schematic/PCB pad assignment C3.1",
+      "status": "PASS",
+      "detail": "schematic='+3V3'; pcb='+3V3'"
+    },
+    {
+      "check": "schematic/PCB pad assignment C3.2",
+      "status": "PASS",
+      "detail": "schematic='GND'; pcb='GND'"
+    },
+    {
+      "check": "component present on PCB C4",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "component value agreement C4",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad C4.1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad C4.2",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "schematic/PCB pad assignment C4.1",
+      "status": "PASS",
+      "detail": "schematic='+3V3'; pcb='+3V3'"
+    },
+    {
+      "check": "schematic/PCB pad assignment C4.2",
+      "status": "PASS",
+      "detail": "schematic='GND'; pcb='GND'"
+    },
+    {
+      "check": "component present on PCB C5",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "component value agreement C5",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad C5.1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad C5.2",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "schematic/PCB pad assignment C5.1",
+      "status": "PASS",
+      "detail": "schematic='+3V3'; pcb='+3V3'"
+    },
+    {
+      "check": "schematic/PCB pad assignment C5.2",
+      "status": "PASS",
+      "detail": "schematic='GND'; pcb='GND'"
+    },
+    {
+      "check": "component present on PCB C6",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "component value agreement C6",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad C6.1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad C6.2",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "schematic/PCB pad assignment C6.1",
+      "status": "PASS",
+      "detail": "schematic='+3V3'; pcb='+3V3'"
+    },
+    {
+      "check": "schematic/PCB pad assignment C6.2",
+      "status": "PASS",
+      "detail": "schematic='GND'; pcb='GND'"
+    },
+    {
+      "check": "component present on PCB C7",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "component value agreement C7",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad C7.1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad C7.2",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "schematic/PCB pad assignment C7.1",
+      "status": "PASS",
+      "detail": "schematic='+3V3'; pcb='+3V3'"
+    },
+    {
+      "check": "schematic/PCB pad assignment C7.2",
+      "status": "PASS",
+      "detail": "schematic='GND'; pcb='GND'"
+    },
+    {
+      "check": "component present on PCB C8",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "component value agreement C8",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad C8.1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad C8.2",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "schematic/PCB pad assignment C8.1",
+      "status": "PASS",
+      "detail": "schematic='+3V3'; pcb='+3V3'"
+    },
+    {
+      "check": "schematic/PCB pad assignment C8.2",
+      "status": "PASS",
+      "detail": "schematic='GND'; pcb='GND'"
+    },
+    {
+      "check": "component present on PCB C9",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "component value agreement C9",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad C9.1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad C9.2",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "schematic/PCB pad assignment C9.1",
+      "status": "PASS",
+      "detail": "schematic='+3V3'; pcb='+3V3'"
+    },
+    {
+      "check": "schematic/PCB pad assignment C9.2",
+      "status": "PASS",
+      "detail": "schematic='GND'; pcb='GND'"
+    },
+    {
+      "check": "component present on PCB C10",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "component value agreement C10",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad C10.1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad C10.2",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "schematic/PCB pad assignment C10.1",
+      "status": "PASS",
+      "detail": "schematic='+1V1'; pcb='+1V1'"
+    },
+    {
+      "check": "schematic/PCB pad assignment C10.2",
+      "status": "PASS",
+      "detail": "schematic='GND'; pcb='GND'"
+    },
+    {
+      "check": "component present on PCB C11",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "component value agreement C11",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad C11.1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad C11.2",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "schematic/PCB pad assignment C11.1",
+      "status": "PASS",
+      "detail": "schematic='+1V1'; pcb='+1V1'"
+    },
+    {
+      "check": "schematic/PCB pad assignment C11.2",
+      "status": "PASS",
+      "detail": "schematic='GND'; pcb='GND'"
+    },
+    {
+      "check": "component present on PCB C12",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "component value agreement C12",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad C12.1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad C12.2",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "schematic/PCB pad assignment C12.1",
+      "status": "PASS",
+      "detail": "schematic='ADC_3V3'; pcb='ADC_3V3'"
+    },
+    {
+      "check": "schematic/PCB pad assignment C12.2",
+      "status": "PASS",
+      "detail": "schematic='GND'; pcb='GND'"
+    },
+    {
+      "check": "component present on PCB C13",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "component value agreement C13",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad C13.1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad C13.2",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "schematic/PCB pad assignment C13.1",
+      "status": "PASS",
+      "detail": "schematic='+3V3'; pcb='+3V3'"
+    },
+    {
+      "check": "schematic/PCB pad assignment C13.2",
+      "status": "PASS",
+      "detail": "schematic='GND'; pcb='GND'"
+    },
+    {
+      "check": "component present on PCB C14",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "component value agreement C14",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad C14.1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad C14.2",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "schematic/PCB pad assignment C14.1",
+      "status": "PASS",
+      "detail": "schematic='+1V1'; pcb='+1V1'"
+    },
+    {
+      "check": "schematic/PCB pad assignment C14.2",
+      "status": "PASS",
+      "detail": "schematic='GND'; pcb='GND'"
+    },
+    {
+      "check": "component present on PCB C15",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "component value agreement C15",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad C15.1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad C15.2",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "schematic/PCB pad assignment C15.1",
+      "status": "PASS",
+      "detail": "schematic='+3V3'; pcb='+3V3'"
+    },
+    {
+      "check": "schematic/PCB pad assignment C15.2",
+      "status": "PASS",
+      "detail": "schematic='GND'; pcb='GND'"
+    },
+    {
+      "check": "component present on PCB J2",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "component value agreement J2",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad J2.1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad J2.2",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad J2.5",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad J2.4",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad J2.3",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "schematic/PCB pad assignment J2.1",
+      "status": "PASS",
+      "detail": "schematic='+3V3'; pcb='+3V3'"
+    },
+    {
+      "check": "schematic/PCB pad assignment J2.2",
+      "status": "PASS",
+      "detail": "schematic='GND'; pcb='GND'"
+    },
+    {
+      "check": "schematic/PCB pad assignment J2.3",
+      "status": "PASS",
+      "detail": "schematic='SWDIO'; pcb='SWDIO'"
+    },
+    {
+      "check": "schematic/PCB pad assignment J2.4",
+      "status": "PASS",
+      "detail": "schematic='SWCLK'; pcb='SWCLK'"
+    },
+    {
+      "check": "schematic/PCB pad assignment J2.5",
+      "status": "PASS",
+      "detail": "schematic='RUN'; pcb='RUN'"
+    },
+    {
+      "check": "component present on PCB R1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "component value agreement R1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad R1.1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad R1.2",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "schematic/PCB pad assignment R1.1",
+      "status": "PASS",
+      "detail": "schematic='XOUT'; pcb='XOUT'"
+    },
+    {
+      "check": "schematic/PCB pad assignment R1.2",
+      "status": "PASS",
+      "detail": "schematic='XTAL_OUT'; pcb='XTAL_OUT'"
+    },
+    {
+      "check": "component present on PCB R2",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "component value agreement R2",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad R2.1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad R2.2",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "schematic/PCB pad assignment R2.1",
+      "status": "PASS",
+      "detail": "schematic='+3V3'; pcb='+3V3'"
+    },
+    {
+      "check": "schematic/PCB pad assignment R2.2",
+      "status": "PASS",
+      "detail": "schematic='QSPI_CS'; pcb='QSPI_CS'"
+    },
+    {
+      "check": "component present on PCB R3",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "component value agreement R3",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad R3.2",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad R3.1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "schematic/PCB pad assignment R3.1",
+      "status": "PASS",
+      "detail": "schematic='QSPI_CS'; pcb='QSPI_CS'"
+    },
+    {
+      "check": "schematic/PCB pad assignment R3.2",
+      "status": "PASS",
+      "detail": "schematic='BOOTSEL_SW'; pcb='BOOTSEL_SW'"
+    },
+    {
+      "check": "component present on PCB R4",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "component value agreement R4",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad R4.1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad R4.2",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "schematic/PCB pad assignment R4.1",
+      "status": "PASS",
+      "detail": "schematic='+3V3'; pcb='+3V3'"
+    },
+    {
+      "check": "schematic/PCB pad assignment R4.2",
+      "status": "PASS",
+      "detail": "schematic='RUN'; pcb='RUN'"
+    },
+    {
+      "check": "component present on PCB R5",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "component value agreement R5",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad R5.1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad R5.2",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "schematic/PCB pad assignment R5.1",
+      "status": "PASS",
+      "detail": "schematic='+3V3'; pcb='+3V3'"
+    },
+    {
+      "check": "schematic/PCB pad assignment R5.2",
+      "status": "PASS",
+      "detail": "schematic='ADC_3V3'; pcb='ADC_3V3'"
+    },
+    {
+      "check": "component present on PCB SW1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "component value agreement SW1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad SW1.1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad SW1.2",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "schematic/PCB pad assignment SW1.1",
+      "status": "PASS",
+      "detail": "schematic='BOOTSEL_SW'; pcb='BOOTSEL_SW'"
+    },
+    {
+      "check": "schematic/PCB pad assignment SW1.1",
+      "status": "PASS",
+      "detail": "schematic='BOOTSEL_SW'; pcb='BOOTSEL_SW'"
+    },
+    {
+      "check": "schematic/PCB pad assignment SW1.2",
+      "status": "PASS",
+      "detail": "schematic='GND'; pcb='GND'"
+    },
+    {
+      "check": "schematic/PCB pad assignment SW1.2",
+      "status": "PASS",
+      "detail": "schematic='GND'; pcb='GND'"
+    },
+    {
+      "check": "component present on PCB SW2",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "component value agreement SW2",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad SW2.2",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad SW2.1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "schematic/PCB pad assignment SW2.1",
+      "status": "PASS",
+      "detail": "schematic='RUN'; pcb='RUN'"
+    },
+    {
+      "check": "schematic/PCB pad assignment SW2.1",
+      "status": "PASS",
+      "detail": "schematic='RUN'; pcb='RUN'"
+    },
+    {
+      "check": "schematic/PCB pad assignment SW2.2",
+      "status": "PASS",
+      "detail": "schematic='GND'; pcb='GND'"
+    },
+    {
+      "check": "schematic/PCB pad assignment SW2.2",
+      "status": "PASS",
+      "detail": "schematic='GND'; pcb='GND'"
+    },
+    {
+      "check": "component present on PCB U1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "component value agreement U1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad U1.23",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad U1.45",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad U1.50",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad U1.1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad U1.10",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad U1.22",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad U1.33",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad U1.42",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad U1.44",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad U1.48",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad U1.49",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad U1.43",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad U1.17",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad U1.19",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad U1.57",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad U1.3",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad U1.2",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad U1.14",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad U1.13",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad U1.15",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad U1.18",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad U1.52",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad U1.56",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad U1.53",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad U1.55",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad U1.54",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad U1.51",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad U1.26",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad U1.5",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad U1.4",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad U1.37",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad U1.24",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad U1.25",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad U1.46",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad U1.47",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad U1.38",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad U1.20",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad U1.21",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "schematic/PCB pad assignment U1.1",
+      "status": "PASS",
+      "detail": "schematic='+3V3'; pcb='+3V3'"
+    },
+    {
+      "check": "schematic/PCB pad assignment U1.2",
+      "status": "PASS",
+      "detail": "schematic='I2C_SDA'; pcb='I2C_SDA'"
+    },
+    {
+      "check": "schematic/PCB pad assignment U1.3",
+      "status": "PASS",
+      "detail": "schematic='I2C_SCL'; pcb='I2C_SCL'"
+    },
+    {
+      "check": "schematic/PCB pad assignment U1.4",
+      "status": "PASS",
+      "detail": "schematic='SENSOR_XSHUT'; pcb='SENSOR_XSHUT'"
+    },
+    {
+      "check": "schematic/PCB pad assignment U1.5",
+      "status": "PASS",
+      "detail": "schematic='SENSOR_IRQ'; pcb='SENSOR_IRQ'"
+    },
+    {
+      "check": "schematic/PCB pad assignment U1.6",
+      "status": "PASS",
+      "detail": "schematic='unconnected-(U1-GPIO4-Pad6)'; pcb='unconnected-(U1-GPIO4-Pad6)'"
+    },
+    {
+      "check": "schematic/PCB pad assignment U1.7",
+      "status": "PASS",
+      "detail": "schematic='unconnected-(U1-GPIO5-Pad7)'; pcb='unconnected-(U1-GPIO5-Pad7)'"
+    },
+    {
+      "check": "schematic/PCB pad assignment U1.8",
+      "status": "PASS",
+      "detail": "schematic='unconnected-(U1-GPIO6-Pad8)'; pcb='unconnected-(U1-GPIO6-Pad8)'"
+    },
+    {
+      "check": "schematic/PCB pad assignment U1.9",
+      "status": "PASS",
+      "detail": "schematic='unconnected-(U1-GPIO7-Pad9)'; pcb='unconnected-(U1-GPIO7-Pad9)'"
+    },
+    {
+      "check": "schematic/PCB pad assignment U1.10",
+      "status": "PASS",
+      "detail": "schematic='+3V3'; pcb='+3V3'"
+    },
+    {
+      "check": "schematic/PCB pad assignment U1.11",
+      "status": "PASS",
+      "detail": "schematic='unconnected-(U1-GPIO8-Pad11)'; pcb='unconnected-(U1-GPIO8-Pad11)'"
+    },
+    {
+      "check": "schematic/PCB pad assignment U1.12",
+      "status": "PASS",
+      "detail": "schematic='unconnected-(U1-GPIO9-Pad12)'; pcb='unconnected-(U1-GPIO9-Pad12)'"
+    },
+    {
+      "check": "schematic/PCB pad assignment U1.13",
+      "status": "PASS",
+      "detail": "schematic='I2S_DATA'; pcb='I2S_DATA'"
+    },
+    {
+      "check": "schematic/PCB pad assignment U1.14",
+      "status": "PASS",
+      "detail": "schematic='I2S_BCLK'; pcb='I2S_BCLK'"
+    },
+    {
+      "check": "schematic/PCB pad assignment U1.15",
+      "status": "PASS",
+      "detail": "schematic='I2S_LRCLK'; pcb='I2S_LRCLK'"
+    },
+    {
+      "check": "schematic/PCB pad assignment U1.16",
+      "status": "PASS",
+      "detail": "schematic='unconnected-(U1-GPIO13-Pad16)'; pcb='unconnected-(U1-GPIO13-Pad16)'"
+    },
+    {
+      "check": "schematic/PCB pad assignment U1.17",
+      "status": "PASS",
+      "detail": "schematic='AMP_ENABLE'; pcb='AMP_ENABLE'"
+    },
+    {
+      "check": "schematic/PCB pad assignment U1.18",
+      "status": "PASS",
+      "detail": "schematic='MUTE_N'; pcb='MUTE_N'"
+    },
+    {
+      "check": "schematic/PCB pad assignment U1.19",
+      "status": "PASS",
+      "detail": "schematic='GND'; pcb='GND'"
+    },
+    {
+      "check": "schematic/PCB pad assignment U1.20",
+      "status": "PASS",
+      "detail": "schematic='XIN'; pcb='XIN'"
+    },
+    {
+      "check": "schematic/PCB pad assignment U1.21",
+      "status": "PASS",
+      "detail": "schematic='XOUT'; pcb='XOUT'"
+    },
+    {
+      "check": "schematic/PCB pad assignment U1.22",
+      "status": "PASS",
+      "detail": "schematic='+3V3'; pcb='+3V3'"
+    },
+    {
+      "check": "schematic/PCB pad assignment U1.23",
+      "status": "PASS",
+      "detail": "schematic='+1V1'; pcb='+1V1'"
+    },
+    {
+      "check": "schematic/PCB pad assignment U1.24",
+      "status": "PASS",
+      "detail": "schematic='SWCLK'; pcb='SWCLK'"
+    },
+    {
+      "check": "schematic/PCB pad assignment U1.25",
+      "status": "PASS",
+      "detail": "schematic='SWDIO'; pcb='SWDIO'"
+    },
+    {
+      "check": "schematic/PCB pad assignment U1.26",
+      "status": "PASS",
+      "detail": "schematic='RUN'; pcb='RUN'"
+    },
+    {
+      "check": "schematic/PCB pad assignment U1.27",
+      "status": "PASS",
+      "detail": "schematic='unconnected-(U1-GPIO16-Pad27)'; pcb='unconnected-(U1-GPIO16-Pad27)'"
+    },
+    {
+      "check": "schematic/PCB pad assignment U1.28",
+      "status": "PASS",
+      "detail": "schematic='unconnected-(U1-GPIO17-Pad28)'; pcb='unconnected-(U1-GPIO17-Pad28)'"
+    },
+    {
+      "check": "schematic/PCB pad assignment U1.29",
+      "status": "PASS",
+      "detail": "schematic='unconnected-(U1-GPIO18-Pad29)'; pcb='unconnected-(U1-GPIO18-Pad29)'"
+    },
+    {
+      "check": "schematic/PCB pad assignment U1.30",
+      "status": "PASS",
+      "detail": "schematic='unconnected-(U1-GPIO19-Pad30)'; pcb='unconnected-(U1-GPIO19-Pad30)'"
+    },
+    {
+      "check": "schematic/PCB pad assignment U1.31",
+      "status": "PASS",
+      "detail": "schematic='unconnected-(U1-GPIO20-Pad31)'; pcb='unconnected-(U1-GPIO20-Pad31)'"
+    },
+    {
+      "check": "schematic/PCB pad assignment U1.32",
+      "status": "PASS",
+      "detail": "schematic='unconnected-(U1-GPIO21-Pad32)'; pcb='unconnected-(U1-GPIO21-Pad32)'"
+    },
+    {
+      "check": "schematic/PCB pad assignment U1.33",
+      "status": "PASS",
+      "detail": "schematic='+3V3'; pcb='+3V3'"
+    },
+    {
+      "check": "schematic/PCB pad assignment U1.34",
+      "status": "PASS",
+      "detail": "schematic='unconnected-(U1-GPIO22-Pad34)'; pcb='unconnected-(U1-GPIO22-Pad34)'"
+    },
+    {
+      "check": "schematic/PCB pad assignment U1.35",
+      "status": "PASS",
+      "detail": "schematic='unconnected-(U1-GPIO23-Pad35)'; pcb='unconnected-(U1-GPIO23-Pad35)'"
+    },
+    {
+      "check": "schematic/PCB pad assignment U1.36",
+      "status": "PASS",
+      "detail": "schematic='unconnected-(U1-GPIO24-Pad36)'; pcb='unconnected-(U1-GPIO24-Pad36)'"
+    },
+    {
+      "check": "schematic/PCB pad assignment U1.37",
+      "status": "PASS",
+      "detail": "schematic='STATUS_LED'; pcb='STATUS_LED'"
+    },
+    {
+      "check": "schematic/PCB pad assignment U1.38",
+      "status": "PASS",
+      "detail": "schematic='VOLUME_ADC'; pcb='VOLUME_ADC'"
+    },
+    {
+      "check": "schematic/PCB pad assignment U1.39",
+      "status": "PASS",
+      "detail": "schematic='unconnected-(U1-GPIO27/ADC1-Pad39)'; pcb='unconnected-(U1-GPIO27{slash}ADC1-Pad39)'"
+    },
+    {
+      "check": "schematic/PCB pad assignment U1.40",
+      "status": "PASS",
+      "detail": "schematic='unconnected-(U1-GPIO28/ADC2-Pad40)'; pcb='unconnected-(U1-GPIO28{slash}ADC2-Pad40)'"
+    },
+    {
+      "check": "schematic/PCB pad assignment U1.41",
+      "status": "PASS",
+      "detail": "schematic='unconnected-(U1-GPIO29/ADC3-Pad41)'; pcb='unconnected-(U1-GPIO29{slash}ADC3-Pad41)'"
+    },
+    {
+      "check": "schematic/PCB pad assignment U1.42",
+      "status": "PASS",
+      "detail": "schematic='+3V3'; pcb='+3V3'"
+    },
+    {
+      "check": "schematic/PCB pad assignment U1.43",
+      "status": "PASS",
+      "detail": "schematic='ADC_3V3'; pcb='ADC_3V3'"
+    },
+    {
+      "check": "schematic/PCB pad assignment U1.44",
+      "status": "PASS",
+      "detail": "schematic='+3V3'; pcb='+3V3'"
+    },
+    {
+      "check": "schematic/PCB pad assignment U1.45",
+      "status": "PASS",
+      "detail": "schematic='+1V1'; pcb='+1V1'"
+    },
+    {
+      "check": "schematic/PCB pad assignment U1.46",
+      "status": "PASS",
+      "detail": "schematic='USB_DM_MCU'; pcb='USB_DM_MCU'"
+    },
+    {
+      "check": "schematic/PCB pad assignment U1.47",
+      "status": "PASS",
+      "detail": "schematic='USB_DP_MCU'; pcb='USB_DP_MCU'"
+    },
+    {
+      "check": "schematic/PCB pad assignment U1.48",
+      "status": "PASS",
+      "detail": "schematic='+3V3'; pcb='+3V3'"
+    },
+    {
+      "check": "schematic/PCB pad assignment U1.49",
+      "status": "PASS",
+      "detail": "schematic='+3V3'; pcb='+3V3'"
+    },
+    {
+      "check": "schematic/PCB pad assignment U1.50",
+      "status": "PASS",
+      "detail": "schematic='+1V1'; pcb='+1V1'"
+    },
+    {
+      "check": "schematic/PCB pad assignment U1.51",
+      "status": "PASS",
+      "detail": "schematic='QSPI_D3'; pcb='QSPI_D3'"
+    },
+    {
+      "check": "schematic/PCB pad assignment U1.52",
+      "status": "PASS",
+      "detail": "schematic='QSPI_CLK'; pcb='QSPI_CLK'"
+    },
+    {
+      "check": "schematic/PCB pad assignment U1.53",
+      "status": "PASS",
+      "detail": "schematic='QSPI_D0'; pcb='QSPI_D0'"
+    },
+    {
+      "check": "schematic/PCB pad assignment U1.54",
+      "status": "PASS",
+      "detail": "schematic='QSPI_D2'; pcb='QSPI_D2'"
+    },
+    {
+      "check": "schematic/PCB pad assignment U1.55",
+      "status": "PASS",
+      "detail": "schematic='QSPI_D1'; pcb='QSPI_D1'"
+    },
+    {
+      "check": "schematic/PCB pad assignment U1.56",
+      "status": "PASS",
+      "detail": "schematic='QSPI_CS'; pcb='QSPI_CS'"
+    },
+    {
+      "check": "schematic/PCB pad assignment U1.57",
+      "status": "PASS",
+      "detail": "schematic='GND'; pcb='GND'"
+    },
+    {
+      "check": "component present on PCB U2",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "component value agreement U2",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad U2.8",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad U2.4",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad U2.6",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad U2.1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad U2.5",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad U2.2",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad U2.3",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad U2.7",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "schematic/PCB pad assignment U2.1",
+      "status": "PASS",
+      "detail": "schematic='QSPI_CS'; pcb='QSPI_CS'"
+    },
+    {
+      "check": "schematic/PCB pad assignment U2.2",
+      "status": "PASS",
+      "detail": "schematic='QSPI_D1'; pcb='QSPI_D1'"
+    },
+    {
+      "check": "schematic/PCB pad assignment U2.3",
+      "status": "PASS",
+      "detail": "schematic='QSPI_D2'; pcb='QSPI_D2'"
+    },
+    {
+      "check": "schematic/PCB pad assignment U2.4",
+      "status": "PASS",
+      "detail": "schematic='GND'; pcb='GND'"
+    },
+    {
+      "check": "schematic/PCB pad assignment U2.5",
+      "status": "PASS",
+      "detail": "schematic='QSPI_D0'; pcb='QSPI_D0'"
+    },
+    {
+      "check": "schematic/PCB pad assignment U2.6",
+      "status": "PASS",
+      "detail": "schematic='QSPI_CLK'; pcb='QSPI_CLK'"
+    },
+    {
+      "check": "schematic/PCB pad assignment U2.7",
+      "status": "PASS",
+      "detail": "schematic='QSPI_D3'; pcb='QSPI_D3'"
+    },
+    {
+      "check": "schematic/PCB pad assignment U2.8",
+      "status": "PASS",
+      "detail": "schematic='+3V3'; pcb='+3V3'"
+    },
+    {
+      "check": "component present on PCB Y1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "component value agreement Y1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad Y1.2",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad Y1.4",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad Y1.1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad Y1.3",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "schematic/PCB pad assignment Y1.1",
+      "status": "PASS",
+      "detail": "schematic='XIN'; pcb='XIN'"
+    },
+    {
+      "check": "schematic/PCB pad assignment Y1.2",
+      "status": "PASS",
+      "detail": "schematic='GND'; pcb='GND'"
+    },
+    {
+      "check": "schematic/PCB pad assignment Y1.3",
+      "status": "PASS",
+      "detail": "schematic='XTAL_OUT'; pcb='XTAL_OUT'"
+    },
+    {
+      "check": "schematic/PCB pad assignment Y1.4",
+      "status": "PASS",
+      "detail": "schematic='GND'; pcb='GND'"
+    },
+    {
+      "check": "component present on PCB C16",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "component value agreement C16",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad C16.1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad C16.2",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "schematic/PCB pad assignment C16.1",
+      "status": "PASS",
+      "detail": "schematic='+5V'; pcb='+5V'"
+    },
+    {
+      "check": "schematic/PCB pad assignment C16.2",
+      "status": "PASS",
+      "detail": "schematic='GND'; pcb='GND'"
+    },
+    {
+      "check": "component present on PCB C17",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "component value agreement C17",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad C17.1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad C17.2",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "schematic/PCB pad assignment C17.1",
+      "status": "PASS",
+      "detail": "schematic='+3V3'; pcb='+3V3'"
+    },
+    {
+      "check": "schematic/PCB pad assignment C17.2",
+      "status": "PASS",
+      "detail": "schematic='GND'; pcb='GND'"
+    },
+    {
+      "check": "component present on PCB C18",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "component value agreement C18",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad C18.2",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad C18.1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "schematic/PCB pad assignment C18.1",
+      "status": "PASS",
+      "detail": "schematic='VBUS_RAW'; pcb='VBUS_RAW'"
+    },
+    {
+      "check": "schematic/PCB pad assignment C18.2",
+      "status": "PASS",
+      "detail": "schematic='GND'; pcb='GND'"
+    },
+    {
+      "check": "component present on PCB D1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "component value agreement D1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad D1.2",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad D1.3",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad D1.4",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad D1.1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad D1.6",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad D1.5",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "schematic/PCB pad assignment D1.1",
+      "status": "PASS",
+      "detail": "schematic='USB_DP'; pcb='USB_DP'"
+    },
+    {
+      "check": "schematic/PCB pad assignment D1.2",
+      "status": "PASS",
+      "detail": "schematic='GND'; pcb='GND'"
+    },
+    {
+      "check": "schematic/PCB pad assignment D1.3",
+      "status": "PASS",
+      "detail": "schematic='USB_DM'; pcb='USB_DM'"
+    },
+    {
+      "check": "schematic/PCB pad assignment D1.4",
+      "status": "PASS",
+      "detail": "schematic='USB_DM_ESD'; pcb='USB_DM_ESD'"
+    },
+    {
+      "check": "schematic/PCB pad assignment D1.5",
+      "status": "PASS",
+      "detail": "schematic='VBUS_RAW'; pcb='VBUS_RAW'"
+    },
+    {
+      "check": "schematic/PCB pad assignment D1.6",
+      "status": "PASS",
+      "detail": "schematic='USB_DP_ESD'; pcb='USB_DP_ESD'"
+    },
+    {
+      "check": "component present on PCB F1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "component value agreement F1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad F1.2",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad F1.1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "schematic/PCB pad assignment F1.1",
+      "status": "PASS",
+      "detail": "schematic='VBUS_RAW'; pcb='VBUS_RAW'"
+    },
+    {
+      "check": "schematic/PCB pad assignment F1.2",
+      "status": "PASS",
+      "detail": "schematic='+5V'; pcb='+5V'"
+    },
+    {
+      "check": "component present on PCB J1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "component value agreement J1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad J1.A5",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad J1.B5",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad J1.A1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad J1.A12",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad J1.B1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad J1.B12",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad J1.S1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad J1.A7",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad J1.B7",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad J1.A6",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad J1.B6",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad J1.A4",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad J1.A9",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad J1.B4",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad J1.B9",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "schematic/PCB pad assignment J1.A1",
+      "status": "PASS",
+      "detail": "schematic='GND'; pcb='GND'"
+    },
+    {
+      "check": "schematic/PCB pad assignment J1.A4",
+      "status": "PASS",
+      "detail": "schematic='VBUS_RAW'; pcb='VBUS_RAW'"
+    },
+    {
+      "check": "schematic/PCB pad assignment J1.A5",
+      "status": "PASS",
+      "detail": "schematic='CC1'; pcb='CC1'"
+    },
+    {
+      "check": "schematic/PCB pad assignment J1.A6",
+      "status": "PASS",
+      "detail": "schematic='USB_DP'; pcb='USB_DP'"
+    },
+    {
+      "check": "schematic/PCB pad assignment J1.A7",
+      "status": "PASS",
+      "detail": "schematic='USB_DM'; pcb='USB_DM'"
+    },
+    {
+      "check": "schematic/PCB pad assignment J1.A8",
+      "status": "PASS",
+      "detail": "schematic='unconnected-(J1-SBU1-PadA8)'; pcb='unconnected-(J1-SBU1-PadA8)'"
+    },
+    {
+      "check": "schematic/PCB pad assignment J1.A9",
+      "status": "PASS",
+      "detail": "schematic='VBUS_RAW'; pcb='VBUS_RAW'"
+    },
+    {
+      "check": "schematic/PCB pad assignment J1.A12",
+      "status": "PASS",
+      "detail": "schematic='GND'; pcb='GND'"
+    },
+    {
+      "check": "schematic/PCB pad assignment J1.B1",
+      "status": "PASS",
+      "detail": "schematic='GND'; pcb='GND'"
+    },
+    {
+      "check": "schematic/PCB pad assignment J1.B4",
+      "status": "PASS",
+      "detail": "schematic='VBUS_RAW'; pcb='VBUS_RAW'"
+    },
+    {
+      "check": "schematic/PCB pad assignment J1.B5",
+      "status": "PASS",
+      "detail": "schematic='CC2'; pcb='CC2'"
+    },
+    {
+      "check": "schematic/PCB pad assignment J1.B6",
+      "status": "PASS",
+      "detail": "schematic='USB_DP'; pcb='USB_DP'"
+    },
+    {
+      "check": "schematic/PCB pad assignment J1.B7",
+      "status": "PASS",
+      "detail": "schematic='USB_DM'; pcb='USB_DM'"
+    },
+    {
+      "check": "schematic/PCB pad assignment J1.B8",
+      "status": "PASS",
+      "detail": "schematic='unconnected-(J1-SBU2-PadB8)'; pcb='unconnected-(J1-SBU2-PadB8)'"
+    },
+    {
+      "check": "schematic/PCB pad assignment J1.B9",
+      "status": "PASS",
+      "detail": "schematic='VBUS_RAW'; pcb='VBUS_RAW'"
+    },
+    {
+      "check": "schematic/PCB pad assignment J1.B12",
+      "status": "PASS",
+      "detail": "schematic='GND'; pcb='GND'"
+    },
+    {
+      "check": "schematic/PCB pad assignment J1.S1",
+      "status": "PASS",
+      "detail": "schematic='GND'; pcb='GND'"
+    },
+    {
+      "check": "schematic/PCB pad assignment J1.S1",
+      "status": "PASS",
+      "detail": "schematic='GND'; pcb='GND'"
+    },
+    {
+      "check": "schematic/PCB pad assignment J1.S1",
+      "status": "PASS",
+      "detail": "schematic='GND'; pcb='GND'"
+    },
+    {
+      "check": "schematic/PCB pad assignment J1.S1",
+      "status": "PASS",
+      "detail": "schematic='GND'; pcb='GND'"
+    },
+    {
+      "check": "component present on PCB R6",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "component value agreement R6",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad R6.1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad R6.2",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "schematic/PCB pad assignment R6.1",
+      "status": "PASS",
+      "detail": "schematic='CC1'; pcb='CC1'"
+    },
+    {
+      "check": "schematic/PCB pad assignment R6.2",
+      "status": "PASS",
+      "detail": "schematic='GND'; pcb='GND'"
+    },
+    {
+      "check": "component present on PCB R7",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "component value agreement R7",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad R7.1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad R7.2",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "schematic/PCB pad assignment R7.1",
+      "status": "PASS",
+      "detail": "schematic='CC2'; pcb='CC2'"
+    },
+    {
+      "check": "schematic/PCB pad assignment R7.2",
+      "status": "PASS",
+      "detail": "schematic='GND'; pcb='GND'"
+    },
+    {
+      "check": "component present on PCB R8",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "component value agreement R8",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad R8.1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad R8.2",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "schematic/PCB pad assignment R8.1",
+      "status": "PASS",
+      "detail": "schematic='USB_DP_ESD'; pcb='USB_DP_ESD'"
+    },
+    {
+      "check": "schematic/PCB pad assignment R8.2",
+      "status": "PASS",
+      "detail": "schematic='USB_DP_MCU'; pcb='USB_DP_MCU'"
+    },
+    {
+      "check": "component present on PCB R9",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "component value agreement R9",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad R9.1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad R9.2",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "schematic/PCB pad assignment R9.1",
+      "status": "PASS",
+      "detail": "schematic='USB_DM_ESD'; pcb='USB_DM_ESD'"
+    },
+    {
+      "check": "schematic/PCB pad assignment R9.2",
+      "status": "PASS",
+      "detail": "schematic='USB_DM_MCU'; pcb='USB_DM_MCU'"
+    },
+    {
+      "check": "component present on PCB TP1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "component value agreement TP1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad TP1.1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "schematic/PCB pad assignment TP1.1",
+      "status": "PASS",
+      "detail": "schematic='VBUS_RAW'; pcb='VBUS_RAW'"
+    },
+    {
+      "check": "component present on PCB TP2",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "component value agreement TP2",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad TP2.1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "schematic/PCB pad assignment TP2.1",
+      "status": "PASS",
+      "detail": "schematic='+5V'; pcb='+5V'"
+    },
+    {
+      "check": "component present on PCB TP3",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "component value agreement TP3",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad TP3.1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "schematic/PCB pad assignment TP3.1",
+      "status": "PASS",
+      "detail": "schematic='+3V3'; pcb='+3V3'"
+    },
+    {
+      "check": "component present on PCB TP4",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "component value agreement TP4",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad TP4.1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "schematic/PCB pad assignment TP4.1",
+      "status": "PASS",
+      "detail": "schematic='+1V1'; pcb='+1V1'"
+    },
+    {
+      "check": "component present on PCB TP5",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "component value agreement TP5",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad TP5.1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "schematic/PCB pad assignment TP5.1",
+      "status": "PASS",
+      "detail": "schematic='GND'; pcb='GND'"
+    },
+    {
+      "check": "component present on PCB TP6",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "component value agreement TP6",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad TP6.1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "schematic/PCB pad assignment TP6.1",
+      "status": "PASS",
+      "detail": "schematic='I2C_SDA'; pcb='I2C_SDA'"
+    },
+    {
+      "check": "component present on PCB TP7",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "component value agreement TP7",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad TP7.1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "schematic/PCB pad assignment TP7.1",
+      "status": "PASS",
+      "detail": "schematic='I2C_SCL'; pcb='I2C_SCL'"
+    },
+    {
+      "check": "component present on PCB TP8",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "component value agreement TP8",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad TP8.1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "schematic/PCB pad assignment TP8.1",
+      "status": "PASS",
+      "detail": "schematic='I2S_DATA'; pcb='I2S_DATA'"
+    },
+    {
+      "check": "component present on PCB TP9",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "component value agreement TP9",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad TP9.1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "schematic/PCB pad assignment TP9.1",
+      "status": "PASS",
+      "detail": "schematic='I2S_BCLK'; pcb='I2S_BCLK'"
+    },
+    {
+      "check": "component present on PCB TP10",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "component value agreement TP10",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad TP10.1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "schematic/PCB pad assignment TP10.1",
+      "status": "PASS",
+      "detail": "schematic='I2S_LRCLK'; pcb='I2S_LRCLK'"
+    },
+    {
+      "check": "component present on PCB TP11",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "component value agreement TP11",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad TP11.1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "schematic/PCB pad assignment TP11.1",
+      "status": "PASS",
+      "detail": "schematic='AMP_SD'; pcb='AMP_SD'"
+    },
+    {
+      "check": "component present on PCB U3",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "component value agreement U3",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad U3.5",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad U3.1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad U3.3",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad U3.2",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "schematic/PCB pad assignment U3.1",
+      "status": "PASS",
+      "detail": "schematic='+5V'; pcb='+5V'"
+    },
+    {
+      "check": "schematic/PCB pad assignment U3.2",
+      "status": "PASS",
+      "detail": "schematic='GND'; pcb='GND'"
+    },
+    {
+      "check": "schematic/PCB pad assignment U3.3",
+      "status": "PASS",
+      "detail": "schematic='+5V'; pcb='+5V'"
+    },
+    {
+      "check": "schematic/PCB pad assignment U3.4",
+      "status": "PASS",
+      "detail": "schematic='unconnected-(U3-NC-Pad4)'; pcb='unconnected-(U3-NC-Pad4)'"
+    },
+    {
+      "check": "schematic/PCB pad assignment U3.5",
+      "status": "PASS",
+      "detail": "schematic='+3V3'; pcb='+3V3'"
+    },
+    {
+      "check": "component present on PCB C19",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "component value agreement C19",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad C19.1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad C19.2",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "schematic/PCB pad assignment C19.1",
+      "status": "PASS",
+      "detail": "schematic='+3V3'; pcb='+3V3'"
+    },
+    {
+      "check": "schematic/PCB pad assignment C19.2",
+      "status": "PASS",
+      "detail": "schematic='GND'; pcb='GND'"
+    },
+    {
+      "check": "component present on PCB C20",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "component value agreement C20",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad C20.1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad C20.2",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "schematic/PCB pad assignment C20.1",
+      "status": "PASS",
+      "detail": "schematic='+3V3'; pcb='+3V3'"
+    },
+    {
+      "check": "schematic/PCB pad assignment C20.2",
+      "status": "PASS",
+      "detail": "schematic='GND'; pcb='GND'"
+    },
+    {
+      "check": "component present on PCB C21",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "component value agreement C21",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad C21.1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad C21.2",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "schematic/PCB pad assignment C21.1",
+      "status": "PASS",
+      "detail": "schematic='+5V'; pcb='+5V'"
+    },
+    {
+      "check": "schematic/PCB pad assignment C21.2",
+      "status": "PASS",
+      "detail": "schematic='GND'; pcb='GND'"
+    },
+    {
+      "check": "component present on PCB C22",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "component value agreement C22",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad C22.1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad C22.2",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "schematic/PCB pad assignment C22.1",
+      "status": "PASS",
+      "detail": "schematic='+5V'; pcb='+5V'"
+    },
+    {
+      "check": "schematic/PCB pad assignment C22.2",
+      "status": "PASS",
+      "detail": "schematic='GND'; pcb='GND'"
+    },
+    {
+      "check": "component present on PCB C23",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "component value agreement C23",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad C23.2",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad C23.1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "schematic/PCB pad assignment C23.1",
+      "status": "PASS",
+      "detail": "schematic='VOLUME_ADC'; pcb='VOLUME_ADC'"
+    },
+    {
+      "check": "schematic/PCB pad assignment C23.2",
+      "status": "PASS",
+      "detail": "schematic='GND'; pcb='GND'"
+    },
+    {
+      "check": "component present on PCB D2",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "component value agreement D2",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad D2.1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad D2.2",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "schematic/PCB pad assignment D2.1",
+      "status": "PASS",
+      "detail": "schematic='GND'; pcb='GND'"
+    },
+    {
+      "check": "schematic/PCB pad assignment D2.2",
+      "status": "PASS",
+      "detail": "schematic='LED_A'; pcb='LED_A'"
+    },
+    {
+      "check": "component present on PCB J3",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "component value agreement J3",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad J3.2",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad J3.1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "schematic/PCB pad assignment J3.1",
+      "status": "PASS",
+      "detail": "schematic='SPK_P'; pcb='SPK_P'"
+    },
+    {
+      "check": "schematic/PCB pad assignment J3.2",
+      "status": "PASS",
+      "detail": "schematic='SPK_N'; pcb='SPK_N'"
+    },
+    {
+      "check": "component present on PCB R10",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "component value agreement R10",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad R10.1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad R10.2",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "schematic/PCB pad assignment R10.1",
+      "status": "PASS",
+      "detail": "schematic='+3V3'; pcb='+3V3'"
+    },
+    {
+      "check": "schematic/PCB pad assignment R10.2",
+      "status": "PASS",
+      "detail": "schematic='SENSOR_XSHUT'; pcb='SENSOR_XSHUT'"
+    },
+    {
+      "check": "component present on PCB R11",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "component value agreement R11",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad R11.1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad R11.2",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "schematic/PCB pad assignment R11.1",
+      "status": "PASS",
+      "detail": "schematic='+3V3'; pcb='+3V3'"
+    },
+    {
+      "check": "schematic/PCB pad assignment R11.2",
+      "status": "PASS",
+      "detail": "schematic='SENSOR_IRQ'; pcb='SENSOR_IRQ'"
+    },
+    {
+      "check": "component present on PCB R12",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "component value agreement R12",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad R12.1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad R12.2",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "schematic/PCB pad assignment R12.1",
+      "status": "PASS",
+      "detail": "schematic='+3V3'; pcb='+3V3'"
+    },
+    {
+      "check": "schematic/PCB pad assignment R12.2",
+      "status": "PASS",
+      "detail": "schematic='I2C_SDA'; pcb='I2C_SDA'"
+    },
+    {
+      "check": "component present on PCB R13",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "component value agreement R13",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad R13.1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad R13.2",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "schematic/PCB pad assignment R13.1",
+      "status": "PASS",
+      "detail": "schematic='+3V3'; pcb='+3V3'"
+    },
+    {
+      "check": "schematic/PCB pad assignment R13.2",
+      "status": "PASS",
+      "detail": "schematic='I2C_SCL'; pcb='I2C_SCL'"
+    },
+    {
+      "check": "component present on PCB R14",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "component value agreement R14",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad R14.1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad R14.2",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "schematic/PCB pad assignment R14.1",
+      "status": "PASS",
+      "detail": "schematic='AMP_ENABLE'; pcb='AMP_ENABLE'"
+    },
+    {
+      "check": "schematic/PCB pad assignment R14.2",
+      "status": "PASS",
+      "detail": "schematic='AMP_SD'; pcb='AMP_SD'"
+    },
+    {
+      "check": "component present on PCB R15",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "component value agreement R15",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad R15.1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad R15.2",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "schematic/PCB pad assignment R15.1",
+      "status": "PASS",
+      "detail": "schematic='AMP_SD'; pcb='AMP_SD'"
+    },
+    {
+      "check": "schematic/PCB pad assignment R15.2",
+      "status": "PASS",
+      "detail": "schematic='GND'; pcb='GND'"
+    },
+    {
+      "check": "component present on PCB R16",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "component value agreement R16",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad R16.1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad R16.2",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "schematic/PCB pad assignment R16.1",
+      "status": "PASS",
+      "detail": "schematic='+3V3'; pcb='+3V3'"
+    },
+    {
+      "check": "schematic/PCB pad assignment R16.2",
+      "status": "PASS",
+      "detail": "schematic='MUTE_N'; pcb='MUTE_N'"
+    },
+    {
+      "check": "component present on PCB R17",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "component value agreement R17",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad R17.2",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad R17.1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "schematic/PCB pad assignment R17.1",
+      "status": "PASS",
+      "detail": "schematic='VOLUME_RAW'; pcb='VOLUME_RAW'"
+    },
+    {
+      "check": "schematic/PCB pad assignment R17.2",
+      "status": "PASS",
+      "detail": "schematic='VOLUME_ADC'; pcb='VOLUME_ADC'"
+    },
+    {
+      "check": "component present on PCB R18",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "component value agreement R18",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad R18.2",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad R18.1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "schematic/PCB pad assignment R18.1",
+      "status": "PASS",
+      "detail": "schematic='STATUS_LED'; pcb='STATUS_LED'"
+    },
+    {
+      "check": "schematic/PCB pad assignment R18.2",
+      "status": "PASS",
+      "detail": "schematic='LED_A'; pcb='LED_A'"
+    },
+    {
+      "check": "component present on PCB R19",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "component value agreement R19",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad R19.2",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad R19.1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "schematic/PCB pad assignment R19.1",
+      "status": "PASS",
+      "detail": "schematic='VOLUME_ADC'; pcb='VOLUME_ADC'"
+    },
+    {
+      "check": "schematic/PCB pad assignment R19.2",
+      "status": "PASS",
+      "detail": "schematic='GND'; pcb='GND'"
+    },
+    {
+      "check": "component present on PCB RV1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "component value agreement RV1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad RV1.3",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad RV1.1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad RV1.2",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "schematic/PCB pad assignment RV1.1",
+      "status": "PASS",
+      "detail": "schematic='GND'; pcb='GND'"
+    },
+    {
+      "check": "schematic/PCB pad assignment RV1.2",
+      "status": "PASS",
+      "detail": "schematic='VOLUME_RAW'; pcb='VOLUME_RAW'"
+    },
+    {
+      "check": "schematic/PCB pad assignment RV1.3",
+      "status": "PASS",
+      "detail": "schematic='+3V3'; pcb='+3V3'"
+    },
+    {
+      "check": "schematic/PCB pad assignment RV1.MP",
+      "status": "PASS",
+      "detail": "schematic=None; pcb=''"
+    },
+    {
+      "check": "schematic/PCB pad assignment RV1.MP",
+      "status": "PASS",
+      "detail": "schematic=None; pcb=''"
+    },
+    {
+      "check": "component present on PCB SW3",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "component value agreement SW3",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad SW3.2",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad SW3.1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad SW3.4",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad SW3.5",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "schematic/PCB pad assignment SW3.1",
+      "status": "PASS",
+      "detail": "schematic='GND'; pcb='GND'"
+    },
+    {
+      "check": "schematic/PCB pad assignment SW3.2",
+      "status": "PASS",
+      "detail": "schematic='AMP_SD'; pcb='AMP_SD'"
+    },
+    {
+      "check": "schematic/PCB pad assignment SW3.3",
+      "status": "PASS",
+      "detail": "schematic='unconnected-(SW3A-C-Pad3)'; pcb='unconnected-(SW3A-C-Pad3)'"
+    },
+    {
+      "check": "schematic/PCB pad assignment SW3.4",
+      "status": "PASS",
+      "detail": "schematic='GND'; pcb='GND'"
+    },
+    {
+      "check": "schematic/PCB pad assignment SW3.5",
+      "status": "PASS",
+      "detail": "schematic='MUTE_N'; pcb='MUTE_N'"
+    },
+    {
+      "check": "schematic/PCB pad assignment SW3.6",
+      "status": "PASS",
+      "detail": "schematic='unconnected-(SW3B-C-Pad6)'; pcb='unconnected-(SW3B-C-Pad6)'"
+    },
+    {
+      "check": "component present on PCB U4",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "component value agreement U4",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad U4.1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad U4.11",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad U4.12",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad U4.2",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad U4.3",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad U4.4",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad U4.6",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad U4.10",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad U4.9",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad U4.7",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad U4.5",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "schematic/PCB pad assignment U4.1",
+      "status": "PASS",
+      "detail": "schematic='+3V3'; pcb='+3V3'"
+    },
+    {
+      "check": "schematic/PCB pad assignment U4.1",
+      "status": "PASS",
+      "detail": "schematic='+3V3'; pcb='+3V3'"
+    },
+    {
+      "check": "schematic/PCB pad assignment U4.2",
+      "status": "PASS",
+      "detail": "schematic='GND'; pcb='GND'"
+    },
+    {
+      "check": "schematic/PCB pad assignment U4.3",
+      "status": "PASS",
+      "detail": "schematic='GND'; pcb='GND'"
+    },
+    {
+      "check": "schematic/PCB pad assignment U4.4",
+      "status": "PASS",
+      "detail": "schematic='GND'; pcb='GND'"
+    },
+    {
+      "check": "schematic/PCB pad assignment U4.5",
+      "status": "PASS",
+      "detail": "schematic='SENSOR_XSHUT'; pcb='SENSOR_XSHUT'"
+    },
+    {
+      "check": "schematic/PCB pad assignment U4.6",
+      "status": "PASS",
+      "detail": "schematic='GND'; pcb='GND'"
+    },
+    {
+      "check": "schematic/PCB pad assignment U4.7",
+      "status": "PASS",
+      "detail": "schematic='SENSOR_IRQ'; pcb='SENSOR_IRQ'"
+    },
+    {
+      "check": "schematic/PCB pad assignment U4.8",
+      "status": "PASS",
+      "detail": "schematic='unconnected-(U4-DNC-Pad8)'; pcb='unconnected-(U4-DNC-Pad8)'"
+    },
+    {
+      "check": "schematic/PCB pad assignment U4.9",
+      "status": "PASS",
+      "detail": "schematic='I2C_SDA'; pcb='I2C_SDA'"
+    },
+    {
+      "check": "schematic/PCB pad assignment U4.10",
+      "status": "PASS",
+      "detail": "schematic='I2C_SCL'; pcb='I2C_SCL'"
+    },
+    {
+      "check": "schematic/PCB pad assignment U4.11",
+      "status": "PASS",
+      "detail": "schematic='+3V3'; pcb='+3V3'"
+    },
+    {
+      "check": "schematic/PCB pad assignment U4.12",
+      "status": "PASS",
+      "detail": "schematic='GND'; pcb='GND'"
+    },
+    {
+      "check": "component present on PCB U5",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "component value agreement U5",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad U5.7",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad U5.8",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad U5.4",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad U5.11",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad U5.15",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad U5.17",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad U5.3",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad U5.16",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad U5.1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad U5.14",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad U5.10",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "connected schematic pin has a physical pad U5.9",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "schematic/PCB pad assignment U5.1",
+      "status": "PASS",
+      "detail": "schematic='I2S_DATA'; pcb='I2S_DATA'"
+    },
+    {
+      "check": "schematic/PCB pad assignment U5.2",
+      "status": "PASS",
+      "detail": "schematic='unconnected-(U5-GAIN_SLOT-Pad2)'; pcb='unconnected-(U5-GAIN_SLOT-Pad2)'"
+    },
+    {
+      "check": "schematic/PCB pad assignment U5.3",
+      "status": "PASS",
+      "detail": "schematic='GND'; pcb='GND'"
+    },
+    {
+      "check": "schematic/PCB pad assignment U5.4",
+      "status": "PASS",
+      "detail": "schematic='AMP_SD'; pcb='AMP_SD'"
+    },
+    {
+      "check": "schematic/PCB pad assignment U5.5",
+      "status": "PASS",
+      "detail": "schematic='unconnected-(U5-NC-Pad5)'; pcb='unconnected-(U5-NC-Pad5)'"
+    },
+    {
+      "check": "schematic/PCB pad assignment U5.6",
+      "status": "PASS",
+      "detail": "schematic='unconnected-(U5-NC-Pad6)'; pcb='unconnected-(U5-NC-Pad6)'"
+    },
+    {
+      "check": "schematic/PCB pad assignment U5.7",
+      "status": "PASS",
+      "detail": "schematic='+5V'; pcb='+5V'"
+    },
+    {
+      "check": "schematic/PCB pad assignment U5.8",
+      "status": "PASS",
+      "detail": "schematic='+5V'; pcb='+5V'"
+    },
+    {
+      "check": "schematic/PCB pad assignment U5.9",
+      "status": "PASS",
+      "detail": "schematic='SPK_P'; pcb='SPK_P'"
+    },
+    {
+      "check": "schematic/PCB pad assignment U5.10",
+      "status": "PASS",
+      "detail": "schematic='SPK_N'; pcb='SPK_N'"
+    },
+    {
+      "check": "schematic/PCB pad assignment U5.11",
+      "status": "PASS",
+      "detail": "schematic='GND'; pcb='GND'"
+    },
+    {
+      "check": "schematic/PCB pad assignment U5.12",
+      "status": "PASS",
+      "detail": "schematic='unconnected-(U5-NC-Pad12)'; pcb='unconnected-(U5-NC-Pad12)'"
+    },
+    {
+      "check": "schematic/PCB pad assignment U5.13",
+      "status": "PASS",
+      "detail": "schematic='unconnected-(U5-NC-Pad13)'; pcb='unconnected-(U5-NC-Pad13)'"
+    },
+    {
+      "check": "schematic/PCB pad assignment U5.14",
+      "status": "PASS",
+      "detail": "schematic='I2S_LRCLK'; pcb='I2S_LRCLK'"
+    },
+    {
+      "check": "schematic/PCB pad assignment U5.15",
+      "status": "PASS",
+      "detail": "schematic='GND'; pcb='GND'"
+    },
+    {
+      "check": "schematic/PCB pad assignment U5.16",
+      "status": "PASS",
+      "detail": "schematic='I2S_BCLK'; pcb='I2S_BCLK'"
+    },
+    {
+      "check": "schematic/PCB pad assignment U5.17",
+      "status": "PASS",
+      "detail": "schematic='GND'; pcb='GND'"
+    },
+    {
+      "check": "MAX98357A official center land dimensions",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "MAX98357A official perimeter land 1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "MAX98357A official perimeter land 2",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "MAX98357A official perimeter land 3",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "MAX98357A official perimeter land 4",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "MAX98357A official perimeter land 5",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "MAX98357A official perimeter land 6",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "MAX98357A official perimeter land 7",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "MAX98357A official perimeter land 8",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "MAX98357A official perimeter land 9",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "MAX98357A official perimeter land 10",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "MAX98357A official perimeter land 11",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "MAX98357A official perimeter land 12",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "MAX98357A official perimeter land 13",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "MAX98357A official perimeter land 14",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "MAX98357A official perimeter land 15",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "MAX98357A official perimeter land 16",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "volume ADC has 1 Mohm open-wiper discharge path",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "potentiometer MPN matches selected body variant",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "firmware pin assignment PICO_DEFAULT_I2C_SDA_PIN",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "firmware pin assignment PICO_DEFAULT_I2C_SCL_PIN",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "firmware pin assignment AIRNOTE_XSHUT_PIN",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "firmware pin assignment AIRNOTE_SENSOR_IRQ_PIN",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "firmware pin assignment AIRNOTE_I2S_DATA_PIN",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "firmware pin assignment AIRNOTE_I2S_BCLK_PIN",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "firmware pin assignment AIRNOTE_I2S_LRCLK_PIN",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "firmware pin assignment AIRNOTE_AMP_ENABLE_PIN",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "firmware pin assignment AIRNOTE_MUTE_N_PIN",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "firmware pin assignment PICO_DEFAULT_LED_PIN",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "firmware pin assignment AIRNOTE_VOLUME_PIN",
+      "status": "PASS",
+      "detail": ""
+    }
+  ],
+  "failed": 0,
+  "physical_tests": "PENDING"
+}

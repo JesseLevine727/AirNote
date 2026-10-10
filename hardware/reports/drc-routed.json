@@ -1,0 +1,146 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-10T13:42:59-0400",
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "9.0.9",
+    "schematic_parity": [
+        {
+            "description": "Pad net (unconnected-(U1-GPIO27/ADC1-Pad39)) doesn't match net given by schematic (unconnected-(U1-GPIO27{slash}ADC1-Pad39)).",
+            "items": [
+                {
+                    "description": "Pad 39 [unconnected-(U1-GPIO27/ADC1-Pad39)] of U1 on F.Cu",
+                    "pos": {
+                        "x": 93.4375,
+                        "y": 80.6
+                    },
+                    "uuid": "a0026f7c-21db-4039-93cc-c4e381468b2f"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (unconnected-(U1-GPIO28/ADC2-Pad40)) doesn't match net given by schematic (unconnected-(U1-GPIO28{slash}ADC2-Pad40)).",
+            "items": [
+                {
+                    "description": "Pad 40 [unconnected-(U1-GPIO28/ADC2-Pad40)] of U1 on F.Cu",
+                    "pos": {
+                        "x": 93.4375,
+                        "y": 80.2
+                    },
+                    "uuid": "eb05b609-caaa-41d9-bcd3-653533d3da0c"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (unconnected-(U1-GPIO29/ADC3-Pad41)) doesn't match net given by schematic (unconnected-(U1-GPIO29{slash}ADC3-Pad41)).",
+            "items": [
+                {
+                    "description": "Pad 41 [unconnected-(U1-GPIO29/ADC3-Pad41)] of U1 on F.Cu",
+                    "pos": {
+                        "x": 93.4375,
+                        "y": 79.8
+                    },
+                    "uuid": "cb86d2da-65e2-42f7-a3d4-9d813a1de0d9"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        }
+    ],
+    "source": "airnote.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Zone [GND] on B.Cu, priority 0",
+                    "pos": {
+                        "x": 50.5,
+                        "y": 50.5
+                    },
+                    "uuid": "5891bb7a-1b24-4e7a-b174-8f1c9670bce0"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 50.5,
+                        "y": 50.5
+                    },
+                    "uuid": "8f9dbe74-272f-4e29-8b82-efb35cfca914"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Zone [GND] on In1.Cu, priority 0",
+                    "pos": {
+                        "x": 50.5,
+                        "y": 50.5
+                    },
+                    "uuid": "f7e7e65f-2f40-4e3f-9bd5-6cf02a8a74e6"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 50.5,
+                        "y": 50.5
+                    },
+                    "uuid": "8f9dbe74-272f-4e29-8b82-efb35cfca914"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 47 [USB_DP_MCU] of U1 on F.Cu",
+                    "pos": {
+                        "x": 91.0,
+                        "y": 78.5625
+                    },
+                    "uuid": "585678b4-5d96-47e5-bbb7-e609ccef66a7"
+                },
+                {
+                    "description": "Pad 2 [USB_DP_MCU] of R8 on F.Cu",
+                    "pos": {
+                        "x": 96.0,
+                        "y": 71.175
+                    },
+                    "uuid": "ac8cf0b3-66ad-4c74-9b5a-de6c7da60bea"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "Footprint 'USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal' does not match copy in library 'Connector_USB'.",
+            "items": [
+                {
+                    "description": "Footprint J1",
+                    "pos": {
+                        "x": 64.0,
+                        "y": 53.675
+                    },
+                    "uuid": "db869a54-43bc-443b-9fe2-860a82dc1500"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        }
+    ]
+}

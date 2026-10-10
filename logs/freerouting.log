@@ -1,0 +1,86 @@
+2026-10-10 13:28:26.946 [main] INFO  Freerouting v1.9.0 (build-date: 2023-10-30)
+2026-10-10 13:30:14.792 [main] INFO  Freerouting v1.9.0 (build-date: 2023-10-30)
+2026-10-10 13:30:14.809 [main] INFO  Settings were loaded from freerouting.json
+2026-10-10 13:30:23.224 [main] INFO  Freerouting v1.9.0 (build-date: 2023-10-30)
+2026-10-10 13:30:23.242 [main] INFO  Settings were loaded from freerouting.json
+2026-10-10 13:30:23.243 [main] ERROR null
+java.awt.HeadlessException: null
+	at sun.awt.HeadlessToolkit.getScreenSize(HeadlessToolkit.java:186) ~[?:?]
+	at app.freerouting.gui.MainApplication.main(MainApplication.java:269) ~[freerouting19.jar:unspecified]
+2026-10-10 13:30:23.250 [main] ERROR Exception in FRAnalytics.trackAnonymousAction: Cannot invoke "app.freerouting.management.SegmentClient.track(String, String, String, app.freerouting.management.segment.Properties)" because "app.freerouting.management.FRAnalytics.analytics" is null
+java.lang.NullPointerException: Cannot invoke "app.freerouting.management.SegmentClient.track(String, String, String, app.freerouting.management.segment.Properties)" because "app.freerouting.management.FRAnalytics.analytics" is null
+	at app.freerouting.management.FRAnalytics.trackAnonymousAction(FRAnalytics.java:139) [freerouting19.jar:unspecified]
+	at app.freerouting.management.FRAnalytics.exceptionThrown(FRAnalytics.java:323) [freerouting19.jar:unspecified]
+	at app.freerouting.gui.DefaultExceptionHandler.handleException(DefaultExceptionHandler.java:15) [freerouting19.jar:unspecified]
+	at app.freerouting.gui.DefaultExceptionHandler.uncaughtException(DefaultExceptionHandler.java:29) [freerouting19.jar:unspecified]
+	at java.lang.ThreadGroup.uncaughtException(ThreadGroup.java:695) [?:?]
+	at java.lang.ThreadGroup.uncaughtException(ThreadGroup.java:690) [?:?]
+	at java.lang.Thread.dispatchUncaughtException(Thread.java:2902) [?:?]
+2026-10-10 13:30:28.844 [main] INFO  Freerouting v1.9.0 (build-date: 2023-10-30)
+2026-10-10 13:30:28.864 [main] INFO  Settings were loaded from freerouting.json
+2026-10-10 13:30:29.870 [main] INFO  Opening 'hardware/outputs/airnote-unrouted.dsn'...
+2026-10-10 13:30:30.227 [ForkJoinPool.commonPool-worker-1] INFO  New version available: v2.5.0
+2026-10-10 13:30:41.122 [main] WARN  Multi-threaded route optimization is broken and it is known to generate clearance violations. It is highly recommended to use the single-threaded route optimization instead by setting the number of threads to 1 with the '-mt 1' command line argument.
+2026-10-10 13:30:41.123 [Thread-28] INFO  Starting auto-routing...
+2026-10-10 13:30:43.039 [Thread-28] INFO  Auto-routing was completed in 1.92 seconds.
+2026-10-10 13:30:43.140 [Thread-28] INFO  Starting route optimization on 2 threads...
+2026-10-10 13:30:43.506 [Thread-28] INFO  Route optimization was completed in 0.36 seconds.
+2026-10-10 13:30:43.511 [Thread-28] INFO  Saving '/tmp/airnote-test.ses'...
+2026-10-10 13:31:23.752 [main] INFO  Freerouting v1.9.0 (build-date: 2023-10-30)
+2026-10-10 13:31:23.771 [main] INFO  Settings were loaded from freerouting.json
+2026-10-10 13:31:24.778 [main] INFO  Opening 'hardware/outputs/airnote-route.dsn'...
+2026-10-10 13:31:24.995 [main] WARN  AutorouteSettings.read_layer_rule: layer not found at ''
+2026-10-10 13:31:24.996 [main] WARN  Structure.create_board: layers missing in structure scope at ''
+2026-10-10 13:31:25.179 [ForkJoinPool.commonPool-worker-1] INFO  New version available: v2.5.0
+2026-10-10 13:31:30.340 [main] WARN  Couldn't create window frame
+2026-10-10 13:31:48.225 [main] INFO  Freerouting v1.9.0 (build-date: 2023-10-30)
+2026-10-10 13:31:48.244 [main] INFO  Settings were loaded from freerouting.json
+2026-10-10 13:31:49.251 [main] INFO  Opening 'hardware/outputs/airnote-route.dsn'...
+2026-10-10 13:31:49.414 [main] WARN  AutorouteSettings.read_layer_rule: layer not found at ''
+2026-10-10 13:31:49.414 [main] WARN  Structure.create_board: layers missing in structure scope at ''
+2026-10-10 13:31:49.486 [ForkJoinPool.commonPool-worker-1] INFO  New version available: v2.5.0
+2026-10-10 13:31:54.262 [main] WARN  Couldn't create window frame
+2026-10-10 13:32:00.135 [main] INFO  Freerouting v1.9.0 (build-date: 2023-10-30)
+2026-10-10 13:32:00.153 [main] INFO  Settings were loaded from freerouting.json
+2026-10-10 13:32:01.159 [main] INFO  Opening 'hardware/outputs/airnote-route.dsn'...
+2026-10-10 13:32:01.385 [ForkJoinPool.commonPool-worker-1] INFO  New version available: v2.5.0
+2026-10-10 13:32:02.959 [Thread-28] INFO  Starting auto-routing...
+2026-10-10 13:32:53.099 [Thread-28] WARN  There were only 14.35 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-10-10 13:32:54.434 [Thread-28] INFO  Auto-routing was completed in 51.47 seconds.
+2026-10-10 13:32:54.534 [Thread-28] INFO  Starting route optimization on 1 thread...
+2026-10-10 13:32:56.842 [Thread-28] INFO  Route optimization was completed in 2.31 seconds.
+2026-10-10 13:32:56.848 [Thread-28] INFO  Saving 'hardware/outputs/airnote-routed.ses'...
+2026-10-10 13:33:33.444 [main] INFO  Freerouting v1.9.0 (build-date: 2023-10-30)
+2026-10-10 13:33:33.462 [main] INFO  Settings were loaded from freerouting.json
+2026-10-10 13:33:34.469 [main] INFO  Opening 'hardware/outputs/airnote-route.dsn'...
+2026-10-10 13:33:34.896 [ForkJoinPool.commonPool-worker-1] INFO  New version available: v2.5.0
+2026-10-10 13:33:37.693 [Thread-28] INFO  Starting auto-routing...
+2026-10-10 13:34:01.632 [main] INFO  Freerouting v1.9.0 (build-date: 2023-10-30)
+2026-10-10 13:34:01.650 [main] INFO  Settings were loaded from freerouting.json
+2026-10-10 13:34:02.657 [main] INFO  Opening 'hardware/outputs/airnote-route.dsn'...
+2026-10-10 13:34:03.039 [ForkJoinPool.commonPool-worker-1] INFO  New version available: v2.5.0
+2026-10-10 13:34:07.550 [Thread-28] INFO  Starting auto-routing...
+2026-10-10 13:34:35.752 [Thread-28] INFO  Auto-routing was completed in 28.20 seconds.
+2026-10-10 13:34:35.853 [Thread-28] INFO  Starting route optimization on 1 thread...
+2026-10-10 13:34:37.761 [Thread-28] INFO  Route optimization was completed in 1.91 seconds.
+2026-10-10 13:34:37.768 [Thread-28] INFO  Saving 'hardware/outputs/airnote-routed.ses'...
+2026-10-10 13:37:06.207 [main] INFO  Freerouting v1.9.0 (build-date: 2023-10-30)
+2026-10-10 13:37:06.225 [main] INFO  Settings were loaded from freerouting.json
+2026-10-10 13:37:07.232 [main] INFO  Opening 'hardware/outputs/airnote-route.dsn'...
+2026-10-10 13:37:07.607 [ForkJoinPool.commonPool-worker-1] INFO  New version available: v2.5.0
+2026-10-10 13:37:10.962 [Thread-22] INFO  Starting auto-routing...
+2026-10-10 13:37:19.620 [Thread-22] WARN  There were only 19.85 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-10-10 13:37:21.468 [Thread-22] INFO  Auto-routing was completed in 10.51 seconds.
+2026-10-10 13:37:21.569 [Thread-22] INFO  Starting route optimization on 1 thread...
+2026-10-10 13:37:23.323 [Thread-22] INFO  Route optimization was completed in 1.75 seconds.
+2026-10-10 13:37:23.330 [Thread-22] INFO  Saving 'hardware/outputs/airnote-routed.ses'...
+2026-10-10 13:49:09.050 [main] INFO  Freerouting v1.9.0 (build-date: 2023-10-30)
+2026-10-10 13:49:09.067 [main] INFO  Settings were loaded from freerouting.json
+2026-10-10 13:49:10.074 [main] INFO  Opening 'hardware/outputs/airnote-route-local.dsn'...
+2026-10-10 13:49:10.487 [ForkJoinPool.commonPool-worker-1] INFO  New version available: v2.5.0
+2026-10-10 13:49:13.304 [Thread-22] INFO  Starting auto-routing...
+2026-10-10 13:49:16.377 [Thread-22] WARN  There were only 14.30 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-10-10 13:49:16.685 [Thread-22] INFO  Auto-routing was completed in 3.38 seconds.
+2026-10-10 13:49:16.786 [Thread-22] INFO  Starting route optimization on 1 thread...
+2026-10-10 13:49:17.848 [Thread-22] INFO  Route optimization was completed in 1.06 seconds.
+2026-10-10 13:49:17.855 [Thread-22] INFO  Saving 'hardware/outputs/airnote-routed-local.ses'...

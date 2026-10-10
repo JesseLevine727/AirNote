@@ -1,0 +1,28 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-10T14:01:37-0400",
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "9.0.9",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/26450f57-a29b-540e-b9ee-402b41b2a6e1",
+            "violations": []
+        },
+        {
+            "path": "/Power/",
+            "uuid_path": "/26450f57-a29b-540e-b9ee-402b41b2a6e1/eab531e4-a825-5a42-9c16-0736af09c845",
+            "violations": []
+        },
+        {
+            "path": "/Instrument/",
+            "uuid_path": "/26450f57-a29b-540e-b9ee-402b41b2a6e1/aa4cab13-dd20-5131-ae19-9d6c86ca2867",
+            "violations": []
+        }
+    ],
+    "source": "airnote.kicad_sch"
+}

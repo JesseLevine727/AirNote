@@ -1,0 +1,519 @@
+{
+  "status": "PASS export-coherence checks only",
+  "gerbonara_version": "1.6.3",
+  "sha256": {
+    "hardware/airnote.kicad_pcb": "c35f7d922f362b58a088193dba98902f71df68bcac94774f78b6f83b8618e9cc",
+    "hardware/airnote.kicad_sch": "34c6fb124b591bd14fb5e3c577ef59631b36c3249d2d33bb45594403e1bfa15b",
+    "hardware/power.kicad_sch": "4b958e9379ade85dcc32ab0351f46ef663bfa9b7dc6a7fd54e0fe38d1fa7d499",
+    "hardware/instrument.kicad_sch": "cfd2724a38cf5fce50cf9f39e308eb1f6cfbb5bc42d241d63dc9cb3057cc543f",
+    "hardware/airnote.kicad_pro": "a97556dba100d06a332e91ea67b7c05de07ed8b10650b8704a8f4c2122f9fb8f",
+    "hardware/airnote.kicad_dru": "82045de79e019a8efea6dbff956824b77b175e821f9ca90cd9a46ab9906f2a81",
+    "hardware/bom.csv": "e5e9c0ee31dc2326f647ad52a0e3823a70f4d825df587be68ca3a4c8b2fa4f98",
+    "hardware/outputs/airnote.net.xml": "ee346477049ec22b76ea3cd7c0bbc5dc64f0328fb498ee8fb50f77e6ed0a27dc",
+    "hardware/outputs/airnote-schematic.pdf": "e86cd4561086e97108cc428b0f1eae94afd570bc26def20fc5f97aeac376ff8c",
+    "hardware/outputs/airnote-assembly.pdf": "85ddb458699018a08be9ed1bacd8016a22605c12d98b4c6915b3235164f012e1",
+    "hardware/outputs/DRAFT-fabrication/README.md": "23bcb01405a3f96517087b0f30782f596b438176b83839c64056807c83b06384",
+    "hardware/outputs/DRAFT-fabrication/airnote-B_Cu.gbl": "d7ed32129a96ad57e92af37c3c4b0249ef37de6b40da830434e8538f6288eab4",
+    "hardware/outputs/DRAFT-fabrication/airnote-B_Mask.gbs": "a9021a5f6f263d4a3fb139c3881404b65f5b03f4f83ec5de6025ec0aae6df1c4",
+    "hardware/outputs/DRAFT-fabrication/airnote-B_Paste.gbp": "bf9c54c2f1fa919aebdbd6383fd3ba7457d7b8e61e1f357ab47bca11c3cf8eb3",
+    "hardware/outputs/DRAFT-fabrication/airnote-B_Silkscreen.gbo": "4e835b14de9fb9f34d461f4827b3b92ce9be244d3256d4e073530ee26077c33f",
+    "hardware/outputs/DRAFT-fabrication/airnote-Edge_Cuts.gm1": "2ef2ca48fa1dc5a1491a17e8875bab1105c46cb26b9673eda255459125dcd8bd",
+    "hardware/outputs/DRAFT-fabrication/airnote-F_Cu.gtl": "9ed5cb2c23acbf51ee756c69713395361e7fe84e558ca15ac39c99efd4b2af93",
+    "hardware/outputs/DRAFT-fabrication/airnote-F_Mask.gts": "a7a4fb8854d2f4254d9bb22844b2f6b90540f8bf34cb261ab0aa9c5dcc1adec0",
+    "hardware/outputs/DRAFT-fabrication/airnote-F_Paste.gtp": "0de3c2188874883fa3d88deeb678119a65ecacec5e23241a9a5ee3cb4ab53f14",
+    "hardware/outputs/DRAFT-fabrication/airnote-F_Silkscreen.gto": "e84d34cc1d3f2ca06d2b2cfa332145791e03a66df8528332681107c1366031dc",
+    "hardware/outputs/DRAFT-fabrication/airnote-In1_Cu.g1": "7a0ba48e07ade6e44835464c4b1df75189eeeb6aeaf181d6affe6575f8436e18",
+    "hardware/outputs/DRAFT-fabrication/airnote-In2_Cu.g2": "5c89f9f829d0125a5debffe15978fe8c5330899bfe53289ccd3e0dab94b2d63c",
+    "hardware/outputs/DRAFT-fabrication/airnote-NPTH-drl_map.pdf": "3e6d736c5a6f8ceb0aaacf9f1c1cf07dbc63c9a3759b4ce2340349286ae44809",
+    "hardware/outputs/DRAFT-fabrication/airnote-NPTH.drl": "13e27d02c7db50368a8b4315e8a30bddfaeb764037da1fc2a0c4739ce016c3b7",
+    "hardware/outputs/DRAFT-fabrication/airnote-PTH-drl_map.pdf": "1b9937d7ea2800647fdc3606723da74e2e9fa24a1f0298c3d4596034c594f30b",
+    "hardware/outputs/DRAFT-fabrication/airnote-PTH.drl": "ac344ee421d4aec24ba44062fb463fdf15b9cca4f28976727eaa41f9839df5cd",
+    "hardware/outputs/DRAFT-fabrication/airnote-all-positions.csv": "3b46aa7fe07245b2c11d68ff1a3b15e8dbdc9fbce702805c9b32c217a1d5ab2b",
+    "hardware/outputs/DRAFT-fabrication/airnote-drill.rpt": "3d2daafc76440dd8216c603d902d0ed54be2fcbc4daddbe7568ea2bb7f94b183",
+    "hardware/outputs/DRAFT-fabrication/airnote-fitted-bom.csv": "fc4049849328600d80bf9e0f30681f07abb6ed29f0a8871f376f2f8a3497bef2",
+    "hardware/outputs/DRAFT-fabrication/airnote-fitted-positions.csv": "96bec3a430a587bb2d188d647481e74c57f5deff604c503c0a4bc2e9d27a7545",
+    "hardware/outputs/DRAFT-fabrication/airnote-job.gbrjob": "3cc5ff14a43862dfbafd66db0af40fa613d0249fc307b3548132540605dadb05"
+  },
+  "checks": [
+    {
+      "check": "Four copper layers parsed",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "check": "Top and bottom mask/paste/silk plus outline present",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "check": "Bottom paste empty for all-top assembly",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "check": "Plated drill centers/sizes/slot lengths match PCB",
+      "status": "PASS",
+      "details": {
+        "source_count": 114,
+        "export_count": 114,
+        "coordinate_tolerance_mm": 0.00051,
+        "maximum_difference_mm": 0.0005000000000023874,
+        "missing": [],
+        "extra": []
+      }
+    },
+    {
+      "check": "Nonplated drill centers/sizes/slot lengths match PCB",
+      "status": "PASS",
+      "details": {
+        "source_count": 6,
+        "export_count": 6,
+        "coordinate_tolerance_mm": 0.00051,
+        "maximum_difference_mm": 0,
+        "missing": [],
+        "extra": []
+      }
+    },
+    {
+      "check": "Placement list matches fitted BOM references",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "check": "Placement C1",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "check": "Placement C2",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "check": "Placement C3",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "check": "Placement C4",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "check": "Placement C5",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "check": "Placement C6",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "check": "Placement C7",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "check": "Placement C8",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "check": "Placement C9",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "check": "Placement C10",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "check": "Placement C11",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "check": "Placement C12",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "check": "Placement C13",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "check": "Placement C14",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "check": "Placement C15",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "check": "Placement C16",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "check": "Placement C17",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "check": "Placement C18",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "check": "Placement C19",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "check": "Placement C20",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "check": "Placement C21",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "check": "Placement C22",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "check": "Placement C23",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "check": "Placement D1",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "check": "Placement D2",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "check": "Placement F1",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "check": "Placement J1",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "check": "Placement J2",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "check": "Placement J3",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "check": "Placement R1",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "check": "Placement R2",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "check": "Placement R3",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "check": "Placement R4",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "check": "Placement R5",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "check": "Placement R6",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "check": "Placement R7",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "check": "Placement R8",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "check": "Placement R9",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "check": "Placement R10",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "check": "Placement R11",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "check": "Placement R12",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "check": "Placement R13",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "check": "Placement R14",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "check": "Placement R15",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "check": "Placement R16",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "check": "Placement R17",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "check": "Placement R18",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "check": "Placement R19",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "check": "Placement RV1",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "check": "Placement SW1",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "check": "Placement SW2",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "check": "Placement SW3",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "check": "Placement U1",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "check": "Placement U2",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "check": "Placement U3",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "check": "Placement U4",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "check": "Placement U5",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "check": "Placement Y1",
+      "status": "PASS",
+      "details": ""
+    }
+  ],
+  "parsed_layers": {
+    "('top', 'copper')": {
+      "objects": 969,
+      "bounds": [
+        [
+          50.5,
+          -119.5
+        ],
+        [
+          139.5,
+          -50.5
+        ]
+      ]
+    },
+    "('top', 'mask')": {
+      "objects": 261,
+      "bounds": [
+        [
+          52.65,
+          -117.35
+        ],
+        [
+          137.35,
+          -51.7
+        ]
+      ]
+    },
+    "('top', 'silk')": {
+      "objects": 1293,
+      "bounds": [
+        [
+          52.65,
+          -118.029819
+        ],
+        [
+          137.35,
+          -51.7
+        ]
+      ]
+    },
+    "('top', 'paste')": {
+      "objects": 238,
+      "bounds": [
+        [
+          59.18,
+          -115.0
+        ],
+        [
+          124.0,
+          -51.7
+        ]
+      ]
+    },
+    "('bottom', 'copper')": {
+      "objects": 287,
+      "bounds": [
+        [
+          50.5,
+          -119.5
+        ],
+        [
+          139.5,
+          -50.5
+        ]
+      ]
+    },
+    "('bottom', 'mask')": {
+      "objects": 22,
+      "bounds": [
+        [
+          52.65,
+          -117.35
+        ],
+        [
+          137.35,
+          -51.7
+        ]
+      ]
+    },
+    "('bottom', 'silk')": {
+      "objects": 22,
+      "bounds": [
+        [
+          52.65,
+          -117.35
+        ],
+        [
+          137.35,
+          -51.7
+        ]
+      ]
+    },
+    "('bottom', 'paste')": {
+      "objects": 0,
+      "bounds": null
+    },
+    "('inner_2', 'copper')": {
+      "objects": 115,
+      "bounds": [
+        [
+          50.5,
+          -119.5
+        ],
+        [
+          139.5,
+          -50.5
+        ]
+      ]
+    },
+    "('inner_1', 'copper')": {
+      "objects": 115,
+      "bounds": [
+        [
+          50.5,
+          -119.5
+        ],
+        [
+          139.5,
+          -50.5
+        ]
+      ]
+    },
+    "('mechanical', 'outline')": {
+      "objects": 4,
+      "bounds": [
+        [
+          49.975,
+          -120.025
+        ],
+        [
+          140.025,
+          -49.975
+        ]
+      ]
+    }
+  },
+  "parser_warnings": [
+    "/home/elfo/Documents/KiCadFun/hardware/outputs/DRAFT-fabrication/airnote-NPTH.drl:14 \"G90\": G90 header statement found after end of header",
+    "/home/elfo/Documents/KiCadFun/hardware/outputs/DRAFT-fabrication/airnote-PTH.drl:20 \"G90\": G90 header statement found after end of header"
+  ],
+  "physical_tests": "PENDING",
+  "limitations": [
+    "Copper Gerbers, mask/paste and split drill sets were parsed; front/back independent render review is recorded separately.",
+    "The Gerber job stackup/finish/revision metadata are placeholders pending a factory-specific release.",
+    "Zero geometry discrepancies do not approve USB impedance/routing, remaining layout concerns, optical assembly process or actual operation."
+  ]
+}

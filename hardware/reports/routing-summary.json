@@ -1,0 +1,14 @@
+{
+  "status": "final locally checked engineering prototype; factory and physical gates remain open",
+  "board_sha256": "c35f7d922f362b58a088193dba98902f71df68bcac94774f78b6f83b8618e9cc",
+  "tracks": 766,
+  "vias": 98,
+  "zones": 4,
+  "track_layers": [
+    "B.Cu",
+    "F.Cu"
+  ],
+  "copper_layers": 4,
+  "minimum_track_width_mm": 0.15,
+  "unconnected_items_in_final_native_DRC": 0
+}

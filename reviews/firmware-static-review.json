@@ -1,0 +1,40 @@
+{
+  "date": "2026-10-10",
+  "scope": "Independent static review; not RP2040 execution or electrical validation",
+  "status": "PASS_WITH_UNVERIFIED_PHYSICAL_GATES",
+  "sha256": {
+    "firmware/src/main.cpp": "af89d7cd43bc039e39a3d18349d98a1aa062817b9f8c27d701d3b6e391c55310",
+    "firmware/src/wire.cpp": "9aafc32c3acc9575a81cc705b401f29e41b09f1913ac0a3f2c0dc34bb0465064",
+    "firmware/include/instrument.hpp": "bc933aac8d743b98dee5fbd81ff009e3ee491b4e5da6d3f15cd1540fac79c8ad",
+    "firmware/src/instrument.cpp": "18aba69c659cfb6a50668042a9b866346793f6dcd118dab9f6b5871287f27f62",
+    "firmware/vendor/pico_audio_i2s/audio_i2s.c": "09e2df64b1a2d537e82c1b2d3c39f1cfe6fed5444891015baa4ef84b9d0b337f",
+    "firmware/include/boards/airnote.h": "b817d261e33574ad49a5a6d827733b51c05bd4211a40b8097a47fcd2efc5769d"
+  },
+  "reviewed": [
+    "Amplifier enable initializes low before peripheral initialization.",
+    "Sensor stays in XSHUT until USB configured or explicitly armed dedicated-adapter mode. Host presence latches mute until power cycle.",
+    "VL53L1X AVDD I2C and GPIO modes explicitly set/read back; bounded driver and I2C waits; transport errors fail quiet.",
+    "Only changed burst-coherent stream counter refreshes frame freshness; independent frozen-frame test passes.",
+    "USB suspend and post-start deconfiguration disable amplifier, assert XSHUT, clear note, request audio stop; LED is off while power mode is unavailable.",
+    "Audio stop masks interrupts, aborts DMA, disables I2S, acknowledges DMA IRQ, publishes stopped state, then parks until power cycle. Watchdog allows parked state.",
+    "Underrun telemetry counts the actual empty consumer-buffer branch, not producer time gaps.",
+    "Two silent audio buffers precede DMA enable; hardware switch directly disables amplifier independently of firmware."
+  ],
+  "corrected_findings": [
+    "Frozen sensor frame previously refreshed freshness indefinitely.",
+    "Status LED previously blinked as a sensor fault before power readiness and during suspend.",
+    "USB deconfiguration previously did not shut down already-started peripherals."
+  ],
+  "pending": [
+    "Physical I/O startup and I2C signaling.",
+    "RP2040 PIO/I2S waveform, audio starvation and analog output tests.",
+    "USB current before configuration, configured maximum, suspend current, input charge/inrush and source capabilities.",
+    "Measured full gesture-to-audio latency and no-target cutoff.",
+    "Sensor post-assembly calibration and real-hand performance."
+  ],
+  "limitations": [
+    "Shutdown reduces peripheral load; it does not establish the USB suspend current limit at a 120 MHz MCU clock.",
+    "After suspend/deconfiguration, the audio core remains parked until a power cycle by design.",
+    "No physical PCB exists; no hardware criterion is marked passed."
+  ]
+}

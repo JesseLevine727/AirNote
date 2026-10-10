@@ -1,0 +1,11 @@
+requirement,procedure,target,status,board_id,firmware_sha256,date_utc,equipment_and_conditions,measurement,raw_evidence_path,notes
+FUNC-01,Fixed target at all 11 band centres,>=99% correct note and valid samples for 60 s per position,PENDING,,,,,,,
+FUNC-02,Hand held at low middle and high notes,5 s hold in >=9 of 10 attempts per note,PENDING,,,,,,,
+PERF-01,100 physical gesture to audio transitions,p95 <=80 ms; report median and maximum; no missed transitions,PENDING,,,,,,,
+FUNC-03,100 target removals,Silent within 150 ms in >=99 trials,PENDING,,,,,,,
+FUNC-04,Empty sensing cone indoors,No unintended notes in 5 min,PENDING,,,,,,,
+AUDIO-01,All 11 steady tones,Frequency error within +/-5 cents,PENDING,,,,,,,
+AUDIO-02,Volume sweep and maximum allowed amplitude,Monotonic level to silence; within power budget,PENDING,,,,,,,
+CTRL-01,50 hardware mute operations including hung MCU,Every operation disables amplifier,PENDING,,,,,,,
+PWR-01,Rails current startup suspend resume and PLAY,Meet docs/power_budget.md allocations and applicable USB limits,PENDING,,,,,,,
+REL-01,30 min playing and 20 power cycles,No hangs resets or unintended sound; 20 successful boots,PENDING,,,,,,,
