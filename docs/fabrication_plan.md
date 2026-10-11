@@ -144,6 +144,39 @@ Overseer dispositions of the reviewer's below-FAIL concerns, 2026-10-10:
 | I2S lines under the crystal on B.Cu; XTAL_OUT between Y1's pads | Accepted. Two GND planes separate B.Cu from the crystal; the added capacitance is under 0.1 pF. |
 | Low stock: J1, RV1 | Re-check on the order day. |
 
+## JLC placement corrections (cart of 2026-10-10)
+
+JLC's placement preview showed several of its part models disagreeing with
+the KiCad orientations in `airnote-jlc-cpl.csv`. The corrections below were
+made in JLC's viewer for the order now in the cart, and checked against each
+footprint's pin-1 mark. They live in that JLC order, **not** in the exported
+CPL file. A fresh upload of the CPL needs them again, until
+`export_outputs.py` gets a JLC correction table.
+
+| Ref | Part | Correction in JLC's top view |
+| --- | --- | --- |
+| D1 | USBLC6-2SC6, SOT-23-6 | rotate 90° clockwise |
+| U2 | W25Q16JVSNIQ, SOIC-8 | rotate 90° clockwise |
+| U3 | AP2112K-3.3, SOT-23-5 | rotate 90° clockwise |
+| U5 | MAX98357A, TQFN-16 | rotate 90° clockwise |
+| U4 | VL53L1X, LGA-12 | rotate 180° |
+| J1 | USB4105-GF-A-120 | move about 1.0 mm into the board, so the leads sit on the pads |
+| J2 | 1×5 header | rotate 90°, move 5.08 mm along the row (anchor is pin 1) |
+| RV1 | PTV09A-4015F | rotate 90° clockwise, move onto the pin and tab holes (anchor is pin 1) |
+| J3 | JST PH 2-pin | move about 1 mm onto the body outline (anchor is pin 1) |
+
+Already correct as exported: U1, Y1, D2, SW1, SW2, SW3 and all passives.
+JLC's RV1 model numbers its pins opposite to the footprint; the pot only
+fits one way, so at worst the knob direction is reversed.
+
+Cart contents: 5 boards, 2 assembled, $158.63 USD before shipping and tax
+($46.23 PCB, $112.40 Standard PCBA). Placement confirmation is set to
+manual, so JLC waits for approval of its placement check before building.
+The order remark asks for no washing and the sensor liner left on. The
+customs description chosen was "Audio Equipment, HS 851890"; confirm it at
+checkout. JLC's default "Remove Mark" means the `JLCJLCJLCJLC` bottom
+silkscreen text prints literally.
+
 ## Before ordering
 
 1. The current revision must pass the independent review
